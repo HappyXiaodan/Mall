@@ -1,0 +1,65 @@
+{
+    
+    "name": "CSS3 PIE: CSS3 decorations for IE",
+    
+    "filename": "PIE.htc",
+    
+    "version": "2.0beta1",
+    
+    "description": "CSS3 PIE makes Internet Explorer 6-9 capable of rendering several of the most useful CSS3 decoration features.",
+    
+    "homepage": "http://css3pie.com/",
+    
+    "keywords": [
+        
+        "css",
+        
+        "css3",
+        
+        "toolkit",
+        
+        "features",
+        
+        "detector",
+        
+        "compatibility",
+        
+        "popular"
+        
+    ],
+    
+    "author": [
+        
+        {
+            
+            "name": "Jason Johnston"
+            
+        }
+        
+    ],
+    
+    "docs": "http://css3pie.com/documentation/",
+    
+    "maintainers": [
+        
+        {
+            
+            "name": "Jason Johnston"
+            
+        }
+        
+    ],
+    
+   "repositories": [
+       
+        {
+           
+           "type": "git",
+           
+           "url": "https://github.com/lojjic/PIE.git"
+           
+        }
+       
+    ]
+    
+}

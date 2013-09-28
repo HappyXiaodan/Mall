@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+
+
+/* 
+888    888                        888                  
+888    888                        888                  
+888    888                        888                  
+8888888888  .d88b.   8888b.   .d88888  .d88b.  888d888 
+888    888 d8P  Y8b     "88b d88" 888 d8P  Y8b 888P"   
+888    888 88888888 .d888888 888  888 88888888 888     
+888    888 Y8b.     888  888 Y88b 888 Y8b.     888     
+888    888  "Y8888  "Y888888  "Y88888  "Y8888  888                 
+*/
+
+
+
+h1, h2, h3, h4, h5, h6 {
+
+    color: #222;
+    
+    color: hsl(0,0%,13%);
+    
+	color: hsla(0,0%,13%,1);
+    
+    color: rgb(34,34,34);
+	
+	color: rgba(34,34,34,1);
+    
+    font: normal normal normal 14px/normal "微软雅黑";
+    
+    text-rendering: optimizeLegibility;<!--text-rendering: optimizeLegibility;-->
+    
+}
+
+h1 {
+	
+    font-size: 2.75em;
+    
+}
+
+h2 {
+	
+    font-size: 2.3125em;
+    
+}
+
+h3 {
+	
+    font-size: 1.6875em;
+    
+}
+
+h4 {
+	
+    font-size: 1.4375em;
+    
+}
+
+h5 {
+	
+    font-size: 1.125em;
+    
+}
+
+h6 {
+	
+    font-size: 1em;
+    
+}
+
+hr {
+    
+    height: 0;
+	
+	margin: 0;
+	
+    border: solid #000;
+    
+    border-width: 1px 0 0;
+    
+    clear: both;
+    
+}
+
+@media only screen and (min-width: 768px) {
+	
+	h1, h2, h3, h4, h5, h6 {
+		
+		line-height: 1.4;
+		
+	}
+	
+	h1 {
+		
+    	font-size: 2.75em;
+    	
+	}
+	
+	h2 {
+		
+    	font-size: 2.3125em;
+    	
+	}
+	
+	h3 {
+		
+		font-size: 1.6875em;
+		
+	}
+	
+	h4 {
+		
+		font-size: 1.4375em;
+		
+	}
+	
+	h5 {
+		
+		font-size: 1.125em;
+		
+	}
+	
+	h6 {
+		
+		font-size: 1em;
+		
+	}
+	
+}

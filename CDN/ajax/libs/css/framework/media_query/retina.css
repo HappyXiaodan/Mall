@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+
+
+/* 
+888b     d888               888 d8b                 .d88888b.                            d8b                   
+8888b   d8888               888 Y8P                d88P" "Y88b                           Y8P                   
+88888b.d88888               888                    888     888                                                 
+888Y88888P888  .d88b.   .d88888 888  8888b.        888     888 888  888  .d88b.  888d888 888  .d88b.  .d8888b  
+888 Y888P 888 d8P  Y8b d88" 888 888     "88b       888     888 888  888 d8P  Y8b 888P"   888 d8P  Y8b 88K      
+888  Y8P  888 88888888 888  888 888 .d888888       888 Y8b 888 888  888 88888888 888     888 88888888 "Y8888b. 
+888   "   888 Y8b.     Y88b 888 888 888  888       Y88b.Y8b88P Y88b 888 Y8b.     888     888 Y8b.          X88 
+888       888  "Y8888   "Y88888 888 "Y888888        "Y888888"   "Y88888  "Y8888  888     888  "Y8888   88888P' 
+                                                          Y8b
+*/
+
+
+
+/**
+Desktop	    		    	Feature	Chrome	Firefox (Gecko)	Internet Explorer	Opera	Safari
+		Basic support	2.0	1.5 (1.8)[*]	5.5 [**]	9	4
+Mobile
+
+[*] Firefox 1.0 supported only an invalid syntax where the character encoding is not set between single or double quotes.
+[**] From IE 5.5 to IE 7 included, IE also supported the invalid syntax where the character encoding is not set between single or double quotes.
+*/
+
+
+
+/**
+	A media query consists of a media type and at least one expression that limits the style sheets' scope by using media features, such as width, height, and color. Media queries, added in CSS3, let the presentation of content be tailored to a specific range of output devices without having to change the content itself.
+	
+	Media queries consist of a media type and can, as of the CSS3 specification, contain one or more expressions, expressed as media features, which resolve to either true or false.  The result of the query is true if the media type specified in the media query matches the type of device the document is being displayed on and all expressions in the media query are true.
+	
+	When a media query is true, the corresponding style sheet or style rules are applied, following the normal cascading rules. Style sheets with media queries attached to their <link> tags will still download even if their media queries would return false (they will not apply, however).
+	
+	Unless you use the not or only operators, the media type is optional and the all type will be implied.
+	
+	Here, the css media query within a style sheet. CSS media query on a link element: <link rel="stylesheet" media="(max-width: 800px)" href="example.css" />.
+ */
+
+
+
+/**
+	Targets:
+	
+	Targetting a specific device is a bad practice. You'll never know what devices are coincidentally targeted by your query. Just use your queries to specify some breakpoints and avoid using media queries to target a device.
+	
+	But... There will probably be cases where your design looks perfect on all mobile devices, except on the device of your boss. Then, and only then use the following list!
+	
+	Only tested on the most used browser!
+	
+	Device	    		    	Device width	    	Device height	    	Pixel ratio
+	--------------------------------------------------------------------------------------------------------------
+    HTC One	    		    	360	    	            640	    	            3	                    Show query
+	--------------------------------------------------------------------------------------------------------------
+	Samsung Galaxy S2	    	320	    	            534	    	            1.5	                   	Show query
+	--------------------------------------------------------------------------------------------------------------
+	Samsung Galaxy S3	    	320	    	            640	    	            2	                    Show query
+	--------------------------------------------------------------------------------------------------------------
+	Samsung Galaxy S4	    	320	    	            640	    	            3	                    Show query
+	--------------------------------------------------------------------------------------------------------------
+	LG Nexus 4	    	        384	    	            592	    	            2	                    Show query
+	--------------------------------------------------------------------------------------------------------------
+	Asus Nexus 7	    	    601	    	            906	    	            1.33	                Show query
+	--------------------------------------------------------------------------------------------------------------
+	iPad 1 and 2	    	    768	    	            1024	    	        1	                    Show query
+	--------------------------------------------------------------------------------------------------------------
+	iPad Mini	    	        768	    	            1024	    	        1	                    Show query
+	--------------------------------------------------------------------------------------------------------------
+	iPad 3 and 4	    	    768	    	            1024	    	        2	                    Show query
+	--------------------------------------------------------------------------------------------------------------
+	iPhone 3G	    	        320	    	            480	    	            1	                    Show query
+	--------------------------------------------------------------------------------------------------------------
+	iPhone 4                    320	    	            480	    	            2	                    Show query
+	--------------------------------------------------------------------------------------------------------------
+	iPhone 5	    	        320	    	            568	    	            2	                    Show query
+	--------------------------------------------------------------------------------------------------------------
+ */
+
+
+
+/**
+ * Retina media query.
+ * Overrides styles for devices with a device-pixel-ratio of 2+, such as iPhone 4.
+ */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	
+	body {
+		
+		
+		
+	}
+	
+}

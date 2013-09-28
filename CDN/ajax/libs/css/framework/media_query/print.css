@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+
+
+/* 
+888b     d888               888 d8b                 .d88888b.                            d8b                   
+8888b   d8888               888 Y8P                d88P" "Y88b                           Y8P                   
+88888b.d88888               888                    888     888                                                 
+888Y88888P888  .d88b.   .d88888 888  8888b.        888     888 888  888  .d88b.  888d888 888  .d88b.  .d8888b    888
+888 Y888P 888 d8P  Y8b d88" 888 888     "88b       888     888 888  888 d8P  Y8b 888P"   888 d8P  Y8b 88K        888
+888  Y8P  888 88888888 888  888 888 .d888888       888 Y8b 888 888  888 88888888 888     888 88888888 "Y8888b.   
+888   "   888 Y8b.     Y88b 888 888 888  888       Y88b.Y8b88P Y88b 888 Y8b.     888     888 Y8b.          X88   888
+888       888  "Y8888   "Y88888 888 "Y888888        "Y888888"   "Y88888  "Y8888  888     888  "Y8888   88888P'   888
+                                                          Y8b
+
+
+8888888b.          d8b          888           .d8888b.  888             888                   
+888   Y88b         Y8P          888          d88P  Y88b 888             888                   
+888    888                      888          Y88b.      888             888                   
+888   d88P 888d888 888 88888b.  888888        "Y888b.   888888 888  888 888  .d88b.  .d8888b  
+8888888P"  888P"   888 888 "88b 888              "Y88b. 888    888  888 888 d8P  Y8b 88K      
+888        888     888 888  888 888                "888 888    888  888 888 88888888 "Y8888b. 
+888        888     888 888  888 Y88b.        Y88b  d88P Y88b.  Y88b 888 888 Y8b.          X88 
+888        888     888 888  888  "Y888        "Y8888P"   "Y888  "Y88888 888  "Y8888   88888P' 
+                                                                    888                       
+                                                               Y8b d88P                       
+                                                                "Y88P"
+*/
+
+
+
+/**
+ * CSS Media Queries are a feature in CSS3 which allows you to specify when certain CSS rules should be applied. This allows you to apply a special CSS for mobile, or adjust a layout for print.
+ */
+
+
+
+/**
+ * Print.
+ *
+ * Overrides styles for print.
+ */
+
+.print-only {
+	
+    display: none !important;
+    
+}
+
+
+
+@media print {
+	
+	* {
+		
+		color: #000 !important; /* Black prints faster: h5bp.com/s */
+		
+		text-shadow: none !important;
+		
+		box-shadow: none !important;
+		
+		background: transparent !important;
+		
+	}
+	
+	a, a:visited {
+		
+		text-decoration: underline;
+		
+	}
+	
+	a[href]:after {
+		
+		content:" (" attr(href)")";
+		
+	}
+	
+	abbr[title]:after {
+		
+		content:" (" attr(title)")";
+		
+	}
+	
+	/* Don't show links for images, or javascript/internal links */
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+		
+		content:"";
+		
+	}
+	
+	pre, blockquote {
+		
+		border: 1px solid #999;
+		
+		page-break-inside: avoid;
+		
+	}
+	
+	thead {
+		
+		display: table-header-group; /* h5bp.com/t */
+	}
+	
+	tr, img {
+		
+		page-break-inside: avoid;
+		
+	}
+	
+	img {
+		
+		max-width: 100% !important;
+		
+	}
+	
+	@page {
+		
+		margin: 0.5cm;
+		
+	}
+	
+	p, h2, h3 {
+		
+		orphans: 3;
+		
+		widows: 3;
+		
+	}
+	
+	h2, h3 {
+		
+		page-break-after: avoid;
+		
+	}
+    
+    .hide-on-print {
+    
+        display: none !important;
+        
+    }
+    
+    .print-only {
+    
+        display: block !important;
+        
+    }
+    
+    .hide-for-print {
+        
+        display: none !important;
+        
+    }
+    
+    .show-for-print {
+    	
+        display: inherit !important;
+        
+    }
+	
+}

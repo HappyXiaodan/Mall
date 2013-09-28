@@ -1,0 +1,57 @@
+{
+    
+    "name": "jquery-private",
+    
+    "filename": "jquery.private.min.js",
+    
+    "title": "jQuery Private",
+    
+    "version": "0.1.0",
+    
+    "description": "Avoiding Conflicts with Other Libraries.Map the use of jQuery to a module that calls noConflict and returns that value of jQuery for the 'jquery' module ID.",
+    
+    "author": {
+        
+        "name": "Shen Weizhong ( Tony )",
+        
+        "email": "swzyocowboy@icloud.com"
+        
+    },
+
+    "keywords": [
+      
+        "jquery",
+      
+        "conflicts"
+        
+    ],
+
+    "maintainers": [
+        
+        {
+            
+            "name": "Shen Weizhong ( Tony )",
+            
+            "email": "swzyocowboy@icloud.com"
+            
+        },
+        
+        {
+            
+            "name": "Zhang Xiaolu ( Doris )",
+            
+            "email": "zxllyf@live.cn"
+            
+        }
+        
+    ],
+    
+    "repositories": [],
+    
+    "dependencies": {
+        
+        "jquery": ">=1.0"
+        
+    }
+    
+}
