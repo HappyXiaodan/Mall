@@ -2,13 +2,137 @@
 
 
 
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: CSS Reset.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.09.28 21:05 ( Tony ).
+ * 
+ * Last update: 2013.09.28 21:06 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
 /* 
- .d8888b.  888          888               888 
-d88P  Y88b 888          888               888 
-888    888 888          888               888 
-888        888  .d88b.  88888b.   8888b.  888 
-888  88888 888 d88""88b 888 "88b     "88b 888 
-888    888 888 888  888 888  888 .d888888 888 
-Y88b  d88P 888 Y88..88P 888 d88P 888  888 888 
- "Y8888P88 888  "Y88P"  88888P"  "Y888888 888                            
+ .d8888b.  888          888               888
+d88P  Y88b 888          888               888
+888    888 888          888               888
+888        888  .d88b.  88888b.   8888b.  888
+888  88888 888 d88""88b 888 "88b     "88b 888
+888    888 888 888  888 888  888 .d888888 888
+Y88b  d88P 888 Y88..88P 888 d88P 888  888 888
+ "Y8888P88 888  "Y88P"  88888P"  "Y888888 888
 */
+
+
+
+*,
+*:before,
+*:after {
+    
+    -moz-box-sizing: border-box;
+    
+    -webkit-box-sizing: border-box;
+    
+    box-sizing: border-box;
+    
+}
+
+body {
+    
+    background: white;
+    
+    color: #000;
+    
+    font-family: normal normal normal 14px/normal "";
+    
+    cursor: default;
+    
+}
+
+img,
+object,
+embed {
+    
+    max-width: 100%;
+    
+    height: auto;
+    
+}
+
+object,
+embed {
+    
+    height: 100%;
+    
+}
+
+#map_canvas img,
+#google-maps img,
+#google-maps img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.google-maps img,
+.baidu-maps img,
+.map_canvas embed,
+.map_canvas object {
+    
+    max-width: none !important;
+    
+}
+
+img {
+    
+    display: inline-block;
+    
+    vertical-align: middle;
+    
+}
+
+textarea {
+    
+    height: auto;
+    
+    min-height: 50px;
+    
+}
+
+select {
+    
+    width: 100%;
+    
+}
+
+del {
+	
+    text-decoration: line-through;
+	
+}
+
+abbr[title] {
+	
+    cursor: help;
+	
+}
+
+dfn[title] {
+	
+    border-bottom: 1px dotted;
+	
+    cursor: help;
+	
+}

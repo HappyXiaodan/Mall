@@ -3,6 +3,30 @@
 
 
 /**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: CSS Reset.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.09.28 21:05 ( Tony ).
+ * 
+ * Last update: 2013.09.28 21:05 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+/**
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
  */
@@ -26,6 +50,8 @@ time, mark, audio, video {
 	padding: 0;
     
 	border: 0;
+
+	outline: 0;
     
 	font-size: 100%;
     
@@ -45,6 +71,12 @@ ol, ul {
     
 	list-style: none;
     
+}
+
+ins {
+	
+    text-decoration: none;
+	
 }
 
 blockquote {

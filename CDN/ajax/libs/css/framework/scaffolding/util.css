@@ -2,6 +2,30 @@
 
 
 
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: CSS Utils.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.09.28 21:05 ( Tony ).
+ * 
+ * Last update: 2013.09.28 22:19 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
 /* 
  * 888    888 888    d8b 888
  * 888    888 888    Y8P 888
@@ -16,6 +40,10 @@
 
 
 
+/*
+ * Floats Utilities
+ */
+
 .left {
 	
     float: left;
@@ -28,25 +56,42 @@
 	
 }
 
-.text-left {
+/**
+ * 1. Remove excess space below images
+ * 2. Guard against `img {max-width:100%}` hiding this utility's images in IE 8.
+ */
+
+.left img, .right img {
+    
+    display: block; /* 1 */
+    
+    max-width: none; /* 2 */
+    
+}
+
+/**
+ * Text utilities: Horizontal text alignment
+ */
+
+.textLeft {
 	
     text-align: left;
 	
 }
 
-.text-right {
+.textRight {
 	
     text-align: right;
 	
 }
 
-.text-center {
+.textCenter {
 	
     text-align: center;
 	
 }
 
-.text-justify {
+.textJustify {
 	
     text-align: justify;
 	
@@ -54,23 +99,33 @@
 
 /**
  * Text Overflow For Div.
+ * 
+ * 1. Ensure that the node has a maximum width after which truncation can
+ *    occur.
+ * 
+ * 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+ *    nodes.
+ * 
+ * 3. "overflow" value must be different from "visible".
  *
  * @Example: 
  *
  * <div class="text-overflow">Text Overflow Testing.</div>
  */
  
-.text-overflow {
+.textOverflow {
 	
 	display: block;
+    
+    max-width: 100%; /* 1 */
+    
+    white-space: nowrap !important;
+    
+    word-wrap: normal !important; /* 2 */
 	
-	word-break: keep-all;
+	overflow: hidden !important; /* 3 */
 	
-	white-space: nowrap;
-	
-	overflow: hidden; /* "overflow" value must be different from "visible" */
-	
-	text-overflow-mode: ellipsis;
+	text-overflow-mode: ellipsis !important;
     
     /* text-overflow: ellipsis-word; */ /* This is setting the ellipsis after a word. If you need.*/
     
@@ -90,11 +145,11 @@
      *
      */
     
-    text-overflow: ellipsis; /* This is setting the ellipsis after a character.*/
+    text-overflow: ellipsis !important; /* This is setting the ellipsis after a character.*/
 	
-	-ms-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis !important;
 	
-	-o-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis !important;
 	
 }
 
@@ -115,16 +170,58 @@
  *
  */
 
-.table-text-overflow {
+.tableTextOverflow {
 	
 	table-layout: fixed;
 	
 }
 
-.invisible {
-	
-    visibility: hidden;
-	
+/**
+ * Word breaking
+ *
+ * Break strings when their length exceeds the width of their container.
+ */
+
+.textBreak {
+    
+    word-break: break-all !important;
+    
+    word-wrap: break-word !important;
+    
+}
+
+/**
+ * Display utilities
+ */
+
+.inlineDisplay {
+    
+    display: inline !important;
+    
+}
+
+.inlineBlockDisplay {
+    
+    display: inline-block !important;
+    
+}
+
+.blockDisplay {
+    
+    display: block !important;
+    
+}
+
+.ableDisplay {
+    
+    display: table !important;
+    
+}
+
+.tableCellDisplay {
+    
+    display: table-cell !important;
+    
 }
 
 .hide {
@@ -133,7 +230,7 @@
     
 }
 
-.advanced-hide {
+.advancedHide {
     
     visibility: hidden;
 	
@@ -141,7 +238,138 @@
     
 }
 
-.half-transparent {
+/**
+ * Control visibility without affecting flow.
+ */
+
+.isInvisible {
+	
+    visibility: hidden !important;
+	
+}
+
+.isVisible {
+    
+    visibility: visible !important;
+    
+}
+
+/**
+ * Clean link
+ *
+ * A link without any text-decoration at all.
+ */
+
+.cleanLink,
+.cleanLink:hover,
+.cleanLink:focus,
+.cleanLink:active {
+    
+    text-decoration: none !important;
+    
+}
+
+/*
+ * Resize
+ */
+
+.noResize {
+    
+    resize: none;
+    
+}
+
+.resizeBoth {
+    
+    resize: both;
+    
+}
+
+.resizeHorizontal {
+    
+    resize: horizontal;
+    
+}
+
+.resizeVertical {
+    
+    resize: vertical;
+    
+}
+
+/**
+ * States utilities ( Cursor ). Indicate that interaction will result in an (in)action.
+ */
+
+.alias { cursor: alias; }
+
+.allScroll { cursor: all-scroll; }
+
+.autoCursor { cursor: auto; }
+
+.cellCursor { cursor: cell; }
+
+.colResize { cursor: col-resize; }
+
+.contextMenu { cursor: context-menu; }
+
+.copyCursor { cursor: copy; }
+
+.crossHair { cursor: crosshair; }
+
+.defaultCursor { cursor: default; }
+
+.eResizeCursor { cursor: e-resize; }
+
+.ewResizeCursor { cursor: ew-resize; }
+
+.helpCursor { cursor: help; }
+
+.moveCursor { cursor: move; }
+
+.nResizeCursor { cursor: n-resize; }
+
+.neResizeCursor { cursor: ne-resize; }
+
+.neswResizeCursor { cursor: nesw-resize; }
+
+.noCursorCursor { cursor: none; }
+
+.noDropCursor { cursor: no-drop; }
+
+.notAllowedCursor { cursor: not-allowed; }
+
+.nsResizeCursor { cursor: ns-resize; }
+
+.nwResizeCursor { cursor: nw-resize; }
+
+.nwseResizeCursor { cursor: nwse-resize; }
+
+.pointerCursor { cursor: pointer; }
+
+.progressCursor { cursor: progress; }
+
+.rowResizeCursor { cursor: row-resize; }
+
+.sResizeCursor { cursor: s-resize; }
+
+.seResizeCursor { cursor: se-resize; }
+
+.swResizeCursor { cursor: sw-resize; }
+
+.textCursor { cursor: text; }
+
+.verticalTextCursor { cursor: vertical-text; }
+
+.wResizeCursor { cursor: w-resize; }
+
+.waitCursor { cursor: wait; }
+
+/*
+ * Opacity.
+ */
+
+.opacityHalf {
 	
 	opacity: 0.5; /* Android 2.1+, Chrome 4+, Firefox 2+, IE 9+, iOS 3.2+, Opera 9+, Safari 3.1+ */
 	
@@ -155,7 +383,7 @@
 	
 }
 
-.completely-transparent {
+.opacityFull {
 	
 	opacity: 0; /* Android 2.1+, Chrome 4+, Firefox 2+, IE 9+, iOS 3.2+, Opera 9+, Safari 3.1+ */
 	
@@ -169,7 +397,7 @@
 	
 }
 
-.hide-text {
+.hideText {
 	
     font: 0/0 a;
 	
@@ -186,12 +414,8 @@
 .antialiased {
 	
     -webkit-font-smoothing: antialiased;
-	
-}
 
-.ie9 .gradient-filter {
-	
-    filter: none;
+    text-rendering: optimizeLegibility;
 	
 }
 
@@ -267,7 +491,7 @@ p.lead {
 	
 }
 
-.input-block-level {
+.inputBlockLevel {
 	
 	display: block;
 	
@@ -445,71 +669,31 @@ p.lead {
  *  [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
  */
 
-.Main-Background-Color {
-    
-    background-color: hsla(40, 13%, 86%, 1);
-	
-    background-color: hsl(40, 13%, 86%);
-    
-    background-color: rgba(225, 222, 216, 1);
-    
-    background-color: rgb(225, 222, 216);
+.mainBackgroundColor {
     
     background-color: #e1ded8;
     
 }
 
-.Black-BG {
-    
-    background-color: hsl(0,0%,0%);
-    
-	background-color: hsla(0,0%,0%,1);
-    
-    background-color: rgb(0,0,0);
-	
-	background-color: rgba(0,0,0,1);
+.blackBg {
     
     background-color: #000;
     
 }
 
-.Light-Grey-BG {
-    
-    background-color: hsl(0,0%,80%);
-    
-	background-color: hsla(0,0%,80%,1);
-    
-    background-color: rgb(204,204,204);
-	
-	background-color: rgba(204,204,204,1);
+.lightGreyBg {
     
     background-color: #CCC;
     
 }
 
-.Facebook-Blue-BG {
-    
-    background-color: hsl(210,100%,40%);
-    
-	background-color: hsla(210,100%,40%,1);
-    
-    background-color: rgb(0,51,102);
-	
-	background-color: rgba(0,51,102,1);
+.facebookBlueBg {
     
     background-color: #036;
 	
 }
 
-.Bright-Red-BG {
-    
-    background-color: hsl(0,100%,100%);
-    
-	background-color: hsla(0,100%,100%,1);
-    
-    background-color: rgb(255,0,0);
-	
-	background-color: rgba(255,0,0,1);
+.brightRedBg {
     
     background-color: #F00;
     
@@ -652,48 +836,10 @@ p.lead {
     
     -webkit-border-radius: 12px; /* Android ≤ 1.6, iOS 1-3.2, Safari 3-4 */
     
-    -webkit-border-radius: 12px 12px 12px 12px; /* Android ≤ 1.6, iOS 1-3.2, Safari 3-4 */
-    
-    -webkit-border-radius: 12px 12px 12px 12px / 12px 12px 12px 12px; /* Android ≤ 1.6, iOS 1-3.2, Safari 3-4 */
-    
     -moz-border-radius: 12px;
     
-    -moz-border-radius: 12px 12px 12px 12px;
-    
-    -moz-border-radius: 12px 12px 12px 12px / 12px 12px 12px 12px;
-    
          border-radius: 12px; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
-        
-         border-radius: 12px 12px 12px 12px; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
-        
-         border-radius: 12px 12px 12px 12px / 12px 12px 12px 12px; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
-    
-    -webkit-background-clip: padding-box;
-    
-    background-clip: padding-box; /* useful if you don't want a bg color from leaking outside the border: */
-    
-}
 
-.box_round_50_percent {
-    
-    -webkit-border-radius: 50%; /* Android ≤ 1.6, iOS 1-3.2, Safari 3-4 */
-    
-    -webkit-border-radius: 50% 50% 50% 50%; /* Android ≤ 1.6, iOS 1-3.2, Safari 3-4 */
-    
-    -webkit-border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; /* Android ≤ 1.6, iOS 1-3.2, Safari 3-4 */
-    
-    -moz-border-radius: 50%;
-    
-    -moz-border-radius: 50% 50% 50% 50%;
-    
-    -moz-border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
-    
-         border-radius: 50%; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
-        
-         border-radius: 50% 50% 50% 50%; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
-        
-         border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
-    
     -webkit-background-clip: padding-box;
     
     background-clip: padding-box; /* useful if you don't want a bg color from leaking outside the border: */
@@ -717,98 +863,7 @@ p.lead {
             box-shadow: inset 0px 2px 10px 0px #000; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 }
 
-.box_inset_shadow_black_type_2 {
-    
-    -webkit-box-shadow: inset 0 0 30px 0px #000; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
-    
-            box-shadow: inset 0 0 30px 0px #000; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
-    
-    -webkit-box-shadow: inset 0 0 30px 0px rgba(0,0,0,0.5); /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
-    
-            box-shadow: inset 0 0 30px 0px rgba(0,0,0,0.5); /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
-    
-}
-
-.box_shadow_white {
-    
-    -webkit-box-shadow: 0px 0px 4px 0px #FFFFFF; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
-    
-            box-shadow: 0px 0px 4px 0px #FFFFFF; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
-    
-  filter: progid:DXImageTransform.Microsoft.Shadow(enabled=true,color='#FFFFFF',direction=0,strength=4); /* Internet Explorer 5.5 or later */
-    
-}
-
-.box_inset_shadow_white {
-    
-    -webkit-box-shadow: inset 0px 0px 4px 0px #FFFFFF; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
-    
-            box-shadow: inset 0px 0px 4px 0px #FFFFFF; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
-    
-}
-
-.box_gradient {
-    
-    background-color: #444444;
-    
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#999999)); /* Chrome, Safari 4+ */
-    
-    background-image: -webkit-linear-gradient(top, #444444, #999999); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-    
-    background-image:    -moz-linear-gradient(top, #444444, #999999); /* Firefox 3.6-15 */
-    
-    background-image:     -ms-linear-gradient(top, #444444, #999999); 
-    
-    background-image:      -o-linear-gradient(top, #444444, #999999); /* Opera 11.10-12.00 */
-    
-    background-image:         linear-gradient(to bottom, #444444, #999999); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.1+ */
-    
-    background-image:         linear-gradient(90deg, #999999, #444444);
-    
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#444444', EndColorStr='#999999');
-  
-  /**
-   * background: -prefix-linear-gradient(top, blue, white);     (The old syntax, deprecated, but still needed, prefixed, for WebKit-based and old browsers)
-   * background: linear-gradient(to bottom, blue, white); 	(The new syntax needed by standard-compliant browsers (Opera 12.1, IE 10, Fx 16 onwards), without prefix)
-   * background: -prefix-linear-gradient(left, blue, white); 	(The old syntax, deprecated, but still needed, prefixed, for WebKit-based and old browsers)
-   * background: linear-gradient(to right, blue, white); 	(The new syntax needed by standard-compliant browsers (Opera 12.1, IE 10, Fx 16 onwards), without prefix)
-   * background: -prefix-linear-gradient(left top, blue, white); 	(The old syntax, deprecated, but still needed, prefixed, for WebKit-based and old browsers)
-   * background: linear-gradient(to bottom right, blue, white); 	(The new syntax needed by standard-compliant browsers (Opera 12.1, IE 10, Fx 16 onwards), without prefix)
-   * background: linear-gradient(<angle>, red, white);
-   * background: -prefix-linear-gradient(top, blue, white 80%, orange); 	(The old syntax, deprecated, but still needed, prefixed, for WebKit-based and old browsers) 
-   * background: linear-gradient(to bottom, blue, white 80%, orange); 	(The new syntax needed by standard-compliant browsers (Opera 12.1, IE 10, Fx 16 onwards), without prefix)
-   * background: -prefix-linear-gradient(left, red, orange, yellow, green, blue); 	(The old syntax, deprecated, but still needed, prefixed, for WebKit-based and old browsers)
-   * background: linear-gradient(to right, red, orange, yellow, green, blue); 	(The new syntax needed by standard-compliant browsers (Opera 12.1, IE 10, Fx 16 onwards), without prefix)
-   * background: linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1)), url(http://foo.com/image.jpg); 	(The old syntax, deprecated, but still needed, prefixed, for WebKit-based and old browsers)
-   * background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url(http://foo.com/image.jpg); 	(The new syntax needed by standard-compliant browsers (Opera 12.1, IE 10, Fx 16 onwards), without prefix)
-   * See more : https://developer.mozilla.org/en-US/docs/CSS/Tutorials/Using_CSS_gradients?redirectlocale=en-US&redirectslug=CSS%2FUsing_CSS_gradients
-   */
-    
-}
-
-.box_gradient_inversion {
-    
-    background-color: #444444;
-    
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#444444)); /* Chrome, Safari 4+ */
-    
-    background-image: -webkit-linear-gradient(top, #999999, #444444); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-    
-    background-image:    -moz-linear-gradient(top, #999999, #444444); /* Firefox 3.6-15 */
-    
-    background-image:     -ms-linear-gradient(top, #999999, #444444); 
-    
-    background-image:      -o-linear-gradient(top, #999999, #444444); /* Opera 11.10-12.00 */
-    
-    background-image:         linear-gradient(to bottom, #999999, #444444); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.1+ */
-    
-    background-image:			linear-gradient(90deg, #444444, #999999);
-    
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#999999', EndColorStr='#444444');
-    
-}
-
-.box_radial_gradient {
+.boxRadialGradient {
     
 	background: -webkit-radial-gradient(circle, white, black); /* Chrome10+,Safari5.1+ */
     
@@ -826,7 +881,7 @@ p.lead {
     
 }
 
-.box-gradient-for-apple-touch-startup-image-test {
+.boxGradient {
 	
 	
 	/* Old Browsers */
@@ -930,48 +985,10 @@ p.lead {
 	
 }
 
-.box_gradient_progress {
-    
-    background-color: #fe7b42;
-    
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fe7b42), to(#d94620)); /* Chrome, Safari 4+ */
-    
-    background-image: -webkit-linear-gradient(top, #fe7b42, #d94620); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-    
-    background-image:    -moz-linear-gradient(top, #fe7b42, #d94620); /* Firefox 3.6-15 */
-    
-    background-image:     -ms-linear-gradient(top, #fe7b42, #d94620); 
-    
-    background-image:      -o-linear-gradient(top, #fe7b42, #d94620); /* Opera 11.10-12.00 */
-    
-    background-image:         linear-gradient(to bottom, #fe7b42, #d94620); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.1+ */
-    
-    background-image:			linear-gradient(0deg, #d94620, #fe7b42);
-    
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fe7b42', EndColorStr='#d94620');
-    
-}
-
-.box_gradient_white {
-    
-    background-color: #FFFFFF;
-    
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#e9e9e9)); /* Chrome, Safari 4+ */
-    
-    background-image: -webkit-linear-gradient(top, #FFFFFF, #e9e9e9); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-    
-    background-image:    -moz-linear-gradient(top, #FFFFFF, #e9e9e9); /* Firefox 3.6-15 */
-    
-    background-image:     -ms-linear-gradient(top, #FFFFFF, #e9e9e9); 
-    
-    background-image:      -o-linear-gradient(top, #FFFFFF, #e9e9e9); /* Opera 11.10-12.00 */
-    
-    background-image:         linear-gradient(to bottom, #FFFFFF, #e9e9e9); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.1+ */
-    
-    background-image:			linear-gradient(0deg, #e9e9e9, #FFFFFF);
-    
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFFF', EndColorStr='#e9e9e9');
-    
+.ie9 .gradientFilter {
+	
+    filter: none;
+	
 }
 
 .box_rgba {
@@ -1109,180 +1126,10 @@ p.lead {
     
     -webkit-background-size: 100% 100%; /* Safari 3-4 */
     
-       -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
+       -moz-background-size: 100% 100%; /* Gecko 1.9.2 (Firefox 3.6) */
     
-         -o-background-size: 100% 100%;           /* Opera 9.5 */
+         -o-background-size: 100% 100%; /* Opera 9.5 */
         
             background-size: 100% 100%; /* Chrome, Firefox 4+, IE 9+, Opera, Safari 5+ and other CSS3-compliant browsers */
     
-}
-
-
-
-/**
- *  [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
- *  [::::::::::::::      ::::::::::::::]
- *  [::::::::::::::      ::::::::::::::]
- *  [::::::[[[[[[[:      :]]]]]]]::::::]
- *  [:::::[                      ]:::::]
- *  [:::::[                      ]:::::]
- *  [:::::[                      ]:::::]
- *  [:::::[                      ]:::::]
- *  [:::::[     CODE THE WEB     ]:::::]
- *  [:::::[      Visibility      ]:::::]
- *  [:::::[                      ]:::::]
- *  [:::::[                      ]:::::]
- *  [:::::[                      ]:::::]
- *  [::::::[[[[[[[:      :]]]]]]]::::::]
- *  [::::::::::::::      ::::::::::::::]
- *  [::::::::::::::      ::::::::::::::]
- *  [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
- */
-
-.show-for-small, .show-for-medium-down, .show-for-large-down {
-	
-	display: inherit !important;
-	
-}
-
-.show-for-medium, .show-for-medium-up, .show-for-large, .show-for-large-up, .show-for-xlarge {
-	
-	display: none !important;
-	
-}
-
-.hide-for-medium, .hide-for-medium-up, .hide-for-large, .hide-for-large-up, .hide-for-xlarge {
-	
-	display: inherit !important;
-	
-}
-
-.hide-for-small, .hide-for-medium-down, .hide-for-large-down {
-	
-	display: none !important;
-	
-}
-
-.show-for-landscape, .hide-for-portrait {
-	
-	display: inherit !important;
-	
-}
-
-.hide-for-landscape, .show-for-portrait {
-	
-	display: none !important;
-	
-}
-
-.show-for-touch {
-	
-	display: none !important;
-	
-}
-
-.hide-for-touch {
-	
-	display: inherit !important;
-	
-}
-
-.touch .show-for-touch {
-	
-	display: inherit !important;
-	
-}
-
-.touch .hide-for-touch {
-	
-	display: none !important;
-	
-}
-
-/* Medium Displays: 768px - 1279px */
-
-@media only screen and (min-width: 768px) {
-	
-	.show-for-medium, .show-for-medium-up {
-		
-		display: inherit !important;
-		
-	}
-	
-	.show-for-small {
-		
-		display: none !important;
-		
-	}
-	
-	.hide-for-small {
-		
-		display: inherit !important;
-		
-	}
-	
-	.hide-for-medium, .hide-for-medium-up {
-		
-		display: none !important;
-		
-	}
-	
-}
-
-/* Large Displays: 1280px - 1440px */
-@media only screen and (min-width: 1280px) {
-	
-	.show-for-large, .show-for-large-up {
-		
-		display: inherit !important;
-		
-	}
-	
-	.show-for-medium, .show-for-medium-down {
-		
-		display: none !important;
-		
-	}
-	
-	.hide-for-medium, .hide-for-medium-down {
-		
-		display: inherit !important;
-		
-	}
-	
-	.hide-for-large, .hide-for-large-up {
-		
-		display: none !important;
-		
-	}
-	
-}
-
-/* X-Large Displays: 1400px and up */
-@media only screen and (min-width: 1440px) {
-	
-	.show-for-xlarge {
-		
-		display: inherit !important;
-		
-	}
-	
-	.show-for-large, .show-for-large-down {
-		
-		display: none !important;
-		
-	}
-	
-	.hide-for-large, .hide-for-large-down {
-		
-		display: inherit !important;
-		
-	}
-	
-	.hide-for-xlarge {
-		
-		display: none !important;
-		
-	}
-	
 }
