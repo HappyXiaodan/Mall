@@ -1,290 +1,289 @@
 /* 团队（ TEAM ） */
-	
-	
-	
+		
+		
+		
 	Web设计师（ Web Designer ）：
 		
 		姓名（ Name ）：
 		
-        QQ：
+		QQ：
 		
-        Facebook：
+		Facebook：
 		
-        Badoo：
+		Badoo：
 		
-        Yahoo Messenger：
+		Yahoo Messenger：
 		
-        腾讯微博（ Tencent MicroBlog ）：
+		腾讯微博（ Tencent MicroBlog ）：
 		
-        新浪微博（ Sina MicroBlog ）：
+		新浪微博（ Sina MicroBlog ）：
 		
-        搜狐微博（ Souhu MicroBlog ）：
+		搜狐微博（ Souhu MicroBlog ）：
 		
-        Twitter：
+		Twitter：
 		
-        电子邮箱：
+		电子邮箱：
 		
-        来自（ From ）：
+		来自（ From ）：
 		
-        所在位置（ Location ）：上海市（Shanghai City）
+		所在位置（ Location ）：上海市（Shanghai City）
 		
-        所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
-	
-	
-	
+		所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
+		
+		
+		
 	用户体验设计师（ UX Designer ）：
 		
 		姓名（ Name ）：
 		
-        QQ：
+		QQ：
 		
-        Facebook：
+		Facebook：
 		
-        Badoo：
+		Badoo：
 		
-        Yahoo Messenger：
+		Yahoo Messenger：
 		
-        腾讯微博（ Tencent MicroBlog ）：
+		腾讯微博（ Tencent MicroBlog ）：
 		
-        新浪微博（ Sina MicroBlog ）：
+		新浪微博（ Sina MicroBlog ）：
 		
-        搜狐微博（ Souhu MicroBlog ）：
+		搜狐微博（ Souhu MicroBlog ）：
 		
-        Twitter：
+		Twitter：
 		
-        电子邮箱：
+		电子邮箱：
 		
-        来自（ From ）：
+		来自（ From ）：
 		
-        所在位置（ Location ）：上海市（Shanghai City）
+		所在位置（ Location ）：上海市（Shanghai City）
 		
-        所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
-	
-	
-	
+		所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
+		
+		
+		
 	UI设计师（ UI Designer ）：
 		
 		姓名（ Name ）：
 		
-        QQ：
+		QQ：
 		
-        Facebook：
+		Facebook：
 		
-        Badoo：
+		Badoo：
 		
-        Yahoo Messenger：
+		Yahoo Messenger：
 		
-        腾讯微博（ Tencent MicroBlog ）：
+		腾讯微博（ Tencent MicroBlog ）：
 		
-        新浪微博（ Sina MicroBlog ）：
+		新浪微博（ Sina MicroBlog ）：
 		
-        搜狐微博（ Souhu MicroBlog ）：
+		搜狐微博（ Souhu MicroBlog ）：
 		
-        Twitter：
+		Twitter：
 		
-        电子邮箱：
+		电子邮箱：
 		
-        来自（ From ）：
+		来自（ From ）：
 		
-        所在位置（ Location ）：上海市（Shanghai City）
+		所在位置（ Location ）：上海市（Shanghai City）
 		
-        所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
-	
-	
-	
+		所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
+		
+		
+		
 	插画师（ Illustrator ）：
 		
 		姓名（ Name ）：
 		
-        QQ：
+		QQ：
 		
-        Facebook：
+		Facebook：
 		
-        Badoo：
+		Badoo：
 		
-        Yahoo Messenger：
+		Yahoo Messenger：
 		
-        腾讯微博（ Tencent MicroBlog ）：
+		腾讯微博（ Tencent MicroBlog ）：
 		
-        新浪微博（ Sina MicroBlog ）：
+		新浪微博（ Sina MicroBlog ）：
 		
-        搜狐微博（ Souhu MicroBlog ）：
+		搜狐微博（ Souhu MicroBlog ）：
 		
-        Twitter：
+		Twitter：
 		
-        电子邮箱：
+		电子邮箱：
 		
-        来自（ From ）：
+		来自（ From ）：
 		
-        所在位置（ Location ）：上海市（Shanghai City）
+		所在位置（ Location ）：上海市（Shanghai City）
 		
-        所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
+		所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
+		
+		
+		
+	前端开发人员（ Front-end Browser-side Developer ）：
+		
+		姓名（ Name ）：沈维忠（ Tony ）
+		
+		QQ：563214029
+		
+		Facebook：swzyocowboy@icloud.com
+		
+		Badoo：
+		
+		Yahoo Messenger：swzyocowboy@yahoo.cn
+		
+		腾讯微博（ Tencent MicroBlog ）：563214029
+		
+		新浪微博（ Sina MicroBlog ）：weibo.com/itonyyo
+		
+		搜狐微博（ Souhu MicroBlog ）：SWZYO.t.sohu.com
+		
+		Twitter：@iTonyYo
+		
+		电子邮箱：swzyocowboy@icloud.com, swzyocowboy@hotmail.com, iTonyYo@gmail.com, itonyyo@vip.qq.com
+		
+		来自（ From ）：江苏省淮安市 ( Huai'an City, Jiang'su Province )
+		
+		所在位置（ Location ）：上海市（Shanghai City）
+		
+		所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
 	
 	
 	
 	前端开发人员（ Front-end Browser-side Developer ）：
 		
-		姓名（ Name ）：沈维忠（ Tony ）
-		
-        QQ：563214029
-		
-        Facebook：swzyocowboy@icloud.com
-		
-        Badoo：
-		
-        Yahoo Messenger：swzyocowboy@yahoo.cn
-		
-        腾讯微博（ Tencent MicroBlog ）：563214029
-		
-        新浪微博（ Sina MicroBlog ）：weibo.com/itonyyo
-		
-        搜狐微博（ Souhu MicroBlog ）：SWZYO.t.sohu.com
-		
-        Twitter：@iTonyYo
-		
-        电子邮箱：swzyocowboy@icloud.com, swzyocowboy@hotmail.com, iTonyYo@gmail.com, itonyyo@vip.qq.com
-		
-        来自（ From ）：江苏省淮安市 ( Huai'an City, Jiang'su Province )
-		
-        所在位置（ Location ）：上海市（Shanghai City）
-		
-        所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
-    
-    
-    
-    前端开发人员（ Front-end Browser-side Developer ）：
-		
 		姓名（ Name ）：张晓露（ Doris ）
 		
-        QQ：
+		QQ：
 		
-        Facebook：
+		Facebook：
 		
-        Badoo：
+		Badoo：
 		
-        Yahoo Messenger：
+		Yahoo Messenger：
 		
-        腾讯微博（ Tencent MicroBlog ）：
+		腾讯微博（ Tencent MicroBlog ）：
 		
-        新浪微博（ Sina MicroBlog ）：
+		新浪微博（ Sina MicroBlog ）：
 		
-        搜狐微博（ Souhu MicroBlog ）：
+		搜狐微博（ Souhu MicroBlog ）：
 		
-        Twitter：
+		Twitter：
 		
-        电子邮箱：
+		电子邮箱：
 		
-        来自（ From ）：
+		来自（ From ）：
 		
-        所在位置（ Location ）：上海市（Shanghai City）
+		所在位置（ Location ）：上海市（Shanghai City）
 		
-        所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
-
-	
-	
-	
+		所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
+		
+		
+		
 	服务器端开发人员（ Back-end Server-side Developer ）：
 		
 		姓名（ Name ）：
 		
-        QQ：
+		QQ：
 		
-        Facebook：
+		Facebook：
 		
-        Badoo：
+		Badoo：
 		
-        Yahoo Messenger：
+		Yahoo Messenger：
 		
-        腾讯微博（ Tencent MicroBlog ）：
+		腾讯微博（ Tencent MicroBlog ）：
 		
-        新浪微博（ Sina MicroBlog ）：
+		新浪微博（ Sina MicroBlog ）：
 		
-        搜狐微博（ Souhu MicroBlog ）：
+		搜狐微博（ Souhu MicroBlog ）：
 		
-        Twitter：
+		Twitter：
 		
-        来自（ From ）：
+		来自（ From ）：
 		
-        所在位置（ Location ）：上海市（Shanghai City）
+		所在位置（ Location ）：上海市（Shanghai City）
 		
-        所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
-	
-	
-	
+		所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
+		
+		
+		
 	标准监督人（ Standard Man ）：
 		
 		姓名（ Name ）：
 		
-        QQ：
+		QQ：
 		
-        Facebook：
+		Facebook：
 		
-        Badoo：
+		Badoo：
 		
-        Yahoo Messenger：
+		Yahoo Messenger：
 		
-        腾讯微博（ Tencent MicroBlog ）：
+		腾讯微博（ Tencent MicroBlog ）：
 		
-        新浪微博（ Sina MicroBlog ）：
+		新浪微博（ Sina MicroBlog ）：
 		
-        搜狐微博（ Souhu MicroBlog ）：
+		搜狐微博（ Souhu MicroBlog ）：
 		
-        Twitter：
+		Twitter：
 		
-        来自（ From ）：
+		来自（ From ）：
 		
-        所在位置（ Location ）：上海市（Shanghai City）
+		所在位置（ Location ）：上海市（Shanghai City）
 		
-        所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
-	
-	
-	
+		所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
+		
+		
+		
 	中文编辑（ CH Translator ）：
 		
 		姓名（ Name ）：
 		
-        QQ：
+		QQ：
 		
-        Facebook：
+		Facebook：
 		
-        Badoo：
+		Badoo：
 		
-        Yahoo Messenger：
+		Yahoo Messenger：
 		
-        腾讯微博（ Tencent MicroBlog ）：
+		腾讯微博（ Tencent MicroBlog ）：
 		
-        新浪微博（ Sina MicroBlog ）：
+		新浪微博（ Sina MicroBlog ）：
 		
-        搜狐微博（ Souhu MicroBlog ）：
+		搜狐微博（ Souhu MicroBlog ）：
 		
-        Twitter：
+		Twitter：
 		
-        来自（ From ）：
+		来自（ From ）：
 		
-        所在位置（ Location ）：上海市（Shanghai City）
+		所在位置（ Location ）：上海市（Shanghai City）
 		
-        所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
-
-
-
+		所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
+		
+		
+		
 /* 感谢（ THANKS ） */
-
-
-
-	......
-
-
-
+		
+		
+		
+		......
+		
+		
+		
 /* 网站（ SITE ） */
-	
-	最近更新（ Last update ）：2013年09月27日（ 15:22 27.09.2013 ）
-	
-    语言（ Language ）：中文（ Chinese ）
-	
-    文档类型（ Doctype ）：HTML5
-	
-    标准（Standards）：HTML5, CSS2.1, CSS3.0, ECMASCRIPT 3, ECMASCRIPT 5, AMD ...
-	
-    组件（Components）：Normalize, Reset CSS, HTML5Shiv, Modernizr, jQuery, jQuery UI, RequireJS, etc.
-	
-	软件（ Software ）：Fiddler, Brackets Sprint, Dreamweaver, Photoshop, Illustrator, Eclipse, My SQL, Tomcat, Maven, Java, etc.
+		
+		最近更新（ Last update ）：2013年09月27日（ 15:22 27.09.2013 ）
+		
+		语言（ Language ）：中文（ Chinese ）
+		
+		文档类型（ Doctype ）：HTML5
+		
+		标准（Standards）：HTML5, CSS2.1, CSS3.0, ECMASCRIPT 3, ECMASCRIPT 5, AMD ...
+		
+		组件（Components）：Normalize, Reset CSS, HTML5Shiv, Modernizr, jQuery, jQuery UI, RequireJS, 960 Gridder, etc.
+		
+		软件（ Software ）：Fiddler, Brackets Sprint, Dreamweaver, Photoshop, Illustrator, Eclipse, My SQL, Tomcat, Maven, Java, etc.
