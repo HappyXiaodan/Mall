@@ -57,7 +57,7 @@
 		return version >= 9;
 		
 	};
-
+	
 	boot.req = function (jquery) {
 		
 		requirejs.config({
@@ -101,7 +101,7 @@
 		});
 		
 	};
-
+	
 	boot.judgement = function (opts) {
 		
 		if (this.isIE()) {
@@ -115,22 +115,22 @@
 		}
 		
 	};
-
-	/*             ___   ___                                   
-	             \  \  \  \                                  
-	   (___)   ___\__\__\__\__                               
-	   (o o)   |  O O O O O O|                               
-	  --\ /----+-------------+-------/                       
+	
+	/*             ___   ___
+	             \  \  \  \
+	   (___)   ___\__\__\__\__
+	   (o o)   |  O O O O O O|
+	  --\ /----+-------------+-------/
 	  |  O                          /
-	   \                           /                         
+	   \                           /
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ => moo__Steerage ...
 	*/
-
+	
 	boot.judgement({
 		
-		jq1x: 'http://resource.fenqimall.com/ajax/libs/js/jquery/1.10.2/jquery.min',
+		jq1x: 'ajax/libs/js/jquery/1.10.2/jquery.min',
 		
-		jq2x: 'http://resource.fenqimall.com/ajax/libs/js/jquery/2.0.3/jquery.min'
+		jq2x: 'ajax/libs/js/jquery/2.0.3/jquery.min'
 		
 	});
 	
