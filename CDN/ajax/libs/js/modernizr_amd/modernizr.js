@@ -13,7 +13,7 @@
  * 
  * Creation Date: 2013.09.28 10:16 ( Tony ).
  * 
- * Last update: 2013.09.28 10:16 ( Tony ).
+ * Last update: 2013.09.30 00:17 ( Tony ).
  * 
  * License: ~
  * 
@@ -21,7 +21,7 @@
  */
 
 define(function () {
-
+	
 	return window.Modernizr;
 	
 });

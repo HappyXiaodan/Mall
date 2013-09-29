@@ -11,7 +11,7 @@
  * 
  * Version: 0.1.0
  * 
- * Last update: 2013.09.07 21:52 ( Tony ).
+ * Last update: 2013.09.30 00:17 ( Tony ).
  * 
  * License: ~
  * 
@@ -20,6 +20,6 @@
 
 define(['jquery'], function (SJ) {
 	
-	return SJ.noConflict(true);
+	return SJ.noConflict(!0);
 	
 });
