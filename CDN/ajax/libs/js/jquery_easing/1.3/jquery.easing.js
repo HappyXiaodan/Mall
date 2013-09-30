@@ -11,7 +11,7 @@
  * 
  * Version: 1.3
  * 
- * Last update: 2012.11.07 ( original ), 2013.09.25 16:26 ( Tony ).
+ * Last update: 2012.11.07 ( original ), 2013.09.30 10:11 ( Tony ).
  * 
  * License: Open source under the BSD License.
  * 
@@ -19,36 +19,36 @@
  */
 
 (function (name, factory) {
-    
-    // See http://bugs.jquery.com/ticket/13335
-    'use strict';
-    
-	var theModule = factory(),
-        
-        // this is considered "safe":
-        hasDefine = typeof define === "function" && define.amd,
-        
-        // hasDefine = typeof define === "function",
-        hasExports = typeof module !== "undefined" && module.exports;
-    
-    if ( hasDefine ){ // AMD Module
-        
-    	define(['jquery'], theModule);
-        
-    } else if ( hasExports ) { // Node.js Module (commonjs compatible)
-        
-    	module.exports = theModule;
-        
-    } else { // Assign to common namespaces or simply the global object (window)
-        
-    	(this.jQuery || this.ender || this.$ || this)[name] = theModule;
-        
-    }
-
+	
+	// See http://bugs.jquery.com/ticket/13335
+	'use strict';
+	
+	var theModule = factory,
+		
+		// this is considered "safe":
+		hasDefine = typeof define === "function" && define.amd,
+		
+		// hasDefine = typeof define === "function",
+		hasExports = typeof module !== "undefined" && module.exports;
+		
+	if ( hasDefine ){ // AMD Module
+		
+		define(['jquery'], theModule);
+		
+	} else if ( hasExports ) { // Node.js Module (commonjs compatible)
+		
+		module.exports = theModule;
+		
+	} else { // Assign to common namespaces or simply the global object (window)
+		
+		(this.jQuery || this.ender || this.$ || this)[name] = theModule();
+		
+	}
+	
 } ('easing', function (SJ) {
-    
-    // See http://bugs.jquery.com/ticket/13335
-    'use strict';
+	
+	// See http://bugs.jquery.com/ticket/13335
+	'use strict';
 	
 	SJ.easing['jswing'] = SJ.easing['swing'];
 	
@@ -304,5 +304,5 @@
 		}
 		
 	});
-
+	
 }));

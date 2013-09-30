@@ -9,7 +9,7 @@
 	// See http://bugs.jquery.com/ticket/13335
 	"use strict";
     
-	var theModule = factory(),
+	var theModule = factory,
         
         // this is considered "safe":
         hasDefine = typeof define === "function" && define.amd,
@@ -27,7 +27,7 @@
         
     } else { // Assign to common namespaces or simply the global object (window)
         
-    	(this.jQuery || this.ender || this.$ || this)[name] = theModule;
+    	(this.jQuery || this.ender || this.$ || this)[name] = theModule();
         
     }
     
@@ -42,7 +42,7 @@
 	SJ.migrateWarnings = [];
     
 	// Set to true to prevent console output; migrateWarnings still maintained
-	// jQuery.migrateMute = false;
+	SJ.migrateMute = false;
     
 	// Show a message on the console so devs know we're active
 	if ( !SJ.migrateMute && window.console && window.console.log ) {

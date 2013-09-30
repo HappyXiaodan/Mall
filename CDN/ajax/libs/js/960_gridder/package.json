@@ -1,0 +1,97 @@
+{
+	
+	"name": "960 Grid System",
+	
+	"file": "960.gridder.min.js",
+	
+	"version": "1.3.1",
+	
+	"title": "960 Gridder",
+	
+	"description": "960 Gridder is an excellent tool for any web developer/designer that wants to easily align, match and lay out websites. NOTE: This repo is no longer maintained. If it works, it works but it's years old and there's probably better ones out there by now.",
+	
+	"author": [
+		
+		{
+			
+			"name": "Andrée Hansson",
+			
+			"email": "peolanha@gmail.com",
+			
+			"url": "http://andreehansson.se/"
+			
+		}
+		
+	],
+	
+	"homepage": "http://peol.github.io/960gridder/",
+	
+	"bugs": "",
+	
+	"docs": "",
+	
+	"maintainers": [
+		
+		{
+			
+			"name": "Andrée Hansson",
+			
+			"email": "peolanha@gmail.com",
+			
+			"url": "http://andreehansson.se/"
+			
+		},
+		
+		{
+			
+			"name": "Shen Weizhong ( Tony )",
+			
+			"email": "swzyocowboy@icloud.com"
+			
+		},
+		
+		{
+			
+			"name": "Zhang Xiaolu ( Doris )",
+			
+			"email": "zxllyf@live.cn"
+			
+		}
+		
+	],
+	
+	"licenses": [
+		
+		{
+			
+			"type": "",
+			
+			"url": ""
+			
+		}
+		
+	],
+	
+	"dependencies": {
+		
+		"jquery": ">=1.10.2",
+		
+		"jquery": ">=2.0.3"
+		
+	},
+	
+	"devdependencies": {},
+	
+	"repositories": [
+		
+		{
+			
+			"type": "git",
+			
+			"url": "https://github.com/peol/960gridder.git"
+			
+		}
+		
+	]
+	
+}

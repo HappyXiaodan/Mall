@@ -11,7 +11,7 @@
  * 
  * Version: 1.3.1
  * 
- * Last update: 2013.09.25 13:19 ( Tony )
+ * Last update: 2013.09.30 10:11 ( Tony )
  * 
  * License: Released under the MIT license
  * 
@@ -49,39 +49,39 @@
  */
 
 (function (name, factory) {
-    
-    // See http://bugs.jquery.com/ticket/13335
-    'use strict';
-    
-	var theModule = factory(),
-        
-        // this is considered "safe":
-        hasDefine = typeof define === "function" && define.amd,
-        
-        // hasDefine = typeof define === "function",
-        hasExports = typeof module !== "undefined" && module.exports;
-    
-    if ( hasDefine ){ // AMD Module
-        
-    	define(['jquery'], theModule);
-        
-    } else if ( hasExports ) { // Node.js Module (commonjs compatible)
-        
-    	module.exports = theModule;
-        
-    } else { // Assign to common namespaces or simply the global object (window)
-        
-    	(this.jQuery || this.ender || this.$ || this)[name] = theModule;
-        
-    }
-    
-} ('cookie', function (SJ) {
-    
-    // See http://bugs.jquery.com/ticket/13335
+	
+	// See http://bugs.jquery.com/ticket/13335
 	'use strict';
-    
+	
+	var theModule = factory,
+		
+		// this is considered "safe":
+		hasDefine = typeof define === "function" && define.amd,
+		
+		// hasDefine = typeof define === "function",
+		hasExports = typeof module !== "undefined" && module.exports;
+	
+	if ( hasDefine ){ // AMD Module
+		
+		define(['jquery'], theModule);
+		
+	} else if ( hasExports ) { // Node.js Module (commonjs compatible)
+		
+		module.exports = theModule;
+		
+	} else { // Assign to common namespaces or simply the global object (window)
+		
+		(this.jQuery || this.ender || this.$ || this)[name] = theModule();
+		
+	}
+	
+} ('cookie', function (SJ) {
+	
+	// See http://bugs.jquery.com/ticket/13335
+	'use strict';
+	
 	var pluses = /\+/g;
-    
+	
 	var decode = function (s) {
 		
 		if (config.raw) {
@@ -92,7 +92,7 @@
 		
 		return decodeURIComponent(s.replace(pluses, ' '));
 	};
-
+	
 	var decodeAndParse = function (s) {
 		
 		if (s.indexOf('"') === 0) {
@@ -111,7 +111,7 @@
 		} catch(e) {}
 		
 	};
-
+	
 	var config = SJ.cookie = function (key, value, options) {
 		
 		// Write
@@ -181,9 +181,9 @@
 		return result;
 		
 	};
-
+	
 	config.defaults = {};
-
+	
 	SJ.removeCookie = function (key, options) {
 		
 		if (SJ.cookie(key) !== undefined) {
@@ -198,5 +198,5 @@
 		return false;
 		
 	};
-
+	
 }));

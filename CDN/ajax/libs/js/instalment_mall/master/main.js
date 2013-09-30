@@ -13,7 +13,7 @@
  * 
  * Creation Date: 2013.09.28 10:16 ( Tony ).
  * 
- * Last update: 2013.09.28 18:57 ( Tony ).
+ * Last update: 2013.09.30 10:27 ( Tony ).
  * 
  * License: ~
  * 
@@ -86,15 +86,52 @@
 			
 		});
 		
-		require(['cdnjs/modernizr_amd/modernizr', 'jquery'], function (Modernizr, SJ) {
+		require([
+			
+			'cdnjs/modernizr_amd/modernizr.min',
+			
+			'jquery',
+			
+			'cdnjs/jquery_cookie/1.3.1/jquery.cookie.min',
+			
+			'cdnjs/960_gridder/1.3.1/960.gridder',
+			
+			'cdnjs/jquery_title_modify/title.modify'
+		
+		], function (modernizr, SJ, cookie, gridder, modifyTitle) {
 			
 			SJ(function ($) {
 				
-				if (Modernizr.canvas) {
+				/**
+				 * Modernizr component( Public ) test.
+				 */
+				
+				if (modernizr.canvas) {
 					
-					console.log($.trim($(document).attr('title')));
+					console.log('Support Canvas API.');
 					
 				}
+				
+				
+				/**
+				 * Cookie component( Public ) test.
+				 */
+				
+				$.cookie('Tony', 'Male', {expires: 7, path: '/', domain: 'example.com', secure: true});
+				
+				console.log('Testing cookie: ' + $.cookie('Tony')); /* Result: undefined. */
+				
+				
+				
+				gridder;
+				
+				
+				
+				/**
+				 * Title modify component( Public ) test.
+				 */
+				
+				modifyTitle();
 				
 			});
 			
