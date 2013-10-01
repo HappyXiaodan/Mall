@@ -6,6 +6,14 @@
 		
 		姓名（ Name ）：
 		
+		手机：
+		
+		电子邮箱：
+		
+		个人主页：
+		
+		Github：
+		
 		QQ：
 		
 		Facebook：
@@ -21,8 +29,6 @@
 		搜狐微博（ Souhu MicroBlog ）：
 		
 		Twitter：
-		
-		电子邮箱：
 		
 		来自（ From ）：
 		
@@ -36,6 +42,14 @@
 		
 		姓名（ Name ）：
 		
+		手机：
+		
+		电子邮箱：
+		
+		个人主页：
+		
+		Github：
+		
 		QQ：
 		
 		Facebook：
@@ -51,8 +65,6 @@
 		搜狐微博（ Souhu MicroBlog ）：
 		
 		Twitter：
-		
-		电子邮箱：
 		
 		来自（ From ）：
 		
@@ -66,6 +78,14 @@
 		
 		姓名（ Name ）：
 		
+		手机：
+		
+		电子邮箱：
+		
+		个人主页：
+		
+		Github：
+		
 		QQ：
 		
 		Facebook：
@@ -81,8 +101,6 @@
 		搜狐微博（ Souhu MicroBlog ）：
 		
 		Twitter：
-		
-		电子邮箱：
 		
 		来自（ From ）：
 		
@@ -96,6 +114,14 @@
 		
 		姓名（ Name ）：
 		
+		手机：
+		
+		电子邮箱：
+		
+		个人主页：
+		
+		Github：
+		
 		QQ：
 		
 		Facebook：
@@ -112,8 +138,6 @@
 		
 		Twitter：
 		
-		电子邮箱：
-		
 		来自（ From ）：
 		
 		所在位置（ Location ）：上海市（Shanghai City）
@@ -125,6 +149,14 @@
 	前端开发人员（ Front-end Browser-side Developer ）：
 		
 		姓名（ Name ）：沈维忠（ Tony ）
+		
+		手机：15921299022
+		
+		电子邮箱：swzyocowboy@icloud.com, swzyocowboy@hotmail.com, iTonyYo@gmail.com, itonyyo@vip.qq.com
+		
+		个人主页：http://user.qzone.qq.com/563214029/
+		
+		Github：https://github.com/Tony-Stark/
 		
 		QQ：563214029
 		
@@ -142,8 +174,6 @@
 		
 		Twitter：@iTonyYo
 		
-		电子邮箱：swzyocowboy@icloud.com, swzyocowboy@hotmail.com, iTonyYo@gmail.com, itonyyo@vip.qq.com
-		
 		来自（ From ）：江苏省淮安市 ( Huai'an City, Jiang'su Province )
 		
 		所在位置（ Location ）：上海市（Shanghai City）
@@ -155,6 +185,14 @@
 	前端开发人员（ Front-end Browser-side Developer ）：
 		
 		姓名（ Name ）：张晓露（ Doris ）
+		
+		手机：
+		
+		电子邮箱：
+		
+		个人主页：
+		
+		Github：
 		
 		QQ：
 		
@@ -171,8 +209,6 @@
 		搜狐微博（ Souhu MicroBlog ）：
 		
 		Twitter：
-		
-		电子邮箱：
 		
 		来自（ From ）：
 		
@@ -186,6 +222,14 @@
 		
 		姓名（ Name ）：
 		
+		手机：
+		
+		电子邮箱：
+		
+		个人主页：
+		
+		Github：
+		
 		QQ：
 		
 		Facebook：
@@ -199,8 +243,6 @@
 		新浪微博（ Sina MicroBlog ）：
 		
 		搜狐微博（ Souhu MicroBlog ）：
-		
-		Twitter：
 		
 		来自（ From ）：
 		
@@ -214,6 +256,14 @@
 		
 		姓名（ Name ）：
 		
+		手机：
+		
+		电子邮箱：
+		
+		个人主页：
+		
+		Github：
+		
 		QQ：
 		
 		Facebook：
@@ -228,8 +278,6 @@
 		
 		搜狐微博（ Souhu MicroBlog ）：
 		
-		Twitter：
-		
 		来自（ From ）：
 		
 		所在位置（ Location ）：上海市（Shanghai City）
@@ -241,6 +289,14 @@
 	中文编辑（ CH Translator ）：
 		
 		姓名（ Name ）：
+		
+		手机：
+		
+		电子邮箱：
+		
+		个人主页：
+		
+		Github：
 		
 		QQ：
 		
