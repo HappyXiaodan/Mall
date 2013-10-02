@@ -92,7 +92,7 @@
 	
 	"devdependencies": {
 		
-		"960-gridder": ">=1.3.1"
+		"Gridder": ">=0.1.0"
 		
 	},
 	

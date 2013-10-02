@@ -1,0 +1,85 @@
+{
+	
+	"name": "Grid System",
+	
+	"file": "gridder.min.js",
+	
+	"version": "0.1.0",
+	
+	"title": "Gridder",
+	
+	"description": "Gridder is an excellent tool for any web developer/designer that wants to easily align, match and lay out websites.",
+	
+	"author": [
+		
+		{
+			
+			"name": "Tony",
+			
+			"email": "swzyocowboy@icloud.com"
+			
+		}
+		
+	],
+	
+	"homepage": "",
+	
+	"bugs": "",
+	
+	"docs": "",
+	
+	"maintainers": [
+		
+		{
+			
+			"name": "Shen Weizhong ( Tony )",
+			
+			"email": "swzyocowboy@icloud.com"
+			
+		},
+		
+		{
+			
+			"name": "Zhang Xiaolu ( Doris )",
+			
+			"email": "zxllyf@live.cn"
+			
+		}
+		
+	],
+	
+	"licenses": [
+		
+		{
+			
+			"type": "",
+			
+			"url": ""
+			
+		}
+		
+	],
+	
+	"dependencies": {
+		
+		"jquery": ">=1.10.2",
+		
+		"jquery": ">=2.0.3"
+		
+	},
+	
+	"devdependencies": {},
+	
+	"repositories": [
+		
+		{
+			
+			"type": "git",
+			
+			"url": ""
+			
+		}
+		
+	]
+	
+}

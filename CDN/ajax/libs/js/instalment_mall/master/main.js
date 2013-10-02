@@ -94,7 +94,7 @@
 			
 			'cdnjs/jquery_cookie/1.3.1/jquery.cookie.min',
 			
-			'cdnjs/960_gridder/1.3.1/960.gridder',
+			'cdnjs/gridder/0.1.0/gridder',
 			
 			'cdnjs/jquery_title_modify/title.modify'
 		
