@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The private stylesheet of master page.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.02 15:48 ( Tony ).
+ * 
+ * Last update: 2013.10.02 20:29 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+/*
+888    888                        888
+888    888                        888
+888    888                        888
+8888888888  .d88b.   8888b.   .d88888  .d88b.  888d888
+888    888 d8P  Y8b     "88b d88" 888 d8P  Y8b 888P"
+888    888 88888888 .d888888 888  888 88888888 888
+888    888 Y8b.     888  888 Y88b 888 Y8b.     888
+888    888  "Y8888  "Y888888  "Y88888  "Y8888  888
+*/
+
+header .row {
+	
+	margin-bottom: 0 !important;
+	
+}
+
+/*
+         (__)
+         (oo)
+  /-------\/
+ / |     ||----> Top Bar.
+*  ||----||
+  ___/  ___/
+*/
+
+.topBar {
+	
+	background-color: #e7e7e7;
+	
+}
+
+.leftH1st, .rightH1st { height: 32px; }
+
+.leftH1st {
+	
+	display: inline;
+	
+}
+
+.rightH1st {
+	
+	display: inline;
+	
+}
+
+/*
+         (__)
+         (oo)
+  /-------\/
+ / |     ||----> Bottom Header.
+*  ||----||
+  ___/  ___/
+*/
+
+.leftH2nd, .rightH2nd { height: 101px; }
+
+.leftH2nd {
+	
+	min-width: 300px;
+	
+	width: auto !important;
+	
+	width: 300px;
+	
+	background: url(http://placehold.it/300x101/CCCCCC/000000) no-repeat;
+	
+}
+
+.rightH2nd {
+	
+	min-width: 400px;
+	
+	width: auto !important;
+	
+	width: 400px;
+	
+	background: url(http://placehold.it/400x101/CCCCCC/000000) no-repeat;
+	
+}
+
+
+
+/* 
+8888888888                   888                     
+888                          888                     
+888                          888                     
+8888888     .d88b.   .d88b.  888888  .d88b.  888d888 
+888        d88""88b d88""88b 888    d8P  Y8b 888P"   
+888        888  888 888  888 888    88888888 888     
+888        Y88..88P Y88..88P Y88b.  Y8b.     888     
+888         "Y88P"   "Y88P"   "Y888  "Y8888  888             
+*/
+
+footer {
+	
+	min-height: 458px;
+	
+	height: auto !important;
+	
+	height: 458px;
+	
+	margin: 0 auto;
+	
+	background-color: #333;
+	
+}
+
+/*
+         (__)
+         (oo)
+  /-------\/
+ / |     ||----> Footer Form.
+*  ||----||
+  ___/  ___/
+*/
+
+.form {
+	
+	z-index: 5;
+	
+	height: 189px;
+	
+	margin-bottom: 0 !important;
+	
+	background: url(http://placehold.it/1200x189/444444/000000) no-repeat;
+	
+}
+
+/*
+         (__)
+         (oo)
+  /-------\/
+ / |     ||----> Footer Site Map.
+*  ||----||
+  ___/  ___/
+*/
+
+.sitemap {
+	
+	margin-bottom: 0 !important;
+	
+}
+
+.sitemap > div {
+	
+	height: 219px;
+	
+	border-top: 1px solid #999999;
+	
+	background: url(http://placehold.it/270x220/444444/000000) no-repeat;
+	
+}
+
+.sitemap > i {
+	
+	height: 1px;
+	
+	background-color: #999999;
+	
+}
+
+/*
+         (__)
+         (oo)
+  /-------\/
+ / |     ||----> Footer Copy Right.
+*  ||----||
+  ___/  ___/
+*/
+
+.copyRight {
+	
+	height: 50px;
+	
+	padding-top: 17px;
+	
+	margin-bottom: 0 !important;
+	
+}
+
+.ie7 .copyRight {
+	
+	height: 33px;
+	
+}

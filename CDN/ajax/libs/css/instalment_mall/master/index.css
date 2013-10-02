@@ -15,11 +15,74 @@
  * 
  * Version: 0.1.0
  * 
- * Creation Date: 2013.09.28 15:48 ( Tony ).
+ * Creation Date: 2013.10.02 15:48 ( Tony ).
  * 
- * Last update: 2013.09.30 00:09 ( Tony ).
+ * Last update: 2013.10.02 20:28 ( Tony ).
  * 
  * License: ~
  * 
  * Copyright: ~
  */
+
+.leftH1st {
+	
+	color: #848484;
+	
+}
+
+/*
+         (__)
+         (oo)
+  /-------\/
+ / |     ||----> Left & Right Top Bar.
+*  ||----||
+  ___/  ___/
+*/
+
+.h1st li {
+	
+	float: left;
+	
+	margin: 0;
+	
+	padding: 0;
+	
+	margin-top: 8px;
+	
+	letter-spacing: 1px;
+	
+}
+
+.h1st a {
+	
+	padding: 0 19px 0 19px;
+	
+	border-right: 1px solid #848484;
+	
+}
+
+.h1st a.myAccount, .h1st a.more  {
+	
+	border: 0;
+	
+}
+
+.h1st a.more {
+	
+	padding-right: 23px;
+	
+}
+
+.h1st a.more > i {
+	
+	width: 13px;
+	
+	height: 7px;
+	
+	top: 4px;
+	
+	right: 0;
+	
+	background: url(../../../ui/mall/master/single/more.jpg) no-repeat;
+	
+}

@@ -70,7 +70,7 @@
 		
 		size: 1200,
 		
-		columns: 16,
+		columns: 12,
 		
 		opacity: 1,
 		
@@ -111,7 +111,7 @@
 		gridderConstructor.prototype.createGrid = function () {
 			
 			// Create a object that'll help us control the grid objects
-			SJ('<div></div>').addClass('gridPanel').addClass(settings.gutterBgClass).css('width', settings.size).appendTo('body');
+			SJ('<div></div>').addClass('gridPanel').addClass(settings.gutterBgClass).addClass('opacityHalf').css('width', settings.size).appendTo('body');
 			
 			// Center our grid if specified to do so
 			SJ('.gridPanel').css({

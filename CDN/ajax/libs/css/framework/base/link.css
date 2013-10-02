@@ -27,25 +27,17 @@
 
 a {
     
-    color: #036;
-    
-    color: hsl(210,100%,40%);
-    
-	color: hsla(210,100%,40%,1);
-    
-    color: rgb(0,51,102);
-	
-	color: rgba(0,51,102,1);
+    color: #333;
     
     text-decoration: none;
-    
-    font: normal normal 14px/normal "微软雅黑";
     
 }
 
 a:hover, a:focus {
     
     cursor: pointer;
+	
+	text-decoration: underline;
     
 }
 
