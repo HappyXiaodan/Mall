@@ -102,6 +102,20 @@
 			
 			SJ(function ($) {
 				
+				
+				
+				/**
+				 * Navigation Demo.
+				 */
+				
+				$("nav").find('a').on('click', function (e) {
+					
+					e.preventDefault();
+					
+					$(this).addClass('selected').closest('li').siblings().children().removeClass('selected');
+					
+				});
+				
 				/**
 				 * Modernizr component( Public ) test.
 				 */
@@ -111,6 +125,7 @@
 					console.log('Support Canvas API.');
 					
 				}
+				
 				
 				
 				/**

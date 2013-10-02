@@ -79,29 +79,13 @@ header .row {
   ___/  ___/
 */
 
-.leftH2nd, .rightH2nd { height: 101px; }
-
 .leftH2nd {
 	
-	min-width: 300px;
+	width: 200px;
 	
-	width: auto !important;
+	height: 101px;
 	
-	width: 300px;
-	
-	background: url(http://placehold.it/300x101/CCCCCC/000000) no-repeat;
-	
-}
-
-.rightH2nd {
-	
-	min-width: 400px;
-	
-	width: auto !important;
-	
-	width: 400px;
-	
-	background: url(http://placehold.it/400x101/CCCCCC/000000) no-repeat;
+	background: url(../../../ui/mall/master/single/logo.jpg) left center no-repeat;
 	
 }
 

@@ -24,12 +24,6 @@
  * Copyright: ~
  */
 
-.leftH1st {
-	
-	color: #848484;
-	
-}
-
 /*
          (__)
          (oo)
@@ -38,6 +32,12 @@
 *  ||----||
   ___/  ___/
 */
+
+.leftH1st {
+	
+	color: #848484;
+	
+}
 
 .h1st li {
 	
@@ -84,5 +84,70 @@
 	right: 0;
 	
 	background: url(../../../ui/mall/master/single/more.jpg) no-repeat;
+	
+}
+
+/*
+         (__)
+         (oo)
+  /-------\/
+ / |     ||----> Bottom Header.
+*  ||----||
+  ___/  ___/
+*/
+
+nav > ul > li {
+	
+	float: left;
+	
+}
+
+nav > ul  > li > a {
+	
+	font-size: 16px;
+	
+	font-family: "微软雅黑";
+	
+	text-align: center;
+	
+	width: 101px;
+	
+	height: 101px;
+	
+	padding-top: 52px;
+	
+}
+
+nav > ul > li > a:hover {
+
+	border-bottom: 5px solid #ff4416;
+
+	text-decoration: none;
+
+}
+
+.ie7 nav > ul > li > a {
+	
+	height: 49px;
+	
+}
+
+.ie7 nav > ul > li > a:hover {
+	
+	height: 44px;
+	
+}
+
+nav a.selected {
+	
+	border-bottom: 5px solid #ff4416;
+	
+}
+
+.ie7 nav a.selected {
+	
+	height: 44px;
+	
+	border-bottom: 5px solid #ff4416;
 	
 }
