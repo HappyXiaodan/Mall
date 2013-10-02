@@ -1,35 +1,23 @@
-/*!
- * Release: 1.3.1 2009-04-26
- */
-
-/*!
- * Copyright (c) Andr�e Hansson (peolanha AT gmail DOT com)
- * MIT License - http://www.opensource.org/licenses/mit-license.php
- * Idea loosely based on JASH, http://billyreisinger.com/jash/
- *
- * Website: http://gridder.andreehansson.se/
- *
- * Changelog:
- * - New GUI! The new GUI should be less obtrusive and has been repositioned.
- *   It is also featuring a slight delay on inputs so that you'll have a chance
- *   to change the settings before it is re-rendering the grid
- * - Due to a lot of inquries regarding affiliation with jQuery the filenames has
- *   been changed, I'm very sorry for the inconvenience!
- * - CSS issues with the GUI should also be fixed in more websites, please report
- *   in any issue you stumble upon
- * - A small bug in IE that made the paragraph lines not position correctly has been
- *   fixed
- * - A dropdown box has replaced the columns input box, 960 Gridder calculates the
- *   proper number of columns that can be used with the specified grid width
- * - The 960 Gridder is now displaying perfectly (into the very pixels) in all
- *   A-grade browsers (according to browsershots.org)
- * - An option to invert the gutters has been added, set this to 'true' if
- *   you want to use it, OR use the shortcut CTRL+ALT+A
- * - Some other minor changes...
- */
-
-/* Create an instance of the Gridder,
- * everything inside is relative to this object.
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: Gridder.It is an excellent tool for any web developer/designer that wants to easily align, match and lay out websites.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.09.30 10:16 ( Tony ).
+ * 
+ * Last update: 2013.10.02 15:33 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
  */
 
 (function (name, factory) {
@@ -70,7 +58,8 @@
 	}
 	
 } ('gridder', function (SJ, easing, keyboard) {
-
+	
+	// See http://bugs.jquery.com/ticket/13335
 	'use strict';
 
 	var settings = {
@@ -177,8 +166,6 @@
 		
 		
 		/* Internal method to create an grid entity.
-		 * @param type
-		 * Either 'vertical' or 'horizontal'
 		 * @param options
 		 * All css attributes that should be set to this object
 		 */
@@ -191,10 +178,8 @@
 		
 		
 		
-		/* Create Setup Window for 960 Gridder and hook all of its functions
-		 * and stuff. This could theoretically be without its own method, but to
-		 * safe-guard the loading of jQuery before running this made me solve the
-		 * issue by wrapping it in an own method.
+		/* 
+		 * Simple Animation.
 		 */
 		
 		gridderConstructor.prototype.setupWindow = function () {
@@ -203,34 +188,34 @@
 			settings.height = SJ(document).height();
 			
 			var slideOpts = {
+					
+					duration: 1000,
+					
+					easing: 'easeOutCirc'
+					
+				},
 				
-				duration: 1000,
+				shortStatus = false,
 				
-				easing: 'easeOutCirc'
+				showActive = settings.active ? true : false,
 				
-			};
-			
-			var shortStatus = false;
-			
-			var showActive = settings.active ? true : false;
-			
-			var slideGrid = function (obj, direc1, direc2) {
-				
-				if (!shortStatus) {
+				slideGrid = function (obj, direc1, direc2) {
 					
-					direc1 == 'up' ? obj.slideDown(slideOpts) : obj.slideUp(slideOpts);
+					if (!shortStatus) {
+						
+						direc1 == 'show' ? obj.slideDown(slideOpts) : obj.slideUp(slideOpts);
+						
+						shortStatus = true;
+						
+					} else {
+						
+						direc2 == 'hide' ? obj.slideUp(slideOpts) : obj.slideDown(slideOpts);
+						
+						shortStatus = false;
+						
+					}
 					
-					shortStatus = true;
-					
-				} else {
-					
-					direc2 == 'down' ? obj.slideUp(slideOpts) : obj.slideDown(slideOpts);
-					
-					shortStatus = false;
-					
-				}
-				
-			};
+				};
 			
 			keyboard.bind('ctrl+shift+s', function() {
 				
@@ -238,11 +223,11 @@
 				
 				if (!showActive) {
 					
-					slideGrid(obj, 'up', 'down');
+					slideGrid(obj, 'show', 'hide');
 					
 				} else {
 					
-					slideGrid(obj, 'down', 'up');
+					slideGrid(obj, 'hide', 'show');
 					
 				}
 				
