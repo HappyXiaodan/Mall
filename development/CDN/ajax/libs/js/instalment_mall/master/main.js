@@ -185,5 +185,5 @@
 		jq2x: 'ajax/libs/js/jquery/2.0.3/jquery.min'
 		
 	});
-	
+		
 }(window, document, requirejs, require));

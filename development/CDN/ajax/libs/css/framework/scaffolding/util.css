@@ -191,6 +191,64 @@
 }
 
 /**
+ * 1. https://developer.mozilla.org/zh-CN/docs/CSS/user-select
+ * 
+ * 2. https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariCSSRef/Articles/StandardCSSProperties.html#//apple_ref/css/property/-webkit-user-select
+ * 
+ * 3. http://msdn.microsoft.com/zh-cn/library/ie/jj152140(v=vs.85).aspx
+ * 
+ * Browser compatibility, https://developer.mozilla.org/zh-CN/docs/CSS/user-select#Browser_compatibility
+ */
+
+.unselectable {
+	
+	user-select: none;
+	
+	-moz-user-select: none; /* 1 */
+	
+	-webkit-user-select: none; /* 2 */
+	
+	-khtml-user-select: none; /* 2 */
+	
+	-ms-user-select: none; /* 3 */
+	
+}
+
+.textSelectable {
+	
+	user-select: text;
+	
+	-moz-user-select: text; /* 1 */
+	
+	-webkit-user-select: text; /* 2 */
+	
+	-khtml-user-select: text; /* 2 */
+	
+	-ms-user-select: text; /* 3 */
+	
+}
+
+/**
+ * Hyphenation
+ * 
+ * Internet Explorer 10 and Windows Store apps using JavaScript in Windows 8 introduce support for an important CSS Text Level 3 feature: hyphenation. 
+ * 
+ * More, http://msdn.microsoft.com/zh-cn/library/ie/bg124094(v=vs.85).aspx
+ */
+
+.msHyphenation {
+	
+	-ms-hyphens: auto;
+	
+	-ms-hyphenate-limit-zone: 50px;
+	
+	-ms-hyphenate-limit-chars: auto;
+	
+	-ms-hyphenate-limit-lines: no-limit;
+	
+}
+
+/**
  * Display utilities
  */
 
@@ -638,20 +696,6 @@ p.lead {
 	
 }
 
-.unselectable {
-	
-	user-select: none;
-	
-	-moz-user-select: none;
-	
-	-webkit-user-select: none;
-	
-	-khtml-user-select: none;
-	
-	-ms-user-select: none;
-	
-}
-
 
 
 /**
@@ -729,14 +773,6 @@ p.lead {
  */
 
 .redHightlightTest {
-    
-    color: hsl(0,100%,100%) !important;
-    
-	color: hsla(0,100%,100%,1) !important;
-    
-    color: rgb(255,0,0) !important;
-	
-	color: rgba(255,0,0,1) !important;
     
     color: #F00 !important;
     

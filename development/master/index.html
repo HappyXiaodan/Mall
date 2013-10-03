@@ -38,7 +38,7 @@
 	
 	<!--[if IE 9]>          <html class="ie ie9 ie-lt10 no-js" lang="zh" itemscope itemtype="http://schema.org/Thing">    <![endif]-->
 	
-	<!--[if gt IE 9]><!-->  <html class="no-js" lang="zh" itemscope itemtype="http://schema.org/Thing">  <!--<![endif]-->
+	<!--[if gt IE 9]><!-->  <html class="no-js" lang="zh" itemscope itemtype="http://schema.org/Thing">  <!--<![endif]--> <!-- Application Cache, eg: <html manifest="manifest.appcache"></html> | Browser Compatibility, https://developer.mozilla.org/zh-CN/docs/HTML/Using_the_application_cache#.E6.B5.8F.E8.A7.88.E5.99.A8.E5.85.BC.E5.AE.B9.E6.80.A7 -->
 		
 		
 		
@@ -70,7 +70,7 @@
 					
 					<meta name="keywords" content=""/>
 					
-					<meta name="description" content=""/>
+					<meta name="description" content="" itemprop="description"/>
 					
 					<meta name="google-site-verification" content="" /> <!-- Speaking of Google, Set site up: http://google.com/webmasters, You can use this tag on the top-level page of your site to verify ownership for Webmaster Tools. Please note that while the values of the "name" and "content" attributes must match exactly what is provided to you (including upper and lower case), it doesn't matter if you change the tag from XHTML to HTML or if the format of the tag matches the format of your page. -->
 					
@@ -84,7 +84,7 @@
 				
 				<!-- Begin | Base Information -->
 					
-					<title>Loading ... </title> <!-- Domain name will be modified. 当前页面名称 | 网站名称 （ www.domain.com ） -->
+					<title itemprop="name">Loading ... </title> <!-- Domain name will be modified. 当前页面名称 | 网站名称 （ www.domain.com ） -->
 					
 					<link rel="canonical" href="http://manage.fenqimall.com"/>
 					
@@ -134,7 +134,7 @@
 						
 						<!-- Begin | Media Query -->
 							
-							<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/media_query/print.css"/> <!-- Print -->
+							<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/media_query/print.css"/> <!-- Print, http://www.phpied.com/delay-loading-your-print-css/, http://www.sanbeiji.com/archives/953 -->
 							
 						<!-- End | Media Query -->
 						
@@ -152,6 +152,8 @@
 				
 				<!-- Begin | Miscellaneous Function -->
 					
+					<!-- This script is the defacto way to enable use of HTML5 sectioning elements in legacy Internet Explorer. -->
+					
 					<!--[if (gte IE 6)&(lte IE 9)]>
 						
 						<script type="text/javascript">window.html5 = {'shivCSS': false};</script>
@@ -160,7 +162,7 @@
 						
 					<![endif]-->
 					
-					<script type="text/javascript" src="../CDN/ajax/libs/js/modernizr/2.6.2/modernizr.min.js"></script>
+					<script type="text/javascript" src="../CDN/ajax/libs/js/modernizr/2.6.2/modernizr.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
 					
 				<!-- End | Miscellaneous Function -->
 				
@@ -172,11 +174,11 @@
 		
 		<!-- Begin | Body -->
 			
-			<body class="rela">
+			<body class="rela antialiased">
 				
 				<!-- Begin | Header -->
 					
-					<header class="fullWidth rela">
+					<header class="fullWidth rela"> <!-- Blog, http://html5doctor.com/the-header-element/ | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header#Browser_compatibility -->
 						
 						<!-- Begin | Top Bar -->
 							
@@ -190,21 +192,21 @@
 										
 										<li>请</li>
 										
-										<li><a href="#">登录</a></li>
+										<li><a href="#" hreflang="zh">登录</a></li>
 										
-										<li><a href="#">免费注册</a></li>
+										<li><a href="#" hreflang="zh">免费注册</a></li>
 										
-										<li><a href="#" class="myAccount">我的账户</a></li>
+										<li><a class="myAccount" href="#" hreflang="zh">我的账户</a></li>
 										
 									</ul>
 									
 									<ul class="grid rightH1st right clearfix">
 										
-										<li><a href="#" class="redHightlightTest">惊喜：汇通分期商城是年轻人圆梦的平台</a></li>
+										<li><a class="redHightlightTest" href="#" hreflang="zh">惊喜：汇通分期商城是年轻人圆梦的平台</a></li>
 										
-										<li><a href="#">客户端下载</a></li>
+										<li><a href="#" hreflang="zh">客户端下载</a></li>
 										
-										<li><a href="#" class="rela more">更多<i class="absol">&nbsp;</i></a></li>
+										<li><a class="rela more" href="#">更多<i class="absol"></i></a></li>
 										
 									</ul>
 									
@@ -220,15 +222,15 @@
 								
 								<a class="grid" href="#" title=""><div class="leftH2nd"></div></a>
 								
-								<nav class="inlineDisplay grid right">
+								<nav class="inlineDisplay grid right"> <!-- Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav#Browser_compatibility -->
 									
 									<ul class="rightH2nd inlineDisplay clearfix">
 										
-										<li><a class="selected" href="#">首&nbsp;&nbsp;页</a></li>
+										<li><a class="selected" href="#" hreflang="zh">首&nbsp;&nbsp;页</a></li>
 										
-										<li><a href="#">数码分期</a></li>
+										<li><a href="#" hreflang="zh">数码分期</a></li>
 										
-										<li><a href="#">常见问题</a></li>
+										<li><a href="#" hreflang="zh">常见问题</a></li>
 										
 									</ul>
 									
@@ -244,7 +246,7 @@
 				
 				<!-- Begin | Footer -->
 					
-					<footer class="fullWidth rela advancedHide">
+					<footer class="fullWidth rela advancedHide"> <!-- Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer#Browser_compatibility -->
 						
 						<div class="rela row form"></div>
 						
@@ -290,7 +292,7 @@
 				
 				<!-- Begin | Page Title -->
 					
-					<var id="pageTitle" class="advancedHide">首页 | 汇通分期商城（ www.fenqimall.com ）</var>
+					<var id="pageTitle" class="advancedHide">首页 | 汇通分期商城（ www.fenqimall.com ）</var> <!-- Definition, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var -->
 					
 				<!-- Begin | Page Title -->
 				
@@ -298,14 +300,14 @@
 				
 					<!-- Begin | Boot -->
 						
-						<!-- 960 Grid System Overlay -->
-						
-						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/master/main" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js"></script>
+						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/master/main" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
 						
 					<!-- End | Boot -->
 					
 					<!-- Begin | Google Analytics Tracker -->
 						
+						<!-- 1. Async Google Analytics, http://davidwalsh.name/async-google-analytics | Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
+
 						<script type="text/javascript">
 							
 							(function(i, s, o, g, r, a, m) {
@@ -324,7 +326,9 @@
 								
 								m = s.getElementsByTagName(o)[0];
 								
-								a.async = 1;
+								a.async = 1; /* 1 */
+								
+								a.defer = 1; /* 1 */
 								
 								a.src = g;
 								

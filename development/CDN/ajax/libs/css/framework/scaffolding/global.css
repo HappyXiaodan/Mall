@@ -136,3 +136,53 @@ dfn[title] {
 	cursor: help;
 	
 }
+
+/*
+         (__)
+         (oo)
+  /-------\/
+ / |     ||----> Draw any selected text yellow on red background.
+*  ||----||
+  ___/  ___/
+*/
+
+::-moz-selection {
+	
+	color: #FFF;
+	
+	background-color: none; /* Safari */
+	
+}
+
+::selection {
+	
+	color: #FFF;
+	
+	background-color: none; /* Firefox */
+	
+}
+
+/*
+         (__)
+         (oo)
+  /-------\/
+ / |     ||----> Draw selected text in a paragraph white on black.
+*  ||----||
+  ___/  ___/
+*/
+
+p::-moz-selection {
+	
+	color: #FFF;
+	
+	background-color: #000; /* Safari */
+	
+}
+
+p::selection {
+	
+	color: #FFF;
+	
+	background-color: #000; /* Firefox */
+	
+}
