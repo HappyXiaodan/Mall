@@ -24,6 +24,8 @@
  * Copyright: ~
  */
 
+
+
 /*
 888    888                        888
 888    888                        888
@@ -125,15 +127,63 @@ footer {
   ___/  ___/
 */
 
-.form {
+footer > .formArea {
 	
 	z-index: 5;
 	
-	height: 189px;
-	
 	margin-bottom: 0 !important;
 	
-	background: url(http://placehold.it/1200x189/444444/000000) no-repeat;
+}
+
+footer > .formArea > #frmRegister {
+	
+	margin-right: 0;
+	
+	margin-left: 0;
+	
+}
+
+footer > .formArea > #frmRegister > * {
+	
+	margin-top: 66px;
+	
+}
+
+footer > .formArea > #frmRegister > button {
+	
+	width: 122px;
+	
+	height: 45px;
+	
+}
+
+.ie7 .formArea > #frmRegister > button {
+	
+	height: 50px;
+	
+}
+
+footer > .formArea > #frmRegister > div {
+	
+	height: 50px;
+	
+}
+
+footer > .formArea > a {
+	
+	width: 100px;
+	
+	height: 50px;
+	
+	padding-top: 12px;
+	
+	margin: 66px 15px 0 0;
+	
+}
+
+.ie7 .formArea > a {
+	
+	height: 36px;
 	
 }
 
@@ -146,23 +196,21 @@ footer {
   ___/  ___/
 */
 
-.sitemap {
+footer > .sitemap {
 	
 	margin-bottom: 0 !important;
 	
 }
 
-.sitemap > div {
+footer > .sitemap > div {
 	
 	height: 219px;
 	
 	border-top: 1px solid #999999;
 	
-	background: url(http://placehold.it/270x220/444444/000000) no-repeat;
-	
 }
 
-.sitemap > i {
+footer > .sitemap > i {
 	
 	height: 1px;
 	
@@ -179,17 +227,21 @@ footer {
   ___/  ___/
 */
 
-.copyRight {
+footer > .copyRight {
 	
 	height: 50px;
 	
-	padding-top: 17px;
+	padding-top: 16px;
+	
+	padding-left: 8px;
 	
 	margin-bottom: 0 !important;
 	
 }
 
 .ie7 .copyRight {
+	
+	width: 1192px;
 	
 	height: 33px;
 	

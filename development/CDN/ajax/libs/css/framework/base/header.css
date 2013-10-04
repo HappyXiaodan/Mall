@@ -18,55 +18,59 @@
 h1, h2, h3, h4, h5, h6 {
 
     color: #222;
-    
-    color: hsl(0,0%,13%);
-    
-	color: hsla(0,0%,13%,1);
-    
-    color: rgb(34,34,34);
 	
-	color: rgba(34,34,34,1);
-    
-    font: normal normal normal 14px/normal "微软雅黑";
-    
-    text-rendering: optimizeLegibility;<!--text-rendering: optimizeLegibility;-->
+	-webkit-font-smoothing: antialiased;
+
+    text-rendering: optimizeLegibility;
     
 }
 
 h1 {
 	
-    font-size: 2.75em;
-    
+    font-size: 2em;
+	
+    margin: 0.67em 0;
+	
 }
 
 h2 {
 	
-    font-size: 2.3125em;
-    
+    font-size: 1.5em;
+	
+    margin: 0.83em 0;
+	
 }
 
 h3 {
 	
-    font-size: 1.6875em;
-    
+    font-size: 1.17em;
+	
+    margin: 1em 0;
+	
 }
 
 h4 {
 	
-    font-size: 1.4375em;
-    
+    font-size: 1em;
+	
+    margin: 1.33em 0;
+	
 }
 
 h5 {
 	
-    font-size: 1.125em;
-    
+    font-size: 0.83em;
+	
+    margin: 1.67em 0;
+	
 }
 
 h6 {
 	
-    font-size: 1em;
-    
+    font-size: 0.67em;
+	
+    margin: 2.33em 0;
+	
 }
 
 hr {
@@ -85,46 +89,6 @@ hr {
 
 @media only screen and (min-width: 768px) {
 	
-	h1, h2, h3, h4, h5, h6 {
-		
-		line-height: 1.4;
-		
-	}
 	
-	h1 {
-		
-    	font-size: 2.75em;
-    	
-	}
-	
-	h2 {
-		
-    	font-size: 2.3125em;
-    	
-	}
-	
-	h3 {
-		
-		font-size: 1.6875em;
-		
-	}
-	
-	h4 {
-		
-		font-size: 1.4375em;
-		
-	}
-	
-	h5 {
-		
-		font-size: 1.125em;
-		
-	}
-	
-	h6 {
-		
-		font-size: 1em;
-		
-	}
 	
 }

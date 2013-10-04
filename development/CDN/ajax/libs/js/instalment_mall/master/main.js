@@ -102,8 +102,6 @@
 			
 			SJ(function ($) {
 				
-				
-				
 				/**
 				 * Navigation Demo.
 				 */

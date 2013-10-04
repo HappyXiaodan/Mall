@@ -875,17 +875,17 @@ p.lead {
 */
 
 .box_round {
+	
+	-webkit-border-radius: 4px; /* Android ≤ 1.6, iOS 1-3.2, Safari 3-4 */
     
-    -webkit-border-radius: 12px; /* Android ≤ 1.6, iOS 1-3.2, Safari 3-4 */
+    -moz-border-radius: 4px;
     
-    -moz-border-radius: 12px;
-    
-         border-radius: 12px; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+        border-radius: 4px; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
 
     -webkit-background-clip: padding-box;
     
     background-clip: padding-box; /* useful if you don't want a bg color from leaking outside the border: */
-    
+	
 }
 
 .box_shadow_black {
