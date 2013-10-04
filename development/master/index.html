@@ -130,7 +130,9 @@
 							
 							<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/base/link.css"/> <!-- Link -->
 							
-							<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/base/header.css"/> <!-- Link -->
+							<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/base/header.css"/> <!-- Header -->
+							
+							<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/base/form.css"/> <!-- Form -->
 							
 						<!-- Begin | Base -->
 						
@@ -258,29 +260,33 @@
 							
 							<div class="rela row formArea clearfix">
 								
-								<form id="frmRegister" class="grid grid_11 clearfix" name="frmRegister" action="" method="post">
+								<!-- Begin | Footer Registration Form -->
 									
-									<div class="grid grid_3">
+									<form id="frmRegister" class="grid grid_11 clearfix" name="frmRegister" action="" method="post">
 										
-										<input name="userName" class="" type="text" class="left" maxlength="5" placeholder="用户名">
+										<div class="grid grid_3">
+											
+											<input name="userName" class="" type="text" class="left" maxlength="5" placeholder="用户名">
+											
+										</div>
 										
-									</div>
+										<div class="grid grid_3">
+											
+											<input name="userPass" class="" type="password" class="left" maxlength="20" placeholder="密码">
+											
+										</div>
+										
+										<div class="grid grid_3">
+											
+											<input name="userPassCheck" class="" type="password" class="left" maxlength="20" placeholder="确认密码">
+											
+										</div>
+										
+										<button class="grid btnRegister box_round">注册</button>
+										
+									</form>
 									
-									<div class="grid grid_3">
-										
-										<input name="userPass" class="" type="password" class="left" maxlength="20" placeholder="密码">
-										
-									</div>
-									
-									<div class="grid grid_3">
-										
-										<input name="userPassCheck" class="" type="password" class="left" maxlength="20" placeholder="确认密码">
-										
-									</div>
-									
-									<button class="grid btnRegister box_round">注册</button>
-									
-								</form>
+								<!-- End | Footer Registration Form -->
 								
 								<a class="right textCenter box_round" href="#">登录</a>
 								
