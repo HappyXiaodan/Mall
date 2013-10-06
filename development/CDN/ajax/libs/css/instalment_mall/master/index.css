@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.02 15:48 ( Tony ).
  * 
- * Last update: 2013.10.02 20:28 ( Tony ).
+ * Last update: 2013.10.05 23:48 ( Tony ).
  * 
  * License: ~
  * 
@@ -54,21 +54,11 @@
 
 .h1st li {
 	
-	float: left;
-	
-	margin: 0;
-	
-	padding: 0;
-	
-	margin-top: 8px;
-	
 	letter-spacing: 1px;
 	
 }
 
 .h1st a {
-	
-	padding: 0 19px 0 19px;
 	
 	border-right: 1px solid #848484;
 	
@@ -80,21 +70,7 @@
 	
 }
 
-.h1st a.more {
-	
-	padding-right: 23px;
-	
-}
-
 .h1st a.more > i {
-	
-	width: 13px;
-	
-	height: 7px;
-	
-	top: 4px;
-	
-	right: 0;
 	
 	background: url(../../../ui/mall/master/single/more.jpg) no-repeat;
 	
@@ -111,6 +87,12 @@
   ___/  ___/
 */
 
+.leftH2nd {
+	
+	background: url(../../../ui/mall/master/single/logo.jpg) left center no-repeat;
+	
+}
+
 nav > ul > li {
 	
 	float: left;
@@ -123,21 +105,11 @@ nav > ul  > li > a {
 	
 	font-family: "微软雅黑";
 	
-	text-align: center;
-	
-	width: 101px;
-	
-	height: 101px;
-	
-	padding-top: 52px;
-	
 }
 
 nav > ul > li > a:hover {
 
 	border-bottom: 5px solid #ff4416;
-
-	text-decoration: none;
 
 }
 
@@ -153,13 +125,13 @@ nav > ul > li > a:hover {
 	
 }
 
-nav a.selected {
+nav > ul > li > a.selected {
 	
 	border-bottom: 5px solid #ff4416;
 	
 }
 
-.ie7 nav a.selected {
+.ie7 nav > ul > li > a.selected {
 	
 	height: 44px;
 	
@@ -195,25 +167,9 @@ footer * {
 	
 }
 
-footer > .formArea > #frmRegister {
-	
-	height: 189px;
-	
-}
-
 footer > .formArea > #frmRegister > div {
 	
 	font-size: 16px;
-	
-	-webkit-border-radius: 4px; /* Android ≤ 1.6, iOS 1-3.2, Safari 3-4 */
-    
-    -moz-border-radius: 4px;
-    
-        border-radius: 4px; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
-
-    -webkit-background-clip: padding-box;
-    
-    background-clip: padding-box; /* useful if you don't want a bg color from leaking outside the border: */
 	
 	background: #f4f4f4 url(../../../ui/mall/master/single/userId.jpg) 21px center no-repeat;
 	
@@ -222,16 +178,6 @@ footer > .formArea > #frmRegister > div {
 footer > .formArea > #frmRegister > div > input {
 	
 	color: #87888d;
-	
-	width: 190px;
-	
-	margin-left: 67px;
-	
-	margin-top: 13px;
-	
-	border: 0;
-	
-	outline: 0;
 	
 	background-color: #f4f4f4;
 	
@@ -243,11 +189,9 @@ footer > .formArea > #frmRegister > button {
 	
 	font-size: 18px;
 	
-	border: 0;
+	-webkit-box-shadow: 0 5px 0 #990404; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
 	
-	outline: 0;
-	
-	box-shadow: 0 5px 0 #990404;
+	box-shadow: 0 5px 0 #990404; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 	
 	background-color: #e9461f;
 	
@@ -257,11 +201,13 @@ footer > .formArea > #frmRegister > button:hover {
 	
 	margin-top: 68px;
 	
-	box-shadow: 0 3px 0 #990404;
+	-webkit-box-shadow: 0 3px 0 #990404; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+	
+	box-shadow: 0 3px 0 #990404; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 	
 }
 
-.ie7 .formArea > #frmRegister > button:hover {
+.ie7 footer > .formArea > #frmRegister > button:hover {
 	
 	margin-top: 66px;
 	
@@ -275,11 +221,7 @@ footer > .formArea > a {
 	
 	font-size: 18px;
 	
-	text-decoration: none;
-	
 	border: 1px solid #999;
-	
-	outline: 0;
 	
 	background-color: #333;
 	
@@ -306,10 +248,6 @@ footer > .sitemap h4 {
 	
 	font-size: 18px;
 	
-	margin-top: 27px;
-	
-	margin-bottom: 27px;
-	
 }
 
 footer > .sitemap a {
@@ -317,8 +255,6 @@ footer > .sitemap a {
 	color: #CCC;
 	
 	font-family: "新宋体";
-	
-	margin-bottom: 16px;
 	
 }
 
@@ -332,7 +268,7 @@ footer > .sitemap > .spColumn > span {
 
 footer > .sitemap > .spColumn > span > a {
 	
-	display: inline;
+	cursor: default;
 	
 	color: #FFF;
 	
@@ -344,32 +280,23 @@ footer > .sitemap > .spColumn > span > a {
 
 footer > .sitemap > .spColumn > div {
 	
-	height: 27px;
-	
-	width: auto;
-	
-	margin-top: 14px;
-	
 	background: url(../../../ui/mall/master/single/sinaIcon.png) center left no-repeat;
 	
 }
 
-
 footer > .sitemap > .spColumn > div > a {
-	
-	display: inline-block;
 	
 	color: #CCC;
 	
 	font-size: 12px;
 	
-	text-decoration: none;
-	
-	margin-left: 54px;
-	
-	padding: 4px 10px;
-	
 	border: 1px solid #CCC;
+	
+}
+
+footer > .sitemap > .spColumn > div > a:hover {
+	
+	background-color: #3f3f3f;
 	
 }
 
@@ -382,7 +309,7 @@ footer > .sitemap > .spColumn > div > a {
   ___/  ___/
 */
 
-footer > .copyRight * {
+footer > .copyRight > span {
 	
 	color: #CCC;
 	

@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.02 15:48 ( Tony ).
  * 
- * Last update: 2013.10.02 20:29 ( Tony ).
+ * Last update: 2013.10.05 23:48 ( Tony ).
  * 
  * License: ~
  * 
@@ -58,17 +58,41 @@ header .row {
 	
 }
 
-.leftH1st, .rightH1st { height: 32px; }
-
-.leftH1st {
+.leftH1st, .rightH1st {
 	
-	display: inline;
+	height: 32px;
 	
 }
 
-.rightH1st {
+.h1st li {
 	
-	display: inline;
+	float: left;
+	
+	margin-top: 8px;
+	
+}
+
+.h1st a {
+	
+	padding: 0 19px 0 19px;
+	
+}
+
+.h1st a.more {
+	
+	padding-right: 23px;
+	
+}
+
+.h1st a.more > i {
+	
+	width: 13px;
+	
+	height: 7px;
+	
+	top: 4px;
+	
+	right: 0;
 	
 }
 
@@ -87,7 +111,15 @@ header .row {
 	
 	height: 101px;
 	
-	background: url(../../../ui/mall/master/single/logo.jpg) left center no-repeat;
+}
+
+nav > ul  > li > a {
+	
+	width: 101px;
+	
+	height: 101px;
+	
+	padding-top: 52px;
 	
 }
 
@@ -137,6 +169,8 @@ footer > .formArea {
 
 footer > .formArea > #frmRegister {
 	
+	height: 189px;
+	
 	margin-right: 0;
 	
 	margin-left: 0;
@@ -166,6 +200,16 @@ footer > .formArea > #frmRegister > button {
 footer > .formArea > #frmRegister > div {
 	
 	height: 50px;
+	
+}
+
+footer > .formArea > #frmRegister > div > input {
+	
+	width: 190px;
+	
+	margin-left: 67px;
+	
+	margin-top: 13px;
 	
 }
 
@@ -202,6 +246,20 @@ footer > .sitemap {
 	
 }
 
+footer > .sitemap h4 {
+	
+	margin-top: 27px;
+	
+	margin-bottom: 27px;
+	
+}
+
+footer > .sitemap a {
+	
+	margin-bottom: 16px;
+	
+}
+
 footer > .sitemap > div {
 	
 	height: 219px;
@@ -215,6 +273,30 @@ footer > .sitemap > i {
 	height: 1px;
 	
 	background-color: #999999;
+	
+}
+
+footer > .sitemap > .spColumn > div {
+	
+	height: 27px;
+	
+	width: auto;
+	
+	margin-top: 14px;
+	
+}
+
+/**
+ * 1. "display: inline-block;"的深入理解, http://www.planabc.net/2007/03/11/display_inline-block/
+ */
+
+footer > .sitemap > .spColumn > div > a {
+	
+	margin-left: 54px;
+	
+	padding: 4px 10px;
+	
+	*zoom: 1; /* 1 */
 	
 }
 

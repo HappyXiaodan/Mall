@@ -25,23 +25,27 @@
 
 
 
-a {
+a, a:link {
 	
 	display: block;
     
     color: #333;
     
     text-decoration: none;
-	
-	background: none;
     
 }
 
-a:hover, a:focus {
+a:hover {
     
     cursor: pointer;
 	
 	text-decoration: underline;
+    
+}
+
+a:focus, a:visited {
+    
+    text-decoration: none !important;
     
 }
 
