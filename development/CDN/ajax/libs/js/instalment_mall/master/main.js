@@ -96,9 +96,11 @@
 			
 			'cdnjs/gridder/0.1.0/gridder',
 			
-			'cdnjs/jquery_title_modify/title.modify'
+			'cdnjs/jquery_title_modify/title.modify',
+			
+			'cdnjs/instalment_mall/master/validation.plus'
 		
-		], function (modernizr, SJ, cookie, gridder, modifyTitle) {
+		], function (modernizr, SJ, cookie, gridder, modifyTitle, ftrValidation) {
 			
 			SJ(function ($) {
 				
@@ -185,3 +187,5 @@
 	});
 		
 }(window, document, requirejs, require));
+
+

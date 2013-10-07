@@ -183,6 +183,79 @@ footer > .formArea > #frmRegister > * {
 	
 }
 
+footer > .formArea > #frmRegister > .field > .info {
+	
+	z-index: 7;
+	
+	font-size: 12px;
+	
+	line-height: 22px;
+	
+	height: 22px;
+	
+	top: 60px;
+	
+	left: 22px;
+	
+	padding: 0 14px 0 14px;
+	
+}
+
+footer > .formArea > #frmRegister > .field > .info > label {
+	
+	color: #f1f1f1;
+	
+	font-family: "新宋体";
+	
+}
+
+footer > .formArea > #frmRegister > .field > .info:before,
+footer > .formArea > #frmRegister > .field > .info:after {
+	
+	content: '';
+	
+	display: block;
+	
+	position: absolute;
+	
+	left: 9px;
+	
+	width: 0;
+	
+	height: 0;
+	
+	border: 7px outset transparent;
+	
+}
+
+footer > .formArea > #frmRegister > .field > .info:before {
+	
+	top: -13px;
+	
+	border-bottom: 7px solid #e60012;
+	
+}
+
+footer > .formArea > #frmRegister > .field > .info:after {
+	
+	top: -13px;
+	
+	border-bottom: 7px solid #e60012;
+	
+}
+
+footer > .formArea > #frmRegister > .field > .info.error {
+	
+	background-color: #e60012;
+	
+}
+
+footer > .formArea > #frmRegister > .field > .info.right {
+	
+	background-color: #33cc33;
+	
+}
+
 footer > .formArea > #frmRegister > button {
 	
 	width: 122px;
@@ -191,23 +264,35 @@ footer > .formArea > #frmRegister > button {
 	
 }
 
-.ie7 .formArea > #frmRegister > button {
+.ie7 .formArea > #frmRegister > button, .ie8 .formArea > #frmRegister > button {
 	
 	height: 50px;
 	
 }
 
-footer > .formArea > #frmRegister > div {
+footer > .formArea > #frmRegister > .field {
 	
 	height: 50px;
 	
 }
 
-footer > .formArea > #frmRegister > div > input {
+footer > .formArea > #frmRegister > .field > i {
+	
+	width: 24px;
+	
+	height: 22px;
+	
+	margin-left: 21px;
+	
+	margin-top: 14px;
+	
+}
+
+footer > .formArea > #frmRegister > .field > input {
 	
 	width: 190px;
 	
-	margin-left: 67px;
+	margin-left: 21px;
 	
 	margin-top: 13px;
 	
@@ -228,6 +313,8 @@ footer > .formArea > a {
 .ie7 .formArea > a {
 	
 	height: 36px;
+	
+	*zoom: 1;
 	
 }
 

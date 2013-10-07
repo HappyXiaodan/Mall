@@ -264,25 +264,37 @@
 									
 									<form id="frmRegister" class="grid grid_11 clearfix" name="frmRegister" action="" method="post">
 										
-										<div class="grid grid_3 box_round">
+										<div class="rela field grid grid_3 box_round">
 											
-											<input name="userName" class="" type="text" class="left" maxlength="5" placeholder="用户名">
+											<i class="left blockDisplay"></i>
 											
-										</div>
-										
-										<div class="grid grid_3 box_round">
+											<input id="userName" class="left" name="userName" type="text" minlength="2" placeholder="用户名"/>
 											
-											<input name="userPass" class="" type="password" class="left" maxlength="20" placeholder="密码">
+											<div class="absol info box_round error hide"></div>
 											
 										</div>
 										
-										<div class="grid grid_3 box_round">
+										<div class="rela field grid grid_3 box_round">
 											
-											<input name="userPassCheck" class="" type="password" class="left" maxlength="20" placeholder="确认密码">
+											<i class="left blockDisplay"></i>
+											
+											<input id="userPass" class="left" name="userPass" type="password" minlength="6" placeholder="密码"/>
+											
+											<div class="absol info box_round error hide"></div>
 											
 										</div>
 										
-										<button class="grid btnRegister box_round">注册</button>
+										<div class="rela field grid grid_3 box_round">
+											
+											<i class="left blockDisplay"></i>
+											
+											<input id="userPassCheck" class="left" name="userPassCheck" type="password" minlength="6" placeholder="确认密码"/>
+											
+											<div class="absol info box_round error hide"></div>
+											
+										</div>
+										
+										<button type="submit" class="grid btnRegister box_round">注册</button>
 										
 									</form>
 									

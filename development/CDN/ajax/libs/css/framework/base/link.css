@@ -32,6 +32,8 @@ a, a:link {
     color: #333;
     
     text-decoration: none;
+	
+	background: none;
     
 }
 
@@ -44,6 +46,8 @@ a:hover {
 }
 
 a:focus, a:visited {
+	
+	outline: 0;
     
     text-decoration: none !important;
     
