@@ -187,6 +187,10 @@ footer > .formArea > #frmRegister > .field > .info {
 	
 	z-index: 7;
 	
+	color: #f1f1f1;
+	
+	font-family: "新宋体";
+	
 	font-size: 12px;
 	
 	line-height: 22px;
@@ -199,13 +203,7 @@ footer > .formArea > #frmRegister > .field > .info {
 	
 	padding: 0 14px 0 14px;
 	
-}
-
-footer > .formArea > #frmRegister > .field > .info > label {
-	
-	color: #f1f1f1;
-	
-	font-family: "新宋体";
+	background-color: #e60012;
 	
 }
 
@@ -241,18 +239,6 @@ footer > .formArea > #frmRegister > .field > .info:after {
 	top: -13px;
 	
 	border-bottom: 7px solid #e60012;
-	
-}
-
-footer > .formArea > #frmRegister > .field > .info.error {
-	
-	background-color: #e60012;
-	
-}
-
-footer > .formArea > #frmRegister > .field > .info.right {
-	
-	background-color: #33cc33;
 	
 }
 

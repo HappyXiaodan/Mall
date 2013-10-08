@@ -136,18 +136,6 @@
 		
 		debug: true,
 		
-		errorPlacement: function (error, element) {
-			
-			element.parent('div').find('.info').append(error).show();
-			
-		},
-		
-		success: function(label) {
-			
-			/*label.parent().hide();*/
-			
-		},
-		
 		rules: {
 			
 			userName: {
@@ -179,6 +167,22 @@
 				noWhitespace: true
 				
 			}
+			
+		},
+		
+		errorElement: 'div',
+		
+		errorPlacement: function (error, element) {
+			
+			error.addClass('absol info box_round');
+			
+			error.insertAfter(element);
+			
+		},
+		
+		success: function(error) {
+			
+			error.remove();
 			
 		},
 		
