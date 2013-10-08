@@ -187,5 +187,3 @@
 	});
 		
 }(window, document, requirejs, require));
-
-

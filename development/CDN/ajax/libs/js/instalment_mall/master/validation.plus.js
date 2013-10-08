@@ -11,7 +11,7 @@
  * 
  * Version: 0.1.0
  * 
- * Creation Date: 2013.10.06 23:34 ( Tony ).
+ * Creation Date: 2013.10.07 14:04 ( Tony ).
  * 
  * Last update:  ( Tony ).
  * 
@@ -86,6 +86,8 @@
 		return this.optional(element) || /^\S+$/i.test(value);
 		
 	}, "不允许存在空格。");
+	
+	
 	
 	SJ('#frmRegister').validate({
 		
