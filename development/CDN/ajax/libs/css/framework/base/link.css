@@ -28,35 +28,35 @@
 a, a:link {
 	
 	display: block;
-    
-    color: #333;
-    
-    text-decoration: none;
+	
+	color: #333;
+	
+	text-decoration: none;
 	
 	background: none;
-    
+	
 }
 
 a:hover {
-    
-    cursor: pointer;
+	
+	cursor: pointer;
 	
 	text-decoration: underline;
-    
+	
 }
 
 a:focus, a:visited {
 	
 	outline: 0;
-    
-    text-decoration: none !important;
-    
+	
+	text-decoration: none !important;
+	
 }
 
 a img {
-    
-    border: 0;
-    
-    outline: 0;
-    
+	
+	border: 0;
+	
+	outline: 0;
+	
 }

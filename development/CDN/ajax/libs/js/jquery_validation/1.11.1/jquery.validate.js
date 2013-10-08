@@ -38,7 +38,7 @@
 } ('validation', function (SJ) {
 	
 	var $ = SJ;
-
+	
 	$.extend($.fn, {
 		
 		// provides delegate(type: String, delegate: Selector, handler: Callback) plugin for easier event delegation
