@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.09.28 21:05 ( Tony ).
  * 
- * Last update: 2013.09.28 22:19 ( Tony ).
+ * Last update: 2013.10.08 10:30 ( Tony ).
  * 
  * License: ~
  * 
@@ -45,13 +45,13 @@
 
 .left {
 	
-    float: left;
+	float: left;
 	
 }
 
 .right {
 	
-    float: right;
+	float: right;
 	
 }
 
@@ -61,11 +61,11 @@
  */
 
 .left img, .right img {
-    
-    display: block; /* 1 */
-    
-    max-width: none; /* 2 */
-    
+	
+	display: block; /* 1 */
+	
+	max-width: none; /* 2 */
+	
 }
 
 
@@ -76,25 +76,25 @@
 
 .textLeft {
 	
-    text-align: left;
+	text-align: left;
 	
 }
 
 .textRight {
 	
-    text-align: right;
+	text-align: right;
 	
 }
 
 .textCenter {
 	
-    text-align: center;
+	text-align: center;
 	
 }
 
 .textJustify {
 	
-    text-align: justify;
+	text-align: justify;
 	
 }
 
@@ -117,36 +117,36 @@
 .textOverflow {
 	
 	display: block;
-    
-    max-width: 100%; /* 1 */
-    
-    white-space: nowrap !important;
-    
-    word-wrap: normal !important; /* 2 */
+	
+	max-width: 100%; /* 1 */
+	
+	white-space: nowrap !important;
+	
+	word-wrap: normal !important; /* 2 */
 	
 	overflow: hidden !important; /* 3 */
 	
 	text-overflow-mode: ellipsis !important;
-    
-    /* text-overflow: ellipsis-word; */ /* This is setting the ellipsis after a word. If you need.*/
-    
-    
-    /*
-     * Support:
-     *
-     * Google Chrome 1.0 (312.3)
-     *
-     * Firefox (Gecko) 7.0 (7.0)
-     *
-     * Internet Explorer 6.0
-     *
-     * Opera 9.0(-o-) 11.0
-     *
-     * Safari (WebKit) 1.3 (312.3)
-     *
-     */
-    
-    text-overflow: ellipsis !important; /* This is setting the ellipsis after a character.*/
+	
+	/* text-overflow: ellipsis-word; */ /* This is setting the ellipsis after a word. If you need.*/
+	
+	
+	/*
+	 * Support:
+	 *
+	 * Google Chrome 1.0 (312.3)
+	 *
+	 * Firefox (Gecko) 7.0 (7.0)
+	 *
+	 * Internet Explorer 6.0
+	 *
+	 * Opera 9.0(-o-) 11.0
+	 *
+	 * Safari (WebKit) 1.3 (312.3)
+	 *
+	 */
+	
+	text-overflow: ellipsis !important; /* This is setting the ellipsis after a character.*/
 	
 	-ms-text-overflow: ellipsis !important;
 	
@@ -184,11 +184,11 @@
  */
 
 .textBreak {
-    
-    word-break: break-all !important;
-    
-    word-wrap: break-word !important;
-    
+	
+	word-break: break-all !important;
+	
+	word-wrap: break-word !important;
+	
 }
 
 /**
@@ -213,23 +213,23 @@
 
 .hideText {
 	
-    font: 0/0 a;
+	font: 0/0 a;
 	
-    color: transparent;
+	color: transparent;
 	
-    text-shadow: none;
+	text-shadow: none;
 	
-    background-color: transparent;
+	background-color: transparent;
 	
-    border: 0;
+	border: 0;
 	
 }
 
 .antialiased {
 	
-    -webkit-font-smoothing: antialiased;
-
-    text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	
+	text-rendering: optimizeLegibility;
 	
 }
 
@@ -282,33 +282,33 @@
  */
 
 .inlineDisplay {
-    
-    display: inline !important;
-    
+	
+	display: inline !important;
+	
 }
 
 .inlineBlockDisplay {
-    
-    display: inline-block !important;
-    
+	
+	display: inline-block !important;
+	
 }
 
 .blockDisplay {
-    
-    display: block !important;
-    
+	
+	display: block !important;
+	
 }
 
 .ableDisplay {
-    
-    display: table !important;
-    
+	
+	display: table !important;
+	
 }
 
 .tableCellDisplay {
-    
-    display: table-cell !important;
-    
+	
+	display: table-cell !important;
+	
 }
 
 /**
@@ -317,28 +317,28 @@
 
 .isInvisible {
 	
-    visibility: hidden !important;
+	visibility: hidden !important;
 	
 }
 
 .isVisible {
-    
-    visibility: visible !important;
-    
+	
+	visibility: visible !important;
+	
 }
 
 .hide {
-    
-    display: none;
-    
+	
+	display: none;
+	
 }
 
 .advancedHide {
-    
-    visibility: hidden;
+	
+	visibility: hidden;
 	
 	display: none;
-    
+	
 }
 
 /**
@@ -351,9 +351,9 @@
 .cleanLink:hover,
 .cleanLink:focus,
 .cleanLink:active {
-    
-    text-decoration: none !important;
-    
+	
+	text-decoration: none !important;
+	
 }
 
 /*
@@ -361,27 +361,27 @@
  */
 
 .noResize {
-    
-    resize: none;
-    
+	
+	resize: none;
+	
 }
 
 .resizeBoth {
-    
-    resize: both;
-    
+	
+	resize: both;
+	
 }
 
 .resizeHorizontal {
-    
-    resize: horizontal;
-    
+	
+	resize: horizontal;
+	
 }
 
 .resizeVertical {
-    
-    resize: vertical;
-    
+	
+	resize: vertical;
+	
 }
 
 /*
@@ -660,33 +660,33 @@ p.lead {
  */
 
 .mainBackgroundColor {
-    
-    background-color: #e1ded8;
-    
+	
+	background-color: #e1ded8;
+	
 }
 
 .blackBg {
-    
-    background-color: #000;
-    
+	
+	background-color: #000;
+	
 }
 
 .lightGreyBg {
-    
-    background-color: #CCC;
-    
+	
+	background-color: #CCC;
+	
 }
 
 .facebookBlueBg {
-    
-    background-color: #036;
+	
+	background-color: #036;
 	
 }
 
 .brightRedBg {
-    
-    background-color: #F00;
-    
+	
+	background-color: #F00;
+	
 }
 
 
@@ -713,9 +713,9 @@ p.lead {
  */
 
 .redHightlightTest {
-    
-    color: #F00 !important;
-    
+	
+	color: #F00 !important;
+	
 }
 
 
@@ -741,49 +741,49 @@ p.lead {
  */
 
 @font-face {
-    
-    /* Basic support:Firefox (Gecko) 3.5 (1.9.1) ,Chrome 4.0 ,IE4.0 ,Opera 10.0 ,Safari 3.1 */
-    /* Web Open Font Format (WOFF) support:Firefox (Gecko) 3.5 (1.9.1) ,Chrome 6.0 ,IE9.0 ,Opera 11.10 ,Safari 5.1 */
-    /* SVG Font support:Chrome ,Opera ,Safari */
-    
-    font-family: 'sketchslabbold';
-    
-    src: local('Verdana, Geneva, sans-serif'),
-        
+	
+	/* Basic support:Firefox (Gecko) 3.5 (1.9.1) ,Chrome 4.0 ,IE4.0 ,Opera 10.0 ,Safari 3.1 */
+	/* Web Open Font Format (WOFF) support:Firefox (Gecko) 3.5 (1.9.1) ,Chrome 6.0 ,IE9.0 ,Opera 11.10 ,Safari 5.1 */
+	/* SVG Font support:Chrome ,Opera ,Safari */
+	
+	font-family: 'sketchslabbold';
+	
+	src: local('Verdana, Geneva, sans-serif'),
+		
 		url('../Font/SketchSlab/sketchslab-bold-webfont.eot?#iefix') format('embedded-opentype'),
-        
+		
 		url('../Font/SketchSlab/sketchslab-bold-webfont.woff') format('woff'),
-        
+		
 		url('../Font/SketchSlab/sketchslab-bold-webfont.ttf') format('truetype'),
-        
+		
 		url('../Font/SketchSlab/sketchslab-bold-webfont.svg#sketchslabbold') format('svg');
 		
 		/*src: local("Helvetica Neue Bold"), */ /* Here, the user's local copy of "Helvetica Neue Bold" is used; if the user doesn't have that font installed (two different names are tried), then the downloadable font named "MgOpenModernaBold.ttf" is used instead */
 	
 		/*local("HelveticaNeue-Bold"), */ /* Here, the user's local copy of "Helvetica Neue Bold" is used; if the user doesn't have that font installed (two different names are tried), then the downloadable font named "MgOpenModernaBold.ttf" is used instead */
 		
-       /*url('MgOpenModernaBold.woff') format('woff'), */ /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	   /*url('MgOpenModernaBold.woff') format('woff'), */ /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 		
 	   /*url('myfont.ttf') format('truetype'); */ /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-    
-    font-variant: normal;
-    
-    font-stretch: normal;
-    
-    font-weight: normal;
-    
-    font-style: normal;
-    
+	
+	font-variant: normal;
+	
+	font-stretch: normal;
+	
+	font-weight: normal;
+	
+	font-style: normal;
+	
 }
 
 .box_tabsize { /* This is an experimental technology : The tab-size CSS property is used to customize the width of a tab (U+0009) character . */
-    
-    -moz-tab-size: 2; /* Firefox 4+ */
-    
-      -o-tab-size: 2; /* Opera 10.60+ */
-    
-         tab-size: 2;
-    
+	
+	-moz-tab-size: 2; /* Firefox 4+ */
+	
+	  -o-tab-size: 2; /* Opera 10.60+ */
+		
+		 tab-size: 2;
+	
 }
 
 
@@ -817,50 +817,50 @@ p.lead {
 .box_round {
 	
 	-webkit-border-radius: 4px; /* Android ≤ 1.6, iOS 1-3.2, Safari 3-4 */
-    
-    -moz-border-radius: 4px;
-    
-        border-radius: 4px; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
-
-    -webkit-background-clip: padding-box;
-    
-    background-clip: padding-box; /* useful if you don't want a bg color from leaking outside the border: */
+	
+	-moz-border-radius: 4px;
+		
+		border-radius: 4px; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+	
+	-webkit-background-clip: padding-box;
+	
+	background-clip: padding-box; /* useful if you don't want a bg color from leaking outside the border: */
 	
 }
 
 .box_shadow_black {
-    
-    -webkit-box-shadow: 0 0 10px 1px #000; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
-    
-            box-shadow: 0 0 10px 1px #000; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
-    
-    filter: progid:DXImageTransform.Microsoft.Shadow(enabled=true,color='#000',direction=0,strength=5); /* Internet Explorer 5.5 or later */
-    
+	
+	-webkit-box-shadow: 0 0 10px 1px #000; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+			
+			box-shadow: 0 0 10px 1px #000; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+	
+	filter: progid:DXImageTransform.Microsoft.Shadow(enabled=true,color='#000',direction=0,strength=5); /* Internet Explorer 5.5 or later */
+	
 }
 
 .box_inset_shadow_black {
-    
-    -webkit-box-shadow: inset 0px 2px 10px 0px #000; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
-    
-            box-shadow: inset 0px 2px 10px 0px #000; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+	
+	-webkit-box-shadow: inset 0px 2px 10px 0px #000; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+			
+			box-shadow: inset 0px 2px 10px 0px #000; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 }
 
 .boxRadialGradient {
-    
+	
 	background: -webkit-radial-gradient(circle, white, black); /* Chrome10+,Safari5.1+ */
-    
+	
 	background: -webkit-radial-gradient(circle, rgba(0,0,0,0.2), rgba(0,0,0,0.9)); /* Chrome10+,Safari5.1+ */
-    
+	
 	background: -moz-radial-gradient(circle, rgba(0,0,0,0.2) 5%,rgba(0,0,0,0.7) 60%,rgba(0,0,0,0.9) 100% ); /* FF3.6+ */
-    
+	
 	background: -o-radial-gradient(circle, rgba(0,0,0,0.2) 5%,rgba(0,0,0,0.7) 60%,rgba(0,0,0,0.9) 100% ); /* Opera 12+ */
-    
+	
 	background: -ms-radial-gradient(circle, rgba(0,0,0,0.2) 5%,rgba(0,0,0,0.7) 60%,rgba(0,0,0,0.9) 100% ); /* IE10+ */
 	
 	background: -webkit-gradient(radial, from( rgba(0,0,0,0.2) ), to( rgba(0,0,0,0.9) ) ); /* Chrome,Safari4+ */
-    
+	
 	background: radial-gradient( circle, rgba(0,0,0,0.2) 5%,rgba(0,0,0,0.7) 60%,rgba(0,0,0,0.9) 100% ); /* W3C */
-    
+	
 }
 
 .pinkBoxGradient {
@@ -1013,29 +1013,29 @@ p.lead {
 
 .ie9 .gradientFilter {
 	
-    filter: none;
+	filter: none;
 	
 }
 
 .box_rgba {
-    
-    background-color: transparent;
-    
-    background-color: rgba(0, 0, 0, 0.5);  /* Chrome, Firefox 3+, IE 9+, Opera 10.10+, Safari 3+ */
-    
+	
+	background-color: transparent;
+	
+	background-color: rgba(0, 0, 0, 0.5);  /* Chrome, Firefox 3+, IE 9+, Opera 10.10+, Safari 3+ */
+	
 }
 
 .box_rotate {
-    
-    -webkit-transform: rotate(7.5deg);  /* Chrome, Safari 3.1+ */
-    
-       -moz-transform: rotate(7.5deg);  /* Firefox 3.5-15 */
-    
-        -ms-transform: rotate(7.5deg);  /* IE 9 */
-        
-         -o-transform: rotate(7.5deg);  /* Opera 10.50-12.00 */
-        
-            transform: rotate(7.5deg);  /* Firefox 16+, IE 10+, Opera 12.50+ */
+	
+	-webkit-transform: rotate(7.5deg);  /* Chrome, Safari 3.1+ */
+	
+	   -moz-transform: rotate(7.5deg);  /* Firefox 3.5-15 */
+		
+		-ms-transform: rotate(7.5deg);  /* IE 9 */
+		
+		 -o-transform: rotate(7.5deg);  /* Opera 10.50-12.00 */
+			
+			transform: rotate(7.5deg);  /* Firefox 16+, IE 10+, Opera 12.50+ */
 
   /**
    * transform: none
@@ -1064,43 +1064,43 @@ p.lead {
 }
 
 .box_scale {
-    
-    -webkit-transform: scale(0.8);  /* Chrome, Safari 3.1+ */ 
-    
-       -moz-transform: scale(0.8);  /* Firefox 3.5+ */ 
-    
-        -ms-transform: scale(0.8);  /* IE 9 */ 
-        
-         -o-transform: scale(0.8);  /* Opera 10.50-12.00 */ 
-        
-            transform: scale(0.8);  /* Firefox 16+, IE 10+, Opera 12.50+ */
-    
+	
+	-webkit-transform: scale(0.8);  /* Chrome, Safari 3.1+ */ 
+	
+	   -moz-transform: scale(0.8);  /* Firefox 3.5+ */ 
+		
+		-ms-transform: scale(0.8);  /* IE 9 */ 
+		
+		 -o-transform: scale(0.8);  /* Opera 10.50-12.00 */ 
+			
+			transform: scale(0.8);  /* Firefox 16+, IE 10+, Opera 12.50+ */
+	
   /**
    * transform: scale(2, 0.5)
    * transform: scaleX(2)
    * transform: scaleY(0.5)
    */ 
-    
+	
 }
 
 .box_3dtransforms {
-    
+	
   -webkit-perspective: 300px;  /* Chrome 12+, Safari 4+ */
-    
-     -moz-perspective: 300px;  /* Firefox 10+ */
-    
-      -ms-perspective: 300px;  /* IE 10 */
-    
-          perspective: 300px;
-    
+	
+	 -moz-perspective: 300px;  /* Firefox 10+ */
+	
+	  -ms-perspective: 300px;  /* IE 10 */
+		
+		  perspective: 300px;
+	
   -webkit-transform: rotateY(180deg);  -webkit-transform-style: preserve-3d;
-    
-     -moz-transform: rotateY(180deg);     -moz-transform-style: preserve-3d;
-    
-      -ms-transform: rotateY(180deg);      -ms-transform-style: preserve-3d;
-    
-          transform: rotateY(180deg);          transform-style: preserve-3d;
-    
+	
+	 -moz-transform: rotateY(180deg);     -moz-transform-style: preserve-3d;
+	
+	  -ms-transform: rotateY(180deg);      -ms-transform-style: preserve-3d;
+		
+		  transform: rotateY(180deg);          transform-style: preserve-3d;
+	
   /**
    * transform: rotate(0.5turn)
    * transform: matrix3d(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0)
@@ -1115,21 +1115,21 @@ p.lead {
    * transform: perspective(17px)	
    * transform: translateX(10px) rotate(10deg) translateY(5px)
    */ 
-    
+	
 }
 
 .box_transition { /* Transition : 变换、过渡 */
-    
-    -webkit-transition: all 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
-    
-       -moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
-    
-	    -ms-transition: all 500ms ease-out; /* IE10.0 */
-        
-         -o-transition: all 0.3s ease-out;  /* Opera 10.50 – 12.00 */
-        
-            transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE10.0+, Opera 12.50+ */
-    
+	
+	-webkit-transition: all 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+	
+	   -moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
+		
+		-ms-transition: all 500ms ease-out; /* IE10.0 */
+		
+		 -o-transition: all 0.3s ease-out;  /* Opera 10.50 – 12.00 */
+			
+			transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE10.0+, Opera 12.50+ */
+	
   /**
    * transition-delay: 0s
    * transition-duration: 0s
@@ -1137,25 +1137,25 @@ p.lead {
    * transition-timing-function: ease
    * Formal syntax: [ none | <single-transition-property> ] || <time> || <timing-function> || <time>
    */
-    
+	
 }
 
 .box_textshadow {
-    
-    text-shadow: 1px 1px 3px #888; /* Chrome, Firefox 3.5+, IE 10+, Opera 9+, Safari 1+ */
-    
-    filter: dropshadow(color=#ff00ff, offx=1, offy=1);
-    
+	
+	text-shadow: 1px 1px 3px #888; /* Chrome, Firefox 3.5+, IE 10+, Opera 9+, Safari 1+ */
+	
+	filter: dropshadow(color=#ff00ff, offx=1, offy=1);
+	
 }
 
 .box_bgsize {
-    
-    -webkit-background-size: 100% 100%; /* Safari 3-4 */
-    
-       -moz-background-size: 100% 100%; /* Gecko 1.9.2 (Firefox 3.6) */
-    
-         -o-background-size: 100% 100%; /* Opera 9.5 */
-        
-            background-size: 100% 100%; /* Chrome, Firefox 4+, IE 9+, Opera, Safari 5+ and other CSS3-compliant browsers */
-    
+	
+	-webkit-background-size: 100% 100%; /* Safari 3-4 */
+	
+	   -moz-background-size: 100% 100%; /* Gecko 1.9.2 (Firefox 3.6) */
+		
+		 -o-background-size: 100% 100%; /* Opera 9.5 */
+			
+			background-size: 100% 100%; /* Chrome, Firefox 4+, IE 9+, Opera, Safari 5+ and other CSS3-compliant browsers */
+	
 }
