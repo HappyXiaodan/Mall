@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The private layout stylesheet of third master page ( index@3.html ).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.10 15:15 ( Tony ).
+ * 
+ * Last update: 2013.10.10 16:32 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+/*
+888    888                        888
+888    888                        888
+888    888                        888
+8888888888  .d88b.   8888b.   .d88888  .d88b.  888d888
+888    888 d8P  Y8b     "88b d88" 888 d8P  Y8b 888P"
+888    888 88888888 .d888888 888  888 88888888 888
+888    888 Y8b.     888  888 Y88b 888 Y8b.     888
+888    888  "Y8888  "Y888888  "Y88888  "Y8888  888
+*/
+
+.pageHeader {
+	
+	border-bottom: 3px solid #e9461f;
+	
+}
+
+.pageHeader > div {
+	
+	height: 100px;
+	
+	margin-bottom: 0;
+	
+}
+
+.pageHeader > div > a > div {
+	
+	height: 100px;
+	
+	width: 200px;
+	
+}
+
+
+
+/* 
+8888888888                   888                     
+888                          888                     
+888                          888                     
+8888888     .d88b.   .d88b.  888888  .d88b.  888d888 
+888        d88""88b d88""88b 888    d8P  Y8b 888P"   
+888        888  888 888  888 888    88888888 888     
+888        Y88..88P Y88..88P Y88b.  Y8b.     888     
+888         "Y88P"   "Y88P"   "Y888  "Y8888  888             
+*/
+
+.pageFooter {
+	
+	height: 32px;
+	
+	margin-bottom: 0;
+	
+}
+
+.pageFooter > span {
+	
+	margin-left: 15px;
+	
+}
+
+.pageFooter > a {
+	
+	display: inline;
+	
+	*zoom: 1;
+	
+}

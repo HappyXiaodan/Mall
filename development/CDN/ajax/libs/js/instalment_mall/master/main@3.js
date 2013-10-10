@@ -1,7 +1,7 @@
 /**
  * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
  * 
- * Describe: The javascript boot file of second master page ( index@2.html ).
+ * Describe: The javascript boot file of third master page ( index@3.html ).
  * 
  * Further changes, comments: ~
  * 
@@ -11,9 +11,9 @@
  * 
  * Version: 0.1.0
  * 
- * Creation Date: 2013.10.10 13:33 ( Tony ).
+ * Creation Date: 2013.10.10 15:15 ( Tony ).
  * 
- * Last update: 2013.10.10 14:21 ( Tony ).
+ * Last update: 2013.10.10 16:45 ( Tony ).
  * 
  * License: ~
  * 
@@ -103,18 +103,6 @@
 			SJ(function ($) {
 				
 				/**
-				 * Navigation Demo.
-				 */
-				
-				$("nav").find('a').on('click', function (e) {
-					
-					e.preventDefault();
-					
-					$(this).addClass('selected').closest('li').siblings().children().removeClass('selected');
-					
-				});
-				
-				/**
 				 * Modernizr component( Public ) test.
 				 */
 				
@@ -130,7 +118,7 @@
 				 * Cookie component( Public ) test.
 				 */
 				
-				$.cookie('Tony', 'Male', {expires: 7, path: '/', domain: 'example.com', secure: false});
+				$.cookie('Tony', 'Male', {expires: 7, path: '/', domain: 'example.com', secure: true});
 				
 				console.log('Testing cookie: ' + $.cookie('Tony')); /* Result: undefined. */
 				
