@@ -11,9 +11,9 @@
  * 
  * Version: 0.1.0
  * 
- * Creation Date: 2013.09.28 10:16 ( Tony ).
+ * Creation Date: 2013.10.10 13:33 ( Tony ).
  * 
- * Last update: 2013.09.30 10:27 ( Tony ).
+ * Last update: 2013.10.10 14:21 ( Tony ).
  * 
  * License: ~
  * 
@@ -96,11 +96,9 @@
 			
 			'cdnjs/gridder/0.1.0/gridder',
 			
-			'cdnjs/jquery_title_modify/title.modify',
-			
-			'cdnjs/instalment_mall/master/validation.plus'
+			'cdnjs/jquery_title_modify/title.modify'
 		
-		], function (modernizr, SJ, cookie, gridder, modifyTitle, ftrValidation) {
+		], function (modernizr, SJ, cookie, gridder, modifyTitle) {
 			
 			SJ(function ($) {
 				

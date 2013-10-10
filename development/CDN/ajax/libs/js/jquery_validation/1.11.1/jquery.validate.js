@@ -84,8 +84,7 @@
 				
 			}
 			
-			// Add novalidate tag if HTML5.
-			this.attr("novalidate", "novalidate");
+			/*this.attr("novalidate", "novalidate");*/ // Add novalidate tag if HTML5.
 			
 			validator = new $.validator(options, this[0]);
 			

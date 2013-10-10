@@ -169,6 +169,18 @@
 			}
 			
 		},
+
+		onfocusout: function(element) { 
+
+			SJ(element).valid();
+
+		},
+
+		onkeyup: function(element) {
+
+			SJ(element).valid();
+
+		},
 		
 		errorElement: 'div',
 		

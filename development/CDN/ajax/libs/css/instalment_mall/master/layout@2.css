@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The private stylesheet of master page.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.10 13:33 ( Tony ).
+ * 
+ * Last update: 2013.10.34 14:21 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+/*
+888    888                        888
+888    888                        888
+888    888                        888
+8888888888  .d88b.   8888b.   .d88888  .d88b.  888d888
+888    888 d8P  Y8b     "88b d88" 888 d8P  Y8b 888P"
+888    888 88888888 .d888888 888  888 88888888 888
+888    888 Y8b.     888  888 Y88b 888 Y8b.     888
+888    888  "Y8888  "Y888888  "Y88888  "Y8888  888
+*/
+
+header .row {
+	
+	margin-bottom: 0 !important;
+	
+}
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Top Bar.
+*  ||----||
+  ___/  ___/
+*/
+
+.topBar {
+	
+	background-color: #e7e7e7;
+	
+}
+
+.leftH1st, .rightH1st {
+	
+	height: 32px;
+	
+}
+
+.h1st li {
+	
+	float: left;
+	
+	margin-top: 8px;
+	
+}
+
+.h1st a {
+	
+	padding: 0 19px 0 19px;
+	
+}
+
+.h1st a.more {
+	
+	padding-right: 23px;
+	
+}
+
+.h1st a.more > i {
+	
+	width: 13px;
+	
+	height: 7px;
+	
+	top: 4px;
+	
+	right: 0;
+	
+}
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Bottom Header.
+*  ||----||
+  ___/  ___/
+*/
+
+.leftH2nd {
+	
+	width: 200px;
+	
+	height: 101px;
+	
+}
+
+nav > ul  > li > a {
+	
+	width: 101px;
+	
+	height: 101px;
+	
+	padding-top: 52px;
+	
+}
+
+
+
+/* 
+8888888888                   888                     
+888                          888                     
+888                          888                     
+8888888     .d88b.   .d88b.  888888  .d88b.  888d888 
+888        d88""88b d88""88b 888    d8P  Y8b 888P"   
+888        888  888 888  888 888    88888888 888     
+888        Y88..88P Y88..88P Y88b.  Y8b.     888     
+888         "Y88P"   "Y88P"   "Y888  "Y8888  888             
+*/
+
+footer {
+	
+	min-height: 458px;
+	
+	height: auto !important;
+	
+	height: 458px;
+	
+	margin: 0 auto;
+	
+	background-color: #333;
+	
+}
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Footer Site Map.
+*  ||----||
+  ___/  ___/
+*/
+
+footer > .sitemap {
+	
+	margin-bottom: 0 !important;
+	
+}
+
+footer > .sitemap h4 {
+	
+	margin-top: 60px;
+	
+	margin-bottom: 27px;
+	
+}
+
+footer > .sitemap a {
+	
+	margin-bottom: 16px;
+	
+}
+
+footer > .sitemap > i {
+	
+	height: 1px;
+	
+	margin-top: 70px;
+	
+	background-color: #999;
+	
+}
+
+footer > .sitemap > .spColumn > div {
+	
+	height: 27px;
+	
+	width: auto;
+	
+	margin-top: 14px;
+	
+}
+
+/**
+ * 1. "display: inline-block;"的深入理解, http://www.planabc.net/2007/03/11/display_inline-block/
+ */
+
+footer > .sitemap > .spColumn > div > a {
+	
+	margin-left: 54px;
+	
+	padding: 4px 10px;
+	
+	*zoom: 1; /* 1 */
+	
+}
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Footer Copy Right.
+*  ||----||
+  ___/  ___/
+*/
+
+footer > .copyRight {
+	
+	height: 50px;
+	
+	padding-top: 16px;
+	
+	padding-left: 8px;
+	
+	margin-bottom: 0 !important;
+	
+}
+
+.ie7 .copyRight {
+	
+	width: 1192px;
+	
+	height: 33px;
+	
+}
