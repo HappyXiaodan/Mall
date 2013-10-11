@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.09.28 21:05 ( Tony ).
  * 
- * Last update: 2013.09.28 21:06 ( Tony ).
+ * Last update: 2013.10.11 11:23 ( Tony ).
  * 
  * License: ~
  * 
@@ -51,17 +51,26 @@ Y88b  d88P 888 Y88..88P 888 d88P 888  888 888
 	
 }
 
-body {
-	
-	background: white;
-	
-	color: #000;
-	
-	font: normal normal normal 14px/normal "新宋体";
-	
-	cursor: default;
-	
-}
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Custom scrollbars in webkit.
+*  ||----||
+  ___/  ___/
+  
+  Search key words => css webkit scrollbar
+  
+  Doc => http://css-tricks.com/custom-scrollbars-in-webkit/
+         
+         https://www.webkit.org/blog/363/styling-scrollbars/
+         
+		 http://almaer.com/blog/creating-custom-scrollbars-with-css-how-css-isnt-great-for-every-task
+         
+		 http://cssdeck.com/labs/css3-webkit-vertical-scrollbars
+*/
 
 ::-webkit-scrollbar {
 	
@@ -88,6 +97,115 @@ body {
 ::-webkit-scrollbar-thumb:horizontal {
 	
 	background-color: rgba(153, 153, 153, 1);
+	
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Style the placeholder of a form element.
+*  ||----||
+  ___/  ___/
+  
+  Search key words => css webkit placeholder color
+  
+  Doc => http://css-tricks.com/almanac/selectors/p/placeholder/
+         
+         https://developer.mozilla.org/zh-CN/docs/Web/CSS/:-moz-placeholder
+*/
+
+::-webkit-input-placeholder { /* WebKit browsers */
+
+    color: #aaa;
+
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+
+    color: #aaa;
+
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+
+    color: #aaa;
+
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+
+    color: #aaa;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Draw any selected text yellow on red background.
+*  ||----||
+  ___/  ___/
+*/
+
+::-moz-selection {
+	
+	color: #FFF;
+	
+	background-color: none; /* Safari */
+	
+}
+
+::selection {
+	
+	color: #FFF;
+	
+	background-color: none; /* Firefox */
+	
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Draw selected text in a paragraph white on black.
+*  ||----||
+  ___/  ___/
+*/
+
+p::-moz-selection {
+	
+	color: #FFF;
+	
+	background-color: #000; /* Safari */
+	
+}
+
+p::selection {
+	
+	color: #FFF;
+	
+	background-color: #000; /* Firefox */
+	
+}
+
+
+
+body {
+	
+	background: white;
+	
+	color: #000;
+	
+	font: normal normal normal 14px/normal "新宋体";
+	
+	cursor: default;
 	
 }
 
@@ -162,55 +280,5 @@ dfn[title] {
 	border-bottom: 1px dotted;
 	
 	cursor: help;
-	
-}
-
-/*
-		 (__)
-		 (oo)
-  /-------\/
- / |     ||----> Draw any selected text yellow on red background.
-*  ||----||
-  ___/  ___/
-*/
-
-::-moz-selection {
-	
-	color: #FFF;
-	
-	background-color: none; /* Safari */
-	
-}
-
-::selection {
-	
-	color: #FFF;
-	
-	background-color: none; /* Firefox */
-	
-}
-
-/*
-		 (__)
-		 (oo)
-  /-------\/
- / |     ||----> Draw selected text in a paragraph white on black.
-*  ||----||
-  ___/  ___/
-*/
-
-p::-moz-selection {
-	
-	color: #FFF;
-	
-	background-color: #000; /* Safari */
-	
-}
-
-p::selection {
-	
-	color: #FFF;
-	
-	background-color: #000; /* Firefox */
 	
 }

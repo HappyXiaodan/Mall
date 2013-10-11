@@ -1,13 +1,27 @@
-/*!
- * jQuery Validation Plugin 1.11.1
- *
- * http://bassistance.de/jquery-plugins/jquery-plugin-validation/
- * http://docs.jquery.com/Plugins/Validation
- *
- * Copyright 2013 Jörn Zaefferer
- * Released under the MIT license:
- *   http://www.opensource.org/licenses/mit-license.php
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: Javascript of form validation.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: http://docs.jquery.com/Plugins/Validation
+ * 
+ *       http://bassistance.de/jquery-plugins/jquery-plugin-validation/
+ * 
+ * Original Author: Jörn Zaefferer, Tony ( Shen Weizhong ).
+ * 
+ * Version: 1.11.1
+ * 
+ * Creation Date: 2013.10.07 14:04 ( Tony ).
+ * 
+ * Last update: 2013.10.10 21:02 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
  */
+
 (function (name, factory) {
 	
 	// See http://bugs.jquery.com/ticket/13335

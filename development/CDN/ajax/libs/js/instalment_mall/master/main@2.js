@@ -102,17 +102,23 @@
 			
 			SJ(function ($) {
 				
+				var nav = $("nav");
+				
+				
+				
 				/**
 				 * Navigation Demo.
 				 */
 				
-				$("nav").find('a').on('click', function (e) {
+				nav.find('a').on('click', function (e) {
 					
 					e.preventDefault();
 					
 					$(this).addClass('selected').closest('li').siblings().children().removeClass('selected');
 					
 				});
+				
+				
 				
 				/**
 				 * Modernizr component( Public ) test.
@@ -135,6 +141,10 @@
 				console.log('Testing cookie: ' + $.cookie('Tony')); /* Result: undefined. */
 				
 				
+				
+				/**
+				 * Development dependency: grid system.
+				 */
 				
 				gridder;
 				

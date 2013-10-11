@@ -102,6 +102,10 @@
 			
 			SJ(function ($) {
 				
+				var nav = $("nav");
+				
+				
+				
 				/**
 				 * Modernizr component( Public ) test.
 				 */
