@@ -32,13 +32,13 @@
 
 <!-- Begin | Html -->
 	
-	<!--[if IE 7]>          <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="zh">    <![endif]-->
+	<!--[if IE 7]>          <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" dir="ltr" lang="zh">    <![endif]-->
 	
-	<!--[if IE 8]>          <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="zh">    <![endif]-->
+	<!--[if IE 8]>          <html class="ie ie8 ie-lt10 ie-lt9 no-js" dir="ltr" lang="zh">    <![endif]-->
 	
-	<!--[if IE 9]>          <html class="ie ie9 ie-lt10 no-js" lang="zh" itemscope itemtype="http://schema.org/Store">    <![endif]-->
+	<!--[if IE 9]>          <html class="ie ie9 ie-lt10 no-js" dir="ltr" lang="zh" itemscope itemtype="http://schema.org/Store">    <![endif]-->
 	
-	<!--[if gt IE 9]><!-->  <html class="no-js" lang="zh" itemscope itemtype="http://schema.org/Store"> <!--<![endif]--> <!-- Application Cache, eg: <html manifest="manifest.appcache"></html> | Browser Compatibility, https://developer.mozilla.org/zh-CN/docs/HTML/Using_the_application_cache#.E6.B5.8F.E8.A7.88.E5.99.A8.E5.85.BC.E5.AE.B9.E6.80.A7 -->
+	<!--[if gt IE 9]><!-->  <html class="no-js" dir="ltr" lang="zh" itemscope itemtype="http://schema.org/Store"> <!--<![endif]--> <!-- Application Cache, eg: <html manifest="manifest.appcache"></html> | Browser Compatibility, https://developer.mozilla.org/zh-CN/docs/HTML/Using_the_application_cache#.E6.B5.8F.E8.A7.88.E5.99.A8.E5.85.BC.E5.AE.B9.E6.80.A7 -->
 		
 		
 		
@@ -69,6 +69,8 @@
 					<meta http-equiv="windows-Target" contect="_top"/> <!-- 强制页面在当前窗口中以独立页面显示，可以防止自己的网页被别人当作一个frame页调用； -->
 					
 					<meta name="keywords" content=""/>
+					
+					<meta name="Title" content="首页 | 汇通分期商城（ www.fenqimall.com ）"/>
 					
 					<meta name="description" content=""/>
 					
@@ -152,6 +154,14 @@
 						
 					<!-- End | Private Stylesheet ( Master ) -->
 					
+					<!-- Begin | Private Stylesheet ( Home ) -->
+						
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/home/layout.css"/> <!-- Layout -->
+						
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/home/index.css"/> <!-- Index -->
+						
+					<!-- End | Private Stylesheet ( Home ) -->
+					
 				<!-- End | Stylesheet -->
 				
 				<!-- Begin | Miscellaneous Function -->
@@ -162,7 +172,7 @@
 						
 						<script type="text/javascript">window.html5 = {'shivCSS': false};</script>
 						
-						<script type="text/javascript" src="../CDN/ajax/libs/js/html5shiv/3.6.2/html5shiv.min.js"></script>
+						<script type="text/javascript" src="../CDN/ajax/libs/js/html5shiv/3.7.0/html5shiv.min.js"></script>
 						
 					<![endif]-->
 					
@@ -178,13 +188,11 @@
 		
 		<!-- Begin | Body -->
 			
-			<body class="rela antialiased"> 
-				
-				
+			<body>
 				
 				<!-- Begin | Header -->
 					
-					<header class="fullWidth rela" itemscope itemtype="http://schema.org/WPHeader"> <!-- Blog, http://html5doctor.com/the-header-element/ | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header#Browser_compatibility -->
+					<header class="fullWidth" itemscope itemtype="http://schema.org/WPHeader"> <!-- Blog, http://html5doctor.com/the-header-element/ | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header#Browser_compatibility -->
 						
 						<!-- Begin | Top Bar -->
 							
@@ -252,9 +260,31 @@
 				
 				
 				
+				<!-- Begin | Promo -->
+					
+					<div class="idxPromo fullWidth rela">
+						
+						<div class="idxFltForm fullWidth absol">
+							
+							<div class="opacityOverlay fullWidth rela"></div>
+							
+							<div class="contentOverlay row rela opacityHalf">
+								
+								
+								
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				<!-- End | Promo -->
+				
+				
+				
 				<!-- Begin | Footer -->
 					
-					<footer class="fullWidth rela" itemscope itemtype="http://schema.org/WPFooter"> <!-- Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer#Browser_compatibility -->
+					<footer class="idexFooter fullWidth" itemscope itemtype="http://schema.org/WPFooter"> <!-- Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer#Browser_compatibility -->
 						
 						<!-- Begin | Form Area -->
 							
@@ -382,7 +412,7 @@
 				
 					<!-- Begin | Boot -->
 						
-						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/master/main" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
+						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/home/main" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
 						
 					<!-- End | Boot -->
 					
@@ -428,27 +458,9 @@
 					
 				<!-- End | JavaScript -->
 				
-				
-				
 			</body>
 			
 		<!-- End | Body -->
-		
-		
-		
-		<!-- 为了很好地防止缓存中出现 Web 页面，可在 HTML 文档的结尾放置另一个标头部分 -->
-		
-		<head>
-			
-			<meta http-equiv="pragma" content="no-cache"/>
-			
-			<meta http-equiv="cache-control" content="no-cache"/>
-			
-			<meta http-equiv="expires" content="0"/>
-			
-		</head>
-		
-		
 		
 	</html>
 	

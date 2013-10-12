@@ -1,7 +1,7 @@
 /**
  * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
  * 
- * Describe: JavaScript boot file ( Index Page ).
+ * Describe: The javascript boot file of first master page ( index.html ).
  * 
  * Further changes, comments: ~
  * 
@@ -13,7 +13,7 @@
  * 
  * Creation Date: 2013.09.28 10:16 ( Tony ).
  * 
- * Last update: 2013.10.11 11:01 ( Tony ).
+ * Last update: 2013.10.11 23:06 ( Tony ).
  * 
  * License: ~
  * 
@@ -98,17 +98,15 @@
 			
 			'cdnjs/jquery_title_modify/title.modify',
 			
-			'cdnjs/jquery_placeholder/0.1.0/jquery.placeholder',
-			
 			'cdnjs/instalment_mall/master/validation.plus'
-				
-		], function (modernizr, SJ, cookie, gridder, modifyTitle, placeholder) {
+			
+		], function (modernizr, SJ, cookie, gridder, modifyTitle) {
 			
 			SJ(function ($) {
 				
 				var nav = $("nav"),
 					
-					footerForm = $('#frmRegister');
+					footerForm = $('#mstFtr1stRgst');
 				
 				
 				
@@ -123,28 +121,6 @@
 					$(this).addClass('selected').closest('li').siblings().children().removeClass('selected');
 					
 				});
-				
-				
-				
-				/**
-				 * Modernizr component( Public ) test.
-				 */
-				
-				if (modernizr.canvas) {
-					
-					console.log('Support Canvas API.');
-					
-				}
-				
-				
-				
-				/**
-				 * Cookie component( Public ) test.
-				 */
-				
-				$.cookie('Tony', 'Male', {expires: 7, path: '/', domain: 'example.com', secure: false});
-				
-				console.log('Testing cookie: ' + $.cookie('Tony')); /* Result: undefined. */
 				
 				
 				
@@ -168,7 +144,7 @@
 				 * Footer registration form checker.
 				 */
 				
-				footerForm.check();
+				footerForm.formcheck();
 				
 			});
 			

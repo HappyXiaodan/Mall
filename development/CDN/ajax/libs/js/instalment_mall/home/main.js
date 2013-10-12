@@ -1,7 +1,7 @@
 /**
  * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
  * 
- * Describe: The javascript boot file of third master page ( index@3.html ).
+ * Describe: JavaScript boot file ( Index Page ).
  * 
  * Further changes, comments: ~
  * 
@@ -11,9 +11,9 @@
  * 
  * Version: 0.1.0
  * 
- * Creation Date: 2013.10.10 15:15 ( Tony ).
+ * Creation Date: 2013.09.28 10:16 ( Tony ).
  * 
- * Last update: 2013.10.10 16:45 ( Tony ).
+ * Last update: 2013.10.11 11:01 ( Tony ).
  * 
  * License: ~
  * 
@@ -96,13 +96,33 @@
 			
 			'cdnjs/gridder/0.1.0/gridder',
 			
-			'cdnjs/jquery_title_modify/title.modify'
-		
-		], function (modernizr, SJ, cookie, gridder, modifyTitle) {
+			'cdnjs/jquery_title_modify/title.modify',
+			
+			'cdnjs/jquery_placeholder/0.1.0/jquery.placeholder',
+			
+			'cdnjs/instalment_mall/master/validation.plus'
+				
+		], function (modernizr, SJ, cookie, gridder, modifyTitle, placeholder) {
 			
 			SJ(function ($) {
 				
-				var nav = $("nav");
+				var nav = $("nav"),
+					
+					footerForm = $('#frmRegister');
+				
+				
+				
+				/**
+				 * Navigation Demo.
+				 */
+				
+				nav.find('a').on('click', function (e) {
+					
+					e.preventDefault();
+					
+					$(this).addClass('selected').closest('li').siblings().children().removeClass('selected');
+					
+				});
 				
 				
 				
@@ -119,6 +139,14 @@
 				 */
 				
 				modifyTitle();
+				
+				
+				
+				/**
+				 * Footer registration form checker.
+				 */
+				
+				footerForm.check();
 				
 			});
 			
@@ -157,5 +185,5 @@
 		jq2x: 'ajax/libs/js/jquery/2.0.3/jquery.min'
 		
 	});
-		
+	
 }(window, document, requirejs, require));

@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.10 13:33 ( Tony ).
  * 
- * Last update: 2013.10.11 11:32 ( Tony ).
+ * Last update: 2013.10.12 09:57 ( Tony ).
  * 
  * License: ~
  * 
@@ -136,18 +136,6 @@ nav > ul  > li > a {
 888         "Y88P"   "Y88P"   "Y888  "Y8888  888             
 */
 
-footer {
-	
-	display: inline-block;
-	
-	*zoom: 1;
-	
-	margin: 0 auto;
-	
-	background-color: #333;
-	
-}
-
 /*
 		 (__)
 		 (oo)
@@ -157,13 +145,13 @@ footer {
   ___/  ___/
 */
 
-footer > .sitemap {
+.sitemap {
 	
 	margin-bottom: 0 !important;
 	
 }
 
-footer > .sitemap h4 {
+.sitemap h4 {
 	
 	margin-top: 60px;
 	
@@ -171,13 +159,13 @@ footer > .sitemap h4 {
 	
 }
 
-footer > .sitemap a {
+.sitemap a {
 	
 	margin-bottom: 16px;
 	
 }
 
-footer > .sitemap > i {
+.sitemap > i {
 	
 	height: 1px;
 	
@@ -187,7 +175,7 @@ footer > .sitemap > i {
 	
 }
 
-footer > .sitemap > .spColumn > div {
+.spColumn > div {
 	
 	height: 27px;
 	
@@ -201,7 +189,7 @@ footer > .sitemap > .spColumn > div {
  * 1. "display: inline-block;"的深入理解, http://www.planabc.net/2007/03/11/display_inline-block/
  */
 
-footer > .sitemap > .spColumn > div > a {
+.spColumn > div > a {
 	
 	margin-left: 54px;
 	
@@ -220,7 +208,7 @@ footer > .sitemap > .spColumn > div > a {
   ___/  ___/
 */
 
-footer > .copyRight {
+.copyRight {
 	
 	height: 50px;
 	

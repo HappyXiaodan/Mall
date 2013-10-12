@@ -62,7 +62,7 @@
 	 * 3. JP = {}, JP(Abbreviations): jQuery Plugin, The package all functions are stored within.
 	 */
 	
-	var pluginName = 'check',/* 1 */
+	var pluginName = 'formcheck',/* 1 */
 		
 		version = '0.1.0',/* 2 */
 		
@@ -152,41 +152,9 @@
 		
 		this.addFunctions();
 		
-		this.validate($this, opts);
+		this.valitodo($this, opts);
 		
 	};
-	
-	/**
-			.-=-==--==--.
-		   ..-=="  ,'o`)      `.
-		 ,'         `"'         \
-		:  (                     `.__...._
-		|                  )    /         `-=-.
-		:       ,vv.-._   /    /               `---==-._
-		 \/\/\/VV ^ d88`;'    /                         `.
-			 ``  ^/d88P!'    /             ,              `._
-				^/    !'   ,.      ,      /                  "-,,__,,--'""""-.
-			   ^/    !'  ,'  \ . .(      (         _           )  ) ) ) ))_,-.\
-			  ^(__ ,!',"'   ;:+.:%:a.     \:.. . ,'          )  )  ) ) ,"'    '
-			  ',,,'','     /o:::":%:%a.    \:.:.:         .    )  ) _,'
-			   """'       ;':::'' `+%%%a._  \%:%|         ;.). _,-""
-					  ,-='_.-'      ``:%::)  )%:|        /:._,"
-					 (/(/"           ," ,'_,'%%%:       (_,'
-									(  (//(`.___;        \
-									 \     \    `         `
-									  `.    `.   `.        :
-										\. . .\    : . . . :
-										 \. . .:    `.. . .:
-										  `..:.:\     \:...\
-										   ;:.:.;      ::...:
-										   ):%::       :::::;
-									   __,::%:(        :::::
-									,;:%%%%%%%:        ;:%::
-									  ;,--""-.`\  ,=--':%:%:\
-									 /"       "| /-".:%%%%%%%\
-													 ;,-"'`)%%)
-													/"      "| => dino
-	*/
 	
 	JP.Plugin.prototype.addFunctions = function () {
 		
@@ -198,50 +166,7 @@
 		
 	};
 	
-	
-	
-	/**
-													   .7
-										   \       , //
-										   |\.--._/|//
-										  /\ ) ) ).'/
-										 /(  \  // /
-										/(   J`((_/ \
-									   / ) | _\     /
-									  /|)  \  eJ    L
-									 |  \ L \   L   L
-									/  \  J  `. J   L
-									|  )   L   \/   \
-								   /  \    J   (\   /
-				 _....___         |  \      \   \```
-		  ,.._.-'        '''--...-||\     -. \   \
-		.'.=.'                    `         `.\ [ Y
-	   /   /                                  \]  J
-	  Y / Y                                    Y   L
-	  | | |          \                         |   L
-	  | | |           Y                        A  J
-	  |   I           |                       /I\ /
-	  |    \          I             \        ( |]/|
-	  J     \         /._           /        -tI/ |
-	   L     )       /   /'-------'J           `'-:.
-	   J   .'      ,'  ,' ,     \   `'-.__          \
-		\ T      ,'  ,'   )\    /|        ';'---7   /
-		 \|    ,'L  Y...-' / _.' /         \   /   /
-		  J   Y  |  J    .'-'   /         ,--.(   /
-		   L  |  J   L -'     .'         /  |    /\
-		   |  J.  L  J     .-;.-/       |    \ .' /
-		   J   L`-J   L____,.-'`        |  _.-'   |
-			L  J   L  J                  ``  J    |
-			J   L  |   L                     J    |
-			 L  J  L    \                    L    \
-			 |   L  ) _.'\                    ) _.'\
-			 L    \('`    \                  ('`    \
-			  ) _.'\`-....'                   `-....'
-			 ('`    \
-			  `-.___/
-	*/
-	
-	JP.Plugin.prototype.validate = function ($this, opts) {
+	JP.Plugin.prototype.valitodo = function ($this, opts) {
 		
 		$this.validate({
 			
@@ -265,15 +190,15 @@
 			
 			errorPlacement: function (error, element) {
 				
-				error.addClass('absol info box_round');
+				SJ(error).addClass('absol info box_round');
 				
-				error.insertAfter(element);
+				SJ(element).parent().append(error);
 				
 			},
 			
 			success: function(error) {
 				
-				error.remove();
+				SJ(error).remove();
 				
 			},
 			
@@ -289,11 +214,11 @@
 				
 				/* 1 */
 				
-				SJ(form).serialize(); /* 2 */
-				
-				console.log(SJ(form).serialize());
-				
-				//form.submit();
+				/*SJ(form).serialize();*/ /* 2 */
+
+				//SJ(form).valid();
+
+				form.submit();
 				
 			}
 			

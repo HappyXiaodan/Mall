@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The private stylesheet of home page.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.11 11:50 ( Tony ).
+ * 
+ * Last update: 2013.10.11 11:50 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+.idxPromo {
+	
+	background: url(../../../ui/mall/home/promo.jpg) center top no-repeat;
+	
+}
+
+.opacityOverlay {
+	
+	opacity: 0.7; /* Android 2.1+, Chrome 4+, Firefox 2+, IE 9+, iOS 3.2+, Opera 9+, Safari 3.1+ */
+	
+	-moz-opacity: 0.7; /* Old mozilla browser like netscape  */
+	
+	-khtml-opacity: 0.7; /* Really really old safari */ 
+	
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; /* IE8  */
+	
+	filter: alpha(opacity=70); /* IE5-7  */
+	
+	background-color: #000;
+	
+}

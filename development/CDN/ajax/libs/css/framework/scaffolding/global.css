@@ -116,26 +116,26 @@ Y88b  d88P 888 Y88..88P 888 d88P 888  888 888
          
          https://developer.mozilla.org/zh-CN/docs/Web/CSS/:-moz-placeholder
 */
-
-::-webkit-input-placeholder { /* WebKit browsers */
-
-    color: #aaa;
-
-}
-
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+/* WebKit browsers */
+::-webkit-input-placeholder {
 
     color: #aaa;
 
 }
-
-::-moz-placeholder { /* Mozilla Firefox 19+ */
+/* Mozilla Firefox 4 to 18 */
+:-moz-placeholder {
 
     color: #aaa;
 
 }
+/* Mozilla Firefox 19+ */
+::-moz-placeholder {
 
-:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #aaa;
+
+}
+/* Internet Explorer 10+ */
+:-ms-input-placeholder {
 
     color: #aaa;
 

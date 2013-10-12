@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The private layout stylesheet of master page.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.11 11:50 ( Tony ).
+ * 
+ * Last update: 2013.10.11 11:50 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+.idxPromo {
+	
+	height: 900px;
+	
+}
+
+.idxFltForm {
+	
+	height: 200px;
+	
+	bottom: 0;
+	
+}
+
+.opacityOverlay {
+	
+	z-index: 10;
+	
+	height: 200px;
+	
+}
+
+.contentOverlay {
+	
+	z-index: 20;
+	
+	height: 200px;
+	
+	top: -200px;
+	
+	background: #036;
+	
+}

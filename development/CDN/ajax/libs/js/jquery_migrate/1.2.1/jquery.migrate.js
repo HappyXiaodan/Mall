@@ -42,7 +42,7 @@
 	SJ.migrateWarnings = [];
     
 	// Set to true to prevent console output; migrateWarnings still maintained
-	SJ.migrateMute = false;
+	SJ.migrateMute = true;
     
 	// Show a message on the console so devs know we're active
 	if ( !SJ.migrateMute && window.console && window.console.log ) {

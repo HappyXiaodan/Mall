@@ -271,60 +271,14 @@
 	
 }
 
-
-
-/**
- * Display utilities
- * 
- * 1. "display: inline-block;"的深入理解, http://www.planabc.net/2007/03/11/display_inline-block/
- * 
- * 2. "Cross-Browser Inline-Block", http://blog.mozilla.org/webdev/2009/02/20/cross-browser-inline-block/
- */
-
-.inlineDisplay {
-	
-	display: inline !important;
-	
-}
-
-.inlineBlockDisplay {
-	
-	display: inline-block !important;
-	
-}
-
-.blockDisplay {
-	
-	display: block !important;
-	
-}
-
-.ableDisplay {
-	
-	display: table !important;
-	
-}
-
-.tableCellDisplay {
-	
-	display: table-cell !important;
-	
-}
-
 /**
  * Control visibility without affecting flow.
  */
 
-.isInvisible {
-	
-	visibility: hidden !important;
-	
-}
+.inlineDisplay {
 
-.isVisible {
-	
-	visibility: visible !important;
-	
+	display: inline !important;
+
 }
 
 .hide {
@@ -536,8 +490,6 @@ p.lead {
 	
 	height: 10px;
 	
-	height: expression(this.scrollHeight < 10 ? "10px" : "auto"); /* Special for lower version of IE. Not Recommended. */
-	
 }
 
 .minHeight_30 {
@@ -547,8 +499,6 @@ p.lead {
 	height: auto !important;
 	
 	height: 30px;
-	
-	height: expression(this.scrollHeight < 31 ? "30px" : "auto"); /* Special for lower version of IE. Not Recommended. */
 	
 }
 
@@ -560,8 +510,6 @@ p.lead {
 	
 	height: 50px;
 	
-	height: expression(this.scrollHeight < 51 ? "50px" : "auto"); /* Special for lower version of IE. Not Recommended. */
-	
 }
 
 .minHeight_100 {
@@ -571,8 +519,6 @@ p.lead {
 	height: auto !important;
 	
 	height: 100px;
-	
-	height: expression(this.scrollHeight < 101 ? "100px" : "auto"); /* Special for lower version of IE. Not Recommended. */
 	
 }
 
@@ -584,8 +530,6 @@ p.lead {
 	
 	height: 250px;
 	
-	height: expression(this.scrollHeight < 251 ? "250px" : "auto"); /* Special for lower version of IE. Not Recommended. */
-	
 }
 
 .minHeight_500 {
@@ -595,8 +539,6 @@ p.lead {
 	height: auto !important;
 	
 	height: 500px;
-	
-	height: expression(this.scrollHeight < 501 ? "500px" : "auto"); /* Special for lower version of IE. Not Recommended. */
 	
 }
 
@@ -608,8 +550,6 @@ p.lead {
 	
 	height: 750px;
 	
-	height: expression(this.scrollHeight < 751 ? "750px" : "auto"); /* Special for lower version of IE. Not Recommended. */
-	
 }
 
 .minHeight_1000 {
@@ -620,8 +560,6 @@ p.lead {
 	
 	height: 1000px;
 	
-	height: expression(this.scrollHeight < 1001 ? "1000px" : "auto"); /* Special for lower version of IE. Not Recommended. */
-	
 }
 
 .minHeight_2000 {
@@ -631,8 +569,6 @@ p.lead {
 	height: auto !important;
 	
 	height: 2000px;
-	
-	height: expression(this.scrollHeight < 2001 ? "2000px" : "auto"); /* Special for lower version of IE. Not Recommended. */
 	
 }
 
@@ -774,7 +710,7 @@ p.lead {
 	
 	font-style: normal;
 	
-}
+}-
 
 .box_tabsize { /* This is an experimental technology : The tab-size CSS property is used to customize the width of a tab (U+0009) character . */
 	

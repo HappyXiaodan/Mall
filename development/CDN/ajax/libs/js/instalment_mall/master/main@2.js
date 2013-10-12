@@ -13,7 +13,7 @@
  * 
  * Creation Date: 2013.10.10 13:33 ( Tony ).
  * 
- * Last update: 2013.10.10 14:21 ( Tony ).
+ * Last update: 2013.10.12 10:00 ( Tony ).
  * 
  * License: ~
  * 
@@ -117,28 +117,6 @@
 					$(this).addClass('selected').closest('li').siblings().children().removeClass('selected');
 					
 				});
-				
-				
-				
-				/**
-				 * Modernizr component( Public ) test.
-				 */
-				
-				if (modernizr.canvas) {
-					
-					console.log('Support Canvas API.');
-					
-				}
-				
-				
-				
-				/**
-				 * Cookie component( Public ) test.
-				 */
-				
-				$.cookie('Tony', 'Male', {expires: 7, path: '/', domain: 'example.com', secure: false});
-				
-				console.log('Testing cookie: ' + $.cookie('Tony')); /* Result: undefined. */
 				
 				
 				

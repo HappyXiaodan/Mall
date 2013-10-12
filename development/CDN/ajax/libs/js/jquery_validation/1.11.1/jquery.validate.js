@@ -633,7 +633,7 @@
 					
 				}
 				
-				var s_delegate = "[type='text'], [type='password'], [type='file'], select, textarea, " +
+				var s_delegate = ":text, [type='password'], [type='file'], select, textarea, " +
 						"[type='number'], [type='search'] ,[type='tel'], [type='url'], " +
 						"[type='email'], [type='datetime'], [type='date'], [type='month'], " +
 						"[type='week'], [type='time'], [type='datetime-local'], " +

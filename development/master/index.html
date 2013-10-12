@@ -60,8 +60,6 @@
 					
 					<meta name="google" content="notranslate"/> <!-- When we recognize that the contents of a page are not in the language that the user is likely to want to read, we often provide a link to a translation in the search results. In general, this gives you the chance to provide your unique and compelling content to a much larger group of users. However, there may be situations where this is not desired. This meta tag tells Google that you don't want us to provide a translation for this page. -->
 					
-					<meta http-equiv="pragma" content="no-cache"/> <!-- HTTP/1.0 -->
-					
 					<meta http-equiv="cache-control" content="no-cache"/> <!-- content="public", or "private", "no-cache", "must-revalidate" , specific time.Use the Cache control: public directive to enable HTTPS caching for Firefox.Some versions of Firefox require that the Cache control: public header to be set in order for resources sent over SSL to be cached on disk, even if the other caching headers are explicitly set. Although this header is normally used to enable caching by proxy servers (as described below), proxies cannot cache any content sent over HTTPS, so it is always safe to set this header for HTTPS resources. -->
 					
 					<meta http-equiv="expires" content="0"/> <!-- content="max-age", or specific time. Set Expires to a minimum of one month, and preferably up to one year, in the future. (We prefer Expires over Cache-Control: max-age because it is is more widely supported.) Do not set it to more than one year in the future, as that violates the RFC guidelines.If you know exactly when a resource is going to change, setting a shorter expiration is okay. But if you think it "might change soon" but don't know when, you should set a long expiration and use URL fingerprinting (described below). Setting caching aggressively does not "pollute" browser caches: as far as we know, all browsers clear their caches according to a Least Recently Used algorithm; we are not aware of any browsers that wait until resources expire before purging them. -->
@@ -162,7 +160,7 @@
 						
 						<script type="text/javascript">window.html5 = {'shivCSS': false};</script>
 						
-						<script type="text/javascript" src="../CDN/ajax/libs/js/html5shiv/3.6.2/html5shiv.min.js"></script>
+						<script type="text/javascript" src="../CDN/ajax/libs/js/html5shiv/3.7.0/html5shiv.min.js"></script>
 						
 					<![endif]-->
 					
@@ -252,23 +250,27 @@
 				
 				
 				
+				<!-- TODO ........................................................................................................ -->
+				
+				
+				
 				<!-- Begin | Footer -->
 					
-					<footer class="fullWidth rela" itemscope itemtype="http://schema.org/WPFooter"> <!-- Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer#Browser_compatibility -->
+					<footer class="mstFtr1st fullWidth rela" itemscope itemtype="http://schema.org/WPFooter"><!-- Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer#Browser_compatibility -->
 						
 						<!-- Begin | Form Area -->
 							
-							<div class="rela row formArea clearfix">
+							<div class="rela row mstFtr1stFrmArea clearfix">
 								
 								<!-- Begin | Footer Registration Form -->
 									
-									<form id="frmRegister" class="grid grid_11 clearfix" name="frmRegister" action="" method="post">
+									<form id="mstFtr1stRgst" class="grid grid_11 clearfix" name="mstFtr1stRgst" action="" method="post">
 										
 										<div class="rela field grid grid_3 box_round">
 											
 											<i class="left blockDisplay"></i>
 											
-											<input id="userName" class="left" name="userName" type="text" minlength="2" placeholder="用户名" required/>
+											<input id="userName" class="left" name="userName" type="text" placeholder="用户名"/>
 											
 										</div>
 										
@@ -276,7 +278,7 @@
 											
 											<i class="left blockDisplay"></i>
 											
-											<input id="userPass" class="left" name="userPass" type="password" minlength="6" placeholder="密码" required/>
+											<input id="userPass" class="left" name="userPass" type="password" placeholder="密码"/>
 											
 										</div>
 										
@@ -284,11 +286,11 @@
 											
 											<i class="left blockDisplay"></i>
 											
-											<input id="userPassCheck" class="left" name="userPassCheck" type="password" minlength="6" placeholder="再输入密码" required/>
+											<input id="userPassCheck" class="left" name="userPassCheck" type="password" placeholder="再输入密码"/>
 											
 										</div>
-										
-										<button type="submit" class="grid btnRegister box_round">注册</button>
+
+										<button type="submit" class="grid btnRegister box_round">注册</button><!-- The <button> element is supported in all browsers tracked here, http://caniuse.com/#search=button -->
 										
 									</form>
 									
@@ -346,7 +348,7 @@
 									
 									<div>
 										
-										<a class="inlineDisplay cleanLink" href="#">关注我们</a>
+										<a class="cleanLink" href="#">关注我们</a>
 										
 									</div>
 									

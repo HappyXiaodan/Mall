@@ -5,7 +5,7 @@
 /**
  * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
  * 
- * Describe: The private stylesheet of master page.
+ * Describe: The private layout stylesheet of master page.
  * 
  * Further changes, comments: ~
  * 
@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.02 15:48 ( Tony ).
  * 
- * Last update: 2013.10.11 11:32 ( Tony ).
+ * Last update: 2013.10.12 09:57 ( Tony ).
  * 
  * License: ~
  * 
@@ -136,18 +136,6 @@ nav > ul  > li > a {
 888         "Y88P"   "Y88P"   "Y888  "Y8888  888             
 */
 
-footer {
-	
-	display: inline-block;
-	
-	*zoom: 1;
-	
-	margin: 0 auto;
-	
-	background-color: #333;
-	
-}
-
 /*
 		 (__)
 		 (oo)
@@ -157,7 +145,7 @@ footer {
   ___/  ___/
 */
 
-footer > .formArea {
+.mstFtr1stFrmArea {
 	
 	z-index: 5;
 	
@@ -165,7 +153,7 @@ footer > .formArea {
 	
 }
 
-footer > .formArea > #frmRegister {
+#mstFtr1stRgst {
 	
 	height: 189px;
 	
@@ -175,13 +163,13 @@ footer > .formArea > #frmRegister {
 	
 }
 
-footer > .formArea > #frmRegister > * {
+#mstFtr1stRgst > * {
 	
 	margin-top: 66px;
 	
 }
 
-footer > .formArea > #frmRegister > .field > .info {
+.info {
 	
 	z-index: 7;
 	
@@ -205,8 +193,8 @@ footer > .formArea > #frmRegister > .field > .info {
 	
 }
 
-footer > .formArea > #frmRegister > .field > .info:before,
-footer > .formArea > #frmRegister > .field > .info:after {
+.info:before,
+.info:after {
 	
 	content: '';
 	
@@ -224,7 +212,7 @@ footer > .formArea > #frmRegister > .field > .info:after {
 	
 }
 
-footer > .formArea > #frmRegister > .field > .info:before {
+.info:before {
 	
 	top: -13px;
 	
@@ -232,7 +220,7 @@ footer > .formArea > #frmRegister > .field > .info:before {
 	
 }
 
-footer > .formArea > #frmRegister > .field > .info:after {
+.info:after {
 	
 	top: -13px;
 	
@@ -240,7 +228,7 @@ footer > .formArea > #frmRegister > .field > .info:after {
 	
 }
 
-footer > .formArea > #frmRegister > button {
+#mstFtr1stRgst > button {
 	
 	width: 122px;
 	
@@ -248,19 +236,19 @@ footer > .formArea > #frmRegister > button {
 	
 }
 
-.ie7 .formArea > #frmRegister > button, .ie8 .formArea > #frmRegister > button {
+.ie7 #mstFtr1stRgst > button, .ie8 #mstFtr1stRgst > button {
 	
 	height: 50px;
 	
 }
 
-footer > .formArea > #frmRegister > .field {
+.field {
 	
 	height: 50px;
 	
 }
 
-footer > .formArea > #frmRegister > .field > i {
+.field > i {
 	
 	width: 24px;
 	
@@ -272,7 +260,7 @@ footer > .formArea > #frmRegister > .field > i {
 	
 }
 
-footer > .formArea > #frmRegister > .field > input {
+.field > input {
 	
 	width: 190px;
 	
@@ -282,7 +270,7 @@ footer > .formArea > #frmRegister > .field > input {
 	
 }
 
-footer > .formArea > a {
+.mstFtr1stFrmArea > a {
 	
 	width: 100px;
 	
@@ -294,7 +282,7 @@ footer > .formArea > a {
 	
 }
 
-.ie7 .formArea > a {
+.ie7 .mstFtr1stFrmArea > a {
 	
 	height: 36px;
 	
@@ -311,13 +299,13 @@ footer > .formArea > a {
   ___/  ___/
 */
 
-footer > .sitemap {
+.sitemap {
 	
 	margin-bottom: 0 !important;
 	
 }
 
-footer > .sitemap h4 {
+.sitemap h4 {
 	
 	margin-top: 27px;
 	
@@ -325,13 +313,13 @@ footer > .sitemap h4 {
 	
 }
 
-footer > .sitemap a {
+.sitemap a {
 	
 	margin-bottom: 16px;
 	
 }
 
-footer > .sitemap > div {
+.sitemap > div {
 	
 	height: 219px;
 	
@@ -339,7 +327,7 @@ footer > .sitemap > div {
 	
 }
 
-footer > .sitemap > i {
+.sitemap > i {
 	
 	height: 1px;
 	
@@ -347,7 +335,7 @@ footer > .sitemap > i {
 	
 }
 
-footer > .sitemap > .spColumn > div {
+.spColumn > div {
 	
 	height: 27px;
 	
@@ -361,7 +349,9 @@ footer > .sitemap > .spColumn > div {
  * 1. "display: inline-block;"的深入理解, http://www.planabc.net/2007/03/11/display_inline-block/
  */
 
-footer > .sitemap > .spColumn > div > a {
+.spColumn > div > a {
+
+	display: inline;
 	
 	margin-left: 54px;
 	
@@ -380,7 +370,7 @@ footer > .sitemap > .spColumn > div > a {
   ___/  ___/
 */
 
-footer > .copyRight {
+.copyRight {
 	
 	height: 50px;
 	
