@@ -108,7 +108,7 @@
 				
 				var nav = $("nav"),
 					
-					footerForm = $('#frmRegister');
+					footerForm = $('#mstFtr1stRgst');
 				
 				
 				
@@ -146,7 +146,7 @@
 				 * Footer registration form checker.
 				 */
 				
-				footerForm.check();
+				footerForm.formcheck();
 				
 			});
 			

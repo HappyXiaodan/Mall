@@ -34,25 +34,25 @@
 
 .idxFltForm {
 	
-	height: 200px;
-	
 	bottom: 0;
 	
+}
+
+.fltFormHeight {
+	
+	height: 200px;
+
 }
 
 .opacityOverlay {
 	
 	z-index: 10;
 	
-	height: 200px;
-	
 }
 
 .contentOverlay {
 	
 	z-index: 20;
-	
-	height: 200px;
 	
 	top: -200px;
 	
