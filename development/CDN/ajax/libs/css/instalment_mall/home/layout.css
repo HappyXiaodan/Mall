@@ -5,7 +5,7 @@
 /**
  * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
  * 
- * Describe: The private layout stylesheet of master page.
+ * Describe: The private layout stylesheet of home page.
  * 
  * Further changes, comments: ~
  * 
@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.11 11:50 ( Tony ).
  * 
- * Last update: 2013.10.11 11:50 ( Tony ).
+ * Last update: 2013.10.13 16:15 ( Tony ).
  * 
  * License: ~
  * 
@@ -25,6 +25,15 @@
  */
 
 
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> First promo.
+*  ||----||
+  ___/  ___/
+*/
 
 .idxPromo {
 	
@@ -56,6 +65,240 @@
 	
 	top: -200px;
 	
-	background: #036;
+}
+
+#idxFltRgst {
 	
+	height: 189px;
+	
+	margin-right: 0;
+	
+	margin-left: 0;
+	
+}
+
+#idxFltRgst > * {
+	
+	margin-top: 75px;
+	
+}
+
+.idxFltSubmit {
+	
+	width: 122px;
+	
+	height: 45px;
+	
+}
+
+.ie7 .idxFltSubmit, .ie8 .idxFltSubmit {
+	
+	height: 50px;
+	
+}
+
+.idxFltFormArea > a {
+	
+	width: 100px;
+	
+	height: 50px;
+	
+	padding-top: 12px;
+	
+	margin: 75px 15px 0 0;
+	
+}
+
+.ie7 .idxFltFormArea > a {
+	
+	height: 36px;
+	
+	*zoom: 1;
+	
+}
+
+.idxFltField {
+	
+	height: 50px;
+	
+}
+
+.idxFltField > i {
+	
+	width: 24px;
+	
+	height: 22px;
+	
+	margin-left: 21px;
+	
+	margin-top: 14px;
+	
+}
+
+.idxFltField > input {
+	
+	width: 190px;
+	
+	margin-left: 21px;
+	
+	margin-top: 13px;
+	
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Second promo.
+*  ||----||
+  ___/  ___/
+*/
+
+.idxPromo2nd {
+
+	height: 1000px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Third promo.
+*  ||----||
+  ___/  ___/
+*/
+
+.idxPromo3rd {
+
+	height: 450px;
+	
+}
+
+
+.idxPromo3rd > div {
+
+	width: 758px;
+
+	height:  186px;
+
+	margin: 0 auto;
+
+	top: 125px;
+
+}
+
+.atlHead {
+
+	width: 758px;
+
+	height:  80px;
+
+}
+
+.picHeadCol {
+
+	width:  80px;
+
+	height:  106px;
+
+}
+
+.picHeadCol > div {
+
+	height: 80px;
+
+	width: 80px;
+
+}
+
+.promoComment {
+
+	width: 658px;
+
+	margin-left: 20px;
+
+}
+
+.promoComment > h4 {
+
+	margin-top: 0;
+
+	margin-bottom: 10px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Recommend products list.
+*  ||----||
+  ___/  ___/
+*/
+
+/* Navigation style title. */
+
+.idxProTitle {
+
+	margin-top: 100px;
+
+	margin-bottom: 26px;
+
+}
+
+.idxProTitle > i {
+
+	height: 2px;
+
+}
+
+.idxProNav {
+
+	display: inline-block;
+
+	*display: inline;
+
+	*zoom: 1;
+	
+	font-size: 24px;
+	
+	font-family: "微软雅黑";
+
+	margin-bottom: 25px;
+
+	margin-left: 15px;
+
+}
+
+.idxProNav > li {
+	
+	float: left;
+	
+}
+
+.idxProNavLine {
+
+	padding: 0 15px;
+
+}
+
+/* Specific product list. */
+
+.idxProList {
+
+	margin-bottom: 88px;
+
+}
+
+.idxProList > a {
+
+	margin-bottom: 30px;
+
 }

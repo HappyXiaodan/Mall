@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The private stylesheet of product list page.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.14 16:22 ( Tony ).
+ * 
+ * Last update: 2013.10.14 18:23; ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Slider.
+*  ||----||
+  ___/  ___/
+*/
+
+/*#sliderImg > li {
+
+	background: #f8e9db;
+
+}*/
+
+#sliderImg > li > img {
+
+	margin: 0 auto;
+
+}
+
+/* Tony appended this selector. */
+
+#sliderImg > li {
+
+	background-color: #f8e9db;
+
+}
+
+.sliderBtnBox > .sliderBtn {
+
+	background-color: #939393;
+
+}
+
+/* when click the slider's buttons, they change styles via javascript(sliderbar.js line123).
+   (a.sliderBtn) */
+.sliderBtnBox > .sliderBtn.active {
+
+	background-color: #f90;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Category.
+*  ||----||
+  ___/  ___/
+*/
+
+.categoryWrapper {
+
+	margin-bottom: 40px;
+
+}
+
+.category {
+
+	height: 98px;
+
+	border-bottom: 3px solid #f90;
+
+}
+
+.category > li {
+
+	text-align: center;
+
+}
+
+.category > li > a.categoryTitle {
+
+	font-size: 24px;
+
+}
+
+.category > li > a {
+
+	text-align: center;
+
+	color: #999;
+
+}
+
+.category > li > span {
+
+	color: #dfdede;
+
+	cursor: default;
+
+}
+
+/* when click the primary category's links, label 'a' change styles via javascript(listFilter.js line25).
+   (a.categoryTitle, a.categoryPhone, a.categoryComputer, a.categoryCamera, a.categoryPad) */
+.categoryAClick { 
+
+	color: #333 !important;
+
+	font-size: 24px;
+
+	margin-top: 50px !important;
+
+}
+
+.productType > li, .productBrand > li {
+
+	font-size: 14px;
+
+	line-height: 22px;
+
+}
+
+.productType > li > a, .productBrand > li > a {
+
+	padding:0 5px;
+
+}
+
+/* when hover over or click the subcategory's links, label 'a' should change styles via javascript(listFilter.js line37).
+   (a in ul.productType and ul.productBrand) */
+.productType > li > a:hover, .productBrand > li > a:hover, .productAClick{
+
+	background-color: #f90;
+
+	color: #fff;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Product list.
+*  ||----||
+  ___/  ___/
+*/
+
+.productList > ul > li {
+
+	background-color: #fff;
+
+}
+
+.productImage {
+
+	margin-top: 60px;
+
+	width: 270px;
+
+	height: 300px;
+
+}
+
+.productDesc, .otherPeriods {
+
+	font:12px/normal "宋体";
+
+}
+
+.loading {
+
+	text-align: center;
+
+}

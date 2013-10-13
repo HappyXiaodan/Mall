@@ -24,6 +24,8 @@
  * Copyright: ~
  */
 
+body { background-color: #f1f1f1; }
+
 /*
 888    888                        888
 888    888                        888
@@ -34,6 +36,12 @@
 888    888 Y8b.     888  888 Y88b 888 Y8b.     888
 888    888  "Y8888  "Y888888  "Y88888  "Y8888  888
 */
+
+.mstHdr2nd {
+
+	background-color: #FFF;
+
+}
 
 /*
 		 (__)

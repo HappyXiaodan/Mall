@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The private layout stylesheet of product list page.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.14 16:22 ( Tony ).
+ * 
+ * Last update: 2013.10.14 18:33 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Slider.
+*  ||----||
+  ___/  ___/
+*/
+
+#sliderWrapper {
+
+	width: 100%;
+
+	min-width: 1200px;
+
+	height: 397px;
+
+	z-index: 1;
+
+	overflow: hidden;
+
+}
+
+#sliderImg {
+
+	height: 397px;
+
+	z-index: 2;
+
+	width: 100%;
+
+}
+
+#sliderImg > li {
+
+	width: 100%;
+
+	position: absolute;
+
+	z-index: 3;
+
+	left: 0;
+
+	display: none;
+
+}
+
+#sliderImg > li > img {
+
+	display: block;
+
+	width: 1171px;
+
+	height: 397px;
+
+	margin: 0 auto;
+
+}
+
+.sliderBtnWrapper {
+
+	position: absolute;
+
+	width: 1170px;
+
+	height: 397px;
+
+	z-index: 20;
+
+	top: 0;
+
+	left: 50%;
+
+	margin-left: -585px;
+
+}
+
+.sliderBtnBox {
+
+	position: absolute;
+
+	z-index: 20;
+
+	top: 360px;
+
+	right: 20px;
+
+}
+
+.sliderBtn {
+
+	float: left;
+
+	display: block;
+
+	width: 18px;
+
+	height: 18px;
+
+	margin-left: 13px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Category.
+*  ||----||
+  ___/  ___/
+*/
+
+.categoryWrapper {
+
+	margin-bottom: 40px;
+
+}
+
+.category {
+
+	height: 98px;
+
+	border-bottom: 3px solid #f90;
+
+}
+
+.category > li {
+
+	float: left;
+
+}
+
+.category > li > a.categoryTitle {
+
+	margin: 50px 30px 0 0;
+
+}
+
+.category > li > a {
+
+	display: inline-block;
+
+	margin: 58px 15px 0;
+
+}
+
+.subCategory {
+
+	width: 1168px;
+
+	height: 100px;
+
+	border: 1px solid #ccc;
+
+	border-top: 0;
+
+}
+
+.subCategoryPhone, .subCategoryComputer, .subCategoryCamera, .subCategoryPad {
+
+	display: none;
+
+}
+
+.productType {  /* only "subCategoryPhone" own */
+
+	margin-top: 25px;
+
+	margin-bottom: -17px !important;
+
+}
+
+.productBrand {
+
+	margin-top: 25px;
+
+}
+
+.productType > li, .productBrand > li {
+
+	float: left;
+
+	margin: 0 22px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Product list.
+*  ||----||
+  ___/  ___/
+*/
+
+/* Tony appended the following stylesheet. */
+
+.productList {
+
+	margin-bottom: 350px;
+
+}
+
+.productList > ul {
+
+	width: 1200px;
+
+
+	/* Tony appended the following stylesheet. Just leave room for the product list. In order to avoid obvious page flickering. */
+
+	min-height: 500px;
+
+	height: auto !important;
+
+	height: 500px;
+
+}
+
+.productList > ul > li {
+
+	height: 526px;
+
+	margin-bottom: 30px;
+
+	border-bottom: 4px solid #e1e1e1;
+
+}
+
+.productImage {
+
+	margin-top: 60px;
+
+}
+
+.productTitle {
+
+	margin-top: 25px;
+
+}
+
+.productDesc, .productPrice, .otherPeriods {
+
+	margin-top: 15px;
+
+}

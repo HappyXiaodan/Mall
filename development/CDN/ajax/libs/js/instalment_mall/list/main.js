@@ -1,7 +1,7 @@
 /**
  * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
  * 
- * Describe: JavaScript boot file ( Index Page ).
+ * Describe: The javascript boot file of product list page ( list/index.html ).
  * 
  * Further changes, comments: ~
  * 
@@ -11,9 +11,9 @@
  * 
  * Version: 0.1.0
  * 
- * Creation Date: 2013.09.28 10:16 ( Tony ).
+ * Creation Date: 2013.10.13 16:28 ( Tony ).
  * 
- * Last update: 2013.10.11 11:01 ( Tony ).
+ * Last update: 2013.10.13 18:06 ( Tony ).
  * 
  * License: ~
  * 
@@ -93,27 +93,25 @@
 			'jquery',
 			
 			'cdnjs/jquery_cookie/1.3.1/jquery.cookie.min',
+
+			'cdnjs/jquery_dslider/0.1.0/jquery.dslider',
+
+			'cdnjs/jquery_grid_list/0.1.0/jquery.grid.list',
 			
 			'cdnjs/gridder/0.1.0/gridder',
 			
-			'cdnjs/jquery_title_modify/title.modify',
-			
-			'cdnjs/instalment_mall/master/validation.plus'
-			
-		], function (modernizr, SJ, cookie, gridder, modifyTitle) {
+			'cdnjs/jquery_title_modify/title.modify'
+		
+		], function (modernizr, SJ, cookie, DSlider, gridList, gridder, modifyTitle) {
 			
 			SJ(function ($) {
 				
-				var nav = $("nav"),
-					
-					footerForm = $('#mstFtr1stRgst'),
-					
-					idxFltRgst = $('#idxFltRgst');
+				var nav = $("nav");
 				
 				
 				
 				/**
-				 * Navigation Demo.
+				 * Navigation demo.
 				 */
 				
 				nav.find('a').on('click', function (e) {
@@ -123,6 +121,24 @@
 					$(this).addClass('selected').closest('li').siblings().children().removeClass('selected');
 					
 				});
+				
+				
+				
+				/**
+				 * D-Slider boot.
+				 */
+				
+				$('#sliderWrapper').sliderbar({
+
+					onceSpeed: 500,
+
+					autoSpeed: 3000,
+
+					start: 1
+
+				});
+				
+				gridList.init();
 				
 				
 				
@@ -140,30 +156,7 @@
 				
 				modifyTitle();
 				
-				
-				
-				/**
-				 * Footer registration form checker.
-				 */
-				idxFltRgst.formcheck();
-				
-				footerForm.formcheck();
-				
-				
-				
-				/**
-				 * First promo animation.
-				 */
-				
-				//var winValidHeight = $(window).height();
-				
-				//$('.idxPromo').height(winValidHeight-133);
-				
-				/*$('.idxFltForm').fadeIn('fast');*/
-				
 			});
-			
-			
 			
 		});
 		
@@ -200,5 +193,5 @@
 		jq2x: 'ajax/libs/js/jquery/2.0.3/jquery.min'
 		
 	});
-	
+		
 }(window, document, requirejs, require));
