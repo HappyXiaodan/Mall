@@ -1,7 +1,7 @@
 /**
  * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
  * 
- * Describe: The javascript boot file of third master page ( index@3.html ).
+ * Describe: The javascript boot file of third master page ( ~/release/master/index@3.html ).
  * 
  * Further changes, comments: ~
  * 
@@ -13,7 +13,7 @@
  * 
  * Creation Date: 2013.10.14 13:32 ( Tony ).
  * 
- * Last update: 2013.10.14 13:39 ( Tony ).
+ * Last update: 2013.10.14 14:04 ( Tony ).
  * 
  * License: ~
  * 
