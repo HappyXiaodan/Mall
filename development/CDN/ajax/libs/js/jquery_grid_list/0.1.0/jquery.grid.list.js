@@ -35,7 +35,7 @@
 	
 	if ( hasDefine ){ // AMD Module
 		
-		define(['jquery'], theModule);
+		define(['jquery', 'cdnjs/jquery_xdomainrequest/1.0.1/jquery.xdomainrequest'], theModule);
 		
 	} else if ( hasExports ) { // Node.js Module (commonjs compatible)
 		
@@ -91,7 +91,7 @@
 
 			$.ajax({
 
-				type: 'POST',
+				type: 'GET',
 
 				url: "http://192.168.0.107:8080/fenqimall/gsonUtilResp",
 
@@ -120,6 +120,12 @@
 						 + "#" + "\" class=\"fontBlue\">查看其他期数 &raquo;</a></p></li>"
 
 					});
+
+					if (data.length < 16) {
+
+						$('.productList').data('loading-status', 'off');
+
+					}
 
 					$('.productList').children('ul').append(liObj);
 
@@ -182,13 +188,21 @@
 
 						loading = true; /* 3 */ 
 
-						$('<h3/>').addClass('row loading').html('正在加载...').insertAfter($('.productList').find('ul'));
+						if ($('.productList').data('loading-status') === 'off') {
+
+							$('<h3/>').addClass('row loading').html('已加载完成').insertAfter($('.productList').find('ul'));
+
+						} else {
+
+							$('<h3/>').addClass('row loading').html('正在加载...').insertAfter($('.productList').find('ul'));
+
+						}
 						
-						i = i + 1; /* 4 */ 
+						i = i + 1; /* 4 */
 
 						$.ajax({  /* 5 */
 
-							type: 'POST',
+							type: 'GET',
 
 							url: "http://192.168.0.107:8080/fenqimall/gsonUtilResp",
 
@@ -217,6 +231,12 @@
 									 + "#" + "\" class=\"fontBlue\">查看其他期数 &raquo;</a></p></li>"
 
 								});
+
+								if (data.length < 16) {
+
+									$('.productList').data('loading-status', 'off');
+
+								}
 
 								$('.loading').remove(); /* 6 */ 
 								
@@ -280,7 +300,11 @@
 
 				e.preventDefault();
 
+				$('.productList').data('loading-status', 'on');
+
 				$(window).off('scroll'); /* 1 */
+
+				loading = false;
 
 				scrollEvent.done(0, "all", "all");
 
@@ -311,13 +335,11 @@
 	/**
 	 * 'a#categoryPhone' clickEvent.
 	 *
-	 * 1. after click 'a#categoryPhone'(手机), reset window's scrolling event.
+	 * 1. change 'a#categoryPhone' style.
 	 *
-	 * 2. change 'a#categoryPhone' style.
+	 * 2. show brand list.
 	 *
-	 * 3. show brand list.
-	 *
-	 * 4. bind brand buttons' click event.
+	 * 3. bind brand buttons' click event.
 	 */
 
 	var phone = (function (mod) {
@@ -328,17 +350,11 @@
 
 				e.preventDefault();
 
-				$(window).off('scroll'); /* 1 */
+				common.categoryChang($(this)); /* 1 */
 
-				loading = false;
+				$('.subCategoryPhone').show(); /* 2 */
 
-				scrollEvent.done(0, "phone", "all");
-
-				common.categoryChang($(this)); /* 2 */
-
-				$('.subCategoryPhone').show(); /* 3 */
-
-				productBrand.clickEvent("phone"); /* 4 */
+				productBrand.clickEvent(); /* 3 */
 
 			});
 
@@ -353,13 +369,11 @@
 	/**
 	 * 'a#categoryComputer' clickEvent.
 	 *
-	 * 1. after click 'a#categoryComputer'(电脑), reset window's scrolling event.
+	 * 1. change 'a#categoryComputer' style.
 	 *
-	 * 2. change 'a#categoryComputer' style.
+	 * 2. show brand list.
 	 *
-	 * 3. show brand list.
-	 *
-	 * 4. bind brand buttons' click event.
+	 * 3. bind brand buttons' click event.
 	 */
 
 	var computer = (function (mod) {
@@ -370,17 +384,11 @@
 
 				e.preventDefault();
 
-				$(window).off('scroll'); /* 1 */
+				common.categoryChang($(this)); /* 1 */
 
-				loading = false;
+				$('.subCategoryComputer').show(); /* 2 */
 
-				scrollEvent.done(0, "computer", "all");
-
-				common.categoryChang($(this)); /* 2 */
-
-				$('.subCategoryComputer').show(); /* 3 */
-
-				productBrand.clickEvent("computer"); /* 4 */
+				productBrand.clickEvent(); /* 3 */
 
 			});
 
@@ -395,13 +403,11 @@
 	/**
 	 * 'a#categoryCamera' clickEvent.
 	 *
-	 * 1. after click 'a#categoryCamera'(单反&微单), reset window's scrolling event.
+	 * 1. change 'a#categoryCamera' style.
 	 *
-	 * 2. change 'a#categoryCamera' style.
+	 * 2. show brand list.
 	 *
-	 * 3. show brand list.
-	 *
-	 * 4. bind brand buttons' click event.
+	 * 3. bind brand buttons' click event.
 	 */
 
 	var camera = (function (mod) {
@@ -412,17 +418,11 @@
 
 				e.preventDefault();
 
-				$(window).off('scroll'); /* 1 */
+				common.categoryChang($(this)); /* 1 */
 
-				loading = false;
+				$('.subCategoryCamera').show(); /* 2 */
 
-				scrollEvent.done(0, "camera", "all");
-
-				common.categoryChang($(this)); /* 2 */
-
-				$('.subCategoryCamera').show(); /* 3 */
-
-				productBrand.clickEvent("camera"); /* 4 */
+				productBrand.clickEvent(); /* 3 */
 
 			});
 
@@ -437,9 +437,11 @@
 	/**
 	 * 'a#categoryPad' clickEvent.
 	 *
-	 * 1. after click 'a#categoryPad'(PAD), reset window's scrolling event.
+	 * 1. change 'a#categoryPad' style.
 	 *
-	 * 2. change 'a#categoryPad' style.
+	 * 2. show brand list.
+	 *
+	 * 3. bind brand buttons' click event.
 	 */
 
 	var pad = (function (mod) {
@@ -450,17 +452,11 @@
 
 				e.preventDefault();
 
-				$(window).off('scroll'); /* 1 */
+				common.categoryChang($(this)); /* 1 */
 
-				loading = false;
+				$('.subCategoryPad').show(); /* 2 */
 
-				scrollEvent.done(0, "pad", "all");
-
-				common.categoryChang($(this)); /* 2 */
-
-				$('.subCategoryPad').show(); /* 3 */
-
-				productBrand.clickEvent("pad"); /* 4 */
+				productBrand.clickEvent(); /* 3 */
 
 			});
 
@@ -482,7 +478,7 @@
 
 	var productBrand = (function (mod) {
 
-		mod.clickEvent = function (type) {
+		mod.clickEvent = function () {
 
 			$('.productBrand:visible').find('li').find('a').each(function (index) {
 
@@ -496,21 +492,25 @@
 
 					if ($(this).data('statu') === 'off') {
 
-						var brand = $(this).data('brand');
+						var brand = $(this).data('brand'),
+
+							type = $(this).parent().parent().parent().data('type');
 
 						$('.productList').children('ul').empty();
 
 						common.getProduct("count=0&proType=" + type + "&proBrand=" + brand);
 
+						$('.productList').data('loading-status', 'on');
+
+						$(window).off('scroll');
+
+						loading = false;
+
+						scrollEvent.done(0, type, brand);
+
 						$(this).data('statu', 'on');
 
 					}
-
-					$(window).off('scroll');
-
-					loading = false;
-
-					scrollEvent.done(0, type, brand);
 
 				});
 
@@ -546,3 +546,4 @@
 	};
 
 }));
+
