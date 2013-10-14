@@ -23,3 +23,463 @@
  * 
  * Copyright: ~
  */
+
+
+
+.breadcrumbs {
+
+	margin-top: 18px;
+
+	margin-bottom: 5px;
+
+}
+
+.breadcrumbs > ul {
+
+	margin-bottom: 34px;
+
+}
+
+/* " X:nth-child(even) ", Compatibility: IE9+, Firefox 23.0+, Chrome 28.0+, Safari 5.1+, Opera 17.0+; https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child#Browser_compatibility */
+
+.breadcrumbs > ul > li:nth-child(even) {
+
+	width: 5px;
+	
+	height: 9px;
+	
+	margin: 3px 8px 0 8px;
+
+}
+
+.ie7 .breadcrumbs > ul > li.crumbarrow, .ie8 .breadcrumbs > ul > li.crumbarrow {
+
+	width: 5px;
+
+	height: 9px;
+
+	margin: 2px 8px 0 8px;
+
+}
+
+.breadcrumbs > h2 {
+
+	margin-top: 0;
+
+	margin-bottom: 0;
+
+	margin-left: 15px;
+
+}
+
+.breadcrumbs > div > span {
+
+	margin-top: 8px;
+
+}
+
+.breadcrumbs > div > ul {
+
+	display: inline-block;
+
+	*display: inline;
+
+	*zoom: 1;
+
+}
+
+.breadcrumbs > div > ul > li:first-child {
+
+	padding-right: 29px;
+
+}
+
+.breadcrumbs > div > ul > li.commonText {
+
+	padding-top: 8px;
+
+}
+
+.breadcrumbs > div > ul > li > a {
+
+	padding: 8px 10px 8px 42px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Product details.
+*  ||----||
+  ___/  ___/
+*/
+
+.proDetails > div {
+
+	z-index: 5;
+
+	height: 429px;
+
+}
+
+.ie7 .proDetails > div {
+
+	height: 427px;
+
+	width: 1168px;
+
+}
+
+.verticalSlide {
+
+	width: 70px;
+
+	height: 370px;
+
+	top: 37px;
+
+	left: 50px;
+
+	background-color: Pink;
+
+}
+
+.switchScreen {
+
+	width: 400px;
+
+	height: 370px;
+
+	left: 170px;
+
+	top: 37px;
+
+}
+
+.productOptions {
+
+	width: 400px;
+
+	height: 370px;
+
+	left: 600px;
+
+	top: 37px;
+
+}
+
+.productOptions > .leftCol {
+	
+	width: 70px;
+	
+	height: 245px;
+	
+}
+
+.productOptions > .leftCol > div {
+	
+	color: #848484;
+	
+	margin-left: 2px;
+	
+}
+
+.productOptions > .leftCol > .proColor {
+	
+	margin-top: 8px;
+	
+}
+
+.productOptions > .leftCol > .proType {
+	
+	margin-top: 24px;
+	
+}
+
+.productOptions > .leftCol > .proStage {
+	
+	margin-top: 32px;
+	
+}
+
+.productOptions > .rightCol {
+	
+	width: 330px;
+	
+	min-height: 245px;
+	
+	height: auto !important;
+	
+	height: 245px;
+	
+}
+
+.productOptions > .rightCol a {
+	
+	padding: 0 25px;
+	
+	border-left: 1px solid #000;
+	
+}
+
+.productOptions > .rightCol > ul > li:first-child > a {
+	
+	padding-left: 0;
+	
+	border-left: 0;
+	
+}
+
+.productOptions > .rightCol > .proColorOptions {
+	
+	margin-top: 8px;
+	
+}
+
+.productOptions > .rightCol > .proTypeOptions {
+	
+	margin-top: 24px;
+	
+}
+
+.productOptions > .rightCol > .stageCount {
+	
+	margin-top: 32px;
+	
+}
+
+.productOptions > .rightCol > .stageCount > div > div {
+
+	font-size: 12px;
+	
+	text-align: center;
+
+	float: left;
+
+	width: 165px;
+
+	height: 31px;
+
+	padding-top: 8px;
+
+	border: 1px solid #FFF;
+
+	background-color: #f3f3f3;
+	
+}
+
+.ie7 .productOptions > .rightCol > .stageCount > div > div {
+
+	width: 163px;
+
+	height: 20px;
+
+	padding-top: 9px;
+
+}
+
+.productOptions > .rightCol > .stageCount > .stageCountHead > div {
+
+	color: #fe6601;
+
+	background-color: #ffcc9a;
+	
+}
+
+.productOptions > .ps {
+	
+	color: #ff3333;
+
+	text-align: left;
+
+	font-size: 12px;
+	
+	margin-top: 10px;
+	
+	margin-left: 70px;
+
+}
+
+.productOptions > button {
+	
+	width: 170px;
+	
+	height: 48px;
+	
+	margin-top: 39px;
+	
+	background: url(../../../ui/mall/details/iwant.jpg) no-repeat;
+	
+}
+
+.productDescribe {
+
+	margin-top: 25px;
+
+	margin-bottom: 128px;
+
+}
+
+.productDescribe > .proDesLeft {
+
+	width: 970px;
+
+	margin-left: 15px;
+
+}
+
+
+/* root element for tabs  */
+#tabs {
+
+    list-style: none;
+
+    border: 1px solid #CCC;
+
+    height: 52px;
+	
+	background-color: #f5f5f5;
+
+}
+
+/* single tab */
+#tabs li {
+
+    float: left;
+
+    text-indent: 0;
+
+}
+
+#tabs a {
+
+    position: relative;
+
+    display: block;
+
+    font: normal 18px/50px "微软雅黑";
+
+    text-align: center;
+
+    text-decoration: none;
+
+    width: 240px;
+
+    color: #000;
+
+    top: 0;
+
+}
+
+.ie7 #tabs a {
+
+	height: 52px;
+
+}
+
+#tabs a:active {
+
+    outline: none;
+
+}
+
+#tabs a:hover {
+
+	background-color: #dbdbdb;
+
+}
+
+#tabs a.current, 
+#tabs a.current:hover, 
+#tabs li.current a {
+
+    cursor: default !important;
+
+    color: #FFF !important;
+
+    background: #ff6600;
+
+}
+
+#tabPanes > div {
+	
+    display: none;
+
+    min-height: 1000px;
+
+	height: auto !important;
+
+	height: 1000px;
+	
+    font-size: 14px;
+
+    padding-top: 65px;
+
+    padding-bottom: 4px;
+	
+    border: 1px solid #CCC;
+	
+    border-top: 0;
+	
+    background-color: #fff;
+	
+}
+
+#tabPanes > .proDsb > img {
+
+	margin-left: 4px;
+
+	max-width: none !important;
+
+}
+
+.productDescribe > .proDesRight {
+
+	width: 190px;
+
+	margin-right: 15px;
+	
+	background-color: #FFF;
+
+}
+
+.proDesRightTitle {
+
+    height: 52px;
+	
+	border: 1px solid #CCC;
+	
+	border-top: 3px solid #ff7f00;
+	
+	background-color: #f5f5f5;
+	
+}
+
+.ie7 .proDesRightTitle {
+	
+	height: 48px;
+	
+}
+
+.bottomThings {
+	
+	border: 1px solid #CCC;
+	
+	border-top: 0;
+	
+}
+
+.ie7 .bottomThings {
+	
+	width: 188px;
+	
+}
+
+.bottomThings > div > img {
+	
+	margin-left: 34px;
+	
+}

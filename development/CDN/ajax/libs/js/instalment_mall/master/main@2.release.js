@@ -1,7 +1,7 @@
 /**
  * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
  * 
- * Describe: The javascript boot file of detail page ( ~/details/index.html ).
+ * Describe: The javascript boot file of second master page ( index@2.html ).
  * 
  * Further changes, comments: ~
  * 
@@ -11,9 +11,9 @@
  * 
  * Version: 0.1.0
  * 
- * Creation Date: 2013.10.14 01:34 ( Tony ).
+ * Creation Date: 2013.10.14 13:32 ( Tony ).
  * 
- * Last update: 2013.10.14 01:34 ( Tony ).
+ * Last update: 2013.10.14 13:38 ( Tony ).
  * 
  * License: ~
  * 
@@ -62,7 +62,7 @@
 		
 		requirejs.config({
 			
-			baseUrl: '../CDN',
+			baseUrl: '//resource.fenqimall.com/ajax/libs',
 			
 			enforceDefine: false,
 			
@@ -70,7 +70,7 @@
 				
 				'jquery': jquery,
 				
-				'cdnjs': 'ajax/libs/js'
+				'cdnjs': 'js'
 				
 			},
 			
@@ -93,16 +93,30 @@
 			'jquery',
 			
 			'cdnjs/jquery_cookie/1.3.1/jquery.cookie.min',
-
-			'cdnjs/jquery_tab/0.1.0/jquery.tab',
 			
 			'cdnjs/gridder/0.1.0/gridder',
 			
 			'cdnjs/jquery_title_modify/title.modify'
 		
-		], function (modernizr, SJ, cookie, gridder, tabs, modifyTitle) {
+		], function (modernizr, SJ, cookie, gridder, modifyTitle) {
 			
 			SJ(function ($) {
+				
+				var nav = $("nav");
+				
+				
+				
+				/**
+				 * Navigation Demo.
+				 */
+				
+				nav.find('a').on('click', function (e) {
+					
+					e.preventDefault();
+					
+					$(this).addClass('selected').closest('li').siblings().children().removeClass('selected');
+					
+				});
 				
 				
 				
@@ -111,8 +125,6 @@
 				 */
 				
 				gridder;
-
-				$("#tabs").tabs("#tabPanes > div");
 				
 				
 				
@@ -154,9 +166,9 @@
 	
 	boot.judgement({
 		
-		jq1x: 'ajax/libs/js/jquery/1.10.2/jquery.min',
+		jq1x: '//resource.fenqimall.com/ajax/libs/js/jquery/1.10.2/jquery.min',
 		
-		jq2x: 'ajax/libs/js/jquery/2.0.3/jquery.min'
+		jq2x: '//resource.fenqimall.com/ajax/libs/js/jquery/2.0.3/jquery.min'
 		
 	});
 		
