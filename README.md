@@ -15,4 +15,3 @@
 * [首页](https://github.com/Huitong-Finance/Mall/tree/master/releases/home '点击查看')，[内网演示](http://192.168.0.180:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/home/ '点击查看')
 
 * [产品申请成功页面](https://github.com/Huitong-Finance/Mall/tree/master/releases/apply '点击查看')，[内网演示](http://192.168.0.180:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/apply/successful.application.html '点击查看')
-	

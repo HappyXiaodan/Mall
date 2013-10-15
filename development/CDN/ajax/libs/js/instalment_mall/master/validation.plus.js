@@ -218,7 +218,9 @@
 
 				//SJ(form).valid();
 
-				form.submit();
+				/*form.submit();*/
+
+				console.log(SJ(form).serialize());
 				
 			}
 			
