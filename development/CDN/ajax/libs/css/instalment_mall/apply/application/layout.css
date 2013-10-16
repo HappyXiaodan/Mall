@@ -32,8 +32,6 @@ body {
 
 	background: url(../../../../img/login/login.jpg) center 75% no-repeat;
 
-	display: none;
-
 }
 
 .gray {
@@ -60,6 +58,37 @@ body {
 
 }
 
+.white {
+
+	background-color: #fff;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> confirm wrapper.
+*  ||----||
+  ___/  ___/
+*/
+
+.confirmWrapper {
+
+	width: 100%;
+
+	height: 100%;
+
+	z-index: 0;
+
+	display: none;
+
+}
+
+
+
 /*
 		 (__)
 		 (oo)
@@ -76,6 +105,10 @@ body {
 	height: 100%;
 
 	z-index: 1;
+
+	top: 0;
+
+	left: 0;
 
 }
 

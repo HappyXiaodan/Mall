@@ -25,6 +25,9 @@
  */
 
 
+ 
+
+
  /*
 		 (__)
 		 (oo)
@@ -107,6 +110,8 @@
 }
 
 .confirmBox > .confirmTitle {
+
+	font-family: "微软雅黑";
 
 	color: #666;
 

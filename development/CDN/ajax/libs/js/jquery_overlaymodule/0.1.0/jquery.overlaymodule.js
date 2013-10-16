@@ -38,7 +38,7 @@
 
 		defaults = {
 			
-			btnClass: 'confirmBtn'
+			confirmObj: ''
 			
 		};
 
@@ -54,35 +54,72 @@
 
 	};
 
+
+
 	thisPlugin.Class.prototype.init = function () {
 
 		var $this = $(this.item),
 
 			opts = this.opts;
 
-		$this.parents('body').fadeIn(800);
-
 		this.clickEvent($this, opts);
 
 	};
 
+
+
 	thisPlugin.Class.prototype.clickEvent = function (obj, opts) {
 
-		var obj = obj.find('.' + opts.btnClass);
+		var overlayObj = $('.' + opts.confirmObj),
 
-		obj.each(function () {
+			btn = overlayObj.find('button');
 
-			$(this).on('click', function () {
 
-				obj.removeClass('.clickConfirmBtn');
 
-				$(this).addClass('.clickConfirmBtn');
+		obj.on('click', function (e) {
 
-			})
+			e.stopPropagation();
+
+			e.preventDefault();
+
+			overlayObj.fadeIn(800);
+
+			btn.removeClass('clickConfirmBtn');
+
+		});
+
+
+
+		btn.each(function () {
+
+			$(this).on('click', function (e) {
+
+				e.stopPropagation();
+
+				e.preventDefault();
+
+				var _this = $(this);
+
+				btn.removeClass('clickConfirmBtn');
+
+				_this.addClass('clickConfirmBtn');
+
+				if (_this.attr('id') === 'notCfm') {
+
+					overlayObj.fadeOut(800);
+
+				} else if (_this.attr('id') === 'cfm') {
+
+					console.log('have clicked cfm');
+
+				}
+
+			});
 
 		});
 
 	};
+
 
 
 	$.fn[pluginName] = function (options) {

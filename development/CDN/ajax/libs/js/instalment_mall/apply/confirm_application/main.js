@@ -104,7 +104,7 @@
 			
 			SJ(function ($) {
 				
-				$('.confirmBox').overlaymodule();
+				$('body').overlaymodule({confirmObj: 'confirmWrapper'});
 				
 				/**
 				 * Development dependency: grid system.
