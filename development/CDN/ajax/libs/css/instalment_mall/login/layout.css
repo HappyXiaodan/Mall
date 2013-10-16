@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+/**
+ * Statement: gehen zum Teufel.
+ * 
+ * Describe: The private stylesheet of login page.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Doris.
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.15 10:15 ( Doris ).
+ * 
+ * Last update: 2013.10.15 10:15; ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+.gray {
+
+	background-color: gray;
+
+}
+
+.red {
+
+	background-color: red;
+
+}
+
+.blue {
+
+	background-color: blue;
+
+}
+
+.yellow {
+
+	background-color: yellow;
+
+}
+
+
+
+
+.container {
+
+	left: 50%;
+
+	margin-left: -185px;
+
+	margin-top: 132px;
+
+	height: 500px;
+
+	width: 370px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Logo.
+*  ||----||
+  ___/  ___/
+*/
+
+.logo {
+
+	height: 108px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Error message box.
+*  ||----||
+  ___/  ___/
+*/
+
+.errorMsg {
+
+	width: 328px;
+
+	*width:288px;
+
+	margin: 0 auto;
+
+	padding: 0 40px;
+
+	display: none;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Form area.
+*  ||----||
+  ___/  ___/
+*/
+
+.content {
+
+	width: 330px;
+
+	*width: 290px;
+
+	height: 260px;
+
+	margin: 0 auto;
+
+	margin-top: 11px;
+
+	padding-left: 40px;
+
+	overflow: hidden; /* hasLayout */
+
+}
+
+.content > label {
+
+	display: block;
+
+	margin-top: 15px;
+
+	margin-bottom: 5px;
+
+}
+
+.content > label:first-child {
+
+	margin-top: 25px;
+
+}
+
+.content > .userName, .content > .userPwd {
+
+	display: block;
+
+	height: 34px;
+
+	width: 248px;
+
+}
+
+.content > .userName > input, .content > .userPwd > input {
+
+	width: 97%;
+
+	margin-left: 5px;
+
+	margin-top: 8px;
+
+	padding: 0;
+
+}
+
+.content > .rememberBox {
+
+	margin-top: 17px;
+
+}
+
+.content > .rememberBox > .remember {
+
+	width: 12px;
+
+	height: 12px;
+
+}
+
+.content > button {
+
+	display: block;
+
+	margin-top: 14px;
+
+	width: 248px;
+
+	height: 34px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Related link.
+*  ||----||
+  ___/  ___/
+*/
+
+
+.container > p {
+
+	padding-left: 60px;
+
+	margin-top: 15px;
+
+}
+
+.container > p:last-child {
+
+	margin-top: 10px;
+
+}
+
+.container > p > a, .errorMsg > a{
+
+	display: inline-block;
+
+}
