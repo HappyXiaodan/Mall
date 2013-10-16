@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: gehen zum Teufel.
+ * 
+ * Describe: The private stylesheet of confirming application page ( ~/apply/confirm.application.html ).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.16 09:11 ( Doris ).
+ * 
+ * Last update: 2013.10.16 09:11 ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+ /*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> confirm background.
+*  ||----||
+  ___/  ___/
+*/
+
+.confirmBg {
+
+	background-color: #848484;
+
+	opacity: 0.7; /* Android 2.1+, Chrome 4+, Firefox 2+, IE 9+, iOS 3.2+, Opera 9+, Safari 3.1+ */
+	
+	-moz-opacity: 0.7; /* Old mozilla browser like netscape  */
+	
+	-khtml-opacity: 0.7; /* Really really old safari */ 
+	
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; /* IE8  */
+	
+	filter: alpha(opacity=70); /* IE5-7  */
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> confirm box base.
+*  ||----||
+  ___/  ___/
+*/
+
+.confirmBase {
+
+	background-color: #fff;
+
+	opacity: 0.6; /* Android 2.1+, Chrome 4+, Firefox 2+, IE 9+, iOS 3.2+, Opera 9+, Safari 3.1+ */
+	
+	-moz-opacity: 0.6; /* Old mozilla browser like netscape  */
+	
+	-khtml-opacity: 0.6; /* Really really old safari */ 
+	
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; /* IE8  */
+	
+	filter: alpha(opacity=60); /* IE5-7  */
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> confirm box.
+*  ||----||
+  ___/  ___/
+*/
+
+.confirmBox {
+
+	background-color: #fff;
+
+	opacity: 1; /* Android 2.1+, Chrome 4+, Firefox 2+, IE 9+, iOS 3.2+, Opera 9+, Safari 3.1+ */
+	
+	-moz-opacity: 1; /* Old mozilla browser like netscape  */
+	
+	-khtml-opacity: 1; /* Really really old safari */ 
+	
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; /* IE8  */
+	
+	filter: alpha(opacity=100); /* IE5-7  */
+
+	font-size: 18px;
+
+}
+
+.confirmBox > .confirmTitle {
+
+	color: #666;
+
+}
+
+.confirmBox > div > em {
+
+	color: #999;
+
+	font-size: 14px;
+
+}
+
+.confirmBox > div > button {
+
+	background-color: #999;
+
+	color: #fff;
+
+	font-weight: bold;
+
+}
+
+.confirmBox > div > button:hover {
+
+	background-color: #ff7f00;
+
+}
+
+.confirmBox > div > button.clickConfirmBtn {
+
+	background-color: #ff7f00 !important;
+
+}

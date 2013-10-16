@@ -1,3 +1,35 @@
+<!doctype html>
+
+<!-- End | Document Type | Comments can not been seen before doctype. Internet Explorer will go into the quirks mode. -->
+
+
+
+<!-- Begin | Annotation -->
+	
+	<!-- Statement: gehen zum Teufel. -->
+	
+	<!-- Describe: ~ -->
+	
+	<!-- Further changes, comments: ~ -->
+	
+	<!-- Docs: ~ -->
+	
+	<!-- Original Author: Tony ( Shen Weizhong ). -->
+	
+	<!-- Version: 0.1.0 -->
+	
+	<!-- Creation Date: 2013.10.16 09:11 ( Doris ) -->
+	
+	<!-- Last update: 2013.10.16 10:50 ( Doris ) -->
+	
+	<!-- License: ~ -->
+	
+	<!-- Copyright: ~ -->
+	
+<!-- Begin | Annotation -->
+
+
+
 <!-- Begin | Html -->
 	
 	<!--[if IE 7]>          <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="zh">    <![endif]-->
@@ -98,6 +130,8 @@
 							
 							<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/base/header.css"/> <!-- Header -->
 							
+							<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/base/form.css"/> <!-- Form -->
+							
 						<!-- Begin | Base -->
 						
 						<!-- Begin | Media Query -->
@@ -108,13 +142,13 @@
 						
 					<!-- End | Plublic Stylesheet -->
 					
-					<!-- Begin | Private Stylesheet ( Home ) -->
+					<!-- Begin | Private Stylesheet ( Application Confirm ) -->
 						
-						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/login/layout.css"/> <!-- Layout -->
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/apply/confirm_application/layout.css"/> <!-- Layout -->
+
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/apply/confirm_application/index.css"/> <!-- Index -->
 						
-						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/login/index.css"/> <!-- Index -->
-						
-					<!-- End | Private Stylesheet ( Home ) -->
+					<!-- End | Private Stylesheet ( Application Confirm ) -->
 					
 				<!-- End | Stylesheet -->
 				
@@ -143,80 +177,52 @@
 		<!-- Begin | Body -->
 			
 			<body class="rela antialiased">
+				
+				<!-- Begin | confirm background -->
 
-				<!-- Begin | login -->
-					
-					<div class="grid_4 absol container">
+					<div class="absol confirmBg"></div>
 
-						<!-- Begin | Logo -->
+				<!-- End | confirm background -->
+
+
+
+				<!-- Begin | confirm box base -->
+
+					<div class="absol confirmBase"></div>
+
+				<!-- End | confirm box base -->
+
+
+
+				<!-- Begin | confirm box -->
+
+					<div class="absol confirmBox">
 							
-							<div class="logo"></div>
+						<p class="textCenter confirmTitle">请确保信息的正确性，以便顺利通过审核</p>
 
-						<!-- End | Logo -->
+						<div class="left notConfirm">
+							
+							<em>不放心</em>
 
+							<button class="confirmBtn">再看看</button>
 
+						</div>
 
-						<!-- Begin | Error message box -->
+						<div class="left confirm">
+							
+							<em>别烦了</em>
 
-							<div class="errorMsg">
+							<button class="confirmBtn" type="submit">我确认</button>
 
-								<b>错误：</b><i>无效的用户名。</i>
-
-								<!-- <a href="#">忘记密码</a>？ -->
-
-							</div>
-
-						<!-- End | Error message box -->
-
-
-
-						<!-- Begin | Form area -->
-                            
-							<form id="frmLogin" class="content userInfo" name="frmLogin" action="#" method="POST">
-								
-								<label for="userName">用户名</label>
-                                
-								<div class="userName">
-									
-									<input id="userName" name="userName" type="text"/>
-                                    
-								</div>
-                                
-								<label for="userPassword">密码</label>
-                                
-								<div class="userPwd">
-									
-									<input id="userPassword" type="password" name="userPassword"/>
-                                    
-								</div>
-                                
-								<div class="rememberBox">
-									
-									<input class="remember" name="remember" type="checkbox"/>
-                                    
-									<span>记住我的登录信息</span>
-                                    
-								</div>
-                                
-								<button type="submit">登&nbsp;&nbsp;录</button>
-                                
-							</form>
-                            
-						<!-- End | Form area -->
-
-
-
-						<!-- Begin | Related link -->
-
-							<p><a href="#">忘记密码？</a> | <a href="#">注册新账号</a></p>
-
-							<p><a href="#">&laquo; 回到首页</a></p>
-
-						<!-- End | Related link -->
+						</div>
 
 					</div>
-
-				<!-- End | login -->
+				
+				<!-- End | confirm box -->
+				
+				
+				
+				
 				
 				
 				
@@ -234,7 +240,7 @@
 				
 					<!-- Begin | Boot -->
 						
-						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/login/main" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
+						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/apply/confirm_application/main" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
 						
 					<!-- End | Boot -->
 					
