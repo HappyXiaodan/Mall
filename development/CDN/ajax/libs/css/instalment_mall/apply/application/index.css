@@ -26,9 +26,36 @@
 
 
  
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> confirm background.
+*  ||----||
+  ___/  ___/
+*/
+
+.formContainer {
+
+	width: 100%;
+
+	height: 100%;
+
+	background-color: #f1f1f1;
+
+}
+
+.appProduct {
+
+	height: 118px;
+
+}
 
 
- /*
+
+
+
+/*
 		 (__)
 		 (oo)
   /-------\/

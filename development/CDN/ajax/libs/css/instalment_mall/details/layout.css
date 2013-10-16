@@ -446,7 +446,7 @@
 
 }
 
-.proDesRightTitle {
+.productDescribe > .proDesRight > .proDesRightTitle {
 
     height: 52px;
 	
@@ -458,10 +458,24 @@
 	
 }
 
-.ie7 .proDesRightTitle {
+.ie7 .productDescribe > .proDesRight > .proDesRightTitle {
 	
 	height: 48px;
 	
+}
+
+.productDescribe > .proDesRight > .proDesRightTitle > h4 {
+
+	font-weight: bold;
+
+	line-height: 48px;
+
+	margin-top: 0;
+
+	margin-bottom: 0;
+
+	margin-left: 14px;
+
 }
 
 .bottomThings {

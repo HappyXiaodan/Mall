@@ -30,8 +30,6 @@ body {
 
 	height: 100%;
 
-	background: url(../../../../img/login/login.jpg) center 75% no-repeat;
-
 }
 
 .gray {
@@ -81,7 +79,7 @@ body {
 
 	height: 100%;
 
-	z-index: 0;
+	z-index: 20;
 
 	display: none;
 
@@ -104,7 +102,7 @@ body {
 
 	height: 100%;
 
-	z-index: 1;
+	z-index: 21;
 
 	top: 0;
 
@@ -129,7 +127,7 @@ body {
 
 	height: 305px;
 
-	z-index: 2;
+	z-index: 22;
 
 	left: 50%;
 
@@ -156,7 +154,7 @@ body {
 
 	height: 292px;
 
-	z-index: 3;
+	z-index: 23;
 
 	left: 50%;
 
