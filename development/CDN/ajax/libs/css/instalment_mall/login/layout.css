@@ -3,7 +3,7 @@
 /**
  * Statement: gehen zum Teufel.
  * 
- * Describe: The private stylesheet of login page.
+ * Describe: The private layout stylesheet of login page (~/login/index.html).
  * 
  * Further changes, comments: ~
  * 
@@ -21,6 +21,16 @@
  * 
  * Copyright: ~
  */
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Needed color.
+*  ||----||
+  ___/  ___/
+*/
 
 .gray {
 
@@ -50,16 +60,20 @@
 
 
 .container {
+	
+	display: inline-block;
+	
+	*display: inline;
+	
+	*zoom: 1;
+
+	width: 370px;
 
 	left: 50%;
 
 	margin-left: -185px;
 
 	margin-top: 132px;
-
-	height: 500px;
-
-	width: 370px;
 
 }
 
@@ -93,15 +107,15 @@
 
 .errorMsg {
 
+	display: none;
+
 	width: 328px;
 
-	*width:288px;
+	*width: 288px;
 
 	margin: 0 auto;
 
 	padding: 0 40px;
-
-	display: none;
 
 }
 
@@ -136,7 +150,11 @@
 
 .content > label {
 
-	display: block;
+	display: inline-block;
+	
+	*display: inline;
+	
+	*zoom: 1;
 
 	margin-top: 15px;
 
@@ -173,6 +191,12 @@
 }
 
 .content > .rememberBox {
+	
+	display: inline-block;
+	
+	*display: inline;
+	
+	*zoom: 1;
 
 	margin-top: 17px;
 

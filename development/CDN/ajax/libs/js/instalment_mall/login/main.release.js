@@ -11,9 +11,9 @@
  * 
  * Version: 0.1.0
  * 
- * Creation Date: 2013.10.15 10:16 ( Doris ).
+ * Creation Date: 2013.10.17 16:39 ( Tony ).
  * 
- * Last update: 2013.10.17 16:37 ( Tony ).
+ * Last update: 2013.10.17 16:39 ( Tony ).
  * 
  * License: ~
  * 
@@ -62,7 +62,7 @@
 		
 		requirejs.config({
 			
-			baseUrl: '../CDN',
+			baseUrl: '//resource.fenqimall.com/ajax/libs',
 			
 			enforceDefine: false,
 			
@@ -70,7 +70,7 @@
 				
 				'jquery': jquery,
 				
-				'cdnjs': 'ajax/libs/js'
+				'cdnjs': 'js'
 				
 			},
 			
@@ -101,22 +101,6 @@
 		], function (modernizr, SJ, cookie, gridder, modifyTitle) {
 			
 			SJ(function ($) {
-				
-				var nav = $("nav");
-				
-				
-				
-				/**
-				 * Navigation Demo.
-				 */
-				
-				nav.find('a').on('click', function (e) {
-					
-					e.preventDefault();
-					
-					$(this).addClass('selected').closest('li').siblings().children().removeClass('selected');
-					
-				});
                 
                 
 				
@@ -167,9 +151,9 @@
 	
 	boot.judgement({
 		
-		jq1x: 'ajax/libs/js/jquery/1.10.2/jquery.min',
+		jq1x: '//resource.fenqimall.com/ajax/libs/js/jquery/1.10.2/jquery.min',
 		
-		jq2x: 'ajax/libs/js/jquery/2.0.3/jquery.min'
+		jq2x: '//resource.fenqimall.com/ajax/libs/js/jquery/2.0.3/jquery.min'
 		
 	});
     
