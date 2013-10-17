@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.16 09:11 ( Doris ).
  * 
- * Last update: 2013.10.16 09:11 ( Doris ).
+ * Last update: 2013.10.17 16:45 ( Doris ).
  * 
  * License: ~
  * 
@@ -30,26 +30,166 @@
 		 (__)
 		 (oo)
   /-------\/
- / |     ||----> confirm background.
+ / |     ||----> Form: product infomation.
 *  ||----||
   ___/  ___/
 */
 
-.formContainer {
+.appProduct > ul {
 
-	width: 100%;
+	background-color: #ffecce;
 
-	height: 100%;
+	border: 1px solid #c96;
 
-	background-color: #f1f1f1;
+	font-size: 18px;
+
+	font-family: "微软雅黑";
+
+}
+
+.appProduct > ul > li:first-child {
+
+	color: #999;
 
 }
 
-.appProduct {
+.appProduct > ul > li.appProImg {
 
-	height: 118px;
+	background-color: #fff;
+
+	border: 1px solid #d5d5d5;
 
 }
+
+.appProduct > ul > li.appProImg > img {
+
+	width: 80px;
+
+	height: 80px;
+
+	margin-top: 6px;
+
+}
+
+.appProduct > ul > li.appProTitle {
+
+	color: #000;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Form: title.
+*  ||----||
+  ___/  ___/
+*/
+
+.formTitle > h1 {
+
+	font: normal normal normal 30px/normal "微软雅黑";
+
+	color: #f63;
+
+}
+
+.formTitle > p {
+
+	font-size: 16px;
+
+	font-weight: bold;
+
+	color: #666;
+
+}
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Form: personal information.
+*  ||----||
+  ___/  ___/
+*/
+
+.personalInfoForm {
+
+	background-color: #fff;
+
+}
+
+.personalInfoForm > div:first-child, div.emergencyContact {
+
+	font-size: 18px;
+
+	font-family: "微软雅黑";
+
+	color: #13b8b2;
+
+}
+
+.personalInfoForm > div.formBtn > a {
+
+	color: #06c;
+
+}
+
+.personalInfoForm label, .personalInfoForm > div.addressTitle,
+
+div.addressChoose > i, div.addressIpt > i {
+
+	line-height: 30px;
+
+	color: #333;
+
+	font-style: normal;
+
+}
+
+.personalInfoForm > .addressTitle {
+
+	font-weight: bold;
+
+}
+
+div.formIpt {
+
+	border: 1px solid #999;
+
+}
+
+div.formIpt > input {
+
+	color: #999;
+
+}
+
+.formSubmit > button {
+
+	background-color: #ff7f00;
+
+	color: #fff;
+
+	font-weight: bold;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Form: supplementary information.
+*  ||----||
+  ___/  ___/
+*/
+
+
 
 
 
@@ -59,7 +199,7 @@
 		 (__)
 		 (oo)
   /-------\/
- / |     ||----> confirm background.
+ / |     ||----> confirm.
 *  ||----||
   ___/  ___/
 */
@@ -80,17 +220,6 @@
 
 }
 
-
-
-/*
-		 (__)
-		 (oo)
-  /-------\/
- / |     ||----> confirm box base.
-*  ||----||
-  ___/  ___/
-*/
-
 .confirmBase {
 
 	background-color: #fff;
@@ -106,17 +235,6 @@
 	filter: alpha(opacity=60); /* IE5-7  */
 
 }
-
-
-
-/*
-		 (__)
-		 (oo)
-  /-------\/
- / |     ||----> confirm box.
-*  ||----||
-  ___/  ___/
-*/
 
 .confirmBox {
 
@@ -149,6 +267,8 @@
 	color: #999;
 
 	font-size: 14px;
+
+	font-style: normal;
 
 }
 

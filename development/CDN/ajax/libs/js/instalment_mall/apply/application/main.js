@@ -1,7 +1,7 @@
 /**
- * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * Statement: gehen zum Teufel.
  * 
- * Describe: The javascript boot file of successful application page ( ~/apply/successful.application.html ).
+ * Describe: The javascript boot file of application page ( ~/apply/index.html ).
  * 
  * Further changes, comments: ~
  * 
@@ -11,9 +11,9 @@
  * 
  * Version: 0.1.0
  * 
- * Creation Date: 2013.10.13 19:04 ( Tony ).
+ * Creation Date: 2013.10.17 16:45 ( Doris ).
  * 
- * Last update: 2013.10.14 01:26 ( Tony ).
+ * Last update: 2013.10.17 16:45 ( Doris ).
  * 
  * License: ~
  * 
@@ -95,17 +95,33 @@
 			'cdnjs/jquery_cookie/1.3.1/jquery.cookie.min',
 
 			'cdnjs/jquery_overlaymodule/0.1.0/jquery.overlaymodule',
+
+			'cdnjs/jquery_datepicker/0.1.0/jquery.datetimepicker',
 			
 			'cdnjs/gridder/0.1.0/gridder',
 			
 			'cdnjs/jquery_title_modify/title.modify'
 		
-		], function (modernizr, SJ, cookie, Doverlaymodule, gridder, modifyTitle) {
+		], function (modernizr, SJ, cookie, Doverlaymodule, datetimepicker, gridder, modifyTitle) {
 			
 			SJ(function ($) {
+
+				/**
+				 * Overlay modle window.
+				 */
 				
-				$('body').overlaymodule({confirmObj: 'confirmWrapper'});
+				$('#submitBtn').overlaymodule({confirmObj: 'confirmWrapper', formId: 'personalInfo'});
+
+
+
+				/**
+				 * Datepicker.
+				 */
 				
+				$('.form_datetime').datepicker({format: 'yyyy-mm-dd'});
+
+
+
 				/**
 				 * Development dependency: grid system.
 				 */

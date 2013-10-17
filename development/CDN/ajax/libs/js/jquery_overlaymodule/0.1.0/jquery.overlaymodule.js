@@ -1,3 +1,26 @@
+/**
+ * Statement: gehen zum Teufel
+ * 
+ * Describe: The javascript boot file of successful application page ( ~/apply/index.html ).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.17 16:45 ( Doris ).
+ * 
+ * Last update: 2013.10.17 16:45 ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
 (function (name, factory) {
 	
 	// See http://bugs.jquery.com/ticket/13335
@@ -38,7 +61,9 @@
 
 		defaults = {
 			
-			confirmObj: ''
+			confirmObj: '',
+
+			formId: ''
 			
 		};
 
@@ -64,6 +89,8 @@
 
 		this.clickEvent($this, opts);
 
+		this.addressChoose();
+
 	};
 
 
@@ -77,6 +104,8 @@
 
 
 		obj.on('click', function (e) {
+
+			console.log(341)
 
 			e.stopPropagation();
 
@@ -110,7 +139,7 @@
 
 				} else if (_this.attr('id') === 'cfm') {
 
-					console.log('have clicked cfm');
+					$('#' + opts.formId).submit();
 
 				}
 
@@ -120,6 +149,63 @@
 
 	};
 
+
+
+	thisPlugin.Class.prototype.addressChoose = function () {
+
+		$('.currentAddressSel').change(function () {
+
+			$(this).find( "option:selected" ).each(function(i, obj) {
+
+				switch ($(this).text()) {
+
+					case '学校地址': {
+
+
+
+						$('#otherAddress').hide();
+
+						$('.currentAddressText').val('aaa').parent().show().prev().show();
+
+						break;
+
+					}
+
+					case '家庭地址': {
+
+						$('#otherAddress').hide();
+
+						$('.currentAddressText').val('bbb').parent().show().prev().show();
+
+						break;
+
+					}
+
+					case '其他地址': {
+
+						$('#otherAddress').show();
+
+						$('.currentAddressText').parent().hide().prev().hide();
+
+						break;
+
+					}
+
+					default: {
+
+						$('.currentAddressText').val('').parent().show().parent().prev().show();
+
+						$('#otherAddress').hide();
+
+					}
+
+				}
+
+			});
+
+		});
+
+	};
 
 
 	$.fn[pluginName] = function (options) {

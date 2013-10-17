@@ -20,7 +20,7 @@
 	
 	<!-- Creation Date: 2013.10.16 09:11 ( Doris ) -->
 	
-	<!-- Last update: 2013.10.16 10:50 ( Doris ) -->
+	<!-- Last update: 2013.10.16 15:39 ( Doris ) -->
 	
 	<!-- License: ~ -->
 	
@@ -150,13 +150,15 @@
 						
 					<!-- End | Private Stylesheet ( Master ) -->
 					
-					<!-- Begin | Private Stylesheet ( Application Confirm ) -->
+					<!-- Begin | Private Stylesheet ( Application ) -->
 						
 						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/apply/application/layout.css"/> <!-- Layout -->
 
 						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/apply/application/index.css"/> <!-- Index -->
+
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/datepicker/0.1.0/datetimepicker.css"/>
 						
-					<!-- End | Private Stylesheet ( Application Confirm ) -->
+					<!-- End | Private Stylesheet ( Application ) -->
 					
 				<!-- End | Stylesheet -->
 				
@@ -259,16 +261,525 @@
 				<!-- Begin | Form area -->
 
 					<div class="formContainer">
-						
-						<div class="row">
-							
-							<div class="grid_12 yellow appProduct">
-								
 
+						<!-- Begin | Form product infomation -->
+							
+							<div class="row appProduct">
+								
+								<ul class="grid_12">
+									
+									<li>申请的分期商品：</li>
+
+									<li class="textCenter appProImg">
+										
+										<img src="http://placehold.it/80x80"/>
+
+									</li>
+
+									<li class="appProTitle">三星 GALAXY S4</li>
+
+								</ul>
 
 							</div>
 
-						</div>
+						<!-- End | Form product infomation -->
+
+
+
+						<!-- Begin | Form title -->
+
+							<div class="row formTitle">
+								
+								<h1 class="offset_1">申请信息</h1>
+
+								<p class="offset_1">请确保信息真实性，申请成功后不可随意修改！</p>
+
+							</div>
+
+						<!-- End | Form title -->
+
+
+
+						<!-- Begin | Form -->
+
+							<form id="personalInfo" class="row"  action="#" method="post">
+
+								<!-- Begin | personal information -->
+									
+									<div class="grid_12 personalInfoForm">
+										
+										<div class="prefix_1 grid_2">个人信息</div>
+
+										<div class="grid_2 offset_7 formBtn">
+
+											<a href="#">修改</a>
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="userName">姓名：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="userName" name="userName" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="identityNum">身份证号：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="identityNum" name="identityNum" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="memberType">身份：</label>
+											
+										<select id="memberType" name="memberType" class="grid_3">
+
+											<option value="0">请选择</option>
+
+											<option value="1">学生</option>
+
+											<option value="2">白领</option>
+
+										</select>
+
+										<label class="prefix_1 grid_1 certiValid" for="identityValid">证件有效期：</label>
+
+										<div class="grid_3 formIpt certiValidIpt">
+											
+											<input id="identityValid" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="phone">手机：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="phone" name="phone" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="email">E-mail：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="email" name="email" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="telephone">固定电话：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="telephone" name="telephone" type="text" />
+
+										</div>
+
+									</div>
+
+								<!-- End | personal information -->
+
+
+
+								<!-- Begin | supplementary information -->
+									
+									<div class="grid_12 personalInfoForm">
+										
+										<div class="prefix_1 grid_10">补充信息</div>
+
+										<label class="prefix_1 grid_1" for="school">学校名称：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="school" name="school" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="entranceTime">入学时间：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="entranceTime" name="entranceTime" type="text" value="2013-10-17" class="form_datetime" data-date-format="yyyy-mm-dd"/>
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="education">学历：</label>
+											
+										<select id="education" name="education" class="grid_3">
+
+											<option value="0">请选择</option>
+
+											<option value="1">本科</option>
+
+											<option value="2">硕士</option>
+
+										</select>
+
+										<label class="prefix_1 grid_1" for="department">所在院系：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="department" name="department" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="grade">年级：</label>
+											
+										<select id="grade" name="grade" class="grid_3">
+
+											<option value="0">请选择</option>
+
+											<option value="1">大一</option>
+
+											<option value="2">大二</option>
+
+											<option value="3">大三</option>
+
+											<option value="4">大四</option>
+
+										</select>
+
+										<label class="prefix_1 grid_1" for="major">专业：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="major" name="major" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="eduSystem">学制：</label>
+											
+										<select id="eduSystem" name="eduSystem" class="grid_3">
+
+											<option value="0">请选择</option>
+
+											<option value="1">全日制</option>
+
+											<option value="2">业余制</option>
+
+										</select>
+
+										<label class="prefix_1 grid_1" for="studentId">学号：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="studentId" name="studentId" type="text" />
+
+										</div>
+
+										<!-- Begin | school address selections -->
+
+											<div class="prefix_1 grid_9 addressTitle">学校地址</div>
+
+											<label class="prefix_1 grid_1" for="schoolProvince">所在区域：</label>
+
+											<div class="grid_8 addressChoose">
+
+												<select id="schoolProvince" name="schoolProvince" class="left">
+													
+													<option value="0">请选择</option>
+
+													<option value="1">上海</option>
+
+													<option value="2">江苏</option>
+
+												</select>
+
+												<i class="left">省</i>
+
+												<select id="schoolCity" name="schoolCity" class="left">
+													
+													<option value="0">请选择</option>
+
+													<option value="1">上海</option>
+
+													<option value="2">南京</option>
+
+												</select>
+
+												<i class="left">市</i>
+
+												<select id="schoolArea" name="schoolArea" class="left">
+													
+													<option value="0">请选择</option>
+
+													<option value="1">黄浦</option>
+
+													<option value="2">静安</option>
+
+												</select>
+
+												<i class="left">区</i>
+
+											</div>
+
+											<label class="prefix_1 grid_1" for="schoolStreet">街道地址：</label>
+
+											<div class="grid_8 formIpt">
+
+												<input id="schoolStreet" name="schoolStreet" type="text" />
+
+											</div>
+
+										<!-- End | school address selections -->
+
+
+
+										<!-- Begin | school address selections -->
+
+											<div class="prefix_1 grid_9 addressTitle">家庭地址</div>
+
+											<label class="prefix_1 grid_1" for="homeProvince">所在区域：</label>
+
+											<div class="grid_8 addressChoose">
+
+												<select id="homeProvince" name="homeProvice" class="left">
+													
+													<option value="0">请选择</option>
+
+													<option value="1">上海</option>
+
+													<option value="2">江苏</option>
+
+												</select>
+
+												<i class="left">省</i>
+
+												<select id="homeCity" name="homeCity" class="left">
+													
+													<option value="0">请选择</option>
+
+													<option value="1">上海</option>
+
+													<option value="2">南京</option>
+
+												</select>
+
+												<i class="left">市</i>
+
+												<select id="homeArea" name="homeArea" class="left">
+													
+													<option value="0">请选择</option>
+
+													<option value="1">黄浦</option>
+
+													<option value="2">静安</option>
+
+												</select>
+
+												<i class="left">区</i>
+
+											</div>
+											
+											<label class="prefix_1 grid_1" for="homeStreet">街道地址：</label>
+
+											<div class="grid_8 formIpt">
+
+												<input id="homeStreet" name="homeStreet" type="text" />
+
+											</div>
+
+										<!-- End | school address selections -->
+
+
+
+										<!-- Begin | current address selections -->
+
+											<label class="prefix_1 grid_1 addressTitle currentAddress" for="nowAddress">现居住地址</label>
+												
+											<select id="nowAddress" name="nowAddress" class="grid_3 currentAddressSel">
+													
+												<option value="0">请选择</option>
+
+												<option value="1">学校地址</option>
+
+												<option value="2">家庭地址</option>
+
+												<option value="3">其他地址</option>
+
+											</select>
+
+											<label class="grid_1" for="nowAddressText">住宿地址：</label>
+
+											<div class="grid_4 formIpt" for>
+												
+												<input id="nowAddressText" name="nowAddressText" type="text" class="currentAddressText" />
+
+											</div>
+
+											<!-- #otherAddress init display:none -->
+
+											<div id="otherAddress" class="prefix_1 left">
+												
+												<label class="grid_1" for="nowProvince">所在区域：</label>
+
+												<div class="grid_9 addressChoose">
+
+													<select id="nowProvince" name="nowProvince" class="left">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">上海</option>
+
+														<option value="2">江苏</option>
+
+													</select>
+
+													<i class="left">省</i>
+
+													<select id="nowCity" name="nowCity" class="left">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">上海</option>
+
+														<option value="2">南京</option>
+
+													</select>
+
+													<i class="left">市</i>
+
+													<select id="nowArea" name="nowArea" class="left">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">黄浦</option>
+
+														<option value="2">静安</option>
+
+													</select>
+
+													<i class="left">区</i>
+
+												</div>
+												
+												<label class="grid_1" for="nowStreet">街道地址：</label>
+
+												<div class="grid_9 formIpt">
+
+													<input id="nowStreet" name="nowStreet" type="text" />
+
+												</div>
+
+											</div>	
+
+										<!-- End | current address selections -->
+
+									</div>
+
+								<!-- End | supplementary information -->
+
+
+
+								<!-- Begin | Contact Person information -->
+									
+									<div class="grid_12 personalInfoForm contactInfo">
+										
+										<div class="offset_1 grid_2 family">直系亲属信息</div>
+
+										<div class="offset_3 grid_5 emergencyContact">紧急联系人信息</div>
+
+										<label class="prefix_1 grid_1" for="familyRelation">关系：</label>
+											
+										<select id="familyRelation" name="familyRelation" class="grid_3">
+
+											<option value="0">请选择</option>
+
+											<option value="1">父</option>
+
+											<option value="2">母</option>
+
+										</select>
+
+										<label class="prefix_1 grid_1" for="emContactRelation">关系：</label>
+											
+										<div class="grid_3 formIpt">
+											
+											<input id="emContactRelation" name="emContactRelation" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="familyName">姓名：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="familyName" name="familyName" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="emContactName">姓名：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="emContactName" name="emContactName" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="familyCompany">工作单位：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="familyCompany" name="familyCompany" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="emContactCompany">工作单位：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="emContactCompany" name="emContactCompany" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="familyPhone">手机：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="familyPhone" name="familyPhone" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="emContactPhone">手机：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="emContactPhone" name="emContactPhone" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="familyAddress">地址：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="familyAddress" name="familyAddress" type="text" />
+
+										</div>
+
+										<label class="prefix_1 grid_1" for="emContactAddress">地址：</label>
+
+										<div class="grid_3 formIpt">
+											
+											<input id="emContactAddress" name="emContactAddress" type="text" />
+
+										</div>
+
+									</div>
+
+								<!-- End | Contact Person information -->
+								
+								<div class="prefix_1 grid_2 formSubmit">
+									
+									<button id="submitBtn" type="submit">提交</button>
+
+								</div>
+
+							</form>
+
+						<!-- End | Form -->
+
+
+
 
 					</div>
 
@@ -416,7 +927,7 @@
 				
 					<!-- Begin | Boot -->
 						
-						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/apply/confirm_application/main" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
+						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/apply/application/main" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
 						
 					<!-- End | Boot -->
 					

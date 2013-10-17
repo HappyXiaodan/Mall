@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.16 09:11 ( Doris ).
  * 
- * Last update: 2013.10.16 09:11 ( Doris ).
+ * Last update: 2013.10.17 16:45 ( Doris ).
  * 
  * License: ~
  * 
@@ -28,7 +28,7 @@ body {
 
 	width: 100%;
 
-	height: 100%;
+	min-width: 1200px;
 
 }
 
@@ -68,7 +68,265 @@ body {
 		 (__)
 		 (oo)
   /-------\/
- / |     ||----> confirm wrapper.
+ / |     ||----> Form: product infomation.
+*  ||----||
+  ___/  ___/
+*/
+
+.formContainer {
+
+	width: 100%;
+
+	height: 100%;
+
+	background-color: #f1f1f1;
+
+}
+
+.appProduct {
+
+	margin-top: 20px;
+
+}
+
+.appProduct > ul {
+
+	height: 118px;
+
+}
+
+.appProduct > ul > li {
+
+	float: left;
+
+	margin-top: 45px;
+
+}
+
+.appProduct > ul > li:first-child {
+
+	width: 170px;
+
+	margin-left: 100px;
+
+}
+
+.appProduct > ul > li.appProImg {
+
+	width: 94px;
+
+	height: 94px;
+
+	margin-left: 30px;
+
+	margin-top: 12px;
+
+}
+
+.appProduct > ul > li.appProTitle {
+
+	margin-left: 30px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Form: title.
+*  ||----||
+  ___/  ___/
+*/
+
+.formTitle {
+
+	margin-top: 30px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Form: personal information & supplementary information.
+*  ||----||
+  ___/  ___/
+*/
+
+#personalInfo {
+
+	margin-top: 30px;
+
+}
+
+.personalInfoForm {
+
+	padding-bottom: 30px;
+
+}
+
+.personalInfoForm > div {
+
+	margin-top: 28px;
+
+	margin-bottom: 10px;
+
+	height: 20px;
+
+}
+
+.personalInfoForm > div:first-child {
+
+	-moz-box-sizing: content-box;
+
+	box-sizing: content-box;
+
+	margin-right: 0;
+
+}
+
+.personalInfoForm > div.formBtn {
+
+	margin-right: 0;
+
+}
+
+.personalInfoForm a {
+
+	margin-left: 30px;
+
+	display: inline;
+
+}
+
+.personalInfoForm label, div.formIpt, 
+
+ div.addressTitle, div.addressChoose, div.addressIpt,
+
+#otherAddress > label {
+
+	-moz-box-sizing: content-box;
+
+	box-sizing: content-box;
+
+	height: 30px;
+
+	margin-top: 15px;
+
+}
+
+#personalInfo select {
+
+	height: 30px;
+
+	margin-top: 15px;
+
+	border: 1px solid #999;
+
+}
+
+div.addressChoose > select {
+
+	margin-top: 0 !important;
+
+	width: 94%;
+
+}
+
+div.addressChoose > i {
+
+	margin: 0 13px;
+
+}
+
+div.formIpt > input {
+
+	margin-left: 4px;
+
+	margin-top: 6px;
+
+	width: 97%;
+
+}
+
+/* label中文字超过grid_1 */
+.personalInfoForm > label.certiValid, label.currentAddress {
+
+	width: 90px;
+
+}
+
+.personalInfoForm > div.certiValidIpt, select.currentAddressSel {
+
+	margin-left: -5px;
+
+}
+
+div.addressChoose > select {
+
+	width: 130px;
+
+}
+
+div#otherAddress {
+
+	margin-top: 0;
+
+	height: 120px;
+
+	display: none;
+
+}
+
+#otherAddress > div {
+
+	margin-bottom: 10px;
+
+}
+
+div.contactInfo {
+
+	margin-top: 30px;
+
+}
+
+div.contactInfo > select {
+
+	margin-bottom: 10px;
+
+}
+
+.personalInfoForm > div.family {
+
+	margin-right: 15px;
+
+}
+
+.formSubmit > button {
+
+	width: 120px;
+
+	height: 40px;
+
+	margin-top: 50px;
+
+	margin-left: 15px;
+
+	margin-bottom: 112px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> confirm.
 *  ||----||
   ___/  ___/
 */
@@ -85,17 +343,6 @@ body {
 
 }
 
-
-
-/*
-		 (__)
-		 (oo)
-  /-------\/
- / |     ||----> confirm background.
-*  ||----||
-  ___/  ___/
-*/
-
 .confirmBg {
 
 	width: 100%;
@@ -109,17 +356,6 @@ body {
 	left: 0;
 
 }
-
-
-
-/*
-		 (__)
-		 (oo)
-  /-------\/
- / |     ||----> confirm box base.
-*  ||----||
-  ___/  ___/
-*/
 
 .confirmBase {
 
@@ -136,17 +372,6 @@ body {
 	margin-left: -228px;
 
 }
-
-
-
-/*
-		 (__)
-		 (oo)
-  /-------\/
- / |     ||----> confirm box.
-*  ||----||
-  ___/  ___/
-*/
 
 .confirmBox {
 
@@ -203,3 +428,4 @@ body {
 	height: 40px;
 
 }
+
