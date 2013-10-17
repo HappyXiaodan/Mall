@@ -2,7 +2,7 @@
 		
 		
 		
-	Web设计师（ Web Designer ）：
+	中文编辑（ CH Translator ）：
 		
 		姓名（ Name ）：
 		
@@ -11,6 +11,42 @@
 		电子邮箱：
 		
 		个人主页：
+		
+		Github：
+		
+		QQ：
+		
+		Facebook：
+		
+		Badoo：
+		
+		Yahoo Messenger：
+		
+		腾讯微博（ Tencent MicroBlog ）：
+		
+		新浪微博（ Sina MicroBlog ）：
+		
+		搜狐微博（ Souhu MicroBlog ）：
+		
+		Twitter：
+		
+		来自（ From ）：
+		
+		所在位置（ Location ）：上海市（Shanghai City）
+		
+		所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
+		
+		
+		
+	Web设计师（ Web Designer ）：
+		
+		姓名（ Name ）：
+		
+		手机（ Phone ）：
+		
+		电子邮箱（ Email ）：
+		
+		个人主页（ Personal Homepage ）：
 		
 		Github：
 		
@@ -42,11 +78,11 @@
 		
 		姓名（ Name ）：
 		
-		手机：
+		手机（ Phone ）：
 		
-		电子邮箱：
+		电子邮箱（ Email ）：
 		
-		个人主页：
+		个人主页（ Personal Homepage ）：
 		
 		Github：
 		
@@ -78,11 +114,11 @@
 		
 		姓名（ Name ）：
 		
-		手机：
+		手机（ Phone ）：
 		
-		电子邮箱：
+		电子邮箱（ Email ）：
 		
-		个人主页：
+		个人主页（ Personal Homepage ）：
 		
 		Github：
 		
@@ -114,11 +150,11 @@
 		
 		姓名（ Name ）：
 		
-		手机：
+		手机（ Phone ）：
 		
-		电子邮箱：
+		电子邮箱（ Email ）：
 		
-		个人主页：
+		个人主页（ Personal Homepage ）：
 		
 		Github：
 		
@@ -186,29 +222,19 @@
 		
 		姓名（ Name ）：张晓露（ Doris ）
 		
-		手机：13636694529
+		手机（ Phone ）：13636694529
 		
-		电子邮箱：
+		电子邮箱（ Email ）：
 		
-		个人主页：
+		个人主页（ Personal Homepage ）：
 		
 		Github：https://github.com/Doris-Zhang/
 		
 		QQ：2633515779
 		
-		Facebook：
-		
-		Badoo：
-		
-		Yahoo Messenger：
-		
 		腾讯微博（ Tencent MicroBlog ）：2633515779
 		
 		新浪微博（ Sina MicroBlog ）：
-		
-		搜狐微博（ Souhu MicroBlog ）：
-		
-		Twitter：
 		
 		来自（ From ）：上海市（Shanghai City）
 		
@@ -222,11 +248,11 @@
 		
 		姓名（ Name ）：张琦（ Peter ）
 		
-		手机：13761114352
+		手机（ Phone ）：13761114352
 		
-		电子邮箱：123548889@qq.com
+		电子邮箱（ Email ）：123548889@qq.com
 		
-		个人主页：
+		个人主页（ Personal Homepage ）：
 		
 		Github：https://github.com/peter-qi
 		
@@ -248,11 +274,11 @@
 		
 		姓名（ Name ）：王亮（ Bryant ）
 		
-		手机：18501301008
+		手机（ Phone ）：18501301008
 		
-		电子邮箱：519205861@qq.com
+		电子邮箱（ Email ）：519205861@qq.com
 		
-		个人主页：
+		个人主页（ Personal Homepage ）：
 		
 		Github：
 		
@@ -274,13 +300,13 @@
 		
 		姓名（ Name ）：彭晓飞（ Laughing ）
 		
-		手机：15221105071
+		手机（ Phone ）：15221105071
 		
-		电子邮箱：tx04228118@163.com
+		电子邮箱（ Email ）：tx04228118@163.com
 		
-		个人主页：
+		个人主页（ Personal Homepage ）：
 		
-		Github：
+		Github：https://github.com/sailor2001
 		
 		QQ：453992394
 		
@@ -300,11 +326,11 @@
 		
 		姓名（ Name ）：李林泓（ Alio ）
 		
-		手机：15001931351
+		手机（ Phone ）：15001931351
 		
-		电子邮箱：522709448@qq.com
+		电子邮箱（ Email ）：522709448@qq.com
 		
-		个人主页：
+		个人主页（ Personal Homepage ）：
 		
 		Github：
 		
@@ -326,11 +352,11 @@
 		
 		姓名（ Name ）：李韦翔（ Cris ）
 		
-		手机：18180390520
+		手机（ Phone ）：18180390520
 		
-		电子邮箱：75614337@qq.com
+		电子邮箱（ Email ）：75614337@qq.com
 		
-		个人主页：
+		个人主页（ Personal Homepage ）：
 		
 		Github：
 		
@@ -350,39 +376,13 @@
 		
 	服务器端开发人员（ Back-end Server-side Developer ）：
 		
-		姓名（ Name ）：陈跃文（ Irwin ）
-		
-		手机：13564767187
-		
-		电子邮箱：irwin.chen.cn@gmail.com
-		
-		个人主页：
-		
-		Github：
-		
-		QQ：58571106
-		
-		腾讯微博（ Tencent MicroBlog ）：58571106
-		
-		新浪微博（ Sina MicroBlog ）：
-		
-		来自（ From ）：四川省樟树市 ( Zhang'shu City, Si'chuan Province )
-		
-		所在位置（ Location ）：上海市（Shanghai City）
-		
-		所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
-		
-		
-		
-	服务器端开发人员（ Back-end Server-side Developer ）：
-		
 		姓名（ Name ）：牛才平（ Andy ）
 		
-		手机：13671520201
+		手机（ Phone ）：13671520201
 		
-		电子邮箱：skyncp@163.com
+		电子邮箱（ Email ）：skyncp@163.com
 		
-		个人主页：
+		个人主页（ Personal Homepage ）：
 		
 		Github：
 		
@@ -393,6 +393,32 @@
 		新浪微博（ Sina MicroBlog ）：
 		
 		来自（ From ）：四川省成都市 ( Cheng'du City, Si'chuan Province )
+		
+		所在位置（ Location ）：上海市（Shanghai City）
+		
+		所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
+		
+		
+		
+	服务器端开发人员（ Back-end Server-side Developer ）：
+		
+		姓名（ Name ）：陈跃文（ Irwin ）
+		
+		手机（ Phone ）：13564767187
+		
+		电子邮箱（ Email ）：irwin.chen.cn@gmail.com
+		
+		个人主页（ Personal Homepage ）：
+		
+		Github：https://github.com/sailor2001
+		
+		QQ：58571106
+		
+		腾讯微博（ Tencent MicroBlog ）：58571106
+		
+		新浪微博（ Sina MicroBlog ）：
+		
+		来自（ From ）：四川省樟树市 ( Zhang'shu City, Si'chuan Province )
 		
 		所在位置（ Location ）：上海市（Shanghai City）
 		
@@ -434,42 +460,6 @@
 		
 		
 		
-	中文编辑（ CH Translator ）：
-		
-		姓名（ Name ）：
-		
-		手机：
-		
-		电子邮箱：
-		
-		个人主页：
-		
-		Github：
-		
-		QQ：
-		
-		Facebook：
-		
-		Badoo：
-		
-		Yahoo Messenger：
-		
-		腾讯微博（ Tencent MicroBlog ）：
-		
-		新浪微博（ Sina MicroBlog ）：
-		
-		搜狐微博（ Souhu MicroBlog ）：
-		
-		Twitter：
-		
-		来自（ From ）：
-		
-		所在位置（ Location ）：上海市（Shanghai City）
-		
-		所在公司（ Company ）：上海市静安区安远路555号静安门大厦808室 汇通金融 | 志道信息科技 ( Room 808, No.555, An'yuan road,Jing'an gate building, Jing'an district of Shanghai,Huitong Financial | Zhi'dao Information Technology )
-		
-		
-		
 /* 感谢（ THANKS ） */
 		
 		
@@ -480,7 +470,7 @@
 		
 /* 网站（ SITE ） */
 		
-		最近更新（ Last update ）：2013年10月17日23时57分（ 23:57 17.10.2013 ）
+		最近更新（ Last update ）：2013年10月18日00时14分（ 00:14 18.10.2013 ）
 		
 		语言（ Language ）：中文（ Chinese ）
 		
