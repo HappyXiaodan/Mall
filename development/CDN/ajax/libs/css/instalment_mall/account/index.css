@@ -1,0 +1,408 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: gehen zum Teufel.
+ *
+ * Describe: index css for account.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Doris ( Zhang Xiaolu ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.18 09:45 ( Doris ).
+ * 
+ * Last update: 2013.10.18 19:19 ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> left sidebar.
+*  ||----||
+  ___/  ___/
+*/
+
+.leftSidebar {
+
+	background-color: #e1e1e1;
+
+}
+
+.leftSidebar > li {
+
+	text-align: center;
+
+	color: #333;
+
+	font-weight: bold;
+
+	line-height: 50px;
+
+}
+
+.activeTab {
+
+	background-color: #fff;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> right container.
+*  ||----||
+  ___/  ___/
+*/
+
+.someSpeech {
+
+	font-size: 18px;
+
+	color: #848484;
+
+	line-height: 45px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> huitong account.
+*  ||----||
+  ___/  ___/
+*/
+
+.accountName > b {
+
+	color: #333;
+
+	font-weight: bold;
+
+	line-height: 65px;
+
+}
+
+.accountName > span {
+
+	color: #333;
+
+}
+
+.accountName > i, .deduction > i, .minRefund > i {
+
+	font-style: normal;
+
+}
+
+.normal {
+
+	color: #ff7f00;
+
+}
+
+.overdue {
+
+	color: #f00;
+
+}
+
+.accountInfo {
+
+	background-color: #f2efe9;
+
+}
+
+.noRepayInfo {
+
+	color: #999;
+
+	font-weight: bold;
+
+	margin: 50px 125px 0 147px;
+
+}
+
+.deduction, .minRefund {
+
+	color: #666;
+
+	font-weight: bold;
+
+}
+
+.deduction > i {
+
+	color: #f00;
+
+	font-size: 24px;
+
+}
+
+.deduction > span {
+
+	font-weight: normal;
+
+}
+
+.minRefund > i {
+
+	color: #f60;
+
+	font-size: 24px;
+
+}
+
+.repayTip {
+
+	font-size: 12px;
+
+	color: #f60;
+
+}
+
+.balance > p:first-child {
+
+	color: #666;
+
+	font-weight: bold;
+
+}
+
+.balanceNum {
+
+	color: #333;
+
+}
+
+.balanceNum > span {
+
+	font-size: 30px;
+
+	font-weight: bold;
+
+	color: #f00;
+
+}
+
+.topUp > button {
+
+	background-color: #ff7f00;
+
+	line-height: 48px;
+
+	color: #fff;
+
+	font-size: 18px;
+
+	font-family: "微软雅黑";
+
+}
+
+.topUp > a {
+
+	color: #06c;
+
+}
+
+.appProcess p {
+
+	font-size: 14px;
+
+	color: #333;
+
+}
+
+.appProcess p:first-child {
+
+	font-size: 24px;
+
+	font-family: "微软雅黑";
+
+	color: #ccc;
+
+}
+
+.appProcess p > span {
+
+	color: #f63;
+
+	font-size: 16px;
+
+	font-weight: bold;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> staging product.
+*  ||----||
+  ___/  ___/
+*/
+
+.stagingProduct, .newProduct {
+
+	line-height: 30px;
+
+}
+
+.stagingProduct > b, .newProduct > b {
+
+	color: #333;
+
+	font-weight: bold;
+
+}
+
+.stagingProduct > a {
+
+	color: #333;
+
+}
+
+.stagingDetail > thead > tr {
+
+	background-color: #f1f1f1;
+
+	line-height: 30px;
+
+}
+
+.stagingDetail th {
+
+	color: #333;
+
+	font-weight: normal;
+
+}
+
+.stagingDetail > tbody > tr > td {
+
+	font-size: 14px;
+
+	color: #333;
+
+	text-align: center;
+
+}
+
+
+
+td.productName {
+
+	text-align: left!important;
+
+	color: #06c!important;
+
+}
+
+.refund {
+
+	font-size: 16px;
+
+	font-weight: bold;
+
+}
+
+/* status: 申请中(applying), 还款中(repaying), 未通过(notPass) */
+.applying {
+
+	color: #09f !important;
+
+	font-weight: bold;
+
+}
+
+.repaying {
+
+	color: #f60 !important;
+
+	font-weight: bold;
+
+}
+
+.notPass {
+
+	color: #666 !important;
+
+	font-weight: bold;
+
+}
+
+
+
+.operation > a {
+
+	line-height: 32px;
+
+}
+
+/* operation: 支付首付(firstPay), 查看详情(viewDetail), 取消申请(cancelApply) */
+.firstPay > a {
+
+	background-color: #390;
+
+	color: #fff;
+
+	font-weight: bold;
+
+}
+
+.viewDetail > a {
+
+	color: #06c;
+
+}
+
+.cancelApply > a {
+
+	background-color: #999;
+
+	color: #fff;
+
+	font-weight: bold;
+
+}
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+
+ / |     ||----> staging product.
+*  ||----||
+  ___/  ___/
+*/
+
+.copyright {
+
+	color: #ccc;
+
+	line-height: 50px;
+
+}

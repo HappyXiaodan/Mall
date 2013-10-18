@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: gehen zum Teufel.
+ *
+ * Describe: layout css for count.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Doris ( Zhang Xiaolu ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.18 18:05 ( Doris ).
+ * 
+ * Last update: 2013.10.18 19:19 ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+.container {
+
+	background-color: #fff;
+
+}
+
+.container .row {
+
+	height: auto;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> left sidebar.
+*  ||----||
+  ___/  ___/
+*/
+
+.leftSidebar {
+
+	min-height: 1000px;
+
+}
+
+.rightContainer {
+
+	height: auto;
+
+}
+
+
+.leftSidebar > li {
+
+	width: 160px;
+
+	height: 50px;
+
+}
+
+.leftSiderbar > li > a {
+
+	display: block;
+
+	width: 100%;
+
+	height: 100%;
+
+}
+
+.myaccount {
+
+	margin-top: 70px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> right container.
+*  ||----||
+  ___/  ___/
+*/
+
+.someSpeech {
+
+	height: 45px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> huitong account.
+*  ||----||
+  ___/  ___/
+*/
+
+.accountName {
+
+	height: 53px;
+
+	border-bottom: 2px solid #e9461f;
+
+}
+
+.accountName > b {
+
+	margin-right: 30px;
+
+}
+
+.accountName > span {
+
+	margin-right: 20px;
+
+}
+
+.accountInfo {
+
+	height: 163px;
+
+	border: 1px solid #eee2d7;
+
+}
+
+.moneyInfo > li {
+
+	margin-top: 20px;
+
+}
+
+.moneyInfo > li:first-child {
+
+	margin-left: 10px;
+
+}
+
+p.deduction {
+
+	margin-top: 20px;
+
+}
+
+p.minRefund {
+
+	margin-top: 8px;
+
+}
+
+p.repayTip {
+
+	margin-top: 15px;
+
+}
+
+.deduction > i, .minRefund > i {
+
+	padding: 0 5px;
+
+}
+
+li.balance {
+
+	height: 85px;
+
+	margin-left: 70px;
+
+	margin-top: 35px;
+
+	padding-left: 65px;
+
+	border-left: 1px solid #9e9999;
+
+}
+
+.balance > p:first-child {
+
+	margin-top: 18px;
+
+}
+
+li.topUp {
+
+	margin-left: 60px;
+
+	margin-top: 55px;
+
+}
+
+.topUp > button {
+
+	width: 170px;
+
+	height: 48px;
+
+}
+
+.topUp > a {
+
+	bottom: 0;
+
+	right: -85px;
+
+}
+
+.appProcess {
+
+	height: 148px;
+
+}
+
+.appProcess > div:first-child {
+
+	width: 300px;
+
+}
+
+.appProcess p {
+
+	margin-top: 10px;
+
+}
+
+.appProcess p:first-child {
+
+	margin-top: 40px;
+
+}
+
+.appProcess img {
+
+	margin-top: 24px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> staging product.
+*  ||----||
+  ___/  ___/
+*/
+
+.stagingProduct, .newProduct {
+
+	height: 30px;
+
+	border-bottom: 2px solid #e9461f; 
+
+}
+
+.stagingProduct > b {
+
+	margin-right: 30px;
+
+}
+
+.stagingProduct > a {
+
+	margin-right: 35px;
+
+}
+
+.stagingDetail {
+
+	width: 100%;
+
+}
+
+.stagingDetail > thead > tr {
+
+	height: 30px;
+
+}
+
+.stagingDetail > tbody > tr {
+
+	border-bottom: 1px solid #ccc;
+
+}
+
+.stagingDetail > tbody img {
+
+	margin-top: 10px;
+
+	margin-bottom: 10px;
+
+	margin-right: 10px;
+
+	border: 1px solid #ccc;
+
+}
+
+.operation > a {
+
+	width: 70px;
+
+	height: 32px;
+
+	margin: 0 auto;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> staging product.
+*  ||----||
+  ___/  ___/
+*/
+
+.newProduct {
+
+	margin-top: 15px;
+
+}
+
+.newProductImg {
+
+	height: 300px;
+
+	margin: 23px 0 26px 0;
+
+}
+
+.firstPic {
+
+	left: 0;
+
+}
+
+.secondPic {
+
+	right: 0!important;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+
+ / |     ||----> staging product.
+*  ||----||
+  ___/  ___/
+*/
+
+.copyright {
+
+	height: 50px;
+
+	border-top: 1px solid #999;
+
+}
