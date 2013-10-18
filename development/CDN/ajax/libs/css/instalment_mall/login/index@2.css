@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The private stylesheet of second login page ( ~/login/index@2.html ).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.18 04:31 ( Tony ).
+ * 
+ * Last update: 2013.10.18 04:31 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> A demo button.
+*  ||----||
+  ___/  ___/
+*/
+
+.showModal {
+
+	color: #555555;
+
+	line-height: 30px;
+
+	font-size: 11px;
+
+	font-weight: bold;
+
+	text-decoration: none;
+
+	text-shadow: 0 1px white;
+	
+	text-align: center;
+
+	border-width: 1px 1px 0;
+
+	border-style: solid;
+
+	border-color: #cecece #bababa #a8a8a8;
+
+	border-radius: 3px 3px 2px 2px;
+
+	outline: 0;
+
+	vertical-align: baseline;
+
+	*vertical-align: auto;
+
+	-webkit-box-sizing: content-box;
+
+	-moz-box-sizing: content-box;
+
+	box-sizing: content-box;
+
+	background: #dfdfdf;
+
+	background-image: -webkit-linear-gradient(top, #f1f1f1, #dfdfdf 70%, #dadada);
+
+	background-image: -moz-linear-gradient(top, #f1f1f1, #dfdfdf 70%, #dadada);
+
+	background-image: -o-linear-gradient(top, #f1f1f1, #dfdfdf 70%, #dadada);
+
+	background-image: linear-gradient(to bottom, #f1f1f1, #dfdfdf 70%, #dadada);
+
+	-webkit-box-shadow: inset 0 1px #fdfdfd, inset 0 0 0 1px #eaeaea, 0 1px #a8a8a8, 0 3px #bbbbbb, 0 4px #a8a8a8, 0 5px 2px rgba(0, 0, 0, 0.25);
+
+	box-shadow: inset 0 1px #fdfdfd, inset 0 0 0 1px #eaeaea, 0 1px #a8a8a8, 0 3px #bbbbbb, 0 4px #a8a8a8, 0 5px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+.showModal:hover, .showModal:active {
+
+	background: #dfdfdf;
+
+	border-top-color: #c9c9c9;
+
+}
+
+.showModal:active {
+
+	vertical-align: -5px;
+
+	border-width: 0;
+
+	border-radius: 3px;
+
+	-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px white;
+
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px white;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> A demo button.
+*  ||----||
+  ___/  ___/
+*/
+
+#instantLogin {
+	
+	background: none;
+	
+}
+
+.modalOverlay {
+	
+	opacity: 0.8; /* Android 2.1+, Chrome 4+, Firefox 2+, IE 9+, iOS 3.2+, Opera 9+, Safari 3.1+ */
+	
+	-moz-opacity: 0.8;    /* Old mozilla browser like netscape  */
+	
+	-khtml-opacity: 0.8;    /* Really really old safari */ 
+	
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* IE8  */
+	
+	filter: alpha(opacity=80); /* IE5-7  */
+	
+	background-color: #FFF;
+	
+}
+
+.modalContent {
+	
+	background: none;
+	
+}
