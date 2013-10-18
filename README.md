@@ -39,9 +39,11 @@
 
 * 申请页，[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/apply/index.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/apply/index.html '点击查看')，[内网演示](http://192.168.0.218:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/apply/ '点击查看')
 
-* 登录页，[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/login/index.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/login/index.html '点击查看')，[内网演示](http://192.168.0.218:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/login/ '点击查看')
+* 登录页（1st），[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/login/index.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/login/index.html '点击查看')，[内网演示](http://192.168.0.218:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/login/ '点击查看')
 
-* 母版页（4），[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/master/index%404.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/master/index%404.html '点击查看')，[内网演示](http://192.168.0.218:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/master/index%404.html '点击查看')
+* 登录页（2nd），[发布版]( '点击查看')，[开发版]( '点击查看')，[内网演示](http://192.168.0.218:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/login/index%402.html '点击查看')
+
+* 母版页（4th），[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/master/index%404.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/master/index%404.html '点击查看')，[内网演示](http://192.168.0.218:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/master/index%404.html '点击查看')
 
 ### 2013.10.15 11:13 ###
 
