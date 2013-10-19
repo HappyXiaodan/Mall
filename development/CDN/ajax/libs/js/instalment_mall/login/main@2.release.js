@@ -62,7 +62,7 @@
 		
 		requirejs.config({
 			
-			baseUrl: 'http://resource.fenqimall.com/ajax/libs',
+			baseUrl: '//resource.fenqimall.com/ajax/libs',
 			
 			enforceDefine: false,
 			
@@ -101,23 +101,23 @@
 		], function (modernizr, SJ, cookie, gridder, modifyTitle) {
 			
 			SJ(function ($) {
-
-
-
+				
+				
+				
 				/**
 				 * Simple Login Overlay.
 				 */
-
+				
 				var showModal = $('.showModal'),
-
+					
 					instantLogin = $('#instantLogin');
-
+				
 				showModal.on('click', function (e) {
-
+					
 					e.preventDefault();
-
+					
 					instantLogin.fadeIn();
-
+					
 				});
 				
 				
@@ -168,9 +168,9 @@
 	
 	boot.judgement({
 		
-		jq1x: 'ajax/libs/js/jquery/1.10.2/jquery.min',
+		jq1x: '//resource.fenqimall.com/ajax/libs/js/jquery/1.10.2/jquery.min',
 		
-		jq2x: 'ajax/libs/js/jquery/2.0.3/jquery.min'
+		jq2x: '//resource.fenqimall.com/ajax/libs/js/jquery/2.0.3/jquery.min'
 		
 	});
 	
