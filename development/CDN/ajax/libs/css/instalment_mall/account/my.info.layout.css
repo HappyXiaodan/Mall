@@ -1,0 +1,338 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: gehen zum Teufel.
+ *
+ * Describe: layout css for count.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Doris.
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.18 18:05 ( Doris ).
+ * 
+ * Last update: 2013.10.19 08:53 ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+.container {
+
+	background-color: #fff;
+
+}
+
+.container .row {
+
+	height: auto;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> left sidebar.
+*  ||----||
+  ___/  ___/
+*/
+
+.leftSidebar {
+
+	min-height: 1000px;
+
+}
+
+.rightContainer {
+
+	height: auto;
+
+}
+
+
+.leftSidebar > li {
+
+	width: 160px;
+
+	height: 50px;
+
+}
+
+.leftSiderbar > li > a {
+
+	display: block;
+
+	width: 100%;
+
+	height: 100%;
+
+}
+
+.myaccount {
+
+	margin-top: 70px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> right container.
+*  ||----||
+  ___/  ___/
+*/
+
+.myInfo {
+
+	height: 45px;
+
+	border-bottom: 2px solid #e9461f;
+
+	margin-bottom: 13px;
+
+}
+
+.myInfoTip {
+
+	height: 40px;
+
+}
+
+.myInfoTip > p {
+
+	margin-left: 22px;
+
+	z-index: 1;
+
+}
+
+.myInfoTip > p > a {
+
+	height: 40px;
+
+	width: 40px;
+
+	z-index: 2;
+
+	right: 0;
+
+	top: 0;
+
+}
+
+.ie7 .myInfoTip > p > a {
+
+	top: -13px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> personal information form.
+*  ||----||
+  ___/  ___/
+*/
+
+.personalInfo {
+
+	height: auto;
+
+	margin-left: 0;
+
+	margin-top: 22px;
+
+}
+
+.personalInfo > p, .identification > p {
+
+	margin-bottom: 24px;
+
+	padding-left: 13px;
+
+	border-left: 2px solid #ff6e0e;
+
+}
+
+.personalInfo label {
+
+	margin-left: 0;
+
+	height: 30px;
+
+	margin-bottom: 15px;
+
+}
+
+.personalInfo .formIpt {
+
+	height: 30px;
+
+	margin-right: 98px;
+
+	margin-bottom: 15px;
+
+	border: 1px solid #999;
+
+}
+
+.personalInfo a {
+
+	height: 30px;
+
+	margin-bottom: 15px;
+
+	margin-right: 0;
+
+}
+
+.ie7 .personalInfo a {
+
+	margin-bottom: 17px;
+
+}
+
+.formIpt > input {
+
+	margin-top: 6px;
+
+	margin-left: 5px;
+
+}
+
+.certiValid {
+
+	width: 85px;
+
+}
+
+.certiValidIpt {
+
+	margin-left: 0;
+
+}
+
+.personalInfo .phoneIpt, .personalInfo .emailIpt {
+
+	margin-right: 0;
+
+}
+
+.personalInfoTitle {
+
+	margin-left: 0;
+
+}
+
+.supplInfo {
+
+	margin-top: 45px;
+
+	margin-left: 0;
+
+}
+
+.personalInfo button {
+
+	width: 120px;
+
+	height: 40px;
+
+	margin: 50px 0 0 100px;
+
+}
+
+.identification {
+
+	margin-top: 22px;
+
+	height: auto;
+
+}
+
+.identification > p {
+
+	width: 270px;
+
+}
+
+p.identTitle {
+
+	padding: 0;
+
+	border: 0;
+
+	width: 270px;
+
+	margin-bottom: 10px;
+
+}
+
+.identImg {
+
+	margin-right: 100px;
+
+	width: 170px;
+
+	height: 100px;
+
+}
+
+.identification a {
+
+	margin-right: 40px;
+
+	margin-bottom: 20px;
+
+}
+
+.identImg > a {
+
+	margin: 0;
+
+}
+
+.studentIdent {
+
+	margin-top: 35px;
+
+}
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+
+ / |     ||----> copyright.
+*  ||----||
+  ___/  ___/
+*/
+
+.copyright {
+
+	width: 970px;
+
+	height: 50px;
+
+	margin-top: 62px;
+
+	border-top: 1px solid #999;
+
+}

@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: gehen zum Teufel.
+ *
+ * Describe: index css for account.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Doris.
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.18 18:05 ( Doris ).
+ * 
+ * Last update: 2013.10.19 08:53 ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> left sidebar.
+*  ||----||
+  ___/  ___/
+*/
+
+.leftSidebar {
+
+	background-color: #e1e1e1;
+
+}
+
+.leftSidebar > li {
+
+	text-align: center;
+
+	color: #333;
+
+	font-weight: bold;
+
+	line-height: 50px;
+
+}
+
+.activeTab {
+
+	background-color: #fff;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> right container.
+*  ||----||
+  ___/  ___/
+*/
+
+.myInfo > b {
+
+	font-size: 16px;
+
+	font-weight: bold;
+
+	color: #333;
+
+	line-height: 45px;
+
+}
+
+.myInfoTip {
+
+	background-color: #e9461f;
+
+}
+
+.myInfoTip > p {
+
+	line-height: 40px;
+
+	color: #fff;
+
+}
+
+.myInfoTip > p > b {
+
+	font-weight: bold;
+
+}
+
+.myInfoTip > p > a {
+
+	background: url(data:image/gif;base64,R0lGODlhKAAoAJEAAGcfDf///10cDAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOkUxMEZFRUEwRDkxNkUzMTFBMjE4QjAxMTBBMzFFMjgwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJFOTQzRkM0MzdFNTExRTM4NzI5OUNERTNFRUI4OTRCIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJFOTQzRkMzMzdFNTExRTM4NzI5OUNERTNFRUI4OTRCIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RUFFOUQ5NTNBQTI5RTMxMTkzMjc5RTYxQkY5NDA5REYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTEwRkVFQTBEOTE2RTMxMUEyMThCMDExMEEzMUUyODAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGgn56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhnZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8uLSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQAAAAAACwAAAAAKAAoAAACjYSOqct9YJycDNJ7Ld5N8494QgBKZBghZ6msT6qyifsy9HcL4szmOtwC+X4mzpBYvByRyaZj1zgua8ooBuq4TVFG3gab3CbAJvEYqDRzu6MP2ea9orML8zsezMzrzucebzVxJ7b0pnZEpnYwBKYYUzHnCEg1KbSwIwl3Vinjcidz+QcKOfolWrqJSgFQAAA7) no-repeat;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> personal information form.
+*  ||----||
+  ___/  ___/
+*/
+
+.personalInfo {
+
+	color: #333;
+
+}
+
+.personalInfo > p {
+
+	font-weight: bold;
+
+}
+
+
+.personalInfo label {
+
+	line-height: 30px;
+
+}
+
+.personalInfo a, .identification a {
+
+	color: #06c;
+
+	line-height: 30px;
+
+}
+
+.personalInfo button {
+
+	color: #fff;
+
+	background-color: #ff7f00;
+
+	font-weight: bold;
+
+}
+
+p.identTitle {
+
+	color: #666;
+
+}
+
+.identImg {
+
+	font-weight: bold;
+
+	line-height: 100px;
+
+	background-color: #f1f1f1;
+
+}
+
+.identImg > a {
+
+	display: inline;
+
+	font-weight: normal;
+
+}
+
+
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+
+ / |     ||----> copyright.
+*  ||----||
+  ___/  ___/
+*/
+
+.copyright {
+
+	color: #ccc;
+
+	line-height: 50px;
+
+}
