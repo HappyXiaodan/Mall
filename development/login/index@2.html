@@ -20,7 +20,7 @@
 	
 	<!-- Creation Date: 2013.10.18 04:31 ( Tony ) -->
 	
-	<!-- Last update: 2013.10.18 04:31 ( Tony ) -->
+	<!-- Last update: 2013.10.19 11:00 ( Tony ) -->
 	
 	<!-- License: ~ -->
 	
@@ -186,7 +186,7 @@
 				
 				<!-- Begin | Modal Window -->
 					
-					<div id="instantLogin" class="affix">
+					<div id="instantLogin" class="affix hide">
 						
 						<div class="absol modalOverlay"></div>
 						
@@ -194,29 +194,39 @@
 							
 							<div class="rela lgnMainArea">
 								
-								<form id="frmInstantLogin" class="absol frmInstantLogin flatYellowBoxGradient clearfix" name="frmInstantLogin" action="#" method="post">
+								<form id="frmInstantLogin" class="absol frmInstantLogin clearfix" name="frmInstantLogin" action="#" method="post">
 									
 									<h5>我有汇通账户，轻松分期：</h5>
 									
 									<label for="userName">用户名</label>
 									
-									<input id="userName" class="field" name="userName" type="text"/>
+									<input id="userName" class="userName instantField" name="userName" type="text"/>
 									
 									<label for="userPass">密码</label>
 									
-									<a class="right" href="#">忘记登录密码？</a>
+									<a href="#">忘记登录密码？</a>
 									
-									<input id="userPass" class="field" name="userPass" type="password"/>
+									<input id="userPass" class="userPass instantField" name="userPass" type="password"/>
 									
-									<input id="chkRmbr" class="left" type="checkbox"/>
+									<input id="chkRmbr" class="chkRmbr" name="chkRmbr" type="checkbox"/>
 									
-									<label id="lblRmbr" for="chkRmbr"class="rela">记住我的登录信息</label>
+									<label id="lblRmbr" class="lblRmbr" name="lblRmbr" for="chkRmbr">记住我的登录信息</label>
 									
 									<button type="submit">登&nbsp;&nbsp;录</button>
 									
 								</form>
 								
 								<i class="absol"></i>
+								
+								<div class="absol registerInfo clearfix">
+									
+									<h5>我没有汇通账户，立即申请。</h5>
+									
+									<div></div>
+									
+									<a href="#">快速注册</a>
+								
+								</div>
 								
 							</div>
 							
@@ -230,7 +240,7 @@
 				
 				<!-- Begin | Page Title -->
 					
-					<var id="pageTitle" class="advancedHide">母版页 | 汇通分期商城（ www.fenqimall.com ）</var> <!-- Definition, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var -->
+					<var id="pageTitle" class="advancedHide">登录模式窗口 | 汇通分期商城（ www.fenqimall.com ）</var> <!-- Definition, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var -->
 					
 				<!-- Begin | Page Title -->
 				
@@ -240,7 +250,7 @@
 				
 					<!-- Begin | Boot -->
 						
-						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/master/main%404" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
+						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/login/main%402" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
 						
 					<!-- End | Boot -->
 					

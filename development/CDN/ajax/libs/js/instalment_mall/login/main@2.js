@@ -13,7 +13,7 @@
  * 
  * Creation Date: 2013.10.18 04:31 ( Tony ).
  * 
- * Last update: 2013.10.18 04:31 ( Tony ).
+ * Last update: 2013.10.19 11:00 ( Tony ).
  * 
  * License: ~
  * 
@@ -101,6 +101,24 @@
 		], function (modernizr, SJ, cookie, gridder, modifyTitle) {
 			
 			SJ(function ($) {
+				
+				
+				
+				/**
+				 * Simple Login Overlay.
+				 */
+				
+				var showModal = $('.showModal'),
+					
+					instantLogin = $('#instantLogin');
+				
+				showModal.on('click', function (e) {
+					
+					e.preventDefault();
+					
+					instantLogin.fadeIn();
+					
+				});
 				
 				
 				

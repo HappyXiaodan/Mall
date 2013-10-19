@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.18 04:31 ( Tony ).
  * 
- * Last update: 2013.10.18 04:32 ( Tony ).
+ * Last update: 2013.10.19 11:00 ( Tony ).
  * 
  * License: ~
  * 
@@ -46,19 +46,19 @@
 	left: 50%;
 	
 	display: inline-block;
-
+	
 	*display: inline;
-
+	
 	zoom: 1;
 	
 	width: 200px;
-
+	
 	height: 30px;
 	
 	margin-top: -15px;
 	
 	margin-left: -100px;
-
+	
 }
 
 .showModal:active {
@@ -73,10 +73,12 @@
 		 (__)
 		 (oo)
   /-------\/
- / |     ||----> A demo button.
+ / |     ||----> Instant Login Modal.
 *  ||----||
   ___/  ___/
 */
+
+/* Basic */
 
 #instantLogin, .modalOverlay, .modalContent {
 	
@@ -108,7 +110,9 @@
 	
 }
 
-.lgnMainArea {
+/* Secondary */
+
+.modalContent > .lgnMainArea {
 	
 	z-index: 20003;
 	
@@ -120,19 +124,13 @@
 	
 	margin-left: -405px;
 	
-	padding: 0;
-	
 	width: 810px;
 	
-	height: 415px; /* Should be auto. */
-	
-	border: 8px solid #f4f4f4;
-	
-	background: #036;
+	height: 415px;
 	
 }
 
-.ie7 .lgnMainArea {
+.ie7 .modalContent > .lgnMainArea {
 	
 	width: 794px;
 	
@@ -144,7 +142,7 @@
 	
 }
 
-.lgnMainArea > i {
+.modalContent > .lgnMainArea > i {
 	
 	z-index: 20006;
 	
@@ -156,17 +154,13 @@
 	
 	left: 394px;
 	
-	background: #CCC;
-	
 }
+
+/* Form Primary */
 
 #frmInstantLogin {
 	
 	z-index: 20005;
-	
-	font-weight: 900;
-	
-	font-family: "微软雅黑";
 	
 	width: 250px;
 	
@@ -176,90 +170,142 @@
 	
 }
 
-#frmInstantLogin > h5 {
+#frmInstantLogin > * {
 	
-	margin-top: 0;
-	
-	margin-bottom: 32px;
+	float: left;
 	
 }
 
-#frmInstantLogin > label, #frmInstantLogin > input.field {
-	
-	color: #CCC;
-	
-	font-weight: normal;
-	
-	font-family: "新宋体";
+#frmInstantLogin > h5 {
 	
 	width: 250px;
 	
-}
-
-#frmInstantLogin > input.field {
+	margin-top: 0;
 	
-	height: 32px;
-	
-	margin-top: 3px;
-	
-	border: 1px solid #cdcdcd;
-	
-}
-
-.ie7 #frmInstantLogin > input.field {
-	
-	width: 246px;
-	
-	height: 30px;
-	
-}
-
-#userName {
-	
-	margin-bottom: 31px; 
+	margin-bottom: 30px;
 	
 }
 
 #frmInstantLogin > a {
 	
-	color: #3366cc;
+	float: right;
 	
-	font: 12px/normal "新宋体";
-	
-	text-decoration: none;
-	
-	margin-top: 4px;
+	margin-top: 3px;
 	
 }
 
-#frmInstantLogin > a:hover {
+#frmInstantLogin > label {
 	
-	text-decoration: underline;
+	display: inline-block;
+	
+	*display: inline;
+	
+	*zoom: 1;
 	
 }
 
-#chkRmbr {
+#frmInstantLogin > .instantField {
+	
+	width: 250px;
+	
+	height: 32px;
+	
+	margin-top: 5px;
+	
+}
+
+.ie7 #frmInstantLogin > .instantField {
+	
+	width: 248px;
+	
+	height: 30px;
+	
+}
+
+#frmInstantLogin > .instantField.userName {
+	
+	margin-bottom: 32px;
+	
+}
+
+#frmInstantLogin > .chkRmbr {
 	
 	margin-top: 31px;
 	
 }
 
-#lblRmbr {
+#frmInstantLogin > .lblRmbr {
 	
-	top: 27px;
+	margin-top: 30px;
 	
-	left: 11px;
+	margin-left: 11px;
+	
+}
+
+.ie7 #frmInstantLogin > .lblRmbr {
+	
+	margin-top: 32px;
 	
 }
 
 #frmInstantLogin > button {
 	
-	position: relative;
-	
-	margin-top: 8px;
-	
 	width: 250px;
 	
 	height: 36px;
+	
+	margin-top: 8px;
+	
+}
+
+/* Registration Info */
+
+.modalContent > .lgnMainArea > .registerInfo {
+	
+	z-index: 20010;
+	
+	width: 306px;
+	
+	top: 70px;
+	
+	left: 465px;
+	
+}
+
+.modalContent > .lgnMainArea > .registerInfo > h5 {
+	
+	width: 306px;
+	
+	margin-bottom: 30px;
+	
+}
+
+.modalContent > .lgnMainArea > .registerInfo > div {
+	
+	width: 306px;
+	
+	height: 163px;
+	
+}
+
+.modalContent > .lgnMainArea > .registerInfo > a {
+	
+	display: block;
+	
+	width: 250px;
+	
+	height: 32px;
+	
+	margin-top: 29px;
+	
+	padding-top: 8px;
+	
+}
+
+.ie7 .modalContent > .lgnMainArea > .registerInfo > a {
+	
+	height: 23px;
+	
+	padding-top: 9px;
 	
 }
