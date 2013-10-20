@@ -18,9 +18,9 @@
 	
 	<!-- Version: 0.1.0 -->
 	
-	<!-- Creation Date: 2013.09.28 15:48 ( Tony ) -->
+	<!-- Creation Date: 2013.10.19 16:15 ( Tony ) -->
 	
-	<!-- Last update: 2013.10.08 08:51 ( Tony ) -->
+	<!-- Last update: 2013.10.19 16:16 ( Tony ) -->
 	
 	<!-- License: ~ -->
 	
@@ -56,9 +56,11 @@
 					
 					<meta name="viewport" content="width = 1200"/>
 					
-					<meta name="Robots" content="all"/>
+					<meta name="Robots" content="none"/>
 					
 					<meta name="google" content="notranslate"/> <!-- When we recognize that the contents of a page are not in the language that the user is likely to want to read, we often provide a link to a translation in the search results. In general, this gives you the chance to provide your unique and compelling content to a much larger group of users. However, there may be situations where this is not desired. This meta tag tells Google that you don't want us to provide a translation for this page. -->
+					
+					<meta http-equiv="pragma" content="no-cache"/> <!-- HTTP/1.0 -->
 					
 					<meta http-equiv="cache-control" content="no-cache"/> <!-- content="public", or "private", "no-cache", "must-revalidate" , specific time.Use the Cache control: public directive to enable HTTPS caching for Firefox.Some versions of Firefox require that the Cache control: public header to be set in order for resources sent over SSL to be cached on disk, even if the other caching headers are explicitly set. Although this header is normally used to enable caching by proxy servers (as described below), proxies cannot cache any content sent over HTTPS, so it is always safe to set this header for HTTPS resources. -->
 					
@@ -127,10 +129,8 @@
 						<!-- Begin | Base -->
 							
 							<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/base/link.css"/> <!-- Link -->
-							
-							<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/base/header.css"/> <!-- Header -->
-							
-							<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/base/form.css"/> <!-- Form -->
+
+							<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/base/header.css"/> <!-- Link -->
 							
 						<!-- Begin | Base -->
 						
@@ -144,11 +144,19 @@
 					
 					<!-- Begin | Private Stylesheet ( Master ) -->
 						
-						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/layout.css"/> <!-- Layout -->
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/layout%403.css"/> <!-- Layout -->
 						
-						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/index.css"/> <!-- Index -->
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/index%403.css"/> <!-- Index -->
 						
 					<!-- End | Private Stylesheet ( Master ) -->
+
+					<!-- Begin | Private Stylesheet ( Registration ) -->
+
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/registration/layout.css"/> <!-- Layout -->
+						
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/registration/index.css"/> <!-- Index -->
+
+					<!-- End | Private Stylesheet ( Registration ) -->
 					
 				<!-- End | Stylesheet -->
 				
@@ -160,7 +168,7 @@
 						
 						<script type="text/javascript">window.html5 = {'shivCSS': false};</script>
 						
-						<script type="text/javascript" src="../CDN/ajax/libs/js/html5shiv/3.7.0/html5shiv.min.js"></script>
+						<script type="text/javascript" src="../CDN/ajax/libs/js/html5shiv/3.6.2/html5shiv.min.js"></script>
 						
 					<![endif]-->
 					
@@ -176,195 +184,79 @@
 		
 		<!-- Begin | Body -->
 			
-			<body class="rela antialiased"> 
+			<body class="rela antialiased">
 				
 				
 				
 				<!-- Begin | Header -->
 					
-					<header class="mstHdr2nd fullWidth rela" itemscope itemtype="http://schema.org/WPHeader"> <!-- Blog, http://html5doctor.com/the-header-element/ | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header#Browser_compatibility -->
+					<header class="mstHdr2nd pageHeader fullWidth rela" itemscope itemtype="http://schema.org/WPHeader"> <!-- Blog, http://html5doctor.com/the-header-element/ | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header#Browser_compatibility -->
 						
-						<!-- Begin | Top Bar -->
+						<div class="row clearfix"> <!-- Main area of the header part.  -->
 							
-							<div class="fullWidth topBar">
-								
-								<div class="h1st row clearfix"> <!-- Main area of the header part.  -->
-									
-									<ul class="grid leftH1st clearfix">
-										
-										<li>亲，欢迎来分期！</li>
-										
-										<li>请</li>
-										
-										<li><a href="#" hreflang="zh">登录</a></li>
-										
-										<li><a href="#" hreflang="zh">免费注册</a></li>
-										
-										<li><a class="myAccount" href="#" hreflang="zh">我的账户</a></li>
-										
-									</ul>
-									
-									<ul class="grid rightH1st right clearfix">
-										
-										<li><a class="redHightlightTest" href="#" hreflang="zh">惊喜：汇通分期商城是年轻人圆梦的平台</a></li>
-										
-										<li><a href="#" hreflang="zh">客户端下载</a></li>
-										
-										<li><a class="rela more" href="#">更多<i class="absol"></i></a></li>
-										
-									</ul>
-									
-								</div>
-								
-							</div>
+							<a class="grid" href="#" title=""> <div></div> </a> <!-- This is logo with a link action. -->
 							
-						<!-- End | Top Bar -->
-						
-						<!-- Begin | Bottom Header -->
-							
-							<div class="row clearfix"> <!-- Main area of the header part.  -->
-								
-								<a class="grid" href="#" title=""><div class="leftH2nd"></div></a>
-								
-								<nav class="inlineDisplay grid right"> <!-- Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav#Browser_compatibility -->
-									
-									<ul class="rightH2nd inlineDisplay textCenter clearfix" itemscope itemtype="http://schema.org/SiteNavigationElement">
-										
-										<li><a class="selected cleanLink" href="#" hreflang="zh">首&nbsp;&nbsp;页</a></li>
-										
-										<li><a class="cleanLink" href="#" hreflang="zh">数码分期</a></li>
-										
-										<li><a class="cleanLink" href="#" hreflang="zh">常见问题</a></li>
-										
-									</ul>
-									
-								</nav>
-								
-							</div>
-							
-						<!-- End | Bottom Header -->
+						</div>
 						
 					</header>
 					
 				<!-- Begin | Header -->
 				
 				
-				
-				<!-- TODO ........................................................................................................ -->
-				
-				
+
+				<!-- Begin | ? -->
+
+					<div class="row">
+						
+						<form id="frmRegistration" class="frmRegistration clearfix" name="frmRegistration" action="#" method="post">
+							
+							<h3>会员注册</h3>
+
+							<label class="lblUserName">用户名</label>
+
+							<div class="userNameArea"><input id="userName" class="userName" name="userName" type="text" value=""/></div>
+
+							<span>6~30个字符，可使用数字、字母、下划线，需以字母开头。</span>
+
+							<label class="lblUserPass">密码</label>
+
+							<div class="userPassArea"><input id="userPass" class="userPass" name="userPass" type="text" value=""/></div>
+
+							<span>8~20位数字和字母的组合（不可使用特殊字符）。</span>
+
+							<label class="lblUserPassDbl">确认密码</label>
+
+							<div class="userPassDblArea"><input id="userPassDouble" class="userPassDouble" name="userPassDouble" type="text" value=""/></div>
+
+							<span class="txtFillAgain">请再次填写密码。</span>
+
+							<label class="lblVertification">验证码</label>
+
+							<div class="userVertifiArea"><input id="userVertification" class="userVertification" name="userVertification" type="text"/></div>
+
+							<div class="vertificationCode"></div>
+
+							<a href="#">看不清？换一张。</a>
+
+							<span>请填写图片中的字符，不区分大小写。</span>
+
+							<button type="submit">注&nbsp;&nbsp;册</button>
+
+						</form>
+
+					</div>
+
+				<!-- Begin | ? -->
+
+
 				
 				<!-- Begin | Footer -->
 					
-					<footer class="mstFtr1st fullWidth rela" itemscope itemtype="http://schema.org/WPFooter"><!-- Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer#Browser_compatibility -->
+					<footer class="pageFooter row rela" itemscope itemtype="http://schema.org/WPFooter"> <!-- Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer#Browser_compatibility -->
 						
-						<!-- Begin | Form Area -->
-							
-							<div class="rela row mstFtr1stFrmArea clearfix">
-								
-								<!-- Begin | Footer Registration Form -->
-									
-									<form id="mstFtr1stRgst" class="grid grid_11 clearfix" name="mstFtr1stRgst" action="" method="post">
-										
-										<div class="rela field grid grid_3 box_round">
-											
-											<i class="left blockDisplay"></i>
-											
-											<input id="userName" class="left" name="userName" type="text" placeholder="用户名"/>
-											
-										</div>
-										
-										<div class="rela field grid grid_3 box_round">
-											
-											<i class="left blockDisplay"></i>
-											
-											<input id="userPass" class="left" name="userPass" type="password" placeholder="密码"/>
-											
-										</div>
-										
-										<div class="rela field grid grid_3 box_round">
-											
-											<i class="left blockDisplay"></i>
-											
-											<input id="userPassCheck" class="left" name="userPassCheck" type="password" placeholder="再输入密码"/>
-											
-										</div>
-
-										<button type="submit" class="grid btnRegister box_round">注册</button><!-- The <button> element is supported in all browsers tracked here, http://caniuse.com/#search=button -->
-										
-									</form>
-									
-								<!-- End | Footer Registration Form -->
-								
-								<a class="right textCenter cleanLink box_round" href="#">登录</a>
-								
-							</div>
-							
-						<!-- End | Form Area -->
+						<span>CopyRight &copy;2013-2014 江西汇通金融信息服务有限公司 版权所有&nbsp;&nbsp;&nbsp;</span>
 						
-						<!-- Begin | Sitemap -->
-							
-							<div class="sitemap row clearfix">
-								
-								<div class="grid grid_3">
-									
-									<h4>如何分期</h4>
-									
-									<a href="#">怎样分期</a>
-									
-									<a href="#">还款方式</a>
-									
-									<a href="#">常见问题</a>
-									
-								</div>
-								
-								<div class="grid grid_3">
-									
-									<h4>关于汇通</h4>
-									
-									<a href="#">汇通分期商城简介</a>
-									
-									<a href="#">汇通公告</a>
-									
-									<a href="#">招贤纳士</a>
-									
-								</div>
-								
-								<div class="grid grid_3">
-									
-									<h4>招商合作</h4>
-									
-									<a href="#">商户入驻</a>
-									
-									<a href="#">商户登录</a>
-									
-								</div>
-								
-								<div class="spColumn grid grid_3">
-									
-									<h4>联系方式</h4>
-									
-									<span>客服电话：<a class="inlineDisplay cleanLink" href="tel:1-408-555-5555">400-808-5599</a></span>
-									
-									<div>
-										
-										<a class="cleanLink" href="#">关注我们</a>
-										
-									</div>
-									
-								</div>
-								
-								<i class="grid grid_12"></i>
-								
-							</div>
-							
-						<!-- End | Sitemap -->
-						
-						<div class="copyRight row">
-							
-							<span class="grid_6">&copy;2013-2014 江西汇通金融信息服务有限公司 版权所有&nbsp;&nbsp;&nbsp;赣ICP备13002945</span>
-							
-						</div>
+						<a href="#">赣ICP备13002945</a>
 						
 					</footer>
 					
@@ -374,7 +266,7 @@
 				
 				<!-- Begin | Page Title -->
 					
-					<var id="pageTitle" class="advancedHide">母版页 | 汇通分期商城（ www.fenqimall.com ）</var> <!-- Definition, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var -->
+					<var id="pageTitle" class="advancedHide">注册 | 汇通分期商城（ www.fenqimall.com ）</var> <!-- Definition, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var -->
 					
 				<!-- Begin | Page Title -->
 				
@@ -384,7 +276,7 @@
 				
 					<!-- Begin | Boot -->
 						
-						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/master/main" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
+						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/master/main%403" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
 						
 					<!-- End | Boot -->
 					

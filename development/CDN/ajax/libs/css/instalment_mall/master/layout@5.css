@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The private layout stylesheet of the fifth master page (~/master/index@5.html).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Doris ( Zhang Xiaolu ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.20 19:58 ( Doris ).
+ * 
+ * Last update: 2013.10.20 22:36 ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+/*
+888    888                        888
+888    888                        888
+888    888                        888
+8888888888  .d88b.   8888b.   .d88888  .d88b.  888d888
+888    888 d8P  Y8b     "88b d88" 888 d8P  Y8b 888P"
+888    888 88888888 .d888888 888  888 88888888 888
+888    888 Y8b.     888  888 Y88b 888 Y8b.     888
+888    888  "Y8888  "Y888888  "Y88888  "Y8888  888
+*/
+
+header .row {
+	
+	margin-bottom: 0 !important;
+	
+}
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Top Bar.
+*  ||----||
+  ___/  ___/
+*/
+
+.topBar {
+	
+	background-color: #e7e7e7;
+	
+}
+
+.leftH1st, .rightH1st {
+	
+	height: 32px;
+	
+}
+
+.h1st li {
+	
+	float: left;
+	
+	margin-top: 8px;
+	
+}
+
+.h1st a {
+	
+	padding: 0 19px 0 19px;
+	
+}
+
+.h1st a.more {
+	
+	padding-right: 23px;
+	
+}
+
+.h1st a.more > i {
+	
+	width: 13px;
+	
+	height: 7px;
+	
+	top: 4px;
+	
+	right: 0;
+	
+}
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Bottom Header.
+*  ||----||
+  ___/  ___/
+*/
+
+.leftH2nd {
+	
+	width: 200px;
+	
+	height: 101px;
+	
+}

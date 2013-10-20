@@ -33,6 +33,10 @@
 发布
 ====
 
+### 2013.10.21 09:00 ###
+
+* 母版页（5th），[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/master/index%404.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/master/index%404.html '点击查看')，[内网演示](http://192.168.0.218:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/master/index%404.html '点击查看')
+
 ### 2013.10.19 12:18 ###
 
 * 母版页（4th），[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/master/index%404.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/master/index%404.html '点击查看')，[内网演示](http://192.168.0.218:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/master/index%404.html '点击查看')
