@@ -70,7 +70,7 @@
 				
 				'jquery': jquery,
 				
-				'cdnjs': 'ajax/libs/js'
+				'cdnjs': 'js'
 				
 			},
 			
