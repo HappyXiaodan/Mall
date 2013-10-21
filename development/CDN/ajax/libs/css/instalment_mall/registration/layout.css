@@ -140,6 +140,14 @@ body > div {
 
 }
 
+.ie7 #frmRegistration > div > input {
+
+	width: 246px;
+
+	margin-top: 3px;
+
+}
+
 #frmRegistration > a {
 
 	color: #36c;
@@ -182,11 +190,23 @@ body > div {
 
 }
 
+.ie7 #frmRegistration > .userNameArea > input {
+
+	margin-left: -49px !important;
+
+}
+
 #frmRegistration > .userPassArea {
 
 	margin-top: 25px;
 
 	margin-left: 62px;
+
+}
+
+.ie7 #frmRegistration > .userPassArea > input {
+
+	margin-left: -62px !important;
 
 }
 
@@ -198,13 +218,37 @@ body > div {
 
 }
 
-#frmRegistration > .userVertifiArea {
+.ie7 #frmRegistration > .userPassDblArea > input {
 
-	margin-top: 25px;
+	margin-left: -34px !important;
+
+}
+
+#frmRegistration > .userVertifiArea {
 
 	width: 100px;
 
+	margin-top: 25px;
+
 	margin-left: 48px;
+
+}
+
+.ie7 #frmRegistration > .userVertifiArea {
+
+	width: 100px;
+
+}
+
+.ie7 #frmRegistration > .userVertifiArea > input {
+
+	margin-left: -48px !important;
+
+}
+
+#userVertification {
+
+	width: 98px !important;
 
 }
 
@@ -224,7 +268,7 @@ body > div {
 
 .ie7 #frmRegistration > .vertificationCode {
 
-	
+	width: 80px;
 	
 }
 
