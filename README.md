@@ -33,11 +33,15 @@
 发布
 ====
 
-### 2013.10.21 09:00 ###
+### 2013.10.21 16:39 ###
 
 * 母版页（5th），[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/master/index%405.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/master/index%405.html '点击查看')，[内网演示](http://192.168.0.106:9022/DROPBOX/Browser%20Side%20Workspace/Mall/development/master/index@5.html '点击查看')。
 
 * 注册页，[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/registration/index.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/registration/index.html '点击查看')，[内网演示](http://192.168.0.106:9022/DROPBOX/Browser%20Side%20Workspace/Mall/development/registration/ '点击查看')。
+
+* 充值页，[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/recharge/index.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/recharge/index.html '点击查看')，[内网演示](http://192.168.0.106:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/recharge/ '点击查看')。
+
+* 支付页，[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/payment/index.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/payment/index.html '点击查看')，[内网演示](http://192.168.0.106:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/payment/ '点击查看')。
 
 ### 2013.10.19 12:18 ###
 
