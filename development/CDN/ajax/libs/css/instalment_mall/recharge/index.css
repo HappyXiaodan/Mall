@@ -3,21 +3,21 @@
 
 
 /**
- * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
- * 
- * Describe: The private stylesheet of the payment page (~/payment/index.html).
+ * Statement: gehen zum Teufel.
+ *
+ * Describe: index css for pay/payment (index.html).
  * 
  * Further changes, comments: ~
  * 
  * Docs: ~
  * 
- * Original Author: Doris ( Zhang Xiaolu ).
+ * Original Author: Doris.
  * 
  * Version: 0.1.0
  * 
- * Creation Date: 2013.10.20 20:01 ( Doris ).
+ * Creation Date: 2013.10.19 11:46 ( Doris ).
  * 
- * Last update: 2013.10.20 20:01 ( Doris ).
+ * Last update: 2013.10.21 11:20 ( Doris ).
  * 
  * License: ~
  * 
@@ -70,52 +70,6 @@
 
 }
 
-.payForProduct {
-
-	background-color: #c8f0e1;
-
-}
-
-.payForProduct > b {
-
-	line-height: 68px;
-
-}
-
-.firstPay > span {
-
-	color: #ff7f00;
-
-	font-size: 24px;
-
-}
-
-.balancePay > p {
-
-	line-height: 32px;
-
-	font-size: 12px;
-	
-}
-
-.balancePay > p > span {
-
-	color: #f60;
-
-	font-weight: bold;
-
-}
-
-.balancePay > button {
-
-	background-color: #ff7f00;
-
-	color: #fff;
-
-	font-weight: bold;
-
-}
-
 .payContent .payTitle {
 
 	line-height: 35px;
@@ -142,13 +96,39 @@
 
 }
 
-.payMethod > button {
+.recharge > p {
+
+	line-height: 32px;
+
+	font-weight: bold;
+
+}
+
+.rechargeAmount {
+
+	background-color: #fff;
+
+}
+
+.recharge > button {
 
 	background-color: #ff7f00;
 
 	color: #fff;
 
 	font-weight: bold;
+
+}
+
+.repayAmount {
+
+	font-weight: bold;
+
+}
+
+.repayAmount > span {
+
+	color: #ff7f00;
 
 }
 
@@ -295,7 +275,7 @@
 
 /* 中国民生银行 */
 #cmbc {
-
+	
 	background-image: url(../../../ui/mall/bank/bank_09.png);
 
 }

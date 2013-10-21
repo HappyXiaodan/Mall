@@ -5,7 +5,7 @@
 /**
  * Statement: gehen zum Teufel.
  *
- * Describe: layout css for pay (index.html).
+ * Describe: layout css for pay/payment (index.html).
  * 
  * Further changes, comments: ~
  * 
@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.19 11:46 ( Doris ).
  * 
- * Last update: 2013.10.21 11:20 ( Doris ).
+ * Last update: 2013.10.21 09:20 ( Doris ).
  * 
  * License: ~
  * 
@@ -63,52 +63,6 @@ body,html {
 
 	border-bottom: 3px solid #999;
 
-	overflow: hidden; /* haslayout */
-
-}
-
-.payForProduct {
-
-	width: 1122px;
-
-	height: 68px;
-
-}
-
-.payForProduct > b:first-child {
-
-	margin-left: 25px;
-
-}
-
-.firstPay {
-
-	margin-left: 118px;
-
-}
-
-.balancePay {
-
-	margin-top: 16px;
-
-	margin-bottom: 32px;
-
-}
-
-.balancePay > input {
-
-	margin: 9px 10px 0 12px;
-
-}
-
-.balancePay > button {
-
-	width: 70px;
-
-	height: 32px;
-
-	margin-left: 105px;
-
 }
 
 .payMethod, .recharge {
@@ -120,12 +74,6 @@ body,html {
 	border-bottom: 3px solid #999;
 
 	overflow: hidden;
-
-}
-
-.payMethod {
-
-	margin-bottom: 59px;
 
 }
 
@@ -189,13 +137,49 @@ body,html {
 
 }
 
-.payMethod > button {
+.recharge {
 
-	margin: 38px 0 23px 7px;
+	border: 0;
+
+	margin-top: 48px;
+
+	margin-bottom: 115px;
+
+}
+
+.recharge > p {
+
+	margin-left: 4px;
+
+}
+
+.rechargeAmount {
+
+	width: 170px;
+
+	height: 32px;
+
+	border: 1px solid #cdcdcd;
+
+}
+
+.rechargeAmount > input {
+
+	margin-top: 7px;
+
+	margin-left: 5px;
+
+}
+
+.recharge > button {
 
 	width: 70px;
 
 	height: 32px;
+
+	margin-left: 30px;
+
+	margin-right: 34px;
 
 }
 

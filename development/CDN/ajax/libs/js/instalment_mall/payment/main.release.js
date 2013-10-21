@@ -62,7 +62,7 @@
 		
 		requirejs.config({
 			
-			baseUrl: '../CDN',
+			baseUrl: '//resource.fenqimall.com/ajax/libs',
 			
 			enforceDefine: false,
 			
@@ -70,7 +70,7 @@
 				
 				'jquery': jquery,
 				
-				'cdnjs': 'ajax/libs/js'
+				'cdnjs': 'js'
 				
 			},
 			
@@ -212,9 +212,9 @@
 	
 	boot.judgement({
 		
-		jq1x: 'ajax/libs/js/jquery/1.10.2/jquery.min',
+		jq1x: '//resource.fenqimall.com/ajax/libs/js/jquery/1.10.2/jquery.min',
 		
-		jq2x: 'ajax/libs/js/jquery/2.0.3/jquery.min'
+		jq2x: '//resource.fenqimall.com/ajax/libs/js/jquery/2.0.3/jquery.min'
 		
 	});
 		
