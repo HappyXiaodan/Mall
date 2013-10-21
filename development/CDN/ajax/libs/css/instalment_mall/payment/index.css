@@ -23,3 +23,50 @@
  * 
  * Copyright: ~
  */
+
+
+ body > div > form {
+
+	background-color: #f1f1f1;
+
+}
+
+body > div > form > .simpleAlert {
+
+	background-color: #c7f0e0;
+
+}
+
+body > div > form > .simpleAlert > span {
+
+	font-weight: 900;
+
+}
+
+body > div > form > .simpleAlert > .proDownPayment > .valueMargin {
+
+	color: #ff7e02;
+
+	font-weight: 900;
+
+	font-size: 20px;
+
+	font-family: "黑体";
+
+}
+
+body > div > form > #payOption {
+
+	margin-top: 25px;
+
+	margin-left: 35px;
+
+}
+
+body > div > form > .lblPayOption {
+
+	margin-top: 23px;
+
+	margin-left: 10px;
+
+}

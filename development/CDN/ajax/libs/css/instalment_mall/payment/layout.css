@@ -23,3 +23,89 @@
  * 
  * Copyright: ~
  */
+
+
+
+body > div > form {
+
+	height: 300px;
+
+}
+
+body > div > form > * {
+
+	float: left;
+
+}
+
+body > div > form > .lineOne {
+
+	margin-top: 26px;
+
+}
+
+body > div > form > .userAccount {
+
+	margin-left: 30px;
+
+}
+
+body > div > form > .userBalance {
+
+	margin-left: 120px;
+
+}
+
+body > div > form .valueMargin {
+
+	margin-left: 10px;
+
+	margin-right: 10px;
+
+}
+
+body > div > form > .simpleAlert {
+
+	width: 1123px;
+
+	height: 70px;
+
+	margin-top: 35px;
+
+	margin-left: 23px;
+
+}
+
+body > div > form > .simpleAlert > span {
+
+	float: left;
+
+	margin-top: 25px;
+
+	margin-left: 25px;
+
+}
+
+body > div > form > .simpleAlert > .proDownPayment {
+
+	margin-top: 22px;
+
+	margin-left: 120px;
+
+}
+
+body > div > form > #payOption {
+
+	margin-top: 25px;
+
+	margin-left: 35px;
+
+}
+
+body > div > form > .lblPayOption {
+
+	margin-top: 23px;
+
+	margin-left: 10px;
+
+}
