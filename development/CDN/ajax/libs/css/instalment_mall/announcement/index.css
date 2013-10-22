@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The private stylesheet of the announcement page (~/announcement/index.html).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.21 18:07 ( Tony ).
+ * 
+ * Last update: 2013.10.21 18:07 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Breadcrumbs.
+*  ||----||
+  ___/  ___/
+*/
+
+.simpleBreadcrumbs > ul > li {
+
+	font-size: 12px;
+
+}
+
+/* " X:nth-child(even) ", Compatibility: IE9+, Firefox 23.0+, Chrome 28.0+, Safari 5.1+, Opera 17.0+; https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child#Browser_compatibility */
+
+.simpleBreadcrumbs > ul > li:nth-child(even) {
+	
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAJCAYAAAD6reaeAAAAjUlEQVQIWzWOMQ6FIBBEZxONJWchtvRKOK60SmPrTYQYCRWJ+13Mn243M2+GtNa8bRuICMyMrutA13XxNE1Y1xWlFCilQPd9sxzzPOM4DsQYQe/jTTGe54ExBvu+g87z5GEYGk9krf2Yfd8j59wQIQRQSoml2TkH731b0YrEsSwLBFNrBY3jyDJHHH/9AIm2UD7RmdDgAAAAAElFTkSuQmCC) center center no-repeat;
+	
+}
+
+.ie7 .simpleBreadcrumbs > ul > li.crumbarrow, .ie8 .simpleBreadcrumbs > ul > li.crumbarrow {
+
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAJCAYAAAD6reaeAAAAjUlEQVQIWzWOMQ6FIBBEZxONJWchtvRKOK60SmPrTYQYCRWJ+13Mn243M2+GtNa8bRuICMyMrutA13XxNE1Y1xWlFCilQPd9sxzzPOM4DsQYQe/jTTGe54ExBvu+g87z5GEYGk9krf2Yfd8j59wQIQRQSoml2TkH731b0YrEsSwLBFNrBY3jyDJHHH/9AIm2UD7RmdDgAAAAAElFTkSuQmCC) center center no-repeat;
+
+}
+
+.simpleBreadcrumbs > ul > li:last-child > a {
+
+	color: #999;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Announcement Directory.
+*  ||----||
+  ___/  ___/
+*/
+
+.topBorder {
+
+	background-color: #ff7f00;
+
+}
+
+.directoryArea > div.directoryPanel {
+
+	border: 1px solid #cdcdcd;
+
+	border-top: 0;
+
+}

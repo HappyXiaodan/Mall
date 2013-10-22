@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The private layout stylesheet of the announcement page (~/announcement/index.html).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.21 18:07 ( Tony ).
+ * 
+ * Last update: 2013.10.21 18:07 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Breadcrumbs.
+*  ||----||
+  ___/  ___/
+*/
+
+.simpleBreadcrumbs {
+
+	margin-top: 18px;
+
+	margin-bottom: 26px;
+
+}
+
+/* " X:nth-child(even) ", Compatibility: IE9+, Firefox 23.0+, Chrome 28.0+, Safari 5.1+, Opera 17.0+; https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child#Browser_compatibility */
+
+.simpleBreadcrumbs > ul > li:nth-child(even) {
+
+	width: 5px;
+	
+	height: 9px;
+	
+	margin: 3px 8px 0 8px;
+
+}
+
+.ie7 .simpleBreadcrumbs > ul > li.crumbarrow, .ie8 .simpleBreadcrumbs > ul > li.crumbarrow {
+
+	width: 5px;
+
+	height: 9px;
+
+	margin: 2px 8px 0 8px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Announcement Directory.
+*  ||----||
+  ___/  ___/
+*/
+
+.directoryArea {
+
+	margin-bottom: 80px;
+
+}
+
+.topBorder {
+
+	height: 3px;
+
+}
+
+.directoryArea > div.directoryPanel {
+
+	padding-bottom: 356px;
+
+}
+
+.ie7 .directoryArea > div.directoryPanel {
+
+	width: 1168px;
+
+}
+
+
+
+.directoryPanel > .directory {
+
+	width: 1030px;
+
+	margin: 0 auto;
+
+	margin-top: 60px;
+
+}
+
+.directoryPanel > .directory > li {
+
+	height: 50px;
+
+	border-top: 1px solid #ccc; 
+
+}
+
+.directoryPanel > .directory > li.watching {
+
+	border-top-color: #ff7f00;
+
+}
+
+.directoryPanel > .directory > li:last-child {
+
+	border-bottom: 1px solid #ccc;
+
+}
+
+.ie7 .directoryPanel > .directory > li.lastLi {
+
+	border-bottom: 1px solid #ccc;
+
+}

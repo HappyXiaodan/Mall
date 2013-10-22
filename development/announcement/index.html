@@ -14,13 +14,13 @@
 	
 	<!-- Docs: ~ -->
 	
-	<!-- Original Author: Doris ( Zhang Xiaolu ). -->
+	<!-- Original Author: Tony ( Shen Weizhong ). -->
 	
 	<!-- Version: 0.1.0 -->
 	
-	<!-- Creation Date: 2013.10.20 20:03 ( Doris ) -->
+	<!-- Creation Date: 2013.10.21 18:06 ( Tony ) -->
 	
-	<!-- Last update: 2013.10.20 22:36 ( Doris ) -->
+	<!-- Last update: 2013.10.21 18:06 ( Tony ) -->
 	
 	<!-- License: ~ -->
 	
@@ -52,11 +52,11 @@
 					
 					<base target="_self"/>
 					
-					<meta http-equiv="X-UA-Compatible" content="IE = EmulateIE7, IE = 10, chrome = 1"/>
+					<meta http-equiv="X-UA-Compatible" content="ie = 7, chrome = 1"/> <!-- Offical: IE = EmulateIE7, IE = 10, chrome = 1 -->
 					
 					<meta name="viewport" content="width = 1200"/>
 					
-					<meta name="Robots" content="none"/>
+					<meta name="Robots" content="all"/>
 					
 					<meta name="google" content="notranslate"/> <!-- When we recognize that the contents of a page are not in the language that the user is likely to want to read, we often provide a link to a translation in the search results. In general, this gives you the chance to provide your unique and compelling content to a much larger group of users. However, there may be situations where this is not desired. This meta tag tells Google that you don't want us to provide a translation for this page. -->
 					
@@ -128,6 +128,8 @@
 							
 							<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/base/link.css"/> <!-- Link -->
 							
+							<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/base/header.css"/> <!-- Header -->
+							
 						<!-- Begin | Base -->
 						
 						<!-- Begin | Media Query -->
@@ -140,19 +142,19 @@
 					
 					<!-- Begin | Private Stylesheet ( Master ) -->
 						
-						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/layout%405.css"/> <!-- Layout -->
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/layout%402.css"/> <!-- Layout -->
 						
-						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/index%405.css"/> <!-- Index -->
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/index%402.css"/> <!-- Index -->
 						
 					<!-- End | Private Stylesheet ( Master ) -->
-
-					<!-- Begin | Private Stylesheet ( Payment ) -->
+					
+					<!-- Begin | Private Stylesheet ( Announcement ) -->
 						
-						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/payment/layout.css"/> <!-- Layout -->
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/announcement/layout.css"/> <!-- Layout -->
 						
-						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/payment/index.css"/> <!-- Index -->
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/announcement/index.css"/> <!-- Index -->
 						
-					<!-- End | Private Stylesheet ( Payment ) -->
+					<!-- End | Private Stylesheet ( Announcement ) -->
 					
 				<!-- End | Stylesheet -->
 				
@@ -230,6 +232,20 @@
 								
 								<a class="grid" href="#" title=""><div class="leftH2nd"></div></a>
 								
+								<nav class="inlineDisplay grid right"> <!-- Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav#Browser_compatibility -->
+									
+									<ul class="rightH2nd inlineDisplay textCenter clearfix" itemscope itemtype="http://schema.org/SiteNavigationElement">
+										
+										<li><a class="selected cleanLink" href="#" hreflang="zh">首&nbsp;&nbsp;页</a></li>
+										
+										<li><a class="cleanLink" href="#" hreflang="zh">数码分期</a></li>
+										
+										<li><a class="cleanLink" href="#" hreflang="zh">常见问题</a></li>
+										
+									</ul>
+									
+								</nav>
+								
 							</div>
 							
 						<!-- End | Bottom Header -->
@@ -237,231 +253,186 @@
 					</header>
 					
 				<!-- Begin | Header -->
-
-
-
-				<!-- Begin | recharge area -->
 				
-					<form id="choosePaymentBank" class="row" method="post" action="#">
-						
-						<div class="grid_12 payContent">
-                            
-							<div class="payAccount">
-								
-								<p>充值账户： <b>lucian</b><i>账户余额：<span>10.00</span>元</i></p>
-                                
-								<div class="payForProduct brightRedBg">
-									
-									<b>iphone 5s 土豪金 500G</b>
-                                    
-									<b class="firstPay">首付款 <span>388.00</span> 元</b>
-                                    
-								</div>
-                                
-								<div class="clearfix balancePay">
-									
-									<input type="checkbox" class="left" />
-                                    
-									<p class="left">使用余额支付 <span>380.00</span> 元</p>
-                                    
-									<button type="button" class="left">支付</button>
-                                    
-								</div>
-                                
-							</div>
-                            
-							<div class="payMethod">
-								
-								<p class="payTitle"><b>其他支付方式：</b>在线支付支持多家银行借记卡支付；支持支付宝、财付通等多种支付平台。</p>
-                                
-								<div class="selectedBank" id="ZFB">
-									
-									<input type="radio" value="alipay" name="chooseBank" checked="checked" />
-                                    
-								</div>
-                                
-								<div class="rela otherPayment">
-                                    
-									<a href="#" class="otherPaymentLink">选择其他在线支付</a>
-                                    
-									<i class="absol"></i>
-                                    
-								</div>
-                                
-								<button>下一步</button>
-                                
-							</div>
-                            
-						</div>
-                        
-					</form>
-                    
-				<!-- End | recharge area -->
-                
-                
-                
-				<!-- Begin | recharge question -->
-                    
-					<div class="row">
-						
-						<div class="grid_12 rechargeQuestion">
+				
+
+				<!-- Begin | Breadcrumbs -->
+
+					<div class="row simpleBreadcrumbs">
+
+						<ul class="grid_12 clearfix">
 							
-							<h3>充值遇到的问题</h3>
-                            
-							<p class="question">1.我还能用信用卡在淘宝购物么？</p>
-                            
-							<p class="answer">答：您在带有信用卡小标识的店铺购物，可以直接使用信用卡快捷（含卡通）、网银进行信用卡支付，支付限额为您的卡面额度。在没有信用卡标识的店铺购物时，您可以使用信用卡快捷（含卡通）、网银进行信用卡支付，月累计支付限额不超过500元。查看使用说明。</p>
-                            
-							<p class="question">2.没有网上银行，怎么用银行卡充值？</p>
-                            
-							<p class="answer">答：储蓄卡用户，请使用储蓄卡快捷支付充值，开通后只需输入支付宝支付密码，即可完成充值。</p>
-                            
-							<p class="question">3.怎样在网上开通储蓄卡快捷支付(含卡通)？</p>
-                            
-							<p class="answer">答：已支持国内大部分主流银行在线开通。在支付宝填写信息后，根据页面引导在网上银行完成开通。</p>
-                            
-							<a href="#">更多帮助</a>
-                            
-						</div>
-                        
-					</div>
-                    
-				<!-- End | recharge question -->
-                
-				
-				
-				<!-- Begin | overlay: choose bank -->
-                
-					<div class="rela chooseBank">
-						
-						<div class="affix opacityHalf chooseBase"></div>
-                        
-						<div class="affix chooseContainer">
+							<li class="left"><a href="#">首页</a></li>
 							
-							<a class="absol closeChoose"></a>
-                            
-							<div class="chooseMain">
-								
-								<label class="chooseTitle">汇通分期商城的合作银行</label>
-                                
-								<ul class="clearfix">
-									
-									<!-- 工商银行 -->	
-									<li class="inputBlockLevel" id="ICBC">
-										
-										<input name="chooseBank" value="icbc" type="radio"/>
-                                        
-									</li>
-                                    
-									<!-- 建设银行 -->
-									<li class="inputBlockLevel" id="CCB">
-										
-										<input name="chooseBank" value="ccb" type="radio"/>
-                                        
-									</li>
-                                    
-									<!-- 中国农业银行 -->
-									<li class="inputBlockLevel" id="ABC">
-										
-										<input name="chooseBank" value="abc" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 交通银行 -->
-									<li class="inputBlockLevel" id="BOCO">
-										
-										<input name="chooseBank" value="bcm" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 招商银行 -->
-									<li class="inputBlockLevel" id="CMB">
-										
-										<input name="chooseBank" value="cmb" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 中国银行 -->
-									<li class="inputBlockLevel" id="BOC">
-										
-										<input name="chooseBank" value="boc" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 中国光大银行 -->
-									<li class="inputBlockLevel" id="CEB">
-										
-										<input name="chooseBank" value="ceb" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 中信银行 -->
-									<li class="inputBlockLevel" id="CITI">
-										
-										<input name="chooseBank" value="cncb" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 中国民生银行 -->
-									<li class="inputBlockLevel" id="CMBC">
-										
-										<input name="chooseBank" value="cmbc" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 广发银行 -->
-									<li class="inputBlockLevel" id="CGB">
-										
-										<input name="chooseBank" value="cgb" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 华夏银行 -->
-									<li class="inputBlockLevel" id="HXBC">
-										
-										<input name="chooseBank" value="hxb" type="radio"/>
-										
-									</li>
-                                    
-								</ul>
-                                
-								<label class="chooseTitle payPlatform">支付平台</label>
-                                
-								<ul class="clearfix payPlatformChoose">
-									
-									<!-- 支付宝 -->
-									<li class="inputBlockLevel" id="ZFB">
-										
-										<input name="chooseBank" value="alipay" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 环迅支付 -->
-									<li class="inputBlockLevel" id="HXZF">
-										
-										<input name="chooseBank" value="ips" type="radio"/>
-										
-									</li>
-                                    
-								</ul>
-                                
-								<div class="divideLine"></div>
-                                
-								<button>确 认</button>
-                                
-							</div>
-                            
-						</div>
-                        
+							<li class="left crumbarrow"></li>
+							
+							<li class="left"><a href="#">网站公告</a></li>
+							
+						</ul>
+
 					</div>
-                    
-				<!-- End | overlay: choose bank -->
+
+				<!-- Begin | Breadcrumbs -->
 
 
+
+				<!-- Begin | Announcement Directory Area -->
+
+					<div class="row directoryArea">
+
+						<div class="topBorder grid_12"></div>
+
+						<div class="directoryPanel grid_12">
+							
+							<ul class="directory blueBoxGradient">
+								
+								<li class="clearfix watching">
+									
+
+
+								</li>
+								
+								<li class="clearfix">
+									
+
+
+								</li>
+								
+								<li class="clearfix">
+									
+
+
+								</li>
+								
+								<li class="clearfix">
+									
+
+
+								</li>
+								
+								<li class="clearfix">
+									
+
+
+								</li>
+								
+								<li class="clearfix">
+									
+
+
+								</li>
+								
+								<li class="clearfix">
+									
+
+
+								</li>
+								
+								<li class="clearfix">
+									
+
+
+								</li>
+								
+								<li class="clearfix">
+									
+
+
+								</li>
+								
+								<li class="lastLi clearfix">
+									
+
+
+								</li>
+
+							</ul>
+
+						</div>
+
+					</div>
+
+				<!-- End | Announcement Directory Area -->
+
+
+				
+				<!-- Begin | Footer -->
+					
+					<footer class="mstFtr2nd fullWidth rela" itemscope itemtype="http://schema.org/WPFooter"> <!-- Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer#Browser_compatibility -->
+						
+						<!-- Begin | Sitemap -->
+							
+							<div class="sitemap row clearfix">
+								
+								<div class="grid grid_3">
+									
+									<h4>如何分期</h4>
+									
+									<a href="#">怎样分期</a>
+									
+									<a href="#">还款方式</a>
+									
+									<a href="#">常见问题</a>
+									
+								</div>
+								
+								<div class="grid grid_3">
+									
+									<h4>关于汇通</h4>
+									
+									<a href="#">汇通分期商城简介</a>
+									
+									<a href="#">汇通公告</a>
+									
+									<a href="#">招贤纳士</a>
+									
+								</div>
+								
+								<div class="grid grid_3">
+									
+									<h4>招商合作</h4>
+									
+									<a href="#">商户入驻</a>
+									
+									<a href="#">商户登录</a>
+									
+								</div>
+								
+								<div class="spColumn grid grid_3">
+									
+									<h4>联系方式</h4>
+									
+									<span>客服电话：<a class="inlineDisplay cleanLink" href="tel:1-408-555-5555">400-808-5599</a></span>
+									
+									<div>
+										
+										<a class="inlineDisplay cleanLink" href="#">关注我们</a>
+										
+									</div>
+									
+								</div>
+								
+								<i class="grid grid_12"></i>
+								
+							</div>
+							
+						<!-- End | Sitemap -->
+						
+						<div class="copyRight row">
+							
+							<span class="grid_6">&copy;2013-2014 江西汇通金融信息服务有限公司 版权所有&nbsp;&nbsp;&nbsp;赣ICP备13002945</span>
+							
+						</div>
+						
+					</footer>
+					
+				<!-- Begin | Footer -->
+				
+				
 				
 				<!-- Begin | Page Title -->
 					
-					<var id="pageTitle" class="advancedHide">支付 | 汇通分期商城（ www.fenqimall.com ）</var> <!-- Definition, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var -->
+					<var id="pageTitle" class="advancedHide">母版页 | 汇通分期商城（ www.fenqimall.com ）</var> <!-- Definition, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var -->
 					
 				<!-- Begin | Page Title -->
 				
@@ -471,7 +442,7 @@
 				
 					<!-- Begin | Boot -->
 						
-						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/payment/main" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
+						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/master/main%402" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
 						
 					<!-- End | Boot -->
 					
