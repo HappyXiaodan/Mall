@@ -36,9 +36,9 @@
 */
 
 .simpleBreadcrumbs > ul > li {
-
+	
 	font-size: 12px;
-
+	
 }
 
 /* " X:nth-child(even) ", Compatibility: IE9+, Firefox 23.0+, Chrome 28.0+, Safari 5.1+, Opera 17.0+; https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child#Browser_compatibility */
@@ -83,5 +83,7 @@
 	border: 1px solid #cdcdcd;
 
 	border-top: 0;
+	
+	background-color: #FFF;
 
 }
