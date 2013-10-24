@@ -110,9 +110,7 @@
 				 * Navigation Demo.
 				 */
 				
-				nav.find('a').on('click', function (e) {
-					
-					e.preventDefault();
+				nav.find('a').on('click', function () {
 					
 					$(this).addClass('selected').closest('li').siblings().children().removeClass('selected');
 					

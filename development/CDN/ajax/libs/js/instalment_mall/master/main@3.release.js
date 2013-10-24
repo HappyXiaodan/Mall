@@ -102,8 +102,6 @@
 			
 			SJ(function ($) {
 				
-				var nav = $("nav");
-				
 				
 				
 				/**
