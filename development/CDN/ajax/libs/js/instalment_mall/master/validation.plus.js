@@ -59,6 +59,24 @@
 		footerForm = $('#mstFtr1stRgst'),
 		
 		idxFltRgst = $('#idxFltRgst');
+	
+	
+	
+	/**
+	 * More rules.
+	 */
+	
+	SJ.validator.addMethod("noWhitespace", function(value, element) {
+		
+		return this.optional(element) || /^\S+$/i.test(value);
+		
+	}, "不允许存在空格。");
+	
+	
+	
+	/**
+	 * Index registration form checker.
+	 */
 
 	idxFltRgst.validate({
 		
@@ -142,13 +160,13 @@
 
 			//SJ(form).valid();
 
-			/*form.submit();*/
-
-			console.log(SJ(form).serialize());
+			form.submit();
 			
 		}
 		
 	});
+	
+	
 	
 	/**
 	 * Footer registration form checker.
@@ -236,18 +254,10 @@
 
 			//SJ(form).valid();
 
-			/*form.submit();*/
-
-			console.log(SJ(form).serialize());
+			form.submit();
 			
 		}
 		
 	});
-	
-	SJ.validator.addMethod("noWhitespace", function(value, element) {
-		
-		return this.optional(element) || /^\S+$/i.test(value);
-		
-	}, "不允许存在空格。");
 	
 }));
