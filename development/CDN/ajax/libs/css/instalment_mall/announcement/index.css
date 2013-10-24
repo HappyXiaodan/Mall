@@ -87,3 +87,119 @@
 	background-color: #FFF;
 
 }
+
+.directoryPanel > ul > li {
+	
+	border-top: 1px solid #ccc;
+	
+}
+
+.directoryPanel > ul > li.watching {
+	
+	border-top-color: #ff7f00;
+	
+}
+
+.directoryPanel > ul > li:last-child {
+	
+	border-bottom: 1px solid #ccc;
+	
+}
+
+.ie7 .directoryPanel > ul > li.lastLi {
+	
+	border-bottom: 1px solid #ccc;
+	
+}
+
+.directoryPanel > ul > li > ul.artTitleContainer {
+	
+	cursor: pointer;
+	
+}
+
+.directoryPanel > ul > li > ul > li.articleTitle > h4 {
+
+	color: #ff7f00;
+	
+	font-weight: 900;
+	
+}
+
+.directoryPanel > ul > li > ul > li.articleTitle > span {
+
+	color: #848484;
+	
+}
+
+.directoryPanel > ul > li > ul > .articleTitle {
+	
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABvElEQVQ4T62TTW/TQBCGn7Xj+CuGFGhVELlAD6CCKlRUBOKCEH+FC3ducIAbdy78FBBwKJQmtCUhfB0KB4KgaoGGJrbjOPYyMT/B7Eq7Ws3MO+87O6M+tLZ0VAkZx3UsP2aAQz6qc8z9gRnbTFfmJvyMj2M4fQJGpKFL1e3jTXzUxtaqXl5ahHwGkhAsg9xw+WWCr4p4Qg1HMzDyGNIcbF8e+2x23qPWXnb15ZVzDCogfhxij0zOFBun/7kAGNVPY5FgciB7liluMIFXrXeo1+2mvriwyIHvCzmYk0ypOcAKQ/TDCwWAuvWGVOxWFrArzJxpIrFvbAuDZ+23+trZBagOReys0AgZVixq6R+4N/dPw91dhtZhapNU0IS+uQfjGs8/bqMer3/V15cb6EpCzliI2vSockbi+ncaRXz9fo9PcjfEbouHIXY1sXm62UO1O0194vwKgQhzwh1hYqIt0ZmtkTy4UQDYt5+gzSuodJo5Y+TPM5CCfe+2UN31tj51aQlPCqYfXUUNdtjnJJ73G3sYFQBJzSOKjjDDN3Qwj7r5gkgK+6XZ+Q8ApSWULmLpbyzdSKVbufQwlR3nv+l5UFwPyflqAAAAAElFTkSuQmCC) left center no-repeat;
+	
+}
+
+.directoryPanel > ul > li > ul > .articleContent {
+	
+	
+	
+}
+
+.directoryPanel > ul > li > ul > .articleContent > p {
+	
+	color: #848484;
+	
+	line-height: 30px;
+	
+	text-indent: 2em;
+	
+	letter-spacing: 1px;
+	
+}
+
+.directoryPanel > ul > li > ul > .articleContent > p.articleRemark {
+
+	text-indent: 0;
+
+}
+
+.directoryPanel > ul > li > ul > .articleContent > p.articleLink {
+
+	text-indent: 0;
+
+}
+
+.directoryPanel > ul > li > ul > .articleContent > p.articleLogo {
+
+	text-indent: 0;
+
+}
+
+.directoryPanel > ul > li > ul > .articleContent > p.articleDate {
+
+	text-indent: 0;
+
+}
+
+.directoryPanel > ul > li > ul > .articleContent > span.slideUp {
+
+	cursor: pointer;
+
+	color: #0066cc;
+
+	font-size: 12px;
+
+}
+
+.directoryPanel > ul > li > ul > .articleContent > span.slideUp:hover {
+
+	text-decoration: underline;
+
+}
+
+.directoryPanel > ul > li > ul > .articleContent > span.slideUp:active {
+
+	color: #ff7f00;
+
+	text-decoration: underline;
+
+}

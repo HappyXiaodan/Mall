@@ -62,7 +62,7 @@
 
 	idxFltRgst.validate({
 		
-		debug: true,
+		debug: false,
 		
 		rules: {
 			
@@ -156,7 +156,7 @@
 
 	footerForm.validate({
 		
-		debug: true,
+		debug: false,
 		
 		rules: {
 			

@@ -100,8 +100,6 @@
 	
 }
 
-
-
 .directoryPanel > ul {
 	
 	width: 1030px;
@@ -112,40 +110,6 @@
 	
 }
 
-.directoryPanel > ul > li {
-	
-	border-top: 1px solid #ccc;
-	
-}
-
-.directoryPanel > ul > li.watching {
-	
-	border-top-color: #ff7f00;
-	
-}
-
-.directoryPanel > ul > li:last-child {
-	
-	border-bottom: 1px solid #ccc;
-	
-}
-
-.ie7 .directoryPanel > ul > li.lastLi {
-	
-	border-bottom: 1px solid #ccc;
-	
-}
-
-.ie7 .directoryPanel > ul > li > ul {
-	
-	margin: 0;
-	
-	padding: 0;
-	
-	max-width: none;
-	
-}
-
 .directoryPanel > ul > li > ul.artTitleContainer {
 	
 	width: 1030px;
@@ -153,8 +117,6 @@
 }
 
 .directoryPanel > ul > li > ul > li.articleTitle > h4 {
-	
-	font-weight: 900;
 	
 	margin-top: 0;
 	
@@ -167,8 +129,6 @@
 }
 
 .directoryPanel > ul > li > ul > li.articleTitle > span {
-
-	color: #848484;
 	
 	top: 17px;
 	
@@ -190,14 +150,6 @@
 
 .directoryPanel > ul > li > ul > .articleContent > p {
 	
-	color: #848484;
-	
-	line-height: 30px;
-	
-	text-indent: 2em;
-	
-	letter-spacing: 1px;
-	
 	width: 775px;
 	
 	margin-bottom: 30px;
@@ -208,15 +160,11 @@
 
 .directoryPanel > ul > li > ul > .articleContent > p.articleRemark {
 
-	text-indent: 0;
-
 	margin-bottom: 0;
 
 }
 
 .directoryPanel > ul > li > ul > .articleContent > p.articleLink {
-
-	text-indent: 0;
 
 	margin-bottom: 60px;
 
@@ -224,15 +172,11 @@
 
 .directoryPanel > ul > li > ul > .articleContent > p.articleLogo {
 
-	text-indent: 0;
-
 	margin-bottom: 0;
 
 }
 
 .directoryPanel > ul > li > ul > .articleContent > p.articleDate {
-
-	text-indent: 0;
 
 	margin-bottom: 38px;
 
