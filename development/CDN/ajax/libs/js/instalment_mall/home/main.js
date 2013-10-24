@@ -104,11 +104,7 @@
 			
 			SJ(function ($) {
 				
-				var nav = $("nav"),
-					
-					footerForm = $('#mstFtr1stRgst'),
-					
-					idxFltRgst = $('#idxFltRgst');
+				var nav = $("nav");
 				
 				
 				
@@ -137,15 +133,6 @@
 				 */
 				
 				modifyTitle();
-				
-				
-				
-				/**
-				 * Footer registration form checker.
-				 */
-				idxFltRgst.formcheck();
-				
-				footerForm.formcheck();
 				
 				
 				
