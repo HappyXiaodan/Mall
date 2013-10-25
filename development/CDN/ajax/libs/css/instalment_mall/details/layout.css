@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.14 01:37 ( Tony ).
  * 
- * Last update: 2013.10.14 01:37 ( Tony ).
+ * Last update: 2013.10.25 19:08 ( Tony ).
  * 
  * License: ~
  * 
@@ -148,14 +148,10 @@
 }
 
 .verticalSlide > .vertical {
-	
-    overflow: hidden;
 
 	width: 70px;
 
 	height: 370px;
-	
-    border: 0;
 	
 }
 
@@ -169,20 +165,6 @@
 	
 	left: 0;
 	
-	background: url(../../../ui/mall/details/top.direction.normal.png) center center no-repeat;
-	
-}
-
-.verticalSlide > .vertical > .prev.disabled {
-	
-	background: url(../../../ui/mall/details/top.direction.response.png) center center no-repeat;
-	
-}
-
-.verticalSlide > .vertical > .prev:hover {
-	
-	background: url(../../../ui/mall/details/top.direction.response.png) center center no-repeat;
-	
 }
 
 .verticalSlide > .vertical > .next {
@@ -194,20 +176,6 @@
 	bottom: 0;
 	
 	left: 0;
-	
-	background: url(../../../ui/mall/details/bottom.direction.normal.png) center center no-repeat;
-	
-}
-
-.verticalSlide > .vertical > .next.disabled {
-	
-	background: url(../../../ui/mall/details/bottom.direction.response.png) center center no-repeat;
-	
-}
-
-.verticalSlide > .vertical > .next:hover {
-	
-	background: url(../../../ui/mall/details/bottom.direction.response.png) center center no-repeat;
 	
 }
 
@@ -250,8 +218,6 @@
 .verticalSlide > .vertical > .items > div > .item > img {
 	
 	float: left;
-	
-	cursor: pointer;
 	
 	width: 70px;
 	
@@ -303,8 +269,6 @@
 
 .productOptions > .leftCol > div {
 	
-	color: #848484;
-	
 	margin-left: 2px;
 	
 }
@@ -343,15 +307,11 @@
 	
 	padding: 0 25px;
 	
-	border-left: 1px solid #000;
-	
 }
 
 .productOptions > .rightCol > ul > li:first-child > a {
 	
 	padding-left: 0;
-	
-	border-left: 0;
 	
 }
 
@@ -375,10 +335,6 @@
 
 .productOptions > .rightCol > .stageCount > div > div {
 
-	font-size: 12px;
-	
-	text-align: center;
-
 	float: left;
 
 	width: 165px;
@@ -386,10 +342,6 @@
 	height: 31px;
 
 	padding-top: 8px;
-
-	border: 1px solid #FFF;
-
-	background-color: #f3f3f3;
 	
 }
 
@@ -403,21 +355,7 @@
 
 }
 
-.productOptions > .rightCol > .stageCount > .stageCountHead > div {
-
-	color: #fe6601;
-
-	background-color: #ffcc9a;
-	
-}
-
 .productOptions > .ps {
-	
-	color: #ff3333;
-
-	text-align: left;
-
-	font-size: 12px;
 	
 	margin-top: 10px;
 	
@@ -433,8 +371,6 @@
 	
 	margin-top: 39px;
 	
-	background: url(../../../ui/mall/details/iwant.jpg) no-repeat;
-	
 }
 
 .productDescribe {
@@ -445,6 +381,17 @@
 
 }
 
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Left Product details.
+*  ||----||
+  ___/  ___/
+*/
+
 .productDescribe > .proDesLeft {
 
 	width: 970px;
@@ -453,26 +400,17 @@
 
 }
 
-
-/* root element for tabs  */
 #tabs {
 
-    list-style: none;
-
-    border: 1px solid #CCC;
-
     height: 52px;
-	
-	background-color: #f5f5f5;
 
 }
 
 /* single tab */
+
 #tabs li {
 
     float: left;
-
-    text-indent: 0;
 
 }
 
@@ -482,15 +420,7 @@
 
     display: block;
 
-    font: normal 18px/50px "微软雅黑";
-
-    text-align: center;
-
-    text-decoration: none;
-
     width: 240px;
-
-    color: #000;
 
     top: 0;
 
@@ -499,30 +429,6 @@
 .ie7 #tabs a {
 
 	height: 52px;
-
-}
-
-#tabs a:active {
-
-    outline: none;
-
-}
-
-#tabs a:hover {
-
-	background-color: #dbdbdb;
-
-}
-
-#tabs a.current, 
-#tabs a.current:hover, 
-#tabs li.current a {
-
-    cursor: default !important;
-
-    color: #FFF !important;
-
-    background: #ff6600;
 
 }
 
@@ -535,18 +441,10 @@
 	height: auto !important;
 
 	height: 1000px;
-	
-    font-size: 14px;
 
     padding-top: 65px;
 
     padding-bottom: 4px;
-	
-    border: 1px solid #CCC;
-	
-    border-top: 0;
-	
-    background-color: #fff;
 	
 }
 
@@ -570,56 +468,168 @@
 
 }
 
-.productDescribe > .proDesRight > .proDesRightTitle {
+#rgtTabs {
 
     height: 52px;
-	
-	border: 1px solid #CCC;
-	
-	border-top: 3px solid #ff7f00;
-	
-	background-color: #f5f5f5;
-	
-}
-
-.ie7 .productDescribe > .proDesRight > .proDesRightTitle {
-	
-	height: 48px;
-	
-}
-
-.productDescribe > .proDesRight > .proDesRightTitle > h4 {
-
-	font-weight: bold;
-
-	line-height: 48px;
-
-	margin-top: 0;
-
-	margin-bottom: 0;
-
-	margin-left: 14px;
 
 }
 
-.bottomThings {
+/* single tab */
+
+#rgtTabs li {
+
+    float: left;
+
+}
+
+#rgtTabs a {
+
+    position: relative;
+
+    display: block;
+
+    width: 94px;
+
+    top: 0;
+
+}
+
+.ie7 #rgtTabs a {
+
+	height: 52px;
+
+}
+
+#rgtTabsPanes > div {
 	
-	border: 1px solid #CCC;
-	
-	border-top: 0;
+    display: none;
+
+    min-height: 100px;
+
+	height: auto !important;
+
+	height: 100px;
 	
 }
 
-.ie7 .bottomThings {
-	
-	width: 188px;
-	
+#rgtTabsPanes > div > div {
+
+	padding-bottom: 10px;
+
 }
 
-.bottomThings > div > img {
+#rgtTabsPanes > div > div > a.rgtTabProHeader {
+
+	width: 170px;
+
+	margin-left: 10px;
+
+}
+
+.ie7 #rgtTabsPanes > div > div > a.rgtTabProHeader {
+
+	margin-left: 0;
+
+}
+
+#rgtTabsPanes > div > div > a.rgtTabProPic {
 
 	float: left;
+
+	margin-top: 10px;
+
+	margin-bottom: 5px;
 	
 	margin-left: 34px;
 	
+	margin-right: 34px;
+	
+}
+
+#rgtTabsPanes > div > div > a.rgtTabProPic > img {
+
+	width: 120px;
+
+	height: 120px;
+
+}
+
+#recentlyBrowsedPanel {
+
+	width: 190px;
+
+	margin-top: 15px;
+
+	margin-right: 15px;
+
+}
+
+#recentlyBrowsedPanel > .panelTopLine {
+
+	width: 190px;
+
+	height: 3px;
+
+}
+
+#recentlyBrowsedPanel > .recentlyBrowsedTitle {
+
+	z-index: 20;
+
+	height: 48px;
+
+}
+
+#recentlyBrowsedPanel > .recentlyBrowsedTitle > h4 {
+
+	z-index: 25;
+
+	margin: 0;
+
+	top: 15px;
+
+	left: 15px;
+
+}
+
+#recentlyBrowsedPanel > .recentlyBrowsedPros {
+
+	overflow: hidden;
+
+}
+
+#recentlyBrowsedPanel > .recentlyBrowsedPros > div {
+
+	float: left;
+
+	width: 95px;
+
+	height: 95px;
+
+	margin-top: -1px;
+
+	margin-left: -1px;
+
+}
+
+.ie7 #recentlyBrowsedPanel > .recentlyBrowsedPros > div {
+
+	width: 94px;
+
+}
+
+#recentlyBrowsedPanel > .recentlyBrowsedPros > div > a {
+
+	display: block;
+
+	float: left;
+
+	width: 80px;
+
+	height: 80px;
+
+	margin-top: 7px;
+
+	margin-left: 7px;
+
 }

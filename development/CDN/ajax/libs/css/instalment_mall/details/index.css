@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.14 01:36 ( Tony ).
  * 
- * Last update: 2013.10.14 01:36 ( Tony ).
+ * Last update: 2013.10.25 19:07 ( Tony ).
  * 
  * License: ~
  * 
@@ -41,7 +41,37 @@
 
 }
 
+.breadcrumbs > ul > li:first-child > a {
+
+	color: #333;
+
+}
+
 /* " X:nth-child(even) ", Compatibility: IE9+, Firefox 23.0+, Chrome 28.0+, Safari 5.1+, Opera 17.0+; https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child#Browser_compatibility */
+
+.breadcrumbs > ul > li:nth-child(3) > a, .breadcrumbs > ul > li:nth-child(5) > a {
+
+	color: #0066cc;
+
+}
+
+.breadcrumbs > ul > li:last-child {
+
+	color: #999;
+
+}
+
+.ie7 .breadcrumbs > ul > li.secondCrumb > a, .ie7 .breadcrumbs > ul > li.thirdCrumb > a {
+
+	color: #0066cc;
+
+}
+
+.ie7 .breadcrumbs > ul > li.lastCrumb {
+
+	color: #999;
+
+}
 
 .breadcrumbs > ul > li:nth-child(even) {
 	
@@ -128,4 +158,321 @@
 
 	background: url(http://placehold.it/360x360) no-repeat;
 	
+}
+
+/* Vertical Silde. */
+
+.verticalSlide > .vertical {
+	
+    overflow: hidden;
+	
+    border: 0;
+	
+}
+
+.verticalSlide > .vertical > .prev {
+	
+	background: url(../../../ui/mall/details/top.direction.normal.png) center center no-repeat;
+	
+}
+
+.verticalSlide > .vertical > .prev.disabled {
+	
+	background: url(../../../ui/mall/details/top.direction.response.png) center center no-repeat;
+	
+}
+
+.verticalSlide > .vertical > .prev:hover {
+	
+	background: url(../../../ui/mall/details/top.direction.response.png) center center no-repeat;
+	
+}
+
+.verticalSlide > .vertical > .next {
+	
+	background: url(../../../ui/mall/details/bottom.direction.normal.png) center center no-repeat;
+	
+}
+
+.verticalSlide > .vertical > .next.disabled {
+	
+	background: url(../../../ui/mall/details/bottom.direction.response.png) center center no-repeat;
+	
+}
+
+.verticalSlide > .vertical > .next:hover {
+	
+	background: url(../../../ui/mall/details/bottom.direction.response.png) center center no-repeat;
+	
+}
+
+.verticalSlide > .vertical > .items > div > .item > img {
+	
+	cursor: pointer;
+	
+}
+
+/* Product Switch Screen. */
+
+.productOptions > .leftCol > div {
+	
+	color: #848484;
+	
+}
+
+.productOptions > .rightCol a {
+	
+	border-left: 1px solid #000;
+	
+}
+
+.productOptions > .rightCol > ul > li:first-child > a {
+	
+	border-left: 0;
+	
+}
+
+.productOptions > .rightCol > .stageCount > div > div {
+
+	font-size: 12px;
+	
+	text-align: center;
+
+	border: 1px solid #FFF;
+
+	background-color: #f3f3f3;
+	
+}
+
+.productOptions > .rightCol > .stageCount > .stageCountHead > div {
+
+	color: #fe6601;
+
+	background-color: #ffcc9a;
+	
+}
+
+.productOptions > .ps {
+	
+	color: #ff3333;
+
+	text-align: left;
+
+	font-size: 12px;
+
+}
+
+.productOptions > button {
+	
+	background: url(../../../ui/mall/details/iwant.jpg) no-repeat;
+	
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Left Product details.
+*  ||----||
+  ___/  ___/
+*/
+
+#tabs {
+
+    border: 1px solid #CCC;
+	
+	background-color: #f5f5f5;
+
+}
+
+/* single tab */
+
+#tabs li {
+
+    text-indent: 0;
+
+}
+
+#tabs a {
+
+    font: normal 18px/50px "微软雅黑";
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #000;
+
+}
+
+#tabs a:active {
+
+    outline: none;
+
+}
+
+#tabs a:hover {
+
+	background-color: #dbdbdb;
+
+}
+
+#tabs a.current, 
+#tabs a.current:hover, 
+#tabs li.current a {
+
+    cursor: default !important;
+
+    color: #FFF !important;
+
+    background: #ff6600;
+
+}
+
+#tabPanes > div {
+	
+    font-size: 14px;
+	
+    border: 1px solid #CCC;
+	
+    border-top: 0;
+	
+    background-color: #fff;
+	
+}
+
+/* Right Product Infos. */
+
+.productDescribe > .proDesRight {
+	
+	background-color: #FFF;
+
+}
+
+#rgtTabs {
+
+    border: 1px solid #CCC;
+	
+	background-color: #f5f5f5;
+
+}
+
+/* single tab */
+
+#rgtTabs li {
+
+    text-indent: 0;
+
+}
+
+#rgtTabs a {
+
+    font: normal 18px/50px "微软雅黑";
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #000;
+
+}
+
+#rgtTabs a:active {
+
+    outline: none;
+
+}
+
+#rgtTabs a:hover {
+
+	background-color: #dbdbdb;
+
+}
+
+#rgtTabs a.current, 
+#rgtTabs a.current:hover, 
+#rgtTabs li.current a {
+
+    cursor: default !important;
+
+    color: #FFF !important;
+
+    background: #ff6600;
+
+}
+
+#rgtTabsPanes > div {
+	
+    font-size: 14px;
+	
+    border: 1px solid #CCC;
+	
+    border-top: 0;
+	
+    background-color: #fff;
+	
+}
+
+#rgtTabsPanes > div > div {
+
+	font-size: 12px;
+
+	text-align: center;
+
+	line-height: 18px;
+
+}
+
+#rgtTabsPanes > div > div > a.rgtTabProHeader {
+
+	color: #9b9b9b;
+
+}
+
+#recentlyBrowsedPanel {
+	
+	background-color: #FFF;
+
+}
+
+#recentlyBrowsedPanel > .panelTopLine {
+
+	background-color: #ff7f00;
+
+}
+
+#recentlyBrowsedPanel > .recentlyBrowsedTitle {
+
+	border: 1px solid #d5d5d5;
+
+	border-top: 0; 
+
+	background-color: #f5f5f5;
+
+}
+
+#recentlyBrowsedPanel > .recentlyBrowsedTitle > h4 {
+
+	font-weight: 900;
+
+}
+
+#recentlyBrowsedPanel > .recentlyBrowsedPros {
+
+	border: 1px solid #d5d5d5;
+
+	border-top: 0;
+
+}
+
+#recentlyBrowsedPanel > .recentlyBrowsedPros > div {
+
+	border: 1px solid #d5d5d5;
+
+	border-right: 0;
+
+	background: #FFF;
+
 }

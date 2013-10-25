@@ -13,7 +13,7 @@
  * 
  * Creation Date: 2013.10.14 01:34 ( Tony ).
  * 
- * Last update: 2013.10.14 01:34 ( Tony ).
+ * Last update: 2013.10.25 19:07 ( Tony ).
  * 
  * License: ~
  * 
@@ -115,12 +115,16 @@
 				gridder;
 				
 				
+				
+				/**
+				 * Waiting for dealing.
+				 */
+
 				$(".scrollable").scrollable({ vertical: true, mousewheel: true });
 				
-				
-				
 				$("#tabs").tabs("#tabPanes > div");
-				
+
+				$('#rgtTabs').tabs("#rgtTabsPanes > div");
 				
 				$('.verticalSlide > .vertical > .items > div > .item > img').on('click', function () {
 					
@@ -135,6 +139,32 @@
 					switchPic.prop('src', baseURL + $.trim(zoomPic));
 					
 				});
+
+				var recentlyBrowsed = $('#recentlyBrowsedPanel > .recentlyBrowsedPros > div'),
+
+					evenRecentlyBrowsed = $('#recentlyBrowsedPanel > .recentlyBrowsedPros > div:even'),
+
+					oddRecentlyBrowsed = $('#recentlyBrowsedPanel > .recentlyBrowsedPros > div:odd'),
+
+					recentlyBrowsedNum = recentlyBrowsed.length;
+
+				evenRecentlyBrowsed.css({'border-right': '0'});
+
+				oddRecentlyBrowsed.css({'border-right': '1px'});
+
+				if ((recentlyBrowsedNum === 1) || (recentlyBrowsedNum === 3) || (recentlyBrowsedNum === 5)) {
+
+					recentlyBrowsed.last().css({'border-right': '1px solid #d5d5d5', 'border-bottom': '0'});
+
+				}
+
+				if ((recentlyBrowsedNum === 2) || (recentlyBrowsedNum === 4) || (recentlyBrowsedNum === 6)) {
+
+					recentlyBrowsed.last().css({'border-bottom': '0'});
+
+					recentlyBrowsed.last().prev().css({'border-bottom': '0'});
+
+				}
 				
 				
 				
