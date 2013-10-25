@@ -133,6 +133,8 @@
 
 }
 
+/* Vertical Silde. */
+
 .verticalSlide {
 
 	width: 70px;
@@ -143,19 +145,139 @@
 
 	left: 50px;
 
-	background-color: Pink;
-
 }
+
+.verticalSlide > .vertical {
+	
+    overflow: hidden;
+
+	width: 70px;
+
+	height: 370px;
+	
+    border: 0;
+	
+}
+
+.verticalSlide > .vertical > .prev {
+
+	width: 70px;
+	
+	height: 10px;
+	
+	top: 0;
+	
+	left: 0;
+	
+	background: url(../../../ui/mall/details/top.direction.normal.png) center center no-repeat;
+	
+}
+
+.verticalSlide > .vertical > .prev.disabled {
+	
+	background: url(../../../ui/mall/details/top.direction.response.png) center center no-repeat;
+	
+}
+
+.verticalSlide > .vertical > .prev:hover {
+	
+	background: url(../../../ui/mall/details/top.direction.response.png) center center no-repeat;
+	
+}
+
+.verticalSlide > .vertical > .next {
+
+	width: 70px;
+	
+	height: 10px;
+	
+	bottom: 0;
+	
+	left: 0;
+	
+	background: url(../../../ui/mall/details/bottom.direction.normal.png) center center no-repeat;
+	
+}
+
+.verticalSlide > .vertical > .next.disabled {
+	
+	background: url(../../../ui/mall/details/bottom.direction.response.png) center center no-repeat;
+	
+}
+
+.verticalSlide > .vertical > .next:hover {
+	
+	background: url(../../../ui/mall/details/bottom.direction.response.png) center center no-repeat;
+	
+}
+
+.verticalSlide > .vertical > .items {
+	
+    position: absolute;
+	
+    height: 20000em;
+	
+    margin: 0px;
+	
+}
+
+.verticalSlide > .vertical > .items > div {
+	
+	width: 70px;
+
+	height: 370px;
+	
+	padding-top: 20px;
+	
+}
+
+.ie7 .verticalSlide > .vertical > .items > div {
+
+	padding-top: 30px;
+	
+}
+
+.verticalSlide > .vertical > .items > div > .item {
+	
+	width: 70px;
+	
+	height: 70px;
+	
+	margin: 10px 0;
+	
+}
+
+.verticalSlide > .vertical > .items > div > .item > img {
+	
+	float: left;
+	
+	cursor: pointer;
+	
+	width: 70px;
+	
+	height: 70px;
+	
+}
+
+/* Product Switch Screen. */
 
 .switchScreen {
 
-	width: 400px;
+	width: 360px;
 
-	height: 370px;
+	height: 360px;
 
-	left: 170px;
+	left: 190px;
 
-	top: 37px;
+	top: 40px;
+
+}
+
+.switchScreen > img {
+
+	width: 360px;
+
+	height: 360px;
 
 }
 
@@ -436,6 +558,8 @@
 
 }
 
+/* Right Product Infos. */
+
 .productDescribe > .proDesRight {
 
 	width: 190px;
@@ -493,6 +617,8 @@
 }
 
 .bottomThings > div > img {
+
+	float: left;
 	
 	margin-left: 34px;
 	

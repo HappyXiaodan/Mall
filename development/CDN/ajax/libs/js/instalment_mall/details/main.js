@@ -97,10 +97,12 @@
 			'cdnjs/jquery_tab/0.1.0/jquery.tab',
 			
 			'cdnjs/gridder/0.1.0/gridder',
+
+			'cdnjs/jquery_scrollable/0.1.0/jquery.scrollable',
 			
 			'cdnjs/jquery_title_modify/title.modify'
 		
-		], function (modernizr, SJ, cookie, gridder, tabs, modifyTitle) {
+		], function (modernizr, SJ, cookie, gridder, tabs, thumbs, modifyTitle) {
 			
 			SJ(function ($) {
 				
@@ -111,8 +113,28 @@
 				 */
 				
 				gridder;
-
+				
+				
+				$(".scrollable").scrollable({ vertical: true, mousewheel: true });
+				
+				
+				
 				$("#tabs").tabs("#tabPanes > div");
+				
+				
+				$('.verticalSlide > .vertical > .items > div > .item > img').on('click', function () {
+					
+					var that = $(this),
+						
+						zoomPic = that.data('graphic'),
+
+						switchPic = $('.switchScreen > img'),
+
+						baseURL = 'http://resource.fenqimall.com/ajax/libs/ui/mall/details/';
+
+					switchPic.prop('src', baseURL + $.trim(zoomPic));
+					
+				});
 				
 				
 				
