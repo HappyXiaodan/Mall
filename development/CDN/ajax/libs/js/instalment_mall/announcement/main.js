@@ -99,7 +99,7 @@
 			'cdnjs/gridder/0.1.0/gridder',
 			
 			'cdnjs/jquery_title_modify/title.modify'
-		
+			
 		], function (modernizr, SJ, easing, cookie, gridder, modifyTitle) {
 			
 			SJ(function ($) {
@@ -111,7 +111,7 @@
 					directoryUnit = directoryContainer.children('li'),
 					
 					articleHeader = directoryUnit.children('ul').eq(0),
-
+					
 					articleContent = directoryUnit.children('ul').eq(1);
 				
 				$('.directoryPanel > ul > li > ul.artTitleContainer').on('click', function () {
@@ -129,13 +129,13 @@
 					});
 					
 				});
-
+				
 				$('.directoryPanel > ul > li > ul > .articleContent > span.slideUp').on('click', function () {
-
+					
 					var that = $(this);
-
+					
 					that.closest('ul').slideUp();
-
+					
 				});
 				
 				/**
@@ -189,5 +189,5 @@
 		jq2x: 'ajax/libs/js/jquery/2.0.3/jquery.min'
 		
 	});
-		
+	
 }(window, document, requirejs, require));
