@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: gehen zum Teufel.
+ *
+ * Describe: index css for repay.plan.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Doris ( Zhang Xiaolu ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.22 14:00 ( Doris ).
+ * 
+ * Last update: 2013.10.22 14:00 ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> left sidebar.
+*  ||----||
+  ___/  ___/
+*/
+
+.leftSidebar {
+
+	background-color: #e1e1e1;
+
+}
+
+.leftSidebar > li {
+
+	text-align: center;
+
+	color: #333;
+
+	font-weight: bold;
+
+	line-height: 50px;
+
+}
+
+.activeTab {
+
+	background-color: #fff;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> right container.
+*  ||----||
+  ___/  ___/
+*/
+
+.rightTitle {
+
+	line-height: 45px;
+
+	color: #333;
+
+	font-size: 16px;
+
+	font-weight: bold;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> my stage table.
+*  ||----||
+  ___/  ___/
+*/
+
+.stagingDetail > thead > tr {
+
+	background-color: #f1f1f1;
+
+	line-height: 30px;
+
+}
+
+th {
+
+	color: #333;
+
+	font-weight: normal;
+
+}
+
+.stagingDetail > tbody > tr > td {
+
+	font-size: 14px;
+
+	color: #333;
+
+	text-align: center;
+
+}
+
+
+
+td.productName {
+
+	text-align: left!important;
+
+	color: #06c!important;
+
+}
+
+.refund {
+
+	font-size: 16px;
+
+	font-weight: bold;
+
+}
+
+/* status: 申请中(applying), 还款中(repaying), 未通过(notPass) */
+.applying {
+
+	color: #09f !important;
+
+	font-weight: bold;
+
+}
+
+.repaying {
+
+	color: #f60 !important;
+
+	font-weight: bold;
+
+}
+
+.notPass {
+
+	color: #666 !important;
+
+	font-weight: bold;
+
+}
+
+
+
+.operation > a {
+
+	line-height: 32px;
+
+}
+
+/* operation: 支付首付(firstPay), 查看详情(viewDetail), 取消申请(cancelApply) */
+.firstPay > a {
+
+	background-color: #390;
+
+	color: #fff;
+
+	font-weight: bold;
+
+}
+
+.viewDetail > a {
+
+	color: #06c;
+
+}
+
+.cancelApply > a {
+
+	background-color: #999;
+
+	color: #fff;
+
+	font-weight: bold;
+
+}
+
+.recharge > a {
+
+	background-color: #ff7f00;
+
+	color: #fff;
+
+	font-weight: bold;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> repay plan table.
+*  ||----||
+  ___/  ___/
+*/
+
+.repayPlan {
+
+	background-color: #f6f6f6
+
+}
+
+.repayPlan > thead > tr {
+
+	background-color: #f8d9c5;
+
+	line-height: 28px;
+
+}
+
+.repayPlan > tbody > tr > td {
+
+	line-height: 35px;
+
+	color: #333;
+
+	text-align: center;
+
+}
+
+.loanAgreement {
+
+	color: #333;
+
+	font-weight: bold;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+
+ / |     ||----> copyright.
+*  ||----||
+  ___/  ___/
+*/
+
+.copyright {
+
+	color: #ccc;
+
+	line-height: 50px;
+
+}

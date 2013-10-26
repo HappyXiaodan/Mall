@@ -39,6 +39,18 @@
 
 * 商品详情页，[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/details/index.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/details/index.html '点击查看')，[内网演示](http://192.168.0.126:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/details/ '点击查看')。
 
+* 还款计划，[发布版]( '点击查看')，[开发版]( '点击查看')，[内网演示]( '点击查看')。
+
+* 更改密码页，[发布版]( '点击查看')，[开发版]( '点击查看')，[内网演示]( '点击查看')。
+
+* 更改手机页，[发布版]( '点击查看')，[开发版]( '点击查看')，[内网演示]( '点击查看')。
+
+* 关于页（1），[发布版]( '点击查看')，[开发版]( '点击查看')，[内网演示]( '点击查看')。
+
+* 关于页（2），[发布版]( '点击查看')，[开发版]( '点击查看')，[内网演示]( '点击查看')。
+
+* 关于页（3），[发布版]( '点击查看')，[开发版]( '点击查看')，[内网演示]( '点击查看')。
+
 ###2013.10.21 16:39###
 
 * 母版页（5th），[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/master/index%405.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/master/index%405.html '点击查看')，[内网演示](http://192.168.0.126:9022/DROPBOX/Browser%20Side%20Workspace/Mall/development/master/index@5.html '点击查看')。

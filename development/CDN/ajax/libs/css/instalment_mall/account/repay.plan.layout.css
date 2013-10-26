@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: gehen zum Teufel.
+ *
+ * Describe: layout css for repay.plan.
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Doris ( Zhang Xiaolu ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.22 14:00 ( Doris ).
+ * 
+ * Last update: 2013.10.22 14:00; ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+body, .container {
+
+	background-color: #fff;
+
+}
+
+.container .row {
+
+	height: auto;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> left sidebar.
+*  ||----||
+  ___/  ___/
+*/
+
+.leftSidebar {
+
+	min-height: 800px;
+
+	height: 100%;
+
+}
+
+.leftSidebar > li {
+
+	width: 160px;
+
+	height: 50px;
+
+}
+
+.leftSiderbar > li > a {
+
+	display: block;
+
+	width: 100%;
+
+	height: 100%;
+
+}
+
+.myaccount {
+
+	margin-top: 70px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> right container.
+*  ||----||
+  ___/  ___/
+*/
+
+.rightContainer {
+
+	min-height: 800px;
+
+	height: 100%;
+
+	z-index: 1;
+
+	padding-bottom: 300px;
+
+}
+
+.rightTitle {
+
+	height: 45px;
+
+	border-bottom: 2px solid #e9461f;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> my stage table.
+*  ||----||
+  ___/  ___/
+*/
+
+.stagingDetail {
+
+	width: 100%;
+
+}
+
+.stagingDetail > thead > tr {
+
+	height: 30px;
+
+}
+
+.stagingDetail > tbody img {
+
+	margin-top: 10px;
+
+	margin-bottom: 10px;
+
+	margin-right: 10px;
+
+	border: 1px solid #ccc;
+
+}
+
+.productNameTitle {
+
+	width: 256px;
+
+}
+
+.operation > a {
+
+	width: 70px;
+
+	height: 32px;
+
+	margin: 0 auto;
+
+}
+
+.replayPlanTitle {
+
+	margin-top: 20px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> repay plan table.
+*  ||----||
+  ___/  ___/
+*/
+
+.repayPlan {
+
+	width: 100%;
+
+}
+
+.repayPlan > thead > tr {
+
+	height: 28px;
+
+}
+
+.repayPlan th {
+
+	padding: 0 20px;
+
+}
+
+.repayPlan > tbody > tr {
+
+	height: 35px;
+
+}
+
+.repayPlan > tbody td {
+
+	padding: 0 20px;
+
+	border-bottom: 1px solid #ccc;
+
+}
+
+.repayPlan > tbody > tr:first-child > td {
+
+	padding-top: 22px;
+
+}
+
+.repayPlan .repayPeriodNum {
+
+	padding-left: 45px;
+
+}
+
+.repayPlan .repayStatus {
+
+	padding-right: 150px;
+
+}
+
+
+
+.repaid {
+
+	color: #999 !important;
+
+}
+
+.lastRepayPlan {
+
+	padding-bottom: 50px !important;
+
+	border: 0 !important;
+
+}
+
+
+
+.loanAgreement, .loanAgreementIcon {
+
+	margin: 44px 0 0px 10px;
+
+	*zoom: 1;
+
+}
+
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+
+ / |     ||----> copyright.
+*  ||----||
+  ___/  ___/
+*/
+
+.copyright {
+
+	width: 100%;
+
+	height: 50px;
+
+	border-top: 1px solid #999;
+
+	z-index: 5;
+
+	left: 0;
+
+	bottom: 0;
+
+}
