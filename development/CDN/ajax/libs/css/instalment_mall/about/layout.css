@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: gehen zum Teufel.
+ *
+ * Describe: layout css for about us(index.html).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Doris ( Zhang Xiaolu ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.23 09:19 ( Doris ).
+ * 
+ * Last update: 2013.10.23 13:07 ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Breadcrumb trail.
+*  ||----||
+  ___/  ___/
+*/
+
+.breadCrumb {
+
+	margin: 0 auto;
+
+	margin-top: 18px;
+
+	margin-bottom: 26px;
+
+	width: 1170px;
+
+}
+
+.breadCrumb > a {
+
+	display: inline;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> huitong introduction.
+*  ||----||
+  ___/  ___/
+*/
+.introContainer {
+
+	padding-bottom: 100px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> huitong introduction/about us menu (left).
+*  ||----||
+  ___/  ___/
+*/
+
+.aboutUsContent {
+
+	padding-bottom: 60px;
+
+}
+
+.aboutUsContent > h5 {
+
+	margin: 60px 70px 16px;
+
+}
+
+.aboutUsContent > p {
+
+	margin: 0 70px 40px 70px;
+
+}
+
+.aboutUsContent a {
+
+	display: inline;
+	
+}
+
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> huitong introduction/about us menu (right).
+*  ||----||
+  ___/  ___/
+*/
+
+.aboutUsTitle {
+
+	height: 39px;
+
+	border-bottom: 2px solid #ff7f00;
+
+}
+
+.aboutUsList {
+
+	margin-top: 18px;
+
+}
+
+.aboutUsList > li {
+
+	height: 38px;
+
+	border-bottom: 1px solid #ccc;
+
+}

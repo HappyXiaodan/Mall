@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: gehen zum Teufel.
+ *
+ * Describe: index css for about us(index.html).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Doris ( Zhang Xiaolu ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.23 09:19 ( Doris ).
+ * 
+ * Last update: 2013.10.23 11:39 ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Breadcrumb trail.
+*  ||----||
+  ___/  ___/
+*/
+
+.breadCrumb > a {
+
+	font-size: 12px;
+
+}
+
+.huitongIntro {
+
+	color: #999 !important;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> huitong introduction/about us menu (left).
+*  ||----||
+  ___/  ___/
+*/
+
+.aboutUsContent {
+
+	background-color: #fff;
+
+}
+
+.aboutUsContent > h5 {
+
+	color: #e9461f;
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+}
+
+.aboutUsContent > p {
+
+	line-height: 30px;
+
+}
+
+.aboutUsContent b {
+
+	font-weight: bold;
+	
+}
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> huitong introduction/about us menu (right).
+*  ||----||
+  ___/  ___/
+*/
+
+.aboutUsTitle {
+
+	color: #333;
+
+	font-family: "微软雅黑";
+
+	font-size: 24px;
+
+}
+
+.aboutUsList > li {
+
+	line-height: 38px;
+
+}
