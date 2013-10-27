@@ -89,6 +89,30 @@
 
 * 产品申请成功页面，[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/apply/successful.application.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/apply/successful.application.html '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/apply/successful.application.html '点击查看')。
 
+## Meta-Programming
+
+- [ ] Towards a fully-reflective meta-programming language (G. Neverov, P. Roe)
+- [x] D-Expressions: Lisp Power, Dylan Style (J. Bachrach, K. Playford)
+- [ ] The Java Syntactic Extender (J. Bachrach, K. Playford)
+- [x] Template Meta-Programming for Haskell (T. Sheard, S.P. Jones)
+- [ ] First-class macros have types (A. Bawden)
+- [ ] Macros that work (W. Clinger, J. Rees)
+- [ ] Macros as multi-stage computations: type-safe, generative, binding macros in MacroML (S.E. Ganz, A. Sabry, W. Taha)
+- [ ] Hygienic macro expansion (E. Kohlbecker, D. Friedman, M. felleisen, B. Duba)
+- [ ] Compile-time meta-programming in a dynamically typed OO language (L. Tratt)
+- [ ] Contrasting compile-time meta-programming in Metalua and Converge (F. Fleutot, L. Tratt)
+- [ ] Extensible syntax with lexical scoping (L. Cardelli, F. Matthes, M. Abadi)
+- [ ] Programmable syntax macros (D. Weise, R. Crew)
+
+
+
+## DSLs and DSELs
+
+- [ ] DSL implementation in MetaOCaml, Template Haskell, and C++ (K. Czarnecki, J. O'Donnell, J. Striengnitz, W. Taha)
+- [ ] Domain Specific Language Implementation via Compile-Time Meta-Programming (L. Tratt)
+- [ ] Meta-programming and DSLs in dynamic languages (Vasco Carvalhão Duarte Andrade e Silva)
+
+
 ## Parsing
 
 - [ ] Parsing Mixfix Operators (N.A. Danielsson, U. Norell)
