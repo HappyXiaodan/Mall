@@ -87,4 +87,4 @@
 
 * 首页，[发布版](https://github.com/Huitong-Finance/Mall/tree/master/releases/home/index.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/home/index.html '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/home/ '点击查看')。
 
-* 产品申请成功页面，[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/apply/successful.application.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/apply/successful.application.html '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/apply/successful.application.html '点击查看')。
+- [x] 产品申请成功页面，[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/apply/successful.application.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/apply/successful.application.html '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/apply/successful.application.html '点击查看')。
