@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The private layout stylesheet of sixth master page ( index@6.html ).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.28 10:54 ( Tony ).
+ * 
+ * Last update: 2013.10.28 13:34 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+/*
+888    888                        888
+888    888                        888
+888    888                        888
+8888888888  .d88b.   8888b.   .d88888  .d88b.  888d888
+888    888 d8P  Y8b     "88b d88" 888 d8P  Y8b 888P"
+888    888 88888888 .d888888 888  888 88888888 888
+888    888 Y8b.     888  888 Y88b 888 Y8b.     888
+888    888  "Y8888  "Y888888  "Y88888  "Y8888  888
+*/
+
+.pageHeader {
+	
+	border-bottom: 3px solid #e9461f;
+	
+}
+
+.pageHeader > div {
+	
+	height: 100px;
+	
+	margin-bottom: 0;
+	
+}
+
+.pageHeader > div > a > div {
+	
+	height: 100px;
+	
+	width: 200px;
+	
+}
+
+
+
+/* 
+88888b.                                                                   888888b.           
+888 "88b                                                                  888  "88b          
+888  888                                                                  888  .88P          
+888 d88P 888d888  .d88b.   .d88b.  888d888  .d88b.  .d8888b  .d8888b      8888888K.   8888b.  888d888
+88888P"  888P"   d88""88b d88P"88b 888P"   d8P  Y8b 88K      88K          888  "Y88b     "88b 888P"
+888      888     888  888 888  888 888     88888888 "Y8888b. "Y8888b.     888    888 .d888888 888
+888      888     Y88..88P Y88b 888 888     Y8b.          X88      X88     888   d88P 888  888 888
+888      888      "Y88P"   "Y88888 888      "Y8888   88888P'  88888P'     8888888P"  "Y888888 888
+                               888
+                          Y8b d88P
+                           "Y88P"
+*/
+
+.regPgsBar > .pgsItem {
+	
+	float: left;
+	
+	min-width: 80px;
+	
+	width: auto !important;
+	
+	width: 80px;
+	
+	height: 70px;
+	
+}
+
+.regPgsBar > .pgsItem.first {
+	
+	margin-left: 93px;
+	
+}
+
+.regPgsBar > .pgsItem.second {
+	
+	margin-left: 120px;
+	
+}
+
+.regPgsBar > .pgsItem.third {
+	
+	margin-left: 120px;
+	
+}
+
+.regPgsBar > .pgsItem.forth {
+	
+	margin-left: 120px;
+	
+}
+
+.regPgsBar > .pgsItem.fifth {
+	
+	margin-left: 120px;
+	
+}
+
+.regPgsBar > .pgsItem > div {
+	
+	width: 22px;
+	
+	height: 21px;
+	
+	margin-top: 23px;
+	
+}
+
+.regPgsBar > .pgsItem > span {
+	
+	margin-top: 22px;
+	
+	margin-left: 15px;
+	
+}
+
+.ie7 .regPgsBar {
+	
+	width: 1168px;
+	
+}
+
+.ie7 .regPgsBar > .pgsItem {
+	
+	height: 68px;
+	
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Slogon.
+*  ||----||
+  ___/  ___/
+*/
+
+.slogon {
+	
+	padding-top: 25px;
+	
+	padding-bottom: 25px;
+	
+}
