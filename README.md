@@ -43,7 +43,7 @@
 
 * 母版页（6），[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/master/index%406.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/master/index%406.html '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/master/index@6.html '点击查看')。
 
-* 注册流程（一），[发布版]( '点击查看')，[开发版]( '点击查看')，[内网演示]( '点击查看')。
+* 注册流程（一），[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/registration/index%402.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/releases/registration/index%402.html '点击查看')，[内网演示]( '点击查看')。
 
 ###2013.10.26 16:13###
 
