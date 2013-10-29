@@ -137,6 +137,30 @@
 	
 }
 
+.regPgsBar > .pgsItem.second {
+	
+	width: 105px !important;
+	
+}
+
+.regPgsBar > .pgsItem.second > span.s {
+	
+	color: #339900;
+	
+	font: 12px/normal "宋体";
+	
+	margin-top: 4px;
+	
+	margin-left: 33px;
+	
+}
+
+.ie7 .regPgsBar > .pgsItem.second > span.s {
+	
+	margin-left: 11px;
+	
+}
+
 .ie7 .regPgsBar {
 	
 	width: 1168px;
