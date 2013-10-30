@@ -102,6 +102,88 @@
 			
 			SJ(function ($) {
 				
+				var selectorEd = $('.selectorEd'),
+					
+					selectorOptions = $('.selectPanel > ul > li'),
+					
+					tgl = false;
+				
+				selectorEd.on('click', function () {
+					
+					var that = $(this),
+						
+						panel = that.prev('div');
+					
+					if (!tgl) {
+						
+						that.addClass('selectorEdOpen');
+						
+						panel.removeClass('hide');
+						
+						panel.animate({opacity: 1, top: 25}, {
+							
+							duration: 400,
+							
+							done: function () { tgl = true; }
+							
+						});
+						
+					}
+					
+				}).on('click', function () {
+					
+					var that = $(this),
+						
+						panel = that.prev('div');
+					
+					if (tgl) {
+						
+						that.removeClass('selectorEdOpen');
+						
+						panel.animate({opacity: 0, top: 35}, {
+							
+							duration: 400,
+							
+							done: function () {
+								
+								panel.addClass('hide');
+								
+								tgl = false;
+								
+							}
+							
+						});
+						
+					}
+					
+				});
+				
+				selectorOptions.on('click', function () {
+					
+					var that = $(this),
+						
+						selectedValue = that.text();
+					
+					selectorEd.children('span').text(selectedValue);
+					
+					selectorEd.children('input').val(selectedValue);
+					
+					selectorEd.prev('div').animate({opacity: 0, top: 35}, {
+						
+						duration: 400,
+						
+						done: function () {
+							
+							selectorEd.prev('div').addClass('hide');
+							
+							tgl = false;
+							
+						}
+						
+					});
+					
+				});
+				
 				
 				
 				/**

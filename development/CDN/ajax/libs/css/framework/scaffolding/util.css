@@ -522,6 +522,26 @@ p.lead {
 	
 }
 
+.minHeight_150 {
+	
+	min-height: 150px;
+	
+	height: auto !important;
+	
+	height: 150px;
+	
+}
+
+.minHeight_200 {
+	
+	min-height: 200px;
+	
+	height: auto !important;
+	
+	height: 200px;
+	
+}
+
 .minHeight_250 {
 	
 	min-height: 250px;
@@ -529,6 +549,16 @@ p.lead {
 	height: auto !important;
 	
 	height: 250px;
+	
+}
+
+.minHeight_300 {
+	
+	min-height: 300px;
+	
+	height: auto !important;
+	
+	height: 300px;
 	
 }
 

@@ -89,12 +89,6 @@ body {
 	
 }
 
-.ie7 .pnvContent > .frmPhoneSubmit {
-	
-	border-bottom: 1px solid #CCC;
-	
-}
-
 .pnvContent > .frmPhoneSubmit > input {
 	
 	float: left;
@@ -241,8 +235,6 @@ body {
 	width: 470px;
 	
 	height: 105px;
-	
-	border-top: 7px solid #eee;
 	
 	margin-top: 2px;
 	

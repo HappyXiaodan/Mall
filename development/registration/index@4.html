@@ -278,7 +278,105 @@
 							
 							<div class="basicInfoContent">
 								
-								
+								<form id="frmBasicInfo" class="frmBasicInfo" name="frmBasicInfo" action="#" method="post">
+									
+									<!-- Begin | Top Bar -->
+										
+										<div class="biToBar">
+											
+											<input id="userName" class="userName" name="userName" type="text" placeholder="请输入您的姓名"/>
+											
+											<div class="selectIdentityArea rela right">
+												
+												<div class="hide opacityFull selectPanel absol grid_2 minHeight_150">
+													
+													<ul>
+														
+														<li class="options box_round">白领</li>
+														
+														<li class="options box_round">学生</li>
+														
+														<li class="options box_round">其他</li>
+														
+													</ul>
+													
+												</div>
+												
+												<div class="absol grid_2 selectorEd selectorEdClose clearfix">
+													
+													<span class="left">身份</span>
+													
+													<input id="selectedIdentity" class="selectedIdentity" type="hidden" name="selectedIdentity"/>
+													
+												</div>
+												
+											</div>
+											
+										</div>
+										
+									<!-- End | Top Bar -->
+									
+									<h6>注意：务必填写申请人本人真实信息，基本信息提交后不得随意修改）</h6>
+									
+									<!-- Begin | Table -->
+										
+										<div class="basicInfoTable clearfix">
+											
+											<div class="rela left tableItem1">
+													
+												<label class="left">身份证号：</label>
+
+												<input id="userIdentity" class="left userIdentity" name="userIdentity" type="text"/>
+
+												<span class="absol left example">（请输入18位身份证号）</span>
+
+											</div>
+											
+											<div class="rela left tableItem2">
+													
+												<label class="left">身份证有效期至：</label>
+
+												<input id="identityYear" class="left identityYear" name="identityYear" type="text" placeholder="年"/>
+
+												<span class="left connectionLine"></span>
+
+												<input id="identityMonth" class="left identityMonth" name="identityMonth" type="text" placeholder="月"/>
+
+												<span class="left connectionLine"></span>
+
+												<input id="identityDate" class="left identityDate" name="identityDate" type="text" placeholder="日"/>
+
+												<span class="absol left example">（例：2013-01-01）</span>
+
+											</div>
+											
+											<div class="rela left tableItem3">
+												
+												<label class="left">Email：</label>
+
+												<input id="identityEmail" class="left identityEmail" name="identityEmail" type="text"/>
+
+											</div>
+											
+											<div class="rela left tableItem4">
+												
+												<label class="left">固定电话：</label>
+
+												<input id="areaCode" class="left areaCode" name="areaCode" type="text" placeholder="区号"/>
+
+												<span class="left connectionLine"></span>
+
+												<input id="userTele" class="left userTele" name="userTele" type="text" placeholder="座机"/>
+
+												<span class="absol left example">（可选填）</span>
+
+											</div>
+											
+										</div>
+										
+									<!-- End | Table -->
+									
+								</form>
 								
 							</div>
 							
