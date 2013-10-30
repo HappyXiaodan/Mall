@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The private layout stylesheet of third registration progress page ( ~/registration/index@4.html ).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.30 16:54 ( Tony ).
+ * 
+ * Last update: 2013.10.30 16:54 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Basic Info Bottom Tool Bar.
+*  ||----||
+  ___/  ___/
+*/
+
+.basicInfoPanel > .basicInfoTool {
+	
+	border-top: 1px solid #eee;
+	
+}
+
+.basicInfoPanel > .basicInfoTool > a {
+	
+	display: block;
+	
+	color: #00cccc;
+	
+	font: 900 18px/normal "微软雅黑";
+	
+	text-decoration: none;
+	
+	outline: none;
+	
+	margin-top: 20px;
+	
+	margin-bottom: 20px;
+	
+}
+
+.basicInfoPanel > .basicInfoTool > a.prev {
+	
+	padding-left: 35px;
+	
+	margin-left: 100px;
+	
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAYAAAC58NwRAAADCUlEQVQoUxWTT2gdVRTGf3dm3puZ9y9JaYsoRYtIokmI8YGGSlApWKjpohQRNy7EZTcqunMr4s6FiGsVxOJGKloUaZq0hdJAg21j++ofGtvaNk3fe5k3M29m7hzPY2YY7r3nO+d833euKSUTk7tYYOg61PSfmxJjLF5a8G8QcvzSCh/NLtLOdF8KK1uuHopl3AYaXUDVo3DhuiS8cXmVjf6AQI8uzB7GZCK6XeJrjTKOCf0mFA6XDXx4fZXlbkqsFalELPkNTJwUElZd+uUOda+KW/hc8+Ddq2v8dG8TP2vALo/9DPlh8lVtaSBS2iFFs0IFhzvK4e3fT3Mq6YE3wd7ugKwec659jClt08hQRGPQWNY18/vXVri4vU2vN4Sxhr6Ws7NHmE4yjaliClXJlQodXb/XWeNkdhv6BXPSogjhxNxBnvJzPFMwMKFWkFhu4PLJH1c4cXOTfkt7dofsV+JftQ/xopLH5IhXsIMC0lzkWGeVHwd3GZcJutFdHt89xrf7DrDQGMdqoKOPiEOpYPP61VVZufMf/UaLOOoyM76PL6YWmFcH66kSd3yiqqpKgJ8q4Ojf63Jya5M8Urhf52nl+l37JWbqIE5XHQq1YZciVXN9H3NLjXtzbZkzJmH3TkiWJzzWtHz9wmGmR2bqF45sx6OnKhrpiWy14LVLv3Hh3hZOo0HZyphMPb55don2iLQdOe1gdWpUpVRQd28q+p3OWX65f0tlzQj2PsJ8XOPL555nJvR0JBToK6AvO1JTSu7Q56Jv+Xh9hc7DmA010qo6i82Az+ZeZj4fAQpMUiYS5B73nZg9tIjUwEN/neFc2tUkLazf5WBR4/OFV5gcWSKljkaiiqiMUZnR1Kw31NXjOtanogdQBjTTCk/uafL9M4sKsJkMjEtdjRndImsyHJ3aK5rtg/O/8vNQs9VU4yLi6MQujC1TyY3qq/tVJSWO3qpIzaiE/KnrI+un2Rg85FHX5fz0kk6JzpKXBNjQsK1Zx1T5qt4+0arGOjxQ7Fv/LPPpEweY0rb/ByoGZXgWFwA5AAAAAElFTkSuQmCC) left center no-repeat;
+	
+}
+
+.basicInfoPanel > .basicInfoTool > a.prev:hover {
+	
+	color: #009999;
+	
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAYAAAC58NwRAAADDUlEQVQoUxWSy2tdVRjFf/u870nvTbxtHmitikU0KLX4GFVRFENQaNVobDRodRg6deL/IQYcOJKQVw2xtraF4KsVRRBKFGmojTVNG2ySm9x73ud8fplt9t7rW+tbaxkpM6GAbddgG4d6DmQpRSg4pbBSOHx84SyfPDvMEwM+RjqZ7IQ2qST0ViFVlGIFPrmBv+yIkcU5/l1r4TccLg69jcmSXGIro+G6UJYUlcFJff7ugvfOz3J5O4GtVNnbvHFgPyYWkWBPhtEHR8fmLn9YFh98NcOv6+tYcQ3nHpeHmi7zL7+jknKRMtEJgaUgl5uVMHppmiub23R1uijtFGmk/PLcOI/11ZUhjiVwA0jhWginvp3hyo2b9HhNNjsR/U2Ln46f4mGdl9Z06URi8auA/1TNyJkzfJdsUM88gpU73PvkYaZfPMHheolllcRmz6UsklXb5vS5c1y4vgZhgzTb5pH+Pj57YYRjPRZ2GbFnjGf3YP7Rpd9XN5burLMvC2nr58HuBnPPv86hQ01CtbnyHXLLwdJczFsLs7J0Y5UdNySzDUfqfUy+9BqP9rnYxRahqAzXI85KfEvPH569KFO3V4h2K2ge4IG04JvjYwyqboIOgk9RVFjGQyobc0ttHZub5kdXQ1vfxSj9Uc1w7pU3eXCgi7izS61WRwqj0hSQJaVs5RbvXv6aS38uQ89+sBOermp8PjzOkV4PWhqqyuqElrokiRBZrKUVE1eXWFj+HQpbgd085Q0w+eoQg6FPTcvQklQZpC1urh/ygGUv5/TCFNd14mqeaVUCngk9JkfHeVwBFQnmbtaSZscj6tEbAjZaOSPnp/htD9B2wNthqOrii9GT9CuNkUokVmfswCGOO3T7Prd3IiYW55mPNrGtALf0GOgL+XloDJMmbfFcdUNdtXWgdNq44T6WtSoTM1/yw9aOsmjJkhajBw9iijIWu/QRrXakouw8JrA92pbNqsDJ2Smu3t3g/t4Gi8dOaPnybfGlm1xz0s5pmrprolANCZV3qwMffT/Np0eHGbjP538T02iQtHLRAgAAAABJRU5ErkJggg==) left center no-repeat;
+	
+}
+
+.basicInfoPanel > .basicInfoTool > a.next {
+	
+	padding-right: 35px;
+	
+	margin-right: 100px;
+	
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAYAAAC58NwRAAACdUlEQVQoU2VSW08TURD+zm4LGITSFoTwG4gX6I1LojExMcjNN3+Ij/4VEyMxaiLy7pOxoXTpEw9IJJpQAwkSiNBud5fSPcdvdktCZDbN2e6Zme8yowzje6OJVz+28fpuAeneHsAAUJqnBcNT8YTiN/m813DN01oZDS/ARCaN9fwcUkmDDmwko0omXws1v1k2tb+nCKULNCZTWayXSrhtJZgeQimbZ4ymBO0g8MxKpYp9v0F4m/Ad5Fj0sTiLwQSbXNEjkuG70tRw6HlYqjqoBw3YShHNoJRJYS33EH2JLnlBYZEyrBCBv10P87UNHAcBOiZBjRqzQ2kiTeOWLbRi3UpcYvCPwj6FP3O+4qjdhhWSntXBXHYUq7kp9Ft2jCCUrkCFY913MV/ZwJ92ECVYFP54ZByrU3n0WGwbxpxoIvUZusJnr9XCYnUDJ+3LyDmJJ3fG8HayIJRCIwQ1xcaPGKOx22jh+VZcZBuNkBcro+NdSqJIEvlRxIrnda+JxS0Hh/5FjKJCLI+xwGgxUTIVOxtYrDrwPSzUqnTOpc2a6TYeDWfxLleKKTFNoBBS1LHvY8n5hl8tnz2S/IWYyYzgfb6A/miwkakxlaOgjQWnjLobUBPXgKjFdAaf8jILUSeDi/I1B3aJZadKh85Ii2tAOwvpYXzgXg1IZxZH2ypzOJfOW5vYdc9klLC0jftDWXwu5jFgJ7urrUUh1OnFhVlxKthpnncHpXEvNYS10gxSkvxfqBe1ivlyfMJacQOYGBzE+vQsMhQMmnCj4KfrmqXqJlfBw0Q/k7nW6d6rzvGGXo9I9J7bxMudbbx5kEOmp697fzNZLv4BiWk7r1wPlaEAAAAASUVORK5CYII=) right center no-repeat;
+	
+}
+
+.basicInfoPanel > .basicInfoTool > a.next:hover {
+	
+	color: #009999;
+	
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAUCAYAAAC58NwRAAADA0lEQVQoU1WTz2tcdRTFP983783Me2/SKTFJbWo6NYuiiFRBLIIiikNqmEpJilVsEIp/guv+AboQdKMbtY1oQJtqpKVgjSAG04UIanaJtdY0MWZmkpnJ+zHvx/W6i3d9z7n33HOuSXKRpY0W7966ydunX2Y8BqyI3CnRtQ0DGQQmw7YMZDFmsd2VNxc+485OjyOjw8w3XqNWNnSIGYyFMM1xfQ8khyTDvDr/uczdXUOqQ2AsxmpVvn/0RY5VClDs67gS/SCiaJcVZGF+b2Xy/OJl/mj1IPdxdjo8eXKcb0+ephC2iCsOvuMSRym5W8bkYS63wz7P/HiFzd+28CuDShRz4sggCxPTVItQCPqIbbNbFIxkiZBYrIYxL9yaZ2OlScGvEknEU6NjzE1OMqaLkULspAoIRDpuShHhl7+2OP/N1/wtHp2oy8DBESYOGN5qnKUWCparE7Rf7DTEsRLV4LGcGZ6b/YBK5TDb63fhvoiZao33zpzDzUJMHLfFLvpYsY30I4zn8F1vm5lrV2lvGwJPwE04NTzOV083FCCZWGFG4jq4aUqkLM1SmXuhw8SVS4RtURMTvLRL/eFHMFGcSU8vUc2FQt4n6vdxS1WWdedXvrhMZ8umPax+yC5na8cxaT+RxFFDeh1KriJV8PI/21xYukFzI6Tt+STODqdqD3LpxIROkEhKza6K89V6h1UlO3P9U1Y6gTqvBLY2V0d5vz5NzThKnO6Kr/b/58WvWcq5hTnWNAL9zRYcGqCuPJ803mAkSMgqifoQi2yqg2GQMa0ifzZ63vWAQ1Wfxw4P8dFkg+HUwnYcDWRPAV2Rexa8dP1jfmoqa1FDmIRMDd3PO/VJhjSEHhaZXtK4BcztKJXGwiwrezlOUCCz9nh8ZIAb9RkKmuoD6EPsK3Ph6jWZ3VglKVUoxRkPHPNYfHaKo8pGpnsbjfV+wNp6Kk/88CFtFfVQ2Wep8TqDRi9UTkkLmp2s8n9AlOfyZ3uPize/5OLUeY6mgm+LxiRh1yvqi+qn7at/AZ2rcWu9yisdAAAAAElFTkSuQmCC) right center no-repeat;
+	
+}
