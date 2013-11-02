@@ -19,12 +19,12 @@
 
 ####汇通分期商城前端团队接下来要做什么?####
 
-* 查看我们的动态（[Github](https://github.com/Huitong-Finance/Mall/pulse '点击查看'), [Trello](https://trello.com/b/VtrgT8dB '点击查看')）
+* 查看我们的动态（[Github](http://goo.gl/d3BS6e '点击查看'), [Trello](http://goo.gl/ukmQjL '点击查看')）。
 
 ####发现BUG!!!####
 
-如果你发现一些总是出现的问题，无论是在访问网站时发现，亦或是在查看我们的代码时发现，可以在[Trello](https://trello.com/b/VtrgT8dB '点击查看')、[Github Issues](https://github.com/Huitong-Finance/Mall/issues '点击查看')上查看、提出问题，并与我们展开讨论。
-后期我们的测试人员会尽快把相关BUG定义、指定流程等发布至[Github Wiki](https://github.com/Huitong-Finance/Mall/wiki '点击查看')之下。
+如果你发现一些总是出现的问题，无论是在访问网站时发现，亦或是在查看我们的代码时发现，可以在[Trello](http://goo.gl/ukmQjL '点击查看')、[Github Issues](http://goo.gl/rZ0t5P '点击查看')上查看、提出问题，并与我们展开讨论。
+后期我们的测试人员会尽快把相关BUG定义、指定流程等发布至[Github Wiki](http://goo.gl/RtjM4n '点击查看')之下。
 
 ####我想帮忙一起写代码!!!####
 
@@ -32,7 +32,7 @@
 
 ####我有一个想法，但是我不懂如何去编写程序!!!####
 
-如果你在功能上或者其他方面有些自己的想法，请查阅我们在[Trello](https://trello.com/b/VtrgT8dB '点击查看')上的面板是否已经存在相关的卡片。如果你的想法非常棒，面板上却没有，我们会将你的提议加入我们的功能储备，并尽可能去实现它！
+如果你在功能上或者其他方面有些自己的想法，请查阅我们在[Trello](http://goo.gl/ukmQjL '点击查看')上的面板是否已经存在相关的卡片。如果你的想法非常棒，面板上却没有，我们会将你的提议加入我们的功能储备，并尽可能去实现它！
 
 
 
@@ -41,27 +41,27 @@
 
 ###2013.10.31 07:58###
 
-* 母版页（6），[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/master/index%406.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/master/index%406.html '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/master/index@6.html '点击查看')。
+* 母版页（6），[发布版](http://goo.gl/64yU9q '点击查看')，[开发版](http://goo.gl/vsmDQi '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/master/index@6.html '点击查看')。
 
-* 注册流程（一），[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/registration/index%402.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/releases/registration/index%402.html '点击查看')，[内网演示]( '点击查看')。
+* 注册流程（一），[发布版](http://goo.gl/XKQU12 '点击查看')，[开发版](http://goo.gl/OMmO0N '点击查看')，[内网演示]( '点击查看')。
 
-* 注册流程（二），[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/registration/index%403.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/registration/index%403.html '点击查看')，[内网演示]( '点击查看')。
+* 注册流程（二），[发布版](http://goo.gl/3ntww6 '点击查看')，[开发版](http://goo.gl/MDBUzl '点击查看')，[内网演示]( '点击查看')。
 
-* 注册流程（三），[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/registration/index%404.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/registration/index%404.html '点击查看')，[内网演示]( '点击查看')。
+* 注册流程（三），[发布版](http://goo.gl/vqj3gy '点击查看')，[开发版](http://goo.gl/34nH5P '点击查看')，[内网演示]( '点击查看')。
 
 ###2013.10.26 16:13###
 
-* 商品详情页，[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/details/index.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/details/index.html '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/details/ '点击查看')。
+* 商品详情页，[发布版](http://goo.gl/v97LDD '点击查看')，[开发版](http://goo.gl/h8lECg '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/details/ '点击查看')。
 
-* 公告页，[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/announcement/index.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/announcement/index.html '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/announcement/ '点击查看')。
+* 公告页，[发布版](http://goo.gl/eIRJuE '点击查看')，[开发版](http://goo.gl/Nbu30H '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/announcement/ '点击查看')。
 
-* 还款计划，[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/account/repay.plan.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/account/repay.plan.html '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/account/repay.plan.html '点击查看')。
+* 还款计划，[发布版](http://goo.gl/6awNuz '点击查看')，[开发版](http://goo.gl/IMXvkM '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/account/repay.plan.html '点击查看')。
 
-* 更改密码页，[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/account/change.password.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/account/change.password.html '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/account/change.password.html '点击查看')。
+* 更改密码页，[发布版](http://goo.gl/gqG3U5 '点击查看')，[开发版](http://goo.gl/P1EC7s '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/account/change.password.html '点击查看')。
 
-* 更改手机页，[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/account/change.phone.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/account/change.phone.html '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/account/change.phone.html '点击查看')。
+* 更改手机页，[发布版](http://goo.gl/PmZ3x8 '点击查看')，[开发版](http://goo.gl/00NvzK '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/account/change.phone.html '点击查看')。
 
-* 关于页，[发布版](https://github.com/Huitong-Finance/Mall/blob/master/releases/about/index.html '点击查看')，[开发版](https://github.com/Huitong-Finance/Mall/blob/master/development/about/index.html '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/about/ '点击查看')。
+* 关于页，[发布版](http://goo.gl/dvsHl4 '点击查看')，[开发版](http://goo.gl/alywX0 '点击查看')，[内网演示](http://192.168.0.150:9022/DROPBOX/Browser%20Side%20Workspace/Mall/releases/about/ '点击查看')。
 
 ###2013.10.21 16:39###
 
