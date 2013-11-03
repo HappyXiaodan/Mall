@@ -6,11 +6,13 @@
 		
 		姓名（ Name ）：
 		
-		手机：
+		手机（ Cell Phone ）：
 		
-		电子邮箱：
+		个人全球统一标识（ Gravatar ）：
 		
-		个人主页：
+		电子邮箱（ Email ）：
+		
+		个人主页（ Personal Homepage ）：
 		
 		Github：
 		
@@ -42,7 +44,9 @@
 		
 		姓名（ Name ）：
 		
-		手机（ Phone ）：
+		手机（ Cell Phone ）：
+		
+		个人全球统一标识（ Gravatar ）：
 		
 		电子邮箱（ Email ）：
 		
@@ -78,9 +82,11 @@
 		
 		姓名（ Name ）：
 		
-		手机（ Phone ）：
+		手机（ Cell Phone ）：
 		
 		电子邮箱（ Email ）：
+		
+		个人全球统一标识（ Gravatar ）：
 		
 		个人主页（ Personal Homepage ）：
 		
@@ -114,7 +120,9 @@
 		
 		姓名（ Name ）：
 		
-		手机（ Phone ）：
+		手机（ Cell Phone ）：
+		
+		个人全球统一标识（ Gravatar ）：
 		
 		电子邮箱（ Email ）：
 		
@@ -150,7 +158,9 @@
 		
 		姓名（ Name ）：
 		
-		手机（ Phone ）：
+		手机（ Cell Phone ）：
+		
+		个人全球统一标识（ Gravatar ）：
 		
 		电子邮箱（ Email ）：
 		
@@ -184,21 +194,21 @@
 		
 	前端开发人员（ Front-end Browser-side Developer ）：
 		
-		姓名（ Name ）：沈维忠（ Tony ）
+		姓名（ Name ）：沈维忠（ Tony Stark ）
 		
-		手机：15921299022
+		手机（ Cell Phone ）：(+86)(021)15921299022
 		
-		电子邮箱：swzyocowboy@icloud.com, swzyocowboy@hotmail.com, iTonyYo@gmail.com, itonyyo@vip.qq.com
+		个人全球统一标识（ Gravatar ）：http://en.gravatar.com/swzcowboy
 		
-		个人主页：http://user.qzone.qq.com/563214029/
+		电子邮箱（ Email ）：swzyocowboy@icloud.com, swzyocowboy@hotmail.com, iTonyYo@gmail.com, itonyyo@vip.qq.com, 100005482237833@facebook.com
+		
+		个人主页（ Personal Homepage ）：
 		
 		Github：https://github.com/Tony-Stark/
 		
-		QQ：563214029
+		QQ：563214029, http://user.qzone.qq.com/563214029/
 		
 		Facebook：swzyocowboy@icloud.com
-		
-		Badoo：
 		
 		Yahoo Messenger：swzyocowboy@yahoo.cn
 		
@@ -208,7 +218,7 @@
 		
 		搜狐微博（ Souhu MicroBlog ）：SWZYO.t.sohu.com
 		
-		Twitter：@iTonyYo
+		Twitter：@iTonyYo, https://twitter.com/iTonyYo
 		
 		来自（ From ）：江苏省淮安市 ( Huai'an City, Jiang'su Province )
 		
@@ -222,7 +232,9 @@
 		
 		姓名（ Name ）：张晓露（ Doris ）
 		
-		手机（ Phone ）：13636694529
+		手机（ Cell Phone ）：13636694529
+		
+		个人全球统一标识（ Gravatar ）：
 		
 		电子邮箱（ Email ）：
 		
@@ -248,7 +260,9 @@
 		
 		姓名（ Name ）：张琦（ Peter ）
 		
-		手机（ Phone ）：13761114352
+		手机（ Cell Phone ）：13761114352
+		
+		个人全球统一标识（ Gravatar ）：
 		
 		电子邮箱（ Email ）：123548889@qq.com
 		
@@ -274,7 +288,9 @@
 		
 		姓名（ Name ）：王亮（ Bryant ）
 		
-		手机（ Phone ）：18501301008
+		手机（ Cell Phone ）：18501301008
+		
+		个人全球统一标识（ Gravatar ）：
 		
 		电子邮箱（ Email ）：519205861@qq.com
 		
@@ -300,7 +316,9 @@
 		
 		姓名（ Name ）：彭晓飞（ Laughing ）
 		
-		手机（ Phone ）：15221105071
+		手机（ Cell Phone ）：15221105071
+		
+		个人全球统一标识（ Gravatar ）：
 		
 		电子邮箱（ Email ）：tx04228118@163.com
 		
@@ -326,7 +344,9 @@
 		
 		姓名（ Name ）：李林泓（ Alio ）
 		
-		手机（ Phone ）：15001931351
+		手机（ Cell Phone ）：15001931351
+		
+		个人全球统一标识（ Gravatar ）：
 		
 		电子邮箱（ Email ）：522709448@qq.com
 		
@@ -352,7 +372,9 @@
 		
 		姓名（ Name ）：李韦翔（ Cris ）
 		
-		手机（ Phone ）：18180390520
+		手机（ Cell Phone ）：18180390520
+		
+		个人全球统一标识（ Gravatar ）：
 		
 		电子邮箱（ Email ）：75614337@qq.com
 		
@@ -378,7 +400,9 @@
 		
 		姓名（ Name ）：牛才平（ Andy ）
 		
-		手机（ Phone ）：13671520201
+		手机（ Cell Phone ）：13671520201
+		
+		个人全球统一标识（ Gravatar ）：
 		
 		电子邮箱（ Email ）：skyncp@163.com
 		
@@ -404,7 +428,9 @@
 		
 		姓名（ Name ）：陈跃文（ Irwin ）
 		
-		手机（ Phone ）：13564767187
+		手机（ Cell Phone ）：13564767187
+		
+		个人全球统一标识（ Gravatar ）：
 		
 		电子邮箱（ Email ）：irwin.chen.cn@gmail.com
 		
@@ -430,11 +456,13 @@
 		
 		姓名（ Name ）：
 		
-		手机：
+		手机（ Cell Phone ）：
 		
-		电子邮箱：
+		个人全球统一标识（ Gravatar ）：
 		
-		个人主页：
+		电子邮箱（ Email ）：
+		
+		个人主页（ Personal Homepage ）：
 		
 		Github：
 		
@@ -470,14 +498,14 @@
 		
 /* 网站（ SITE ） */
 		
-		最近更新（ Last update ）：2013年10月18日00时14分（ 00:14 18.10.2013 ）
+		最近更新（ Last update ）：2013年11月03日22时43分（ 22:43 03.11.2013 ）
 		
 		语言（ Language ）：中文（ Chinese ）
 		
 		文档类型（ Doctype ）：HTML5
 		
-		标准（ Standards ）：HTML5, CSS2.1, CSS3.0, ECMASCRIPT 3, ECMASCRIPT 5, AMD, etc.
+		标准（ Standards ）：HTML5, CSS2.1, CSS3.0, ECMASCRIPT 3, ECMASCRIPT 5, AMD, Java EE 7, etc.
 		
-		组件（ Components ）：Normalize, Reset CSS, HTML5Shiv, Modernizr, jQuery, jQuery UI, RequireJS, 960 Gridder, etc.
+		组件（ Components ）：Normalize, Reset CSS, Bootstrap, HTML5Shiv, Modernizr, jQuery, RequireJS, Tapestry, Hibernate, Spring, EhCache, Maven, etc.
 		
-		软件（ Software ）：Fiddler, Brackets Sprint, Dreamweaver, Photoshop, Illustrator, Eclipse, My SQL, Tomcat, Maven, Java, etc.
+		软件（ Software ）：Fiddler, Brackets Sprint, Sublime Text, Dreamweaver, Photoshop, Firework, Illustrator, Eclipse, My SQL, Tomcat Server, Nginx Server, etc.
