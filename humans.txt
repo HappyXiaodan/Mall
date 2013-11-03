@@ -20,9 +20,7 @@
 		
 		Facebook：
 		
-		Badoo：
-		
-		Yahoo Messenger：
+		Google+：
 		
 		腾讯微博（ Tencent MicroBlog ）：
 		
@@ -58,9 +56,7 @@
 		
 		Facebook：
 		
-		Badoo：
-		
-		Yahoo Messenger：
+		Google+：
 		
 		腾讯微博（ Tencent MicroBlog ）：
 		
@@ -96,9 +92,7 @@
 		
 		Facebook：
 		
-		Badoo：
-		
-		Yahoo Messenger：
+		Google+：
 		
 		腾讯微博（ Tencent MicroBlog ）：
 		
@@ -134,9 +128,7 @@
 		
 		Facebook：
 		
-		Badoo：
-		
-		Yahoo Messenger：
+		Google+：
 		
 		腾讯微博（ Tencent MicroBlog ）：
 		
@@ -172,9 +164,7 @@
 		
 		Facebook：
 		
-		Badoo：
-		
-		Yahoo Messenger：
+		Google+：
 		
 		腾讯微博（ Tencent MicroBlog ）：
 		
@@ -210,7 +200,7 @@
 		
 		Facebook：swzyocowboy@icloud.com
 		
-		Yahoo Messenger：swzyocowboy@yahoo.cn
+		Google+：https://plus.google.com/114960355664861539339
 		
 		腾讯微博（ Tencent MicroBlog ）：563214029
 		
@@ -470,9 +460,7 @@
 		
 		Facebook：
 		
-		Badoo：
-		
-		Yahoo Messenger：
+		Google+：
 		
 		腾讯微博（ Tencent MicroBlog ）：
 		
@@ -498,7 +486,7 @@
 		
 /* 网站（ SITE ） */
 		
-		最近更新（ Last update ）：2013年11月03日22时43分（ 22:43 03.11.2013 ）
+		最近更新（ Last update ）：2013年11月03日23时02分（ 23:02 03.11.2013 ）
 		
 		语言（ Language ）：中文（ Chinese ）
 		
