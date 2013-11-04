@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The private stylesheet of sixth registration progress page ( ~/registration/index@7.html ).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.30 16:54 ( Tony ).
+ * 
+ * Last update: 2013.10.30 16:54 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> finish content.
+*  ||----||
+  ___/  ___/
+*/
+
+.finishInfoPanel {
+	
+	box-shadow: 1px 2px 5px 0 #CCC;
+
+	padding-bottom: 110px;
+	
+}
+
+.ie7 .finishInfoPanel {
+	
+	border: 1px solid #CCC;
+	
+}
+
+.regFinish {
+
+	margin-top: 77px;
+
+	margin-left: 232px;
+
+}
+
+.setOut {
+
+	margin-top: 44px;
+
+	margin-left: 232px;
+
+}
+
+.proClassify {
+
+	margin-left: 232px;
+
+	margin-top: 36px;
+
+	width: 600px;
+
+}
+
+.proClassify > li {
+
+	margin-right: 30px;
+
+	margin-bottom: 20px;
+
+}
+
+.proClassify > li > a {
+
+	display: block;
+
+	width: 170px;
+
+	height: 50px;
+
+}
+
+.finishInfoPanelBG {
+
+	z-index: 2;
+
+	right: 0;
+
+	bottom: 0;
+
+	width: 349px;
+
+	height: 207px;
+
+}
