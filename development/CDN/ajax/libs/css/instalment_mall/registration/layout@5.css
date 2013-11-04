@@ -1,0 +1,595 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The private layout stylesheet of fifth registration progress page ( ~/registration/index@5.html ).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Doris ( Zhang Xiaolu ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.30 16:54 ( Doris ).
+ * 
+ * Last update: 2013.11.04 11:55 ( Tony ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Basic Info Panel.
+*  ||----||
+  ___/  ___/
+*/
+
+body {
+	
+	padding-bottom: 300px;
+	
+}
+
+.ie7 .suppInfoPanel {
+	
+	width: 1168px;
+	
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> Basic Info Content Form Area.
+*  ||----||
+  ___/  ___/
+*/
+
+.frmSuppInfo {
+	
+	width: 1173px;
+	
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> supplementary Info Content Form Area.
+*  ||----||
+  ___/  ___/
+*/
+
+.lines {
+
+	border-bottom: 1px solid #eee;
+
+}
+
+.selectSchoolArea {
+
+	width: 170px;
+
+	height: 100px;
+
+	margin-left: 200px;
+
+	margin-right: 15px;
+
+	z-index: 1;
+
+}
+
+.selectEduArea, .selectEduSysArea, .selectGradeArea {
+
+	height: 100px;
+
+	z-index: 1;
+
+}
+
+ .selectGradeArea {
+
+ 	margin-right: 0;
+
+	z-index: 1;
+
+ }
+
+.selectEntYearArea, .selectEntMonthArea {
+
+	width: 85px;
+
+	height: 100px;
+
+	margin-left: 15px;
+
+	z-index: 1;
+
+}
+
+.selectEntMonthArea {
+
+	margin-left: 0;
+
+	margin-right: 15px;
+
+	z-index: 1;
+
+}
+
+.selectProvinceArea, .selectCityArea, .selectaddTypeArea {
+
+	width: 120px;
+
+	height: 100px;
+
+	margin-left: 15px;
+
+	z-index: 1;
+
+}
+
+.selectRegionArea {
+
+	width: 130px;
+
+	height: 100px;
+
+	margin-right: 15px;
+
+	z-index: 1;
+
+}
+
+.selectCityArea, .currAdd {
+
+	margin-left: 0;
+
+	z-index: 1;
+
+}
+
+.selectEduSysArea > .selectorEd > span, .selectGradeArea > .selectorEd > span {
+
+	margin-left: 45px;
+
+}
+
+.selectProvinceArea > .selectorEd > span {
+
+	margin-left: 23px;
+
+}
+
+.selectEntYearArea > .selectorEd, .selectEntMonthArea > .selectorEd {
+
+	background-position: 70px 8px;
+
+}
+
+.selectProvinceArea > .selectorEd, .selectCityArea > .selectorEd, .selectRegionArea> .selectorEd,
+.selectaddTypeArea > .selectorEd {
+
+	background-position: 100px 8px;
+
+}
+
+.selectEntYearArea > .selectorEd > span,
+.selectEntMonthArea > .selectorEd > span {
+
+	margin-left: 17px;
+
+}
+
+.selectRegionArea > .selectPanel > ul {
+
+	height: 200px;
+
+	overflow: auto;
+
+}
+
+input.studentId, input.major, input.schAddressDetail, input.homeAddressDetail {
+
+	width: 465px;
+
+}
+
+
+input.currAddressDetail {
+
+	width: 330px;
+
+}
+
+.frmLabel, .frmIpt {
+
+	height: 100px;
+
+}
+
+.ie7 .frmIpt {
+
+	padding:0;
+
+}
+
+.odd {
+
+	margin-left: 0;
+}
+
+.even {
+
+	margin-right: 0;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> schoolPanel.
+*  ||----||
+  ___/  ___/
+*/
+
+.schoolPanel {
+
+	width: 664px;
+
+	height: 380px;
+
+	z-index: 99;
+
+	top: 23px;
+
+	left: -90px;
+
+}
+
+.closeBtn {
+
+	width: 40px;
+
+	height: 40px;
+
+	z-index: 100;
+
+	right: 0;
+
+	top: 0;
+
+}
+
+.panelTitle {
+
+	margin-top: 10px;
+
+	margin-left: 22px;
+
+	margin-bottom: 15px;
+
+}
+
+.listName {
+
+	margin-left: 22px;
+
+	margin-bottom: 9px;
+
+	padding: 2px 6px;
+
+}
+
+.cityList, .areaList {
+
+	width: 560px;
+
+	margin-left: 15px;
+
+	margin-bottom: 9px;
+
+}
+
+.cityList > li {
+
+	margin-right: 7px;
+
+	padding: 2px 6px;
+
+}
+
+.areaList > li  {
+
+	margin-right: 7px;
+
+	margin-bottom: 5px;
+
+	padding: 2px 0;
+
+}
+
+.cityList > li > a {
+
+	width: 100%;
+
+	height: 100%;
+
+}
+
+.schoolBox {
+
+	width: 624px;
+
+	height: 246px;
+
+	margin-left: 20px;
+
+	border: 1px solid #c3c3c3;
+
+}
+
+.schoolSearch {
+
+	border-bottom: 1px solid #c3c3c3;
+
+}
+
+.schoolSearch > label {
+
+	display: inline-block;
+
+	margin-left: 5px;
+
+	margin-top: 5px;
+
+}
+
+.schoolSearch > input {
+
+	width: 138px;
+
+	height: 20px;
+
+	border: 1px solid #c3c3c3;
+
+	margin-top: 5px;
+
+	margin-bottom: 5px;
+
+}
+
+.schoolListBox {
+
+	width: 100%;
+
+	height: 215px;
+
+}
+
+.schoolList {
+
+	padding-bottom: 15px;
+
+}
+
+.schoolList > li {
+
+	width: 185px;
+
+	margin-top: 13px;
+
+	padding-left: 15px;
+
+	-webkit-box-sizing: content-box;
+	
+	-moz-box-sizing: content-box;
+	
+	box-sizing: content-box;
+
+}
+
+.divideLine {
+
+	width: 1px;
+
+	height: 100%;
+
+	background-color: #eee;
+
+	z-index: 2;
+
+	left: -15px;
+
+	top: 0;
+
+}
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> error message.
+*  ||----||
+  ___/  ___/
+*/
+
+.errMsg {
+
+	display: none;
+
+	width: 135px;
+
+	height: 22px;
+
+	z-index: 1;
+
+	top: 70px;
+	
+	left: 30px;
+
+}
+
+.eduSysError, .gradeError {
+
+	left: 50px;
+
+}
+
+.studentIdError, .majorError, .schAddError, .homeAddError {
+
+	left: 100px;
+
+}
+
+ .depError {
+
+ 	left: 200px;
+
+ }
+
+
+
+
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> selectPanel.
+*  ||----||
+  ___/  ___/
+*/
+
+.selectPanel {
+
+	width: 100%;
+	
+	top: 35px;
+	
+	left: 0px;
+
+	z-index: 20;
+	
+}
+
+.ie7 .selectPanel {
+	
+}
+
+.selectPanel > ul {
+	
+	margin-top: 55px;
+	
+	margin-left: 5px;
+
+	margin-right: 5px;
+	
+	border-top: 1px solid #CCC;
+	
+}
+
+.selectPanel > ul > .options {
+	
+	padding: 0 10px;
+	
+	height: 30px;
+	
+	margin-bottom: 5px;
+	
+}
+
+.selectPanel > ul > .options:first-child {
+	
+	margin-top: 5px;
+	
+}
+
+.selectorEd {
+	
+	z-index: 1;
+
+	width: 100%;
+	
+	top: 40px;
+	
+	left: 0px;
+	
+}
+
+.selectorEd > span {
+	
+	margin-top: -3px;
+	
+	margin-left: 28px;
+	
+}
+
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> info Bottom Tool Bar.
+*  ||----||
+  ___/  ___/
+*/
+
+.infoTool > a {
+	
+	margin-top: 20px;
+	
+	margin-bottom: 20px;
+	
+}
+
+.infoTool > a.prev {
+	
+	padding-left: 35px;
+	
+	margin-left: 60px;
+
+}
+
+.infoTool > a.next {
+	
+	padding-right: 35px;
+	
+	margin-right: 60px;
+
+}
+
+.prevLine {
+
+	left: 230px;
+
+}
+
+.nextLine {
+
+	left: 960px;
+
+}
