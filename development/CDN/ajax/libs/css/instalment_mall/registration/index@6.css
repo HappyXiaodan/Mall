@@ -5,19 +5,19 @@
 /**
  * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
  * 
- * Describe: The private stylesheet of fourth registration progress page ( ~/registration/index@5.html ).
+ * Describe: The private stylesheet of fifth registration progress page ( ~/registration/index@6.html ).
  * 
  * Further changes, comments: ~
  * 
  * Docs: ~
  * 
- * Original Author: Doris ( Zhang Xiaolu ).
+ * Original Author: Tony ( Shen Weizhong ).
  * 
  * Version: 0.1.0
  * 
- * Creation Date: 2013.10.30 16:54 ( Doris ).
+ * Creation Date: 2013.11.02 09:31 ( Doris ).
  * 
- * Last update: 2013.11.04 11:55 ( Tony ).
+ * Last update: 2013.11.02 14:25 ( Doris ).
  * 
  * License: ~
  * 
@@ -45,11 +45,21 @@
 
     color: #CCC;
 
+    font-family: "微软雅黑";
+
+    font-size: 16px;
+
+    line-height: 16px;
+
 }
 /* Mozilla Firefox 4 to 18 */
 :-moz-placeholder {
 
     color: #CCC;
+
+    font-family: "微软雅黑";
+
+    font-size: 16px;
 
 }
 /* Mozilla Firefox 19+ */
@@ -57,11 +67,21 @@
 
     color: #CCC;
 
+    font-family: "微软雅黑";
+
+    font-size: 16px;
+
 }
 /* Internet Explorer 10+ */
 :-ms-input-placeholder {
 
     color: #CCC;
+
+    font-family: "微软雅黑";
+
+    font-size: 16px;
+
+    line-height: 16px;
 
 }
 
@@ -100,9 +120,17 @@
 */
 
 .selectEntYearArea > .selectPanel > ul > .options,
-.selectEntMonthArea > .selectPanel > ul > .options {
+.selectEntMonthArea > .selectPanel > ul > .options,
+.selectGraYearArea > .selectPanel > ul > .options,
+.selectGraMonthArea > .selectPanel > ul > .options {
 
 	font-size: 16px;
+
+}
+
+.connector {
+
+	background-color: #666;
 
 }
 

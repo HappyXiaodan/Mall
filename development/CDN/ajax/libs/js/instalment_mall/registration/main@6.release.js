@@ -1,19 +1,19 @@
 /**
  * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
  * 
- * Describe: The javascript boot file of fourth registration progress page ( ~/registration/index@5.html ).
+ * Describe: The javascript boot file of fifth registration progress page ( ~/registration/index@6.html ).
  * 
  * Further changes, comments: ~
  * 
  * Docs: ~
  * 
- * Original Author: Doris ( Zhang Xiaolu ).
+ * Original Author: Tony ( Shen Weizhong ).
  * 
  * Version: 0.1.0
  * 
- * Creation Date: 2013.10.30 16:57 ( Doris ).
+ * Creation Date: 2013.11.04 13:03 ( Tony ).
  * 
- * Last update: 2013.11.04 11:55 ( Tony ).
+ * Last update: 2013.11.04 13:03 ( Tony ).
  * 
  * License: ~
  * 
@@ -61,8 +61,8 @@
 	boot.req = function (jquery) {
 		
 		requirejs.config({
-			
-			baseUrl: '../CDN',
+                        
+            baseUrl: '//resource.fenqimall.com/ajax/libs',
 			
 			enforceDefine: false,
 			
@@ -70,7 +70,7 @@
 				
 				'jquery': jquery,
 				
-				'cdnjs': 'ajax/libs/js'
+				'cdnjs': 'js'
 				
 			},
 			
@@ -101,186 +101,187 @@
 		], function (modernizr, SJ, cookie, gridder, modifyTitle) {
 			
 			SJ(function ($) {
-				
+
+
 				var selectorEd = $('.selectorEd'),
-					
+
 					selectorPanel = $('.selectPanel'),
-					
+
 					tgl = false;
 				
 				selectorEd.each(function (i, obj) {
-					
+
 					$(this).on('click', function () {
-						
+
 						var that = $(this),
-							
+
 							panel = that.prev('div');
-						
+
 						if (!tgl) {
-							
+
 							if (!that.hasClass('selectorSchool')) {
-								
+
 								that.addClass('selectorEdOpen');
-								
+
 							}
-							
+
 							that.css('z-index', 40);
-							
+
 							that.parent().css('z-index', 2);
-							
+
 							panel.removeClass('hide');
-							
+
 							panel.animate({opacity: 1, top: 25}, {
-								
+
 								duration: 400,
-								
+
 								done: function () { tgl = true; }
-								
+
 							});
-							
+
 						}
-						
+
 					}).on('click', function () {
-						
+
 						var that = $(this),
 							
-							panel = that.prev('div');
+				 			panel = that.prev('div');
 						
-						if (tgl) {
+				 		if (tgl) {
 							
-							that.removeClass('selectorEdOpen');
+				 			that.removeClass('selectorEdOpen');
+
+				 			that.css('z-index', 1);
+
+				 			that.parent().css('z-index', 1);
 							
-							that.css('z-index', 1);
-							
-							that.parent().css('z-index', 1);
-							
-							panel.animate({opacity: 0, top: 35}, {
+				 			panel.animate({opacity: 0, top: 35}, {
 								
-								duration: 400,
+				 				duration: 400,
 								
-								done: function () {
+				 				done: function () {
 									
-									panel.addClass('hide');
+				 					panel.addClass('hide');
 									
-									tgl = false;
+				 					tgl = false;
 									
-								}
+				 				}
 								
-							});
+				 			});
 							
 						}
-						
+
 					});
-					
+
 				});
-				
-				
-				
+
+
+
 				selectorPanel.each(function (i, obj) {
-					
+
 					var _this = $(this)
-					
+
 					_this.children('ul').find('li').on('click', function () {
-						
+
 						var that = $(this),
-							
+
 							selectedValue = that.text();
-						
-						if (_this.parent().hasClass('selectEntYearArea')) {
-							
+
+						if (_this.parent().hasClass('selectEntYearArea') || _this.parent().hasClass('selectGraYearArea') ) {
+
 							_this.next('div').children('span').css('margin-left', -15).text(selectedValue);
-							
+
 						} else {
-							
+
 							_this.next('div').children('span').text(selectedValue);
-							
+
 						}
-						
+
 						_this.next('div').children('input').val(selectedValue);
-						
+
 						_this.next('div').removeClass('selectorEdOpen');
-						
+
 						_this.animate({ opacity: 0, top: 35 }, {
-							
+
 							duration: 400,
-							
+
 							done: function () {
-								
+
 								selectorEd.prev('div').addClass('hide');
-								
+
 								tgl = false;
-								
+
 							}
-							
+
 						})
-						
-						
+
+
 					});
-					
+
 				});
-				
-				
-				
+
+
+
 				$('.closeBtn').on('click', function (e) {
-					
+
 					e.preventDefault();
-					
+
 					$('.schoolPanel').animate({opacity: 0, top: 35}, {
+								
+		 				duration: 400,
 						
-						duration: 400,
+		 				done: function () {
+							
+		 					$(this).addClass('hide');
+							
+		 					tgl = false;
+							
+		 				}
 						
-						done: function () {
-							
-						$(this).addClass('hide');
-							
-							tgl = false;
-							
-						}
-						
-					});
-					
+		 			});
+
 				});
-				
-				
-				
-				
+
+
+
+
 				/**
 				 * school panel.
 				 */
-				
+
 				var cityListObj = $('.cityList').find('a'),
-					
+
 					areaListObj = $('.areaList').find('a'),
-					
+
 					method = {};
-				
+
 				method = {
-					
+
 					clickEvent: function (obj, className) {
-						
+
 						obj.on('click', function (e) {
-							
+
 							e.preventDefault();
-							
+
 							e.stopPropagation();
-							
+
 							obj.parent().removeClass(className);
-							
+
 							$(this).parent().addClass(className);
-							
+
 						});
-						
+
 					}
-					
+
 				};
-				
+
 				method.clickEvent(cityListObj, 'currentCity');
-				
+
 				method.clickEvent(areaListObj, 'currentArea')
+
+
 				
-				
-				
-				
+
 				
 				/**
 				 * Development dependency: grid system.
@@ -327,10 +328,10 @@
 	*/
 	
 	boot.judgement({
-		
-		jq1x: 'ajax/libs/js/jquery/1.10.2/jquery.min',
-		
-		jq2x: 'ajax/libs/js/jquery/2.0.3/jquery.min'
+        
+        jq1x: '//resource.fenqimall.com/ajax/libs/js/jquery/1.10.2/jquery.min',
+        
+        jq2x: '//resource.fenqimall.com/ajax/libs/js/jquery/2.0.3/jquery.min'
 		
 	});
 		

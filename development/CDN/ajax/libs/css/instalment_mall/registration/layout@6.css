@@ -5,19 +5,19 @@
 /**
  * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
  * 
- * Describe: The private layout stylesheet of fourth registration progress page ( ~/registration/index@5.html ).
+ * Describe: The private layout stylesheet of fifth registration progress page ( ~/registration/index@6.html ).
  * 
  * Further changes, comments: ~
  * 
  * Docs: ~
  * 
- * Original Author: Doris ( Zhang Xiaolu ).
+ * Original Author: Tony ( Shen Weizhong ).
  * 
  * Version: 0.1.0
  * 
- * Creation Date: 2013.10.30 16:54 ( Doris ).
+ * Creation Date: 2013.11.02 09:31 ( Doris ).
  * 
- * Last update: 2013.11.04 11:55 ( Tony ).
+ * Last update: 2013.11.02 14:25 ( Doris ).
  * 
  * License: ~
  * 
@@ -81,6 +81,22 @@ body {
 
 }
 
+
+
+.selectIndustry, .selectWorkYear, .selectEduArea, .selectEduSysArea {
+
+	height: 100px;
+
+	z-index: 1;
+
+}
+
+.graduateLabel {
+
+	margin-left: 100px;
+
+}
+
 .selectSchoolArea {
 
 	width: 170px;
@@ -95,23 +111,7 @@ body {
 
 }
 
-.selectEduArea, .selectEduSysArea, .selectGradeArea {
-
-	height: 100px;
-
-	z-index: 1;
-
-}
-
- .selectGradeArea {
-
- 	margin-right: 0;
-
-	z-index: 1;
-
- }
-
-.selectEntYearArea, .selectEntMonthArea {
+.selectEntYearArea, .selectEntMonthArea, .selectGraYearArea, .selectGraMonthArea {
 
 	width: 85px;
 
@@ -123,7 +123,7 @@ body {
 
 }
 
-.selectEntMonthArea {
+.selectEntMonthArea, .selectGraMonthArea {
 
 	margin-left: 0;
 
@@ -133,7 +133,7 @@ body {
 
 }
 
-.selectProvinceArea, .selectCityArea, .selectaddTypeArea {
+.selectProvinceArea, .selectCityArea, .selectRegionArea, .selectaddTypeArea {
 
 	width: 120px;
 
@@ -148,12 +148,6 @@ body {
 .selectRegionArea {
 
 	width: 130px;
-
-	height: 100px;
-
-	margin-right: 15px;
-
-	z-index: 1;
 
 }
 
@@ -177,7 +171,8 @@ body {
 
 }
 
-.selectEntYearArea > .selectorEd, .selectEntMonthArea > .selectorEd {
+.selectEntYearArea > .selectorEd, .selectEntMonthArea > .selectorEd,
+.selectGraYearArea > .selectorEd, .selectGraMonthArea > .selectorEd {
 
 	background-position: 70px 8px;
 
@@ -191,13 +186,43 @@ body {
 }
 
 .selectEntYearArea > .selectorEd > span,
-.selectEntMonthArea > .selectorEd > span {
+.selectEntMonthArea > .selectorEd > span,
+.selectGraYearArea > .selectorEd > span,
+.selectGraMonthArea > .selectorEd > span {
 
 	margin-left: 17px;
 
 }
 
-.selectRegionArea > .selectPanel > ul {
+.comPhoneAreaCode {
+
+	width: 70px;
+
+	margin-left: 15px;
+
+}
+
+.comPhone {
+
+	width: 170px;
+
+}
+
+.connector {
+
+	width: 20px;
+
+	height: 2px;
+
+	margin-left: 5px;
+
+	margin-right: 5px;
+
+	margin-top: 50px;
+
+}
+
+.selectRegionArea > .selectPanel > ul, .selectIndustry > .selectPanel > ul {
 
 	height: 200px;
 
@@ -205,16 +230,9 @@ body {
 
 }
 
-input.studentId, input.major, input.schAddressDetail, input.homeAddressDetail {
+.selectIndustry > .divideLine, .selectWorkYear > .divideLine {
 
-	width: 465px;
-
-}
-
-
-input.currAddressDetail {
-
-	width: 330px;
+	left: -115px;
 
 }
 
@@ -230,6 +248,61 @@ input.currAddressDetail {
 
 }
 
+.incomeLabel {
+
+	margin-left: 130px;
+
+	width: 55px;
+
+}
+
+.comPhoneTitleLabel {
+
+	width: 55px;
+
+	margin-left: 30px;
+
+}
+
+.incomeLabel > .divideLine {
+
+	left: -30px;
+
+}
+
+.comPhoneTitleLabel > .divideLine {
+
+	left: -30px;
+
+}
+
+input.income {
+
+	width: 250px;
+
+	margin-left: 30px;
+
+}
+
+input.comPhone {
+
+	width: 130px;
+
+}
+
+input.comAddressDetail, input.homeAddressDetail {
+
+	width: 465px;
+
+}
+
+
+input.currAddressDetail {
+
+	width: 330px;
+
+}
+
 .odd {
 
 	margin-left: 0;
@@ -240,6 +313,7 @@ input.currAddressDetail {
 	margin-right: 0;
 
 }
+
 
 
 
@@ -408,6 +482,12 @@ input.currAddressDetail {
 
 }
 
+.graduateSchool {
+
+	margin-left: 115px !important;
+
+}
+
 .divideLine {
 
 	width: 1px;
@@ -416,7 +496,7 @@ input.currAddressDetail {
 
 	background-color: #eee;
 
-	z-index: 2;
+	z-index: 0;
 
 	left: -15px;
 
@@ -449,19 +529,19 @@ input.currAddressDetail {
 
 }
 
-.eduSysError, .gradeError {
+.eduSysError, .gradeError, .HighestEduError {
 
 	left: 50px;
 
 }
 
-.studentIdError, .majorError, .schAddError, .homeAddError {
+.incomeError, .phoneError, .comAddError, .schAddError, .homeAddError {
 
 	left: 100px;
 
 }
 
- .depError {
+ .companyError, .sectorError, .jobError {
 
  	left: 200px;
 
