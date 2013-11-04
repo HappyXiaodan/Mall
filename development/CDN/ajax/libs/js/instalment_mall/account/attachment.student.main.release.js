@@ -1,19 +1,19 @@
 /**
- * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * Statement: gehen zum Teufel.
  * 
- * Describe: The javascript boot file of first master page ( ~/release/master/index.html ).
+ * Describe: The javascript boot file of attachment (~/account/attachment.student.html).
  * 
  * Further changes, comments: ~
  * 
  * Docs: ~
  * 
- * Original Author: Tony ( Shen Weizhong ).
+ * Original Author: Doris.
  * 
  * Version: 0.1.0
  * 
- * Creation Date: 2013.10.14 02:03 ( Tony ).
+ * Creation Date: 2013.10.29 11:10 ( Doris ).
  * 
- * Last update: 2013.10.14 14:04 ( Tony ).
+ * Last update: 2013.10.29 11:10 ( Doris ).
  * 
  * License: ~
  * 
@@ -96,17 +96,13 @@
 			
 			'cdnjs/gridder/0.1.0/gridder',
 			
-			'cdnjs/jquery_title_modify/title.modify',
-			
-			'cdnjs/instalment_mall/master/validation.plus'
-			
+			'cdnjs/jquery_title_modify/title.modify'
+		
 		], function (modernizr, SJ, cookie, gridder, modifyTitle) {
 			
 			SJ(function ($) {
 				
-				var nav = $("nav"),
-					
-					footerForm = $('#mstFtr1stRgst');
+				var nav = $("nav");
 				
 				
 				
@@ -114,13 +110,79 @@
 				 * Navigation Demo.
 				 */
 				
-				nav.find('a').on('click', function () {
+				nav.find('a').on('click', function (e) {
+					
+					e.preventDefault();
 					
 					$(this).addClass('selected').closest('li').siblings().children().removeClass('selected');
 					
 				});
+                    
+                    
+                
+
+                /**
+                 * Set side bar height.
+                 */
+
+				var docHeight = $(document).height(),
+                    
+					headerHeight = $('header').height();
+
+				$('.leftSidebar').css({
+                    
+					"height": docHeight-headerHeight
+                    
+				});
+
+
+
+				/**
+				 * Close tip.
+				 */
+
+				$('.closeInfoTip').on('click', function (e) {
+                    
+					e.preventDefault();
+                    
+					$('.myInfoTip').hide();
+                    
+				});
+                
 				
+
+				/**
+				 * Upload image event.
+				 */
+
+				var uploadImg = (function (u) {
+
+					u.clickEvent = function () {
+
+						$('.uploadImg').each(function (i, obj) {
+
+							$(obj).on('click', function (e) {
+
+								e.preventDefault();
+
+								e.stopPropagation();
+
+								$(this).next('input').trigger('click');
+
+							});
+
+						});
+
+					};
+
+					return u;
+
+				} (uploadImg || {}));
 				
+				uploadImg.clickEvent();
+				
+                
+                
 				
 				/**
 				 * Development dependency: grid system.
@@ -173,5 +235,5 @@
 		jq2x: '//resource.fenqimall.com/ajax/libs/js/jquery/2.0.3/jquery.min'
 		
 	});
-	
+		
 }(window, document, requirejs, require));

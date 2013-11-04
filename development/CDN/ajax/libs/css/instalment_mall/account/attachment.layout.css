@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: gehen zum Teufel.
+ *
+ * Describe: layout css for attachment(account/attachment.student.html).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Doris.
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.29 09:11 ( Doris ).
+ * 
+ * Last update: 2013.10.29 09:11 ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+.container {
+
+	background-color: #fff;
+
+}
+
+.container .row {
+
+	height: auto;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> left sidebar.
+*  ||----||
+  ___/  ___/
+*/
+
+.leftSidebar {
+
+	min-height: 1200px;
+
+}
+
+.leftSidebar > li {
+
+	width: 160px;
+
+	height: 50px;
+
+}
+
+.leftSiderbar > li > a {
+
+	display: block;
+
+	width: 100%;
+
+	height: 100%;
+
+}
+
+.myaccount {
+
+	margin-top: 70px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> right container.
+*  ||----||
+  ___/  ___/
+*/
+
+.rightContainer {
+
+	width: 1000px;
+
+	margin-left: 0;
+
+	margin-right: 0;
+
+}
+
+.myInfo {
+
+	height: 45px;
+
+	border-bottom: 2px solid #e9461f;
+
+}
+
+.myInfoTip {
+
+	height: 40px;
+
+	margin-top: 13px;
+
+}
+
+.myInfoTip > p {
+
+	margin-left: 22px;
+
+	z-index: 1;
+
+}
+
+.myInfoTip > p > a {
+
+	width: 40px;
+
+	height: 40px;
+
+	z-index: 2;
+
+	right: 0;
+
+	top: 0;
+
+}
+
+.ie7 .myInfoTip > p > a {
+
+	top: -13px;
+
+}
+
+
+
+
+
+
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> upload attachment.
+*  ||----||
+  ___/  ___/
+*/
+
+.personalInfoForm {
+
+	margin-top: 20px;
+
+	margin-left: 0;
+
+	margin-right: 0;
+
+	width: 600px;
+
+}
+
+.attachmentTitle {
+
+	margin-bottom: 27px;
+
+}
+
+.uploadBox {
+
+	margin: 0 15px 65px 15px;
+
+}
+
+.ie7 .uploadBox {
+
+	margin: 0 14px 65px 14px;
+
+}
+
+.uploadImg {
+
+	width: 120px;
+
+	height: 120px;
+
+	border: 1px solid #e94720;
+
+	z-index: 1;
+
+}
+
+.grayBorder {
+
+	border-color: #ccc !important;
+
+}
+
+.grayDottedBorder {
+
+	border: 1px dotted #ccc !important;
+
+}
+
+.uploadImg > span {
+
+	z-index: 2;
+
+	top: 90px; 
+
+	left: 31px;
+
+}
+
+.uploadBox > p {
+
+	padding-top: 15px;
+
+}
+
+.uploadIpt {
+
+	display: none;
+
+}
+
+.remark {
+
+	border: 1px solid #ccc;
+
+	height: 95px;
+
+	margin-bottom: 50px;
+
+}
+
+.personalInfoForm > button {
+
+	width: 120px;
+
+	height: 40px;
+
+	margin-left: 15px; 
+
+	margin-bottom: 250px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+
+ / |     ||----> copyright.
+*  ||----||
+  ___/  ___/
+*/
+
+.copyright {
+
+	width: 970px;
+
+	height: 50px;
+
+	margin-top: 70px;
+
+	border-top: 1px solid #999;
+
+}
