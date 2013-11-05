@@ -13,7 +13,7 @@
  * 
  * Creation Date: 2013.10.18 17:07 ( Doris ).
  * 
- * Last update: 2013.10.18 17:53 ( Doris ).
+ * Last update: 2013.10.18 16:56 ( Doris ).
  * 
  * License: ~
  * 
@@ -102,7 +102,9 @@
 			
 			SJ(function ($) {
 				
-				var nav = $("nav");
+				var nav = $("nav"),
+
+					statusTip = $('.status').children('div');
 				
 				
 				
@@ -110,7 +112,9 @@
 				 * Navigation Demo.
 				 */
 				
-				nav.find('a').on('click', function () {
+				nav.find('a').on('click', function (e) {
+					
+					e.preventDefault();
 					
 					$(this).addClass('selected').closest('li').siblings().children().removeClass('selected');
 					
@@ -132,6 +136,23 @@
 
 
 
+
+
+				statusTip.each(function () {
+
+					$(this).on('mouseover', function (e) {
+
+						e.preventDefault();
+
+						$(this).children('div').css('display', 'block');
+
+					}).on('mouseout', function () {
+
+						$(this).children('div').css('display', 'none');
+
+					})
+
+				});
 
 
 

@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.18 18:05 ( Doris ).
  * 
- * Last update: 2013.10.18 19:19 ( Doris ).
+ * Last update: 2013.10.25 16:56; ( Doris ).
  * 
  * License: ~
  * 
@@ -117,7 +117,7 @@
 
 	height: 53px;
 
-	border-bottom: 2px solid #e9461f;
+	border-bottom: 6px solid #e9461f;
 
 }
 
@@ -135,119 +135,73 @@
 
 .accountInfo {
 
-	height: 163px;
+	border: 1px solid #ccc;
 
-	border: 1px solid #eee2d7;
+	border-top: 0;
+
+	margin-bottom: 27px;
 
 }
 
-.moneyInfo > li {
+.accountBalance, .currentBalance {
+
+	width: 500px;
+
+	padding: 25px 0 18px 20px;
+
+	border-right: 1px solid #ccc;
+
+}
+
+.accountBalance {
+
+	border-bottom: 1px solid #ccc;
+
+}
+
+.accountBalanceNum, .currentBalanceNum {
 
 	margin-top: 20px;
 
 }
 
-.moneyInfo > li:first-child {
+.accountRecharge {
 
-	margin-left: 10px;
-
-}
-
-p.deduction {
-
-	margin-top: 20px;
+	margin-left: 65px;
 
 }
 
-p.minRefund {
+.accountRecharge > a {
 
-	margin-top: 8px;
-
-}
-
-p.repayTip {
-
-	margin-top: 15px;
+	margin-top: 29px;
 
 }
 
-.deduction > i, .minRefund > i {
+.rechargeBtn {
 
-	padding: 0 5px;
+	width: 70px;
 
-}
+	height: 32px;
 
-li.balance {
-
-	height: 85px;
-
-	margin-left: 70px;
-
-	margin-top: 35px;
-
-	padding-left: 65px;
-
-	border-left: 1px solid #9e9999;
+	margin-right: 23px;
 
 }
 
-.balance > p:first-child {
+.currentBalance {
 
-	margin-top: 18px;
-
-}
-
-li.topUp {
-
-	margin-left: 60px;
-
-	margin-top: 55px;
+	padding-bottom: 40px;
 
 }
 
-.topUp > button {
+.accountInfoRight {
 
-	width: 170px;
-
-	height: 48px;
+	padding: 36px 0 0px 26px;
 
 }
 
-.topUp > a {
+.accountInfoRight > p {
 
-	bottom: 0;
-
-	right: -85px;
-
-}
-
-.appProcess {
-
-	height: 148px;
-
-}
-
-.appProcess > div:first-child {
-
-	width: 300px;
-
-}
-
-.appProcess p {
-
-	margin-top: 10px;
-
-}
-
-.appProcess p:first-child {
-
-	margin-top: 40px;
-
-}
-
-.appProcess img {
-
-	margin-top: 24px;
+	margin-bottom: 50px;
 
 }
 
@@ -266,7 +220,13 @@ li.topUp {
 
 	height: 30px;
 
-	border-bottom: 2px solid #e9461f; 
+	border-bottom: 2px solid #e9461f;
+
+	-webkit-box-sizing: content-box;
+	
+	-moz-box-sizing: content-box;
+	
+	box-sizing: content-box;
 
 }
 
@@ -278,7 +238,9 @@ li.topUp {
 
 .stagingProduct > a {
 
-	margin-right: 35px;
+	margin-right: 11px;
+
+	padding: 0 13px;
 
 }
 
@@ -294,9 +256,27 @@ li.topUp {
 
 }
 
-.stagingDetail > tbody > tr {
+.stagingDetail > tbody > tr > td {
 
 	border-bottom: 1px solid #ccc;
+
+}
+
+.startTime, .endTime {
+
+	width: 94px;
+
+}
+
+.refund, .period, .status {
+
+	width: 120px;
+
+}
+
+.operation {
+
+	width: 170px;
 
 }
 
@@ -314,11 +294,13 @@ li.topUp {
 
 .operation > a {
 
+	float: left;
+
 	width: 70px;
 
-	height: 32px;
+	margin: 0 7px;
 
-	margin: 0 auto;
+	padding: 9px 0px;
 
 }
 
@@ -328,7 +310,7 @@ li.topUp {
 		 (__)
 		 (oo)
   /-------\/
- / |     ||----> staging product.
+ / |     ||----> new product.
 *  ||----||
   ___/  ___/
 */
@@ -366,7 +348,7 @@ li.topUp {
 		 (oo)
   /-------\/
 
- / |     ||----> staging product.
+ / |     ||----> copyright.
 *  ||----||
   ___/  ___/
 */
