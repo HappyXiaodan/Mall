@@ -6,9 +6,9 @@
 
 <!-- Begin | Annotation -->
 	
-	<!-- Statement: gehen zum Teufel -->
+	<!-- Statement:gehen zum Teufel. -->
 	
-	<!-- Describe: recharge page -->
+	<!-- Describe: index for recharge.html(account/recharge.html) -->
 	
 	<!-- Further changes, comments: ~ -->
 	
@@ -18,15 +18,15 @@
 	
 	<!-- Version: 0.1.0 -->
 	
-	<!-- Creation Date: 2013.10.19 11:30 ( Doris ) -->
+	<!-- Creation Date: 2013.10.31 10:36 ( Doris ) -->
 	
-	<!-- Last update: 2013.10.21 09:20 ( Doris ) -->
+	<!-- Last update: 2013.11.2 14:48 ( Doris ) -->
 	
 	<!-- License: ~ -->
 	
 	<!-- Copyright: ~ -->
 	
-<!-- Begin | Annotation -->
+<!-- End | Annotation -->
 
 
 
@@ -52,11 +52,11 @@
 					
 					<base target="_self"/>
 					
-					<meta http-equiv="X-UA-Compatible" content="IE = EmulateIE7, IE = 10, chrome = 1"/>
+					<meta http-equiv="X-UA-Compatible" content="ie = 7, chrome = 1"/>
 					
 					<meta name="viewport" content="width = 1200"/>
 					
-					<meta name="Robots" content="none"/>
+					<meta name="Robots" content="all"/>
 					
 					<meta name="google" content="notranslate"/> <!-- When we recognize that the contents of a page are not in the language that the user is likely to want to read, we often provide a link to a translation in the search results. In general, this gives you the chance to provide your unique and compelling content to a much larger group of users. However, there may be situations where this is not desired. This meta tag tells Google that you don't want us to provide a translation for this page. -->
 					
@@ -142,19 +142,21 @@
 					
 					<!-- Begin | Private Stylesheet ( Master ) -->
 						
-						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/layout%405.css"/> <!-- Layout -->
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/layout%402.css"/> <!-- Layout -->
 						
-						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/index%405.css"/> <!-- Index -->
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/index%402.css"/> <!-- Index -->
 						
 					<!-- End | Private Stylesheet ( Master ) -->
 
-					<!-- Begin | Private Stylesheet ( pay/recharge ) -->
+					<!-- Begin | Private Stylesheet ( account/recharge.html ) -->
 						
-						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/recharge/layout.css"/> <!-- Layout -->
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/account/recharge.layout.css"/> <!-- Layout -->
 						
-						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/recharge/index.css"/> <!-- Index -->
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/account/recharge.index.css"/> <!-- Index -->
+
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/datepicker/0.1.0/datetimepicker.css"/><!-- Datetimepicker -->
 						
-					<!-- End | Private Stylesheet ( pay/recharge ) -->
+					<!-- End | Private Stylesheet ( account/recharge.html ) -->
 					
 				<!-- End | Stylesheet -->
 				
@@ -238,244 +240,453 @@
 						
 					</header>
 					
-				<!-- Begin | Header -->
-
-				<!-- Begin | recharge area -->
-				
-					<form id="choosePaymentBank" class="row" method="post" action="#">
-						
-						<div class="grid_12 payContent">
-                            
-							<div class="payAccount">
-								
-								<p>充值账户： <b>lucian</b><i>账户余额：<span>10.00</span>元</i></p>
-                                
-							</div>
-                            
-							<div class="payMethod">
-								
-								<p class="payTitle"><b>支付方式：</b>在线支付支持多家银行借记卡支付；支持支付宝、财付通等多种支付平台。</p>
-                                
-								<div class="selectedBank" id="alipay">
-									
-									<input type="radio" value="alipay" name="chooseBank" checked="checked" />
-                                    
-								</div>
-                                
-								<div class="rela otherPayment">
-                                    
-									<a href="#" class="otherPaymentLink">选择其他在线支付</a>
-                                    
-									<i class="absol"></i>
-                                    
-								</div>
-                                
-							</div>
-                            
-							<div class="clearfix recharge">
-								
-								<p class="left">充值金额： </p>
-                                
-								<div class="left inputBlockLevel rechargeAmount">
-									
-									<input id="rechargeAmountNum" name="rechargeAmountNum" type="text" />
-                                    
-								</div>
-                                
-								<button class="left" type="submit">充 值</button>
-                                
-								<p class="left repayAmount">本期应还总金额为 <span>388.00元</span></p>
-                                
-							</div>
-                            
-						</div>
-                        
-					</form>
+				<!-- End | Header -->
+				    
+				    
                     
-				<!-- End | recharge area -->
-
-
-
-				<!-- Begin | recharge question -->
-                    
-					<div class="row">
+				<!-- Begin | My account -->
+                
+					<div class="clearfix container">
 						
-						<div class="grid_12 rechargeQuestion">
+						<div class="row">
 							
-							<h3>充值遇到的问题</h3>
+							<!-- Begin | Left sidebar -->
+                                
+								<ul class="grid_2 clearfix leftSidebar">
+									
+									<li class="right myaccount activeTab"><a href="#">我的账户</a></li>
+                                    
+									<li class="right"><a href="#">交易记录</a></li>
+                                    
+									<li class="right"><a href="#">我的资料</a></li>
+
+									<li class="right"><a href="#">补充附件</a></li>
+                                    
+									<li class="right"><a href="#">修改密码</a></li>
+                                    
+								</ul>
+                                
+							<!-- End | Left sidebar -->
                             
-							<p class="question">1.我还能用信用卡在淘宝购物么？</p>
+							<!-- Begin | Right container -->
                             
-							<p class="answer">答：您在带有信用卡小标识的店铺购物，可以直接使用信用卡快捷（含卡通）、网银进行信用卡支付，支付限额为您的卡面额度。在没有信用卡标识的店铺购物时，您可以使用信用卡快捷（含卡通）、网银进行信用卡支付，月累计支付限额不超过500元。查看使用说明。</p>
-                            
-							<p class="question">2.没有网上银行，怎么用银行卡充值？</p>
-                            
-							<p class="answer">答：储蓄卡用户，请使用储蓄卡快捷支付充值，开通后只需输入支付宝支付密码，即可完成充值。</p>
-                            
-							<p class="question">3.怎样在网上开通储蓄卡快捷支付(含卡通)？</p>
-                            
-							<p class="answer">答：已支持国内大部分主流银行在线开通。在支付宝填写信息后，根据页面引导在网上银行完成开通。</p>
-                            
-							<a href="#">更多帮助</a> 
+								<div class="grid_10 clearfix rightContainer">
+								
+									<p class="grid_10 myInfo">
+										
+										交易明细
+
+									</p>
+                                        
+									<!-- Begin | account balance -->
+                                        
+										<div class="grid_10 accountBalance">
+											
+											<p>账户余额：<span> 2100.00 </span>元</p>
+
+										</div>
+                                        
+									<!-- End | account balance -->
+
+									<!-- Begin | recharge detail -->
+
+										<form class="rechargeDetail" action="#" method="post">
+
+											<div class="grid_10 clearfix searchBar">
+												
+												<select class="grid_2 detailType">
+												
+													<option value="1">所有记录</option>
+
+													<option value="2">线上充值</option>
+
+													<option value="3">系统还款</option>
+
+												</select>
+
+												<div class="left formIpt startTime">
+													
+													<input type="text" class="textCenter startTimeIpt" />
+
+												</div>
+
+												<span class="left connector"></span>
+
+												<div class="left formIpt endTime">
+													
+													<input type="text" class="textCenter endTimeIpt" />
+
+												</div>
+
+												<button class="left searchBtn">搜 索</button>
+
+											</div>
+											
+											
+
+											<div class="grid_10">
+												
+												<table class="detailTable">
+													
+													<thead>
+														
+														<tr>
+															
+															<th class="serialNum">流水号</th>
+
+															<th class="rechargeType">类型</th>
+
+															<th class="rechargeWay">方式</th>
+
+															<th class="rechargeAmount">金额</th>
+
+															<th class="rechargeTime">时间</th>
+
+															<th class="rechargeStatus">状态</th>
+
+														</tr>
+
+													</thead>
+
+													<tbody>
+														
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">系统扣款</td>
+
+															<td class="rechargeWay"></td>
+
+															<td class="rechargeAmount">-350.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">还款成功</td>
+
+														</tr>
+
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">线上充值</td>
+
+															<td class="rechargeWay">支付宝</td>
+
+															<td class="rechargeAmount">+10.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">充值成功</td>
+
+														</tr>
+
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">线上充值</td>
+
+															<td class="rechargeWay">支付宝</td>
+
+															<td class="rechargeAmount">+10.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">充值成功</td>
+
+														</tr>
+
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">线上充值</td>
+
+															<td class="rechargeWay">支付宝</td>
+
+															<td class="rechargeAmount">+10.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">充值成功</td>
+
+														</tr>
+
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">线上充值</td>
+
+															<td class="rechargeWay">支付宝</td>
+
+															<td class="rechargeAmount">+10.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">充值成功</td>
+
+														</tr>
+
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">线上充值</td>
+
+															<td class="rechargeWay">支付宝</td>
+
+															<td class="rechargeAmount">+10.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">充值成功</td>
+
+														</tr>
+
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">线上充值</td>
+
+															<td class="rechargeWay">支付宝</td>
+
+															<td class="rechargeAmount">+10.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">充值成功</td>
+
+														</tr>
+
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">线上充值</td>
+
+															<td class="rechargeWay">支付宝</td>
+
+															<td class="rechargeAmount">+10.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">充值成功</td>
+
+														</tr>
+
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">线上充值</td>
+
+															<td class="rechargeWay">支付宝</td>
+
+															<td class="rechargeAmount">+10.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">充值成功</td>
+
+														</tr>
+
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">线上充值</td>
+
+															<td class="rechargeWay">支付宝</td>
+
+															<td class="rechargeAmount">+10.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">充值成功</td>
+
+														</tr>
+
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">线上充值</td>
+
+															<td class="rechargeWay">支付宝</td>
+
+															<td class="rechargeAmount">+10.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">充值成功</td>
+
+														</tr>
+
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">线上充值</td>
+
+															<td class="rechargeWay">支付宝</td>
+
+															<td class="rechargeAmount">+10.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">充值成功</td>
+
+														</tr>
+
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">线上充值</td>
+
+															<td class="rechargeWay">支付宝</td>
+
+															<td class="rechargeAmount">+10.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">充值成功</td>
+
+														</tr>
+
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">线上充值</td>
+
+															<td class="rechargeWay">支付宝</td>
+
+															<td class="rechargeAmount">+10.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">充值成功</td>
+
+														</tr>
+
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">线上充值</td>
+
+															<td class="rechargeWay">支付宝</td>
+
+															<td class="rechargeAmount">+10.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">充值成功</td>
+
+														</tr>
+
+														<tr>
+															
+															<td class="serialNum">CZ20130922002319</td>
+
+															<td class="rechargeType">线上充值</td>
+
+															<td class="rechargeWay">支付宝</td>
+
+															<td class="rechargeAmount">+10.00</td>
+
+															<td class="rechargeTime">2103-09-22 18:00</td>
+
+															<td class="rechargeStatus">充值成功</td>
+
+														</tr>
+
+													</tbody>
+
+												</table>
+
+											</div>
+
+										</form>
+
+										<ul class="left clearfix paging">
+											
+											<li class="prev"><a href="#">上一页</a></li>
+
+											<li><a href="#" class="pageNum currentPage">1</a></li>
+
+											<li><a href="#" class="pageNum">2</a></li>
+
+											<li><a href="#" class="pageNum">3</a></li>
+
+											<li><a href="#" class="pageNum">4</a></li>
+
+											<li><a href="#" class="pageNum">5</a></li>
+
+											<li class="textCenter morePages">...</li>
+
+											<li class="next"><a href="#">下一页</a></li>
+
+											<li class="totalPages">共 100 页</li>
+
+											<li>去第</li>
+
+											<li class="clearfix pageJump">
+												
+												<div class="left">
+													
+													<input type="text" class="textCenter" />
+
+												</div>
+
+												<a href="#" class="left pageJumpBtn">确定</a>
+
+											</li>
+
+											<li>页</li>
+
+										</ul>
+
+									<!-- End | recharge detail -->
+                                        
+									    
+                                        
+									<p class="grid_10 copyright">
+									    
+										© 2013-2014 江西汇通金融信息服务有限公司 版权所有   赣ICP备13002945
+                                        
+									</p>
+                                    
+								</div>
+                                
+							<!-- End | Right container -->
                             
 						</div>
                         
 					</div>
                     
-				<!-- End | recharge question -->
-				
-				
-				
-				<!-- Begin | overlay: choose bank -->
-                    
-					<div class="rela chooseBank">
-						
-						<div class="affix opacityHalf chooseBase"></div>
-                        
-						<div class="affix chooseContainer">
-							
-							<a class="absol closeChoose"></a>
-                            
-                            
-                            
-							<div class="chooseMain">
-								
-								<label class="chooseTitle">汇通分期商城的合作银行</label>
-                                
-								<ul class="clearfix">
-									
-									<!-- 工商银行 -->	
-									<li class="inputBlockLevel" id="icbc">
-										
-										<input name="chooseBank" value="icbc" type="radio"/>
-                                        
-									</li>
-                                    
-									<!-- 建设银行 -->
-									<li class="inputBlockLevel" id="ccb">
-										
-										<input name="chooseBank" value="ccb" type="radio"/>
-                                        
-									</li>
-                                    
-									<!-- 中国农业银行 -->
-									<li class="inputBlockLevel" id="abc">
-										
-										<input name="chooseBank" value="abc" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 交通银行 -->
-									<li class="inputBlockLevel" id="bcm">
-										
-										<input name="chooseBank" value="bcm" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 招商银行 -->
-									<li class="inputBlockLevel" id="cmb">
-										
-										<input name="chooseBank" value="cmb" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 中国银行 -->
-									<li class="inputBlockLevel" id="boc">
-										
-										<input name="chooseBank" value="boc" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 中国光大银行 -->
-									<li class="inputBlockLevel" id="ceb">
-										
-										<input name="chooseBank" value="ceb" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 中信银行 -->
-									<li class="inputBlockLevel" id="cncb">
-										
-										<input name="chooseBank" value="cncb" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 中国民生银行 -->
-									<li class="inputBlockLevel" id="cmbc">
-										
-										<input name="chooseBank" value="cmbc" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 广发银行 -->
-									<li class="inputBlockLevel" id="cgb">
-										
-										<input name="chooseBank" value="cgb" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 华夏银行 -->
-									<li class="inputBlockLevel" id="hxb">
-										
-										<input name="chooseBank" value="hxb" type="radio"/>
-										
-									</li>
-                                    
-								</ul>
-                                
-                                
-                                
-								<label class="chooseTitle payPlatform">支付平台</label> 
-                                
-								<ul class="clearfix payPlatformChoose">
-									
-									<!-- 支付宝 -->
-									<li class="inputBlockLevel" id="alipay">
-										
-										<input name="chooseBank" value="alipay" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 环迅支付 -->
-									<li class="inputBlockLevel" id="ips">
-										
-										<input name="chooseBank" value="ips" type="radio"/>
-										
-									</li>
-                                    
-								</ul>
-                                
-								<div class="divideLine"></div>
-                                
-                                
-                                
-								<button>确 认</button>
-                                
-							</div>
-                            
-							
-                            
-						</div>
-                        
-					</div>
-                    
-				<!-- End | overlay: choose bank -->
-				
-				
-				
+				<!-- End | My account -->
+				    
+				    
+				    
 				<!-- Begin | Page Title -->
 					
-					<var id="pageTitle" class="advancedHide">充值 | 汇通分期商城（ www.fenqimall.com ）</var> <!-- Definition, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var -->
+					<var id="pageTitle" class="advancedHide">我的资料 | 汇通分期商城（ www.fenqimall.com ）</var> <!-- Definition, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var -->
 					
 				<!-- Begin | Page Title -->
-				
-				
-				
+				    
+				    
+				    
 				<!-- Begin | JavaScript -->
-				
+				    
 					<!-- Begin | Boot -->
 						
-						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/recharge/main" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
+						<script type="text/javascript" data-main="../CDN/ajax/libs/js/instalment_mall/account/recharge.main" src="../CDN/ajax/libs/js/requirejs/2.1.8/require.min.js" defer="true"></script> <!-- Asynchronous script execution. http://msdn.microsoft.com/zh-cn/library/ie/hh673524(v=vs.85).aspx, http://hacks.mozilla.org/2009/06/defer/, http://www.phpied.com/deferring-scripts-for-faster-rendering/, http://davidwalsh.name/html5-async | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Browser_compatibility -->
 						
 					<!-- End | Boot -->
 					
