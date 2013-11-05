@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: gehen zum Teufel.
+ * 
+ * Describe: The private layout stylesheet of forget password(successful.html).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Doris.
+ * 
+ * Version: 0.1.0
+ * 
+* Creation Date: 2013.10.30 09:39; ( Doris ).
+ * 
+ * Last update: 2013.10.30 09:39 ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> forget password.
+*  ||----||
+  ___/  ___/
+*/
+
+.contentTitle {
+
+	height: 54px;
+
+	margin-top: 45px;
+
+}
+
+.progressBar {
+
+	height: 69px;
+
+}
+
+.progressItem {
+
+	margin-top: 24px;
+
+	z-index: 1;
+
+}
+
+.progressItem > i {
+
+	display: inline-block;
+
+	width: 22px;
+
+	height: 21px;
+
+	z-index: 2;
+
+	left: 0;
+
+	bottom: -1px;
+
+}
+
+.progressItem > span {
+
+	padding-left: 34px;
+
+}
+
+.successfulText {
+
+	margin-top: 112px;
+
+	margin-bottom: 60px;
+
+}
+
+.successfulText > i {
+
+	margin-left: 40px;
+
+	margin-top: 4px;
+
+	width: 31px;
+
+	height: 26px;
+
+}
+
+.successfulText > span {
+
+	margin-left: 30px;
+
+}
+
+.btnBox {
+
+	padding-bottom: 450px;
+
+}
+
+.loginBtn {
+
+	width: 122px;
+
+	height: 50px;
+
+}
