@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: ~
+ * 
+ * Describe: The private stylesheet of merchant settle page ( ~/merchant_settle/index.html ).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Doris.
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.11.06 13:40 ( Doris ).
+ * 
+ * Last update: 2013.11.06 13:40 ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+
+.comingText {
+
+	padding: 250px 0;
+
+}
