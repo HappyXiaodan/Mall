@@ -8,7 +8,7 @@
 	
 	<!-- Statement: gehen zum Teufel -->
 	
-	<!-- Describe: recharge page -->
+	<!-- Describe: pay page(recharge.html) -->
 	
 	<!-- Further changes, comments: ~ -->
 	
@@ -20,7 +20,7 @@
 	
 	<!-- Creation Date: 2013.10.19 11:30 ( Doris ) -->
 	
-	<!-- Last update: 2013.10.21 09:20 ( Doris ) -->
+	<!-- Last update: 2013.11.02 18:06 ( Doris ) -->
 	
 	<!-- License: ~ -->
 	
@@ -52,11 +52,11 @@
 					
 					<base target="_self"/>
 					
-					<meta http-equiv="X-UA-Compatible" content="IE = EmulateIE7, IE = 10, chrome = 1"/>
+					<meta http-equiv="X-UA-Compatible" content="ie = 7, chrome = 1"/>
 					
 					<meta name="viewport" content="width = 1200"/>
 					
-					<meta name="Robots" content="none"/>
+					<meta name="Robots" content="all"/>
 					
 					<meta name="google" content="notranslate"/> <!-- When we recognize that the contents of a page are not in the language that the user is likely to want to read, we often provide a link to a translation in the search results. In general, this gives you the chance to provide your unique and compelling content to a much larger group of users. However, there may be situations where this is not desired. This meta tag tells Google that you don't want us to provide a translation for this page. -->
 					
@@ -142,9 +142,9 @@
 					
 					<!-- Begin | Private Stylesheet ( Master ) -->
 						
-						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/layout%405.css"/> <!-- Layout -->
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/layout%402.css"/> <!-- Layout -->
 						
-						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/index%405.css"/> <!-- Index -->
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/master/index%402.css"/> <!-- Index -->
 						
 					<!-- End | Private Stylesheet ( Master ) -->
 
@@ -238,7 +238,9 @@
 						
 					</header>
 					
-				<!-- Begin | Header -->
+				<!-- End | Header -->
+
+
 
 				<!-- Begin | recharge area -->
 				
@@ -251,6 +253,8 @@
 								<p>充值账户： <b>lucian</b><i>账户余额：<span>10.00</span>元</i></p>
                                 
 							</div>
+							
+							
                             
 							<div class="payMethod">
 								
@@ -272,15 +276,23 @@
                                 
 							</div>
                             
-							<div class="clearfix recharge">
+							
+                            
+							<div class="rela clearfix recharge">
 								
-								<p class="left">充值金额： </p>
+								<p class="left">
+
+									充值金额： 
+
+								</p>
                                 
 								<div class="left inputBlockLevel rechargeAmount">
 									
 									<input id="rechargeAmountNum" name="rechargeAmountNum" type="text" />
                                     
 								</div>
+
+								<div class="absol tipBox">错误</div>
                                 
 								<button class="left" type="submit">充 值</button>
                                 
@@ -335,125 +347,129 @@
 						<div class="affix chooseContainer">
 							
 							<a class="absol closeChoose"></a>
-                            
-                            
+
+
                             
 							<div class="chooseMain">
+
+								<!-- Begin | banks -->
 								
-								<label class="chooseTitle">汇通分期商城的合作银行</label>
+									<label class="chooseTitle bankTitle">汇通分期商城的合作银行</label>
+	                                
+									<ul class="clearfix">
+										
+										<!-- 工商银行 -->	
+										<li class="inputBlockLevel" id="icbc">
+											
+											<input name="chooseBank" value="icbc" type="radio"/>
+	                                        
+										</li>
+	                                    
+										<!-- 建设银行 -->
+										<li class="inputBlockLevel" id="ccb">
+											
+											<input name="chooseBank" value="ccb" type="radio"/>
+	                                        
+										</li>
+	                                    
+										<!-- 中国农业银行 -->
+										<li class="inputBlockLevel" id="abc">
+											
+											<input name="chooseBank" value="abc" type="radio"/>
+											
+										</li>
+	                                    
+										<!-- 交通银行 -->
+										<li class="inputBlockLevel" id="bcm">
+											
+											<input name="chooseBank" value="bcm" type="radio"/>
+											
+										</li>
+	                                    
+										<!-- 招商银行 -->
+										<li class="inputBlockLevel" id="cmb">
+											
+											<input name="chooseBank" value="cmb" type="radio"/>
+											
+										</li>
+	                                    
+										<!-- 中国银行 -->
+										<li class="inputBlockLevel" id="boc">
+											
+											<input name="chooseBank" value="boc" type="radio"/>
+											
+										</li>
+	                                    
+										<!-- 中国光大银行 -->
+										<li class="inputBlockLevel" id="ceb">
+											
+											<input name="chooseBank" value="ceb" type="radio"/>
+											
+										</li>
+	                                    
+										<!-- 中信银行 -->
+										<li class="inputBlockLevel" id="cncb">
+											
+											<input name="chooseBank" value="cncb" type="radio"/>
+											
+										</li>
+	                                    
+										<!-- 中国民生银行 -->
+										<li class="inputBlockLevel" id="cmbc">
+											
+											<input name="chooseBank" value="cmbc" type="radio"/>
+											
+										</li>
+	                                    
+										<!-- 广发银行 -->
+										<li class="inputBlockLevel" id="cgb">
+											
+											<input name="chooseBank" value="cgb" type="radio"/>
+											
+										</li>
+	                                    
+										<!-- 华夏银行 -->
+										<li class="inputBlockLevel" id="hxb">
+											
+											<input name="chooseBank" value="hxb" type="radio"/>
+											
+										</li>
+	                                    
+									</ul>
                                 
-								<ul class="clearfix">
-									
-									<!-- 工商银行 -->	
-									<li class="inputBlockLevel" id="icbc">
-										
-										<input name="chooseBank" value="icbc" type="radio"/>
-                                        
-									</li>
-                                    
-									<!-- 建设银行 -->
-									<li class="inputBlockLevel" id="ccb">
-										
-										<input name="chooseBank" value="ccb" type="radio"/>
-                                        
-									</li>
-                                    
-									<!-- 中国农业银行 -->
-									<li class="inputBlockLevel" id="abc">
-										
-										<input name="chooseBank" value="abc" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 交通银行 -->
-									<li class="inputBlockLevel" id="bcm">
-										
-										<input name="chooseBank" value="bcm" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 招商银行 -->
-									<li class="inputBlockLevel" id="cmb">
-										
-										<input name="chooseBank" value="cmb" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 中国银行 -->
-									<li class="inputBlockLevel" id="boc">
-										
-										<input name="chooseBank" value="boc" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 中国光大银行 -->
-									<li class="inputBlockLevel" id="ceb">
-										
-										<input name="chooseBank" value="ceb" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 中信银行 -->
-									<li class="inputBlockLevel" id="cncb">
-										
-										<input name="chooseBank" value="cncb" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 中国民生银行 -->
-									<li class="inputBlockLevel" id="cmbc">
-										
-										<input name="chooseBank" value="cmbc" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 广发银行 -->
-									<li class="inputBlockLevel" id="cgb">
-										
-										<input name="chooseBank" value="cgb" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 华夏银行 -->
-									<li class="inputBlockLevel" id="hxb">
-										
-										<input name="chooseBank" value="hxb" type="radio"/>
-										
-									</li>
-                                    
-								</ul>
+                                <!-- End | banks -->
+
+
+
+                                <!-- Begin | pay platforms -->
                                 
-                                
-                                
-								<label class="chooseTitle payPlatform">支付平台</label> 
-                                
-								<ul class="clearfix payPlatformChoose">
-									
-									<!-- 支付宝 -->
-									<li class="inputBlockLevel" id="alipay">
+									<label class="chooseTitle payPlatform">支付平台</label> 
+	                                
+									<ul class="clearfix payPlatformChoose">
 										
-										<input name="chooseBank" value="alipay" type="radio"/>
-										
-									</li>
-                                    
-									<!-- 环迅支付 -->
-									<li class="inputBlockLevel" id="ips">
-										
-										<input name="chooseBank" value="ips" type="radio"/>
-										
-									</li>
-                                    
-								</ul>
+										<!-- 支付宝 -->
+										<li class="inputBlockLevel" id="alipay">
+											
+											<input name="chooseBank" value="alipay" type="radio"/>
+											
+										</li>
+	                                    
+										<!-- 环迅支付 -->
+										<li class="inputBlockLevel" id="ips">
+											
+											<input name="chooseBank" value="ips" type="radio"/>
+											
+										</li>
+	                                    
+									</ul>
+
+								<!-- End | pay platforms -->
                                 
 								<div class="divideLine"></div>
-                                
-                                
                                 
 								<button>确 认</button>
                                 
 							</div>
-                            
-							
                             
 						</div>
                         

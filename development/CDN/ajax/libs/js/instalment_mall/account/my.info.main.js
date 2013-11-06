@@ -110,7 +110,9 @@
 				 * Navigation Demo.
 				 */
 				
-				nav.find('a').on('click', function () {
+				nav.find('a').on('click', function (e) {
+					
+					e.preventDefault();
 					
 					$(this).addClass('selected').closest('li').siblings().children().removeClass('selected');
 					
@@ -147,63 +149,33 @@
                     
 				});
                 
-				var uploadMethod = {
-                    
-					uploadImg: function (uploadLinkObj, inputObj) {
-                        
-						$('.' + uploadLinkObj).on('click', function (e) {
-                            
-							e.preventDefault();
-                            
-							$('#' + inputObj).trigger('click');
-                            
-						});
-                        
-					},
-                    
-					deletImg: function (delLinkObj, imgObj, putLinkObj, inputObj) {
-                        
-						if ($('.' + imgObj).length) {
-                            
-							$('.' + delLinkObj).on('click', function (e) {
-                                
-								e.preventDefault();
-                                
-								if (!$('.' + putLinkObj).length) {
-                                    
-									$('.' + imgObj).parent().html("未上传 <a href=\"#\" class=\"" + putLinkObj + "\">点击上传</a>");
-                                    
-									uploadMethod.uploadImg(putLinkObj, inputObj);
-                                    
-								}
-                                
-							});
-                            
-						} else {
-                            
-							uploadMethod.uploadImg(putLinkObj, inputObj);
-                            
-						}
-                        
+				
+
+				/**
+				 * According to member type(student or employee), show related options.
+				 */
+
+				var memberType = $('.memberType');
+
+				memberType.on('change', function (e) {
+
+					if ($(this).val() === "学生") {
+
+						$('.student').css('display', 'inline');
+
+						$('.employee').css('display', 'none');
+
+					} else if ($(this).val() === "白领") {
+
+						$('.employee').css('display', 'inline');
+
+						$('.student').css('display', 'none');
+
 					}
-                    
-				};
-                
-				uploadMethod.uploadImg('uploadIdentFrontLink', 'uploadIdentFront');
-                
-				uploadMethod.deletImg('delIdentFront', 'identImgFront', 'putIdentFront', 'uploadIdentFront');
-                
-				uploadMethod.uploadImg('uploadIdentBackLink', 'uploadIdentBack');
-                
-				uploadMethod.deletImg('delIdentBack', 'identImgBack', 'putIdentBack', 'uploadIdentBack');
-                
-				uploadMethod.uploadImg('uploadStudentCardLink', 'uploadStudentCard');
-                
-				uploadMethod.deletImg('delStudentCard', 'studentCard', 'putStudentCard', 'uploadStudentCard');
-                
-				uploadMethod.uploadImg('uploadSchoolCardLink', 'uploadSchoolCard');
-                
-				uploadMethod.deletImg('delSchoolCard', 'schoolCard', 'putSchoolCard', 'uploadSchoolCard');
+
+				});
+
+				
                 
                 
 				

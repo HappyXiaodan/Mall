@@ -1,7 +1,7 @@
 /**
  * Statement: gehen zum Teufel.
  * 
- * Describe: The javascript boot file of student information preview page (~/account/info.preview.student.html).
+ * Describe: The javascript boot file of information preview page (account/info.preview.student.html & info.preview.employee.html).
  * 
  * Further changes, comments: ~
  * 

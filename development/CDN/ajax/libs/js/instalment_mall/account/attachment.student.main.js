@@ -1,7 +1,7 @@
 /**
  * Statement: gehen zum Teufel.
  * 
- * Describe: The javascript boot file of attachment (~/account/attachment.student.html).
+ * Describe: The javascript boot file of attachment (account/attachment.student.html).
  * 
  * Further changes, comments: ~
  * 

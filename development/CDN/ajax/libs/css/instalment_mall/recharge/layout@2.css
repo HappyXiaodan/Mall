@@ -1,0 +1,398 @@
+@charset "utf-8";
+
+
+
+/**
+ * Statement: gehen zum Teufel.
+ *
+ * Describe: layout css for recharge(account/recharge.html).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Doris.
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.31 10:36 ( Doris ).
+ * 
+ * Last update: 2013.10.31 10:36 ( Doris ).
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
+
+.container {
+
+	background-color: #fff;
+
+}
+
+.container .row {
+
+	height: auto;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> left sidebar.
+*  ||----||
+  ___/  ___/
+*/
+
+.leftSidebar {
+
+	min-height: 1200px;
+
+}
+
+.leftSidebar > li {
+
+	width: 160px;
+
+	height: 50px;
+
+}
+
+.leftSiderbar > li > a {
+
+	display: block;
+
+	width: 100%;
+
+	height: 100%;
+
+}
+
+.myaccount {
+
+	margin-top: 70px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> right container.
+*  ||----||
+  ___/  ___/
+*/
+
+.rightContainer {
+
+	width: 1000px;
+
+	margin-left: 0;
+
+	margin-right: 0;
+
+}
+
+.myInfo {
+
+	height: 45px;
+
+	border-bottom: 2px solid #e9461f;
+
+}
+
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> account balance.
+*  ||----||
+  ___/  ___/
+*/
+
+.accountBalance {
+
+	height: 54px;
+
+}
+
+.accountBalance > p {
+
+	margin-top: 28px;
+
+	margin-left: 4px;
+
+}
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+ / |     ||----> recharge detail.
+*  ||----||
+  ___/  ___/
+*/
+
+.searchBar {
+
+	height: 32px;
+
+	margin-top: 20px;
+
+	padding-bottom: 20px;
+
+	-webkit-box-sizing: content-box;
+	
+	-moz-box-sizing: content-box;
+	
+	box-sizing: content-box;
+
+	border-bottom: 2px solid #e9461f;
+
+}
+
+.detailType {
+
+	margin-left: 0;
+
+	height: 100%;
+
+	border: 1px solid #a4a4a4;
+
+}
+
+.formIpt {
+
+	height: 100%;
+
+	width: 100px;
+
+	border: 1px solid #a4a4a4;
+
+}
+
+.ie7 .formIpt {
+
+	display: inline;
+
+}
+
+.formIpt > input {
+
+	width: 90px;
+
+	margin-top: 6px;
+
+	margin-left: 5px;
+
+}
+
+.startTime {
+
+	margin-left: 58px;
+
+}
+
+.connector {
+
+	width: 11px;
+
+	height: 1px;
+
+	margin: 15px 8px 0;
+
+	border-bottom: 1px solid #333;
+
+}
+
+.searchBtn {
+
+	width: 70px;
+
+	height: 100%;
+
+	margin-left: 17px;
+
+}
+
+.detailTable {
+
+	width: 100%;
+
+	margin-bottom: 30px;
+
+}
+
+.detailTable > thead > tr {
+
+	height: 28px;
+
+}
+
+.detailTable > tbody > tr {
+
+	height: 35px;
+
+}
+
+.serialNum {
+
+	width: 250px;
+
+}
+
+.rechargeType {
+
+	width: 100px;
+
+}
+
+.rechargeWay {
+
+	width: 178px;
+
+}
+
+.paging {
+
+	margin-left: 185px;
+
+	height: 32px;
+
+}
+
+.paging > li {
+
+	float: left;
+
+	margin: 0 5px;
+
+	height: 32px;
+
+}
+
+.paging > li.prev {
+
+	margin-right: 10px;
+
+}
+
+.paging > li.next {
+
+	margin-left: 10px;
+
+}
+
+.paging > li > a {
+
+	width: 32px;
+
+	height: 100%;
+
+	border: 1px solid #ddd;
+
+}
+
+.prev > a, .next > a {
+
+	width: 70px !important;
+
+}
+
+li.morePages {
+
+	width: 32px;
+
+}
+
+li.totalPages {
+
+	margin-left: 30px;
+
+	margin-right: 20px;
+
+}
+
+li.pageJump {
+
+	margin: 0 10px;
+
+}
+
+.pageJump > div, .pageJump > a.pageJumpBtn {
+
+	margin: 6px 0;
+
+	width: 40px;
+
+	height: 20px;
+
+}
+
+.pageJump > div {
+
+	height: 18px;
+
+	-webkit-box-sizing: content-box;
+	
+	-moz-box-sizing: content-box;
+	
+	box-sizing: content-box;
+
+	border: 1px solid #ddd;
+
+	border-right: 0;
+
+}
+
+.pageJump > div > input {
+
+	margin-left: 2px;
+
+	width: 36px;
+
+}
+
+.pageJump > a.pageJumpBtn {
+
+	border: 0;
+
+}
+
+
+
+
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+
+ / |     ||----> copyright.
+*  ||----||
+  ___/  ___/
+*/
+
+.copyright {
+
+	width: 970px;
+
+	height: 50px;
+
+	margin-top: 485px;
+
+	border-top: 1px solid #999;
+
+}

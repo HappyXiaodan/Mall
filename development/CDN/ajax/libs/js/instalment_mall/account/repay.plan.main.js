@@ -13,7 +13,7 @@
  * 
  * Creation Date: 2013.10.22 15:30 ( Doris ).
  * 
- * Last update: 2013.10.22 17:00 ( Doris ).
+ * Last update: 2013.10.28 11:20 ( Doris ).
  * 
  * License: ~
  * 
@@ -146,6 +146,24 @@
                     
 				$('.leftSidebar').css({"height": docHeight-headerHeight});
 				
+
+
+				$('.overdueAmount').each(function () {
+
+					$(this).on('mouseover', function (e) {
+
+						e.preventDefault();
+
+						$(this).children('div').css('display', 'block');
+
+					}).on('mouseout', function () {
+
+						$(this).children('div').css('display', 'none');
+
+					})
+
+				});
+
                 
 				
 				/**

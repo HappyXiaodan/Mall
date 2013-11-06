@@ -20,7 +20,7 @@
 	
 	<!-- Creation Date: 2013.10.18 18:05 ( Doris ) -->
 	
-	<!-- Last update: 2013.10.19 11:07 ( Doris ) -->
+	<!-- Last update: 2013.11.02 17:22 ( Doris ) -->
 	
 	<!-- License: ~ -->
 	
@@ -257,6 +257,8 @@
 									<li class="right"><a href="#">交易记录</a></li>
                                     
 									<li class="right activeTab"><a href="#">我的资料</a></li>
+
+									<li class="right"><a href="#">补充附件</a></li>
                                     
 									<li class="right"><a href="#">修改密码</a></li>
                                     
@@ -267,271 +269,1130 @@
 							<!-- Begin | Right container -->
                             
 								<div class="grid_10 clearfix rightContainer">
-									
-									<div class="myInfo">
-											
-										<b>我的资料</b>
-                                        
-									</div>
-                                        
-									<div class="myInfoTip">
+								
+									<p class="grid_10 myInfo">
+										
+										我的资料
+
+									</p>
+
+									<div class="grid_10 myInfoTip">
 										
 										<p class="rela">
-                                            
-											<b>个人资料（除手机号、Email）</b>在申请分期商品后<b>不可随意修改。</b>如有错误请联系 客服热线:<b>400-808-5599</b>
-                                            
-											<a href="#" class="absol closeInfoTip"></a>
-                                            
+
+											个人资料（除手机号、Email）在申请分期商品后不可随意修改。如有错误请联系 客服热线:400-808-5599<a class="absol closeInfoTip"></a>
+										
 										</p>
-                                        
+
 									</div>
                                         
-										<!-- Begin | personal information form -->
-                                            
-											<form id="personalInfoForm" method="post" action="#">
-												
-												<div class="grid_5 clearfix personalInfo">
-                                                    
-													<p class="grid_5 personalInfoTitle">个人信息</p>
-                                                        
-													<label class="grid_1" for="userName">姓名：</label>
-                                                        
-													<div class="grid_3 formIpt">
-												     
-												        <input id="userName" name="userName" type="text"/>
-                                                        
-													</div>
-                                                        
-													<label class="grid_1" for="memberType">身份：</label>
-                                                        
-													<div class="grid_3 formIpt">
-														
-														<input id="memberType" name="memberType" type="text"/>
-                                                        
-													</div>
-                                                        
-													<label class="grid_1" for="phone">手机：</label>
-                                                        
-													<div class="grid_3 formIpt phoneIpt">
-														
-														<input id="phone" name="phone" type="text"/>
-                                                        
-													</div>
-                                                        
-													<a href="#" class="grid_1">更换手机号</a>
-                                                        
-													<label class="grid_1" for="identityNum">身份证号：</label>
-                                                        
-													<div class="grid_3 formIpt">
-														
-														<input id="identityNum" name="identityNum" type="text"/>
-                                                        
-													</div>
-                                                        
-													<label class="grid_1 certiValid" for="identityValid">证件有效期：</label>
-                                                        
-													<div class="grid_3 formIpt certiValidIpt">
-														
-														<input id="identityValid" name="identityValid" type="text"/>
-                                                        
-													</div>
-                                                        
-													<label class="grid_1" for="email">E-mail：</label>
-                                                        
-													<div class="grid_3 formIpt emailIpt">
-														
-														<input id="email" name="email" type="text"/>
-                                                        
-													</div>
-                                                        
-													<a href="#" class="grid_1">邮箱验证</a>
-                                                        
-													<label class="grid_1" for="telephone">固定电话：</label>
-                                                        
-													<div class="grid_3 formIpt">
-														
-														<input id="telephone" name="telephone" type="text"/>
-                                                        
-													</div>
-                                                        
-                                                        
-                                                        
-                                                        
-													<p class="grid_5 supplInfo">补充信息</p>
-                                                        
-													<label class="grid_1" for="school">学校名称：</label>
-                                                        
-													<div class="grid_3 formIpt">
-														
-														<input id="school" name="school" type="text"/>
-                                                        
-													</div>
-                                                        
-													<label class="grid_1" for="education">学历：</label>
-                                                        
-													<div class="grid_3 formIpt">
-														
-														<input id="education" name="education" type="text"/>
-                                                        
-													</div>
-                                                        
-													<label class="grid_1" for="grade">年级：</label>
-                                                        
-													<div class="grid_3 formIpt">
-														
-														<input id="grade" name="grade" type="text"/>
-                                                        
-													</div>
-                                                        
-													<label class="grid_1" for="eduSystem">学制：</label>
-                                                        
-													<div class="grid_3 formIpt">
-														
-														<input id="eduSystem" name="eduSystem" type="text"/>
-                                                        
-													</div>
-                                                        
-													<label class="grid_1" for="entranceTime">入学时间：</label>
-                                                        
-													<div class="grid_3 formIpt">
-														
-														<input id="entranceTime" name="entranceTime" type="text"/>
-                                                        
-													</div>
-                                                        
-													<label class="grid_1" for="department">所在院系：</label>
-                                                        
-													<div class="grid_3 formIpt">
-														
-														<input id="department" name="department" type="text"/>
-                                                        
-													</div>
-                                                        
-													<label class="grid_1" for="major">专业：</label>
-                                                        
-													<div class="grid_3 formIpt">
-														
-														<input id="major" name="major" type="text"/>
-                                                        
-													</div>
-                                                        
-													<label class="grid_1" for="studentId">学号：</label>
-                                                        
-													<div class="grid_3 formIpt">
-														
-														<input id="studentId" name="studentId" type="text"/>
-                                                        
-													</div>
-                                                        
-													<label class="grid_1" for="schoolAddress">学校地址：</label>
-                                                        
-													<div class="grid_3 formIpt">
-														
-														<input id="schoolAddress" name="schoolAddress" type="text"/>
-                                                        
-													</div>
-                                                        
-													<button type="submit" class="offset_1 left">保存</button>
-                                                    
+									<!-- Begin | personal information form -->
+                                        
+										<form class="grid_9 clearfix personalInfoForm" method="post" action="#">
+
+											<!-- Begin | basic information -->
+										
+												<p class="grid_10 infoTitle">基本信息</p>
+
+												<label class="rela grid_1" for="userName">
+
+													姓名：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<div class="grid_3 formIpt">
+													
+													<input id="userName" type="text"/>
+
 												</div>
-                                                    
-                                                   
-                                                   
-												<div class="grid_3 identification">
-                                                   
-													<!-- Begin |  identity card front -->
-													    
-														<p class="left">身份证</p>
-													   
-														<p class="left identTitle">身份证（正面）</p>
-													   
-														<div class="left identImg textCenter">
-															
-															<img src="http://placehold.it/170x100" class="identImgFront" />
-													   
-														</div>
-													   
-														<a href="#" class="left uploadIdentFrontLink">重新上传</a>
-													   
-														<input id="uploadIdentFront" type="file" class="hide"/>
-													   
-														<a href="#" class="left delIdentFront">删除</a>
-													   
-													<!-- End |  identity card front -->
-												        
-													   
-													   
-													<!-- Begin |  identity card back -->
-													   
-														<p class="left identTitle">身份证（反面）</p>
-													   
-														<div class="left identImg textCenter">
-													       
-															<!-- img class="identImgBack" -->
-															
-															未上传 <a href="#" class="putIdentBack">点击上传</a>
-													       
-														</div>
-													   
-														<a href="#" class="left uploadIdentBackLink">重新上传</a>
-													   
-														<input id="uploadIdentBack" type="file" class="hide"/>
-													   
-														<a href="#" class="left delIdentBack">删除</a>
-													   
-													<!-- End |  identity card back -->
-													   
-													   
-													   
-													<!-- Begin | studentId card -->
-													   
-														<p class="left studentIdent">学生证/校园卡</p>
-													   
-														<p class="left identTitle">学生证</p>
-													   
-														<div class="left identImg textCenter">
-															
-															<img src="http://placehold.it/170x100" class="studentCard" />
-													       
-														</div>
-													   
-														<a href="#" class="left uploadStudentCardLink">重新上传</a>
-													   
-														<input id="uploadStudentCard" type="file" class="hide" />
-													   
-														<a href="#" class="left delStudentCard">删除</a>
-													   
-													<!-- End | studentId card -->
-													   
-													   
-													   
-													<!-- Begin | school card -->
-													   
-														<p class="left identTitle">校园卡</p>
-													   
-														<div class="left identImg textCenter">
-															
-															<img src="http://placehold.it/170x100" class="schoolCard"/>
-													       
-														</div>
-													   
-														<a href="#" class="left uploadSchoolCardLink">重新上传</a>
-													   
-														<input id="uploadSchoolCard" type="file" class="hide"/>
-													   
-														<a href="#" class="left delSchoolCard">删除</a>
-													   
-													<!-- End | school card -->
-												
+
+												<label class="rela offset_1 grid_1" for="identityNum">
+
+													身份证号：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<div class="grid_3 formIpt">
+													
+													<input id="identityNum" type="text"/>
+
 												</div>
-								                
-											</form>
-                                            
-										<!-- End | personal information form -->
+
+												<label class="rela grid_1" for="memberType">
+
+													身份：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<select id="memberType" class="grid_3 memberType">
+
+													<option value="学生">学生</option>
+
+													<option value="白领">白领</option>
+
+												</select>
+
+												<label class="rela offset_1 grid_1" for="identityValid">
+
+													证件有效期：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<div class="grid_1 formIpt identityValidIpt">
+													
+													<input id="identityValid" class="textCenter" type="text"/><i>—</i>
+
+												</div>
+												
+												<div class="grid_1 formIpt identityValidIpt">
+													
+													<input class="textCenter" type="text"/><i>—</i>
+
+												</div>
+												
+												<div class="grid_1 formIpt identityValidIpt">
+													
+													<input class="textCenter" type="text"/>
+
+												</div>
+
+												<label class="rela grid_1" for="phone">
+
+													手机：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<div class="grid_3 formIpt">
+													
+													<input id="phone" type="text"/>
+
+												</div>
+
+												<a href="#" class="grid_1 changePhone">修改</a>
+
+												<label class="rela grid_1" for="email">
+
+													E-mail：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<div class="grid_3 formIpt">
+													
+													<input id="email" type="text"/>
+
+												</div>
+
+												<label class="rela grid_1" for="telephone">
+
+													固定电话：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<div class="grid_1 formIpt telephoneIpt">
+													
+													<input id="telephone" class="textCenter" type="text"/><i>—</i>
+
+												</div>
+												
+												<div class="grid_2 formIpt telephoneNumIpt">
+													
+													<input type="text"/>
+
+												</div>
+
+											<!-- End | basic information -->
+
+
+
+											<!-- Begin | supplementary information -->
+
+												<p class="grid_10 infoTitle">补充信息</p>
+
+												<!-- Begin | student supplementary information -->
+
+													<label class="rela grid_1 student" for="school">
+
+														学校名称：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_3 formIpt student">
+														
+														<input id="school" type="text"/>
+
+													</div>
+
+													<label class="rela offset_1 grid_1 student" for="eduSystem">
+
+														学制：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<select id="eduSystem" class="grid_3 student">
+
+														<option value="1">全日制</option>
+
+														<option value="2">业余制</option>
+
+													</select>
+
+													<label class="rela grid_1 student" for="education">
+
+														学历：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<select id="education" class="grid_3 student">
+
+														<option value="1">本科</option>
+
+														<option value="2">硕士</option>
+
+													</select>
+
+													<label class="rela offset_1 grid_1 student" for="entranceYear">
+
+														入学时间：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<select id="entranceYear" class="left entranceYear student">
+														
+														<option value="1">2009</option>
+
+														<option value="2">2010</option>
+
+														<option value="3">2011</option>
+
+														<option value="4">2012</option>
+
+														<option value="5">2013</option>
+
+													</select>
+
+													<i class="left textCenter blockWord student">年</i>
+
+													<select id="entranceMonth" class="left entranceMonth student">
+														
+														<option value="1">1</option>
+
+														<option value="2">2</option>
+
+														<option value="3">3</option>
+
+														<option value="4">4</option>
+
+														<option value="5">5</option>
+
+														<option value="6">6</option>
+
+														<option value="7">7</option>
+
+														<option value="8">8</option>
+
+														<option value="9">9</option>
+
+														<option value="10">10</option>
+
+														<option value="11">11</option>
+
+														<option value="12">12</option>
+
+													</select>
+
+													<i class="left textCenter blockWord student">月</i>
+
+													<label class="rela grid_1 student" for="grade">
+
+														年级：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+												
+													<select id="grade" class="grid_3 student">
+
+														<option value="1">大一</option>
+
+														<option value="2">大二</option>
+
+														<option value="3">大三</option>
+
+														<option value="4">大四</option>
+
+													</select>
+
+													<label class="rela offset_1 grid_1 student" for="studentId">
+
+														学号：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_3 formIpt student">
+														
+														<input id="studentId" type="text" />
+
+													</div>
+
+													<label class="rela grid_1 student" for="department">
+
+														所在院系：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_3 formIpt student">
+														
+														<input id="department" type="text" />
+
+													</div>
+
+													<label class="rela offset_1 grid_1 student" for="major">
+
+														专业：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_3 formIpt student">
+														
+														<input id="major" type="text" />
+
+													</div>
+
+													<p class="grid_10 addressTitle student">学校地址</p>
+
+													<label class="rela grid_1 student" for="schoolProvince">
+
+														所在区域：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<select id="schoolProvince" class="left schoolProvince student">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">上海</option>
+
+														<option value="2">江苏</option>
+
+													</select>
+
+													<i class="left textCenter blockWord student">省</i>
+													
+													<select id="schoolCity" class="left schoolCity student">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">上海</option>
+
+														<option value="2">南京</option>
+
+													</select>
+
+													<i class="left textCenter blockWord student">市</i>
+
+													<select id="schoolArea" class="left schoolArea student">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">黄浦</option>
+
+														<option value="2">静安</option>
+
+													</select>
+
+													<i class="left textCenter blockWord lastWord student">区</i>
+
+													<label class="rela grid_1 student" for="schoolDetailAddress">
+
+														详细地址：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_8 formIpt schoolDetailAddressIpt student">
+														
+														<input id="schoolDetailAddress" type="text" />
+
+													</div>
+
+													<p class="grid_10 addressTitle student">家庭地址</p>
+
+													<label class="rela grid_1 student" for="homeProvince">
+
+														所在区域：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<select id="homeProvince" class="left homeProvince student">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">上海</option>
+
+														<option value="2">江苏</option>
+
+													</select>
+
+													<i class="left textCenter blockWord student">省</i>
+													
+													<select id="homeCity" class="left homeCity student">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">上海</option>
+
+														<option value="2">南京</option>
+
+													</select>
+
+													<i class="left textCenter blockWord student">市</i>
+
+													<select id="homeArea" class="left homeArea student">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">黄浦</option>
+
+														<option value="2">静安</option>
+
+													</select>
+
+													<i class="left textCenter blockWord lastWord student">区</i>
+
+													<label class="rela grid_1 student" for="homeDetailAddress">
+
+														详细地址：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_8 formIpt homeDetailAddressIpt student">
+														
+														<input id="homeDetailAddress" type="text" />
+
+													</div>
+
+													<label class="grid_10 addressTitle student" for="nowAddress">现居住地址</label>
+
+													<label class="rela grid_1 student" for="nowProvince">
+
+														所在区域：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<select id="nowProvince" class="left nowProvince student">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">上海</option>
+
+														<option value="2">江苏</option>
+
+													</select>
+
+													<i class="left textCenter blockWord student">省</i>
+													
+													<select id="nowCity" class="left nowCity student">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">上海</option>
+
+														<option value="2">南京</option>
+
+													</select>
+
+													<i class="left textCenter blockWord student">市</i>
+
+													<select id="nowArea" class="left nowArea student">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">黄浦</option>
+
+														<option value="2">静安</option>
+
+													</select>
+
+													<i class="left textCenter blockWord lastWord student">区</i>
+
+													<label class="rela grid_1 student" for="nowDetailAddress">
+
+														详细地址：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_8 formIpt nowDetailAddressIpt student">
+														
+														<input id="nowDetailAddress" type="text" />
+
+													</div>
+
+												<!-- End | student supplementary information -->
+
+
+
+												<!-- Begin | employee supplementary information -->
+
+													<label class="rela grid_1 employee" for="company">
+
+														单位名称：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_3 formIpt employee">
+														
+														<input id="company" type="text" />
+
+													</div>
+
+													<label class="rela offset_1 grid_1 employee" for="industry">
+
+														行业类别：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+												
+													<select id="industry" class="grid_3 employee">
+
+														<option value="1">金融</option>
+
+														<option value="2">it</option>
+
+													</select>
+
+													<label class="rela grid_1 employee" for="joinedYear">
+
+														入职时间：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<select id="joinedYear" class="left joinedYear employee">
+														
+														<option value="1">2009</option>
+
+														<option value="2">2010</option>
+
+														<option value="3">2011</option>
+
+														<option value="4">2012</option>
+
+														<option value="5">2013</option>
+
+													</select>
+
+													<i class="left textCenter blockWord employee">年</i>
+
+													<select id="joinedMonth" class="left joinedMonth employee">
+														
+														<option value="1">1</option>
+
+														<option value="2">2</option>
+
+														<option value="3">3</option>
+
+														<option value="4">4</option>
+
+														<option value="5">5</option>
+
+														<option value="6">6</option>
+
+														<option value="7">7</option>
+
+														<option value="8">8</option>
+
+														<option value="9">9</option>
+
+														<option value="10">10</option>
+
+														<option value="11">11</option>
+
+														<option value="12">12</option>
+
+													</select>
+
+													<i class="left textCenter blockWord normalLastWord employee">月</i>
+
+													<label class="rela offset_1 grid_1 employee" for="serviceYear">
+
+														工作年限：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+												
+													<select id="serviceYear" class="grid_3 employee">
+
+														<option value="1">一年</option>
+
+														<option value="2">两年</option>
+
+														<option value="3">三年</option>
+
+													</select>
+
+													<label class="rela grid_1 employee" for="section">
+
+														入职部门：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_3 formIpt employee">
+														
+														<input id="section" type="text" />
+
+													</div>
+
+													<label class="rela offset_1 grid_1 employee" for="job">
+
+														职位/职务：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_3 formIpt employee">
+														
+														<input id="job" type="text" />
+
+													</div>
+
+													<label class="rela grid_1 employee" for="income">
+
+														目前收入：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_3 formIpt employee">
+														
+														<input id="section" type="text" />
+
+													</div>
+
+													<label class="rela offset_1 grid_1 employee" for="companyTel">
+
+														单位电话：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_1 formIpt telephoneIpt employee">
+														
+														<input id="companyTel" class="textCenter" type="text"/><i>—</i>
+
+													</div>
+													
+													<div class="grid_2 formIpt telephoneNumIpt employee">
+														
+														<input type="text"/>
+
+													</div>
+
+													<label class="rela grid_1 employee" for="graduateSchool">
+
+														毕业院校：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_3 formIpt employee">
+														
+														<input id="graduateSchool" type="text" />
+
+													</div>
+
+													<label class="rela offset_1 grid_1 employee" for="graduateYear">
+
+														毕业时间：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<select id="graduateYear" class="left graduateYear employee">
+														
+														<option value="1">2009</option>
+
+														<option value="2">2010</option>
+
+														<option value="3">2011</option>
+
+														<option value="4">2012</option>
+
+														<option value="5">2013</option>
+
+													</select>
+
+													<i class="left textCenter blockWord employee">年</i>
+
+													<select id="graduateMonth" class="left graduateMonth employee">
+														
+														<option value="1">1</option>
+
+														<option value="2">2</option>
+
+														<option value="3">3</option>
+
+														<option value="4">4</option>
+
+														<option value="5">5</option>
+
+														<option value="6">6</option>
+
+														<option value="7">7</option>
+
+														<option value="8">8</option>
+
+														<option value="9">9</option>
+
+														<option value="10">10</option>
+
+														<option value="11">11</option>
+
+														<option value="12">12</option>
+
+													</select>
+
+													<i class="left textCenter blockWord employee">月</i>
+
+													<label class="rela grid_1 employee" for="highestEducation">
+
+														最高学历：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<select id="highestEducation" class="grid_3 employee">
+
+														<option value="1">本科</option>
+
+														<option value="2">硕士</option>
+
+													</select>
+
+													<label class="rela offset_1 grid_1 employee" for="eduSystem">
+
+														学制：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<select id="eduSystem" class="grid_3 employee">
+
+														<option value="1">全日制</option>
+
+														<option value="2">业余制</option>
+
+													</select>
+
+													<p class="grid_10 addressTitle employee">单位地址</p>
+
+													<label class="rela grid_1 employee" for="companyProvince">
+
+														所在区域：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<select id="companyProvince" class="left companyProvince employee">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">上海</option>
+
+														<option value="2">江苏</option>
+
+													</select>
+
+													<i class="left textCenter blockWord employee">省</i>
+													
+													<select id="companyCity" class="left companyCity employee">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">上海</option>
+
+														<option value="2">南京</option>
+
+													</select>
+
+													<i class="left textCenter blockWord employee">市</i>
+
+													<select id="companyArea" class="left companyArea employee">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">黄浦</option>
+
+														<option value="2">静安</option>
+
+													</select>
+
+													<i class="left textCenter blockWord lastWord employee">区</i>
+
+													<label class="rela grid_1 employee" for="companyDetailAddress">
+
+														详细地址：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_8 formIpt companyDetailAddressIpt employee">
+														
+														<input id="companyDetailAddress" type="text" />
+
+													</div>
+
+													<p class="grid_10 addressTitle employee">家庭地址</p>
+
+													<label class="rela grid_1 employee" for="homeProvince">
+
+														所在区域：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<select id="homeProvince" class="left homeProvince employee">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">上海</option>
+
+														<option value="2">江苏</option>
+
+													</select>
+
+													<i class="left textCenter blockWord employee">省</i>
+													
+													<select id="homeCity" class="left homeCity employee">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">上海</option>
+
+														<option value="2">南京</option>
+
+													</select>
+
+													<i class="left textCenter blockWord employee">市</i>
+
+													<select id="homeArea" class="left homeArea employee">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">黄浦</option>
+
+														<option value="2">静安</option>
+
+													</select>
+
+													<i class="left textCenter blockWord lastWord employee">区</i>
+
+													<label class="rela grid_1 employee" for="homeDetailAddress">
+
+														详细地址：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_8 formIpt homeDetailAddressIpt employee">
+														
+														<input id="homeDetailAddress" type="text" />
+
+													</div>
+
+													<label class="grid_10 addressTitle employee" for="nowAddress">
+
+														现居住地址
+
+													</label>
+
+													<label class="rela grid_1 employee" for="nowProvince">
+
+														所在区域：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<select id="nowProvince" class="left nowProvince employee">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">上海</option>
+
+														<option value="2">江苏</option>
+
+													</select>
+
+													<i class="left textCenter blockWord employee">省</i>
+													
+													<select id="nowCity" class="left nowCity employee">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">上海</option>
+
+														<option value="2">南京</option>
+
+													</select>
+
+													<i class="left textCenter blockWord employee">市</i>
+
+													<select id="nowArea" class="left nowArea employee">
+														
+														<option value="0">请选择</option>
+
+														<option value="1">黄浦</option>
+
+														<option value="2">静安</option>
+
+													</select>
+
+													<i class="left textCenter blockWord lastWord employee">区</i>
+
+													<label class="rela grid_1 employee" for="nowDetailAddress">
+
+														详细地址：
+
+														<div class="absol tipBox errorTip">错误</div>
+
+													</label>
+
+													<div class="grid_8 formIpt nowDetailAddressIpt employee">
+														
+														<input id="nowDetailAddress" type="text" />
+
+													</div>
+
+												<!-- End | employee supplementary information -->
+
+											<!-- End | supplementary information -->
+
+
+
+											<!-- Begin | contact Person information -->
+
+												<p class="grid_4 infoTitle">直系亲属信息</p>
+
+												<p class="offset_1 grid_4 infoTitle">紧急联系人信息</p>
+
+												<label class="rela grid_1" for="familyName">
+
+													姓名：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<div class="grid_3 formIpt">
+													
+													<input id="familyName" type="text"/>
+
+												</div>
+
+												<label class="rela offset_1 grid_1" for="emContactName">
+
+													姓名：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<div class="grid_3 formIpt">
+													
+													<input id="emContactName" type="text"/>
+
+												</div>
+
+												<label class="rela grid_1" for="familyRelation">
+
+													关系：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<select id="familyRelation" class="grid_3">
+
+													<option value="0">请选择</option>
+
+													<option value="1">父</option>
+
+													<option value="2">母</option>
+
+												</select>
+
+												<label class="rela offset_1 grid_1" for="emContactRelation">
+
+													关系：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<select id="emContactRelation" class="grid_3">
+
+													<option value="0">请选择</option>
+
+													<option value="1">同学</option>
+
+													<option value="2">等等</option>
+
+												</select>
+
+												<label class="rela grid_1" for="familyCompany">
+
+													工作单位：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<div class="grid_3 formIpt">
+													
+													<input id="familyCompany" type="text" />
+
+												</div>
+
+												<label class="rela offset_1 grid_1" for="emContactCompany">
+
+													工作单位：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<div class="grid_3 formIpt">
+													
+													<input id="emContactCompany" type="text" />
+
+												</div>
+
+												<label class="rela grid_1" for="familyPhone">
+
+													手机：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<div class="grid_3 formIpt">
+													
+													<input id="familyPhone" type="text" />
+
+												</div>
+
+												<label class="rela offset_1 grid_1" for="emContactPhone">
+
+													手机：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<div class="grid_3 formIpt">
+													
+													<input id="emContactPhone" type="text" />
+
+												</div>
+
+												<label class="rela grid_1" for="familyAddress">
+
+													地址：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<div class="grid_3 formIpt">
+													
+													<input id="familyAddress" type="text" />
+
+												</div>
+
+												<label class="rela offset_1 grid_1" for="emContactAddress">
+
+													地址：
+
+													<div class="absol tipBox errorTip">错误</div>
+
+												</label>
+
+												<div class="grid_3 formIpt">
+													
+													<input id="emContactAddress" type="text" />
+
+												</div>
+
+												<button type="submit" class="left">保 存</button>
+
+
+											<!-- End | contact Person information -->
+
+							                
+										</form>
+                                        
+									<!-- End | personal information form -->
                                         
 									    
                                         
-									<p class="left copyright">
+									<p class="grid_10 copyright">
 									    
 										© 2013-2014 江西汇通金融信息服务有限公司 版权所有   赣ICP备13002945
                                         

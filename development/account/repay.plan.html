@@ -20,7 +20,7 @@
 	
 	<!-- Creation Date: 2013.10.22 13:25 ( Doris ) -->
 	
-	<!-- Last update: 2013.10.22 13:25 ( Doris ) -->
+	<!-- Last update: 2013.10.28 11:20 ( Doris ) -->
 	
 	<!-- License: ~ -->
 	
@@ -56,7 +56,9 @@
 					
 					<meta name="viewport" content="width = 1200"/>
 					
-					<meta name="Robots" content="none"/>
+					<meta name="Robots" content="all"/>
+					
+					<meta name="google" content="notranslate"/> <!-- When we recognize that the contents of a page are not in the language that the user is likely to want to read, we often provide a link to a translation in the search results. In general, this gives you the chance to provide your unique and compelling content to a much larger group of users. However, there may be situations where this is not desired. This meta tag tells Google that you don't want us to provide a translation for this page. -->
 					
 					<meta http-equiv="cache-control" content="no-cache"/> <!-- content="public", or "private", "no-cache", "must-revalidate" , specific time.Use the Cache control: public directive to enable HTTPS caching for Firefox.Some versions of Firefox require that the Cache control: public header to be set in order for resources sent over SSL to be cached on disk, even if the other caching headers are explicitly set. Although this header is normally used to enable caching by proxy servers (as described below), proxies cannot cache any content sent over HTTPS, so it is always safe to set this header for HTTPS resources. -->
 					
@@ -74,7 +76,7 @@
 					
 					<meta name="Author" content="Shen Weizhong ( Tony )"/>
 					
-					<meta name="Generator" content="Brackets Sprint 32, Sublime Text 3, Dreamweaver CC, Photoshop CC, Illustrator CC, Tomcat 7.0.42, Java Version 1.7.0_40"/>
+					<meta name="Generator" content="Brackets Sprint 31, Sublime Text 3, Dreamweaver CC, Photoshop CC, Illustrator CC, Tomcat 7.0.42, Java Version 1.7.0_40"/>
 					
 				<!-- End | Meta Data -->
 				
@@ -255,6 +257,8 @@
 									<li class="right"><a href="#">交易记录</a></li>
                                     
 									<li class="right"><a href="#">我的资料</a></li>
+
+									<li class="right"><a href="#">补充附件</a></li>
                                     
 									<li class="right"><a href="#">修改密码</a></li>
                                     
@@ -318,7 +322,7 @@
                                                     
 													<td class="endTime">2014-10-19</td>
                                                     
-													<td class="status repaying">还款中（正常）</td>
+													<td class="status repaying">还款中</td>
                                                     
 													<td class="operation recharge"><a href="#">充 值</a></td>
                                                     
@@ -370,7 +374,11 @@
                                                     
 													<td>388.00</td>
                                                     
-													<td>0.00</td>
+													<td class="overdueAmount rela">
+
+														0.00
+
+													</td>
                                                     
 													<td>388.00</td>
                                                     
@@ -386,7 +394,7 @@
                                                     
 													<td>388.00</td>
                                                     
-													<td>0.00</td>
+													<td class="overdueAmount">0.00</td>
                                                     
 													<td>388.00</td>
                                                     
@@ -402,7 +410,7 @@
                                                     
 													<td>388.00</td>
                                                     
-													<td>0.00</td>
+													<td class="overdueAmount">0.00</td>
                                                     
 													<td>388.00</td>
                                                     
@@ -418,7 +426,23 @@
                                                     
 													<td>388.00</td>
                                                     
-													<td>0.00</td>
+													<td class="overdueAmount rela">
+
+														0.00
+
+														<div class="absol textLeft statusTip overdueTip">
+															
+															<p>逾期金额：<span>350.00元</span></p>
+                                                            
+															<p>利息：<span>10.00元</span></p>
+                                                            
+															<p>违约金：<span>50.00元</span></p>
+                                                            
+															<a href="#">立即还款</a>
+                                                            
+														</div>
+
+													</td>
                                                     
 													<td>388.00</td>
                                                     
@@ -434,7 +458,7 @@
                                                     
 													<td>388.00</td>
                                                     
-													<td>0.00</td>
+													<td class="overdueAmount">0.00</td>
                                                     
 													<td>388.00</td>
                                                     
@@ -450,7 +474,7 @@
                                                     
 													<td>388.00</td>
                                                     
-													<td>0.00</td>
+													<td class="overdueAmount">0.00</td>
                                                     
 													<td>388.00</td>
                                                     
@@ -466,7 +490,7 @@
                                                     
 													<td>388.00</td>
                                                     
-													<td>0.00</td>
+													<td class="overdueAmount">0.00</td>
                                                     
 													<td>388.00</td>
                                                     
@@ -482,7 +506,7 @@
                                                     
 													<td>388.00</td>
                                                     
-													<td>0.00</td>
+													<td class="overdueAmount">0.00</td>
                                                     
 													<td>388.00</td>
                                                     
@@ -498,7 +522,7 @@
                                                     
 													<td>388.00</td>
                                                     
-													<td>0.00</td>
+													<td class="overdueAmount">0.00</td>
                                                     
 													<td>388.00</td>
                                                     
@@ -514,7 +538,7 @@
                                                     
 													<td>388.00</td>
                                                     
-													<td>0.00</td>
+													<td class="overdueAmount">0.00</td>
                                                     
 													<td>388.00</td>
                                                     
@@ -530,7 +554,7 @@
                                     
 									<a href="#" class="left loanAgreement">借款协议</a>
                                     
-									<a href="#" class="left loanAgreementIcon">图标</a>
+									<a href="#" class="left loanAgreementIcon"></a>
                                     
 									<p class="absol copyright">
 										

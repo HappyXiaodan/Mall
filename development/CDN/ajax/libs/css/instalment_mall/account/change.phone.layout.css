@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.22 09:21 ( Doris ).
  * 
- * Last update: 2013.10.22 11:50 ( Doris ).
+ * Last update: 2013.11.02 15:48 ( Doris ).
  * 
  * License: ~
  * 
@@ -126,8 +126,6 @@ body, .container {
 
 	border: 1px solid #999;
 
-	margin-right: 598px;
-
 	margin-bottom: 15px;
 
 }
@@ -135,6 +133,24 @@ body, .container {
 .formIpt input {
 
 	margin: 5px 0 0 10px;
+
+}
+
+.tipBox {
+
+	height: 32px;
+
+	margin-right: 0;
+
+	margin-bottom: 15px;
+
+	padding-left: 22px;
+
+}
+
+.ie7 .tipBox {
+
+	width: 540px;
 
 }
 
@@ -172,7 +188,7 @@ body, .container {
 
 	height: 30px;
 
-	margin-right: 635px;
+	margin-right: 55px;
 
 	margin-bottom: 17px;
 

@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.18 18:05 ( Doris ).
  * 
- * Last update: 2013.10.19 08:53 ( Doris ).
+ * Last update: 2013.11.02 17:22 ( Doris ).
  * 
  * License: ~
  * 
@@ -72,13 +72,11 @@
   ___/  ___/
 */
 
-.myInfo > b {
+.myInfo {
 
 	font-size: 16px;
 
 	font-weight: bold;
-
-	color: #333;
 
 	line-height: 45px;
 
@@ -92,15 +90,11 @@
 
 .myInfoTip > p {
 
-	line-height: 40px;
+	font-weight: bold;
 
 	color: #fff;
 
-}
-
-.myInfoTip > p > b {
-
-	font-weight: bold;
+	line-height: 40px;
 
 }
 
@@ -121,68 +115,63 @@
   ___/  ___/
 */
 
-.personalInfo {
+.infoTitle {
 
-	color: #333;
+	font-size: 18px;
 
-}
+	font-family: "微软雅黑";
 
-.personalInfo > p {
-
-	font-weight: bold;
+	color: #13b8b2;
 
 }
 
+.personalInfoForm > label, .personalInfoForm > a {
 
-.personalInfo label {
+	line-height: 32px;
 
-	line-height: 30px;
+	white-space:nowrap;
 
 }
 
-.personalInfo a, .identification a {
+.personalInfoForm > a {
+
+	text-indent: -17px;
 
 	color: #06c;
 
-	line-height: 30px;
+}
+
+.identityValidIpt, .telephoneIpt {
+
+	white-space:nowrap;
 
 }
 
-.personalInfo button {
+.blockWord {
+
+	line-height: 32px;
+
+	font-style: normal;
+
+}
+
+.addressTitle {
+
+	font-weight: bold;
+
+	white-space:nowrap;
+
+}
+
+.personalInfoForm > button {
+
+	background-color: #e9461f;
 
 	color: #fff;
 
-	background-color: #ff7f00;
-
 	font-weight: bold;
 
 }
-
-p.identTitle {
-
-	color: #666;
-
-}
-
-.identImg {
-
-	font-weight: bold;
-
-	line-height: 100px;
-
-	background-color: #f1f1f1;
-
-}
-
-.identImg > a {
-
-	display: inline;
-
-	font-weight: normal;
-
-}
-
-
 
 
 
@@ -201,5 +190,25 @@ p.identTitle {
 	color: #ccc;
 
 	line-height: 50px;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+
+ / |     ||----> error box.
+*  ||----||
+  ___/  ___/
+*/
+
+.tipBox {
+
+	font-size: 12px;
+
+	color: #f00;
 
 }

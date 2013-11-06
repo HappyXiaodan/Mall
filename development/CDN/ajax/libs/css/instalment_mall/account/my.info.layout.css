@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.18 18:05 ( Doris ).
  * 
- * Last update: 2013.10.19 08:53 ( Doris ).
+ * Last update: 2013.11.02 17:22 ( Doris ).
  * 
  * License: ~
  * 
@@ -50,16 +50,9 @@
 
 .leftSidebar {
 
-	min-height: 1000px;
+	min-height: 1200px;
 
 }
-
-.rightContainer {
-
-	height: auto;
-
-}
-
 
 .leftSidebar > li {
 
@@ -96,19 +89,31 @@
   ___/  ___/
 */
 
+.rightContainer {
+
+	width: 1000px;
+
+	margin-left: 0;
+
+	margin-right: 0;
+
+}
+
 .myInfo {
 
 	height: 45px;
 
 	border-bottom: 2px solid #e9461f;
 
-	margin-bottom: 13px;
-
 }
 
 .myInfoTip {
 
 	height: 40px;
+
+	margin-top: 13px;
+
+	margin-bottom: 21px;
 
 }
 
@@ -122,9 +127,9 @@
 
 .myInfoTip > p > a {
 
-	height: 40px;
-
 	width: 40px;
+
+	height: 40px;
 
 	z-index: 2;
 
@@ -142,6 +147,12 @@
 
 
 
+
+
+
+
+
+
 /*
 		 (__)
 		 (oo)
@@ -150,66 +161,65 @@
 *  ||----||
   ___/  ___/
 */
-
-.personalInfo {
-
-	height: auto;
+.personalInfoForm {
 
 	margin-left: 0;
-
-	margin-top: 22px;
-
-}
-
-.personalInfo > p, .identification > p {
-
-	margin-bottom: 24px;
-
-	padding-left: 13px;
-
-	border-left: 2px solid #ff6e0e;
-
-}
-
-.personalInfo label {
-
-	margin-left: 0;
-
-	height: 30px;
-
-	margin-bottom: 15px;
-
-}
-
-.personalInfo .formIpt {
-
-	height: 30px;
-
-	margin-right: 98px;
-
-	margin-bottom: 15px;
-
-	border: 1px solid #999;
-
-}
-
-.personalInfo a {
-
-	height: 30px;
-
-	margin-bottom: 15px;
 
 	margin-right: 0;
 
+	width: 900px;
+
 }
 
-.ie7 .personalInfo a {
+.ie7 .personalInfoForm {
 
-	margin-bottom: 17px;
+	width: 908px;
+
+}
+
+.infoTitle {
+
+	margin-top: 32px;
+
+}
+
+.personalInfoForm > label, .personalInfoForm > a {
+
+	margin-top: 20px;
+
+	height: 32px;
+
+}
+
+.personalInfoForm > .formIpt {
+
+	margin-top: 20px;
+
+	height: 32px;
+
+	border: 1px solid #ccc;
+
+}
+
+.ie7 .personalInfoForm > .formIpt {
+
+	height: 30px;
+
+}
+
+.personalInfoForm > select {
+
+	margin-top: 20px;
+
+	height: 32px;
+
+	border: 1px solid #ccc;
 
 }
 
 .formIpt > input {
+
+	width: 260px;
 
 	margin-top: 6px;
 
@@ -217,103 +227,120 @@
 
 }
 
-.certiValid {
+.identityValidIpt, .telephoneIpt {
 
-	width: 85px;
-
-}
-
-.certiValidIpt {
-
-	margin-left: 0;
+	width: 70px;
 
 }
 
-.personalInfo .phoneIpt, .personalInfo .emailIpt {
+.identityValidIpt > input, .telephoneIpt > input {
 
-	margin-right: 0;
-
-}
-
-.personalInfoTitle {
-
-	margin-left: 0;
+	width: 56px;
 
 }
 
-.supplInfo {
+.identityValidIpt > i, .telephoneIpt > i {
 
-	margin-top: 45px;
-
-	margin-left: 0;
+	padding-left: 15px;
 
 }
 
-.personalInfo button {
+.telephoneNumIpt > input {
+
+	width: 160px;
+
+}
+
+.entranceYear, .entranceMonth, .joinedYear, .joinedMonth,
+.graduateYear, .graduateMonth {
+
+	width: 100px;
+
+}
+
+.entranceYear, .joinedYear, .graduateYear {
+
+	margin-left: 15px;
+
+}
+
+.blockWord {
+
+	display: block;
+
+	margin-top: 20px;
+
+	width: 35px;
+
+}
+
+.addressTitle {
+
+	margin-top: 34px;
+
+}
+
+.schoolProvince, .schoolCity, .schoolArea, 
+.homeProvince, .homeCity, .homeArea,
+.nowProvince, .nowCity, .nowArea,
+.companyProvince, .companyCity, .companyArea {
+
+	width: 130px;
+
+	margin-top: 20px;
+
+}
+
+.schoolProvince, .homeProvince, .nowProvince, .companyProvince {
+
+	margin-left: 15px;
+
+}
+
+.lastWord {
+
+	margin-right: 270px;
+}
+
+.schoolDetailAddressIpt > input, 
+.homeDetailAddressIpt > input,
+.nowDetailAddressIpt > input,
+.companyDetailAddressIpt > input {
+
+	width: 760px;
+
+}
+
+.nowAddress {
+
+	margin-right: 500px;
+
+}
+
+.personalInfoForm > button {
 
 	width: 120px;
 
 	height: 40px;
 
-	margin: 50px 0 0 100px;
+	margin-top: 52px;
 
 }
 
-.identification {
+.employee {
 
-	margin-top: 22px;
-
-	height: auto;
+	display: none;
 
 }
 
-.identification > p {
+.normalLastWord {
 
-	width: 270px;
-
-}
-
-p.identTitle {
-
-	padding: 0;
-
-	border: 0;
-
-	width: 270px;
-
-	margin-bottom: 10px;
+	margin-right: 15px;
 
 }
 
-.identImg {
 
-	margin-right: 100px;
 
-	width: 170px;
-
-	height: 100px;
-
-}
-
-.identification a {
-
-	margin-right: 40px;
-
-	margin-bottom: 20px;
-
-}
-
-.identImg > a {
-
-	margin: 0;
-
-}
-
-.studentIdent {
-
-	margin-top: 35px;
-
-}
 
 /*
 		 (__)
@@ -331,8 +358,32 @@ p.identTitle {
 
 	height: 50px;
 
-	margin-top: 62px;
+	margin-top: 70px;
 
 	border-top: 1px solid #999;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+
+ / |     ||----> error box.
+*  ||----||
+  ___/  ___/
+*/
+
+.tipBox {
+
+	/*display: none;*/
+
+	padding-left: 22px;
+
+	top: 25px;
+
+	left: 80px;
 
 }

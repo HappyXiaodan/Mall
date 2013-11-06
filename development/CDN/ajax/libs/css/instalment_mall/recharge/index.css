@@ -5,7 +5,7 @@
 /**
  * Statement: gehen zum Teufel.
  *
- * Describe: index css for pay/payment (index.html).
+ * Describe: index css for payment (recharge.html).
  * 
  * Further changes, comments: ~
  * 
@@ -17,7 +17,7 @@
  * 
  * Creation Date: 2013.10.19 11:46 ( Doris ).
  * 
- * Last update: 2013.10.21 11:20 ( Doris ).
+ * Last update: 2013.11.02 18:06 ( Doris ).
  * 
  * License: ~
  * 
@@ -31,7 +31,7 @@
 		 (__)
 		 (oo)
   /-------\/
- / |     ||----> pay content area.
+ / |     ||----> recharge area.
 *  ||----||
   ___/  ___/
 */
@@ -218,93 +218,93 @@
 }
 
 /* 工商银行 */
-#ICBC {
+#icbc {
 
-	background-image: url(../../../ui/mall/bank/bank_01.png);
+	background-image: url(../../../img/pay/payment/bank_01.png);
 
 }
 
 /* 建设银行 */
-#CCB {
+#ccb {
 
-	background-image: url(../../../ui/mall/bank/bank_02.png);
+	background-image: url(../../../img/pay/payment/bank_02.png);
 
 }
 
 /* 中国农业银行 */
-#ABC {
+#abc {
 
-	background-image: url(../../../ui/mall/bank/bank_03.png);
+	background-image: url(../../../img/pay/payment/bank_03.png);
 
 }
 
 /* 交通银行 */
-#BOCO {
+#bcm {
 
-	background-image: url(../../../ui/mall/bank/bank_04.png);
+	background-image: url(../../../img/pay/payment/bank_04.png);
 
 }
 
 /* 招商银行 */
-#CMB {
+#cmb {
 
-	background-image: url(../../../ui/mall/bank/bank_05.png);
+	background-image: url(../../../img/pay/payment/bank_05.png);
 
 }
 
 /* 中国银行 */
-#BOC {
+#boc {
 
-	background-image: url(../../../ui/mall/bank/bank_06.png);
+	background-image: url(../../../img/pay/payment/bank_06.png);
 
 }
 
 /* 中国光大银行 */
-#CEB {
+#ceb {
 
-	background-image: url(../../../ui/mall/bank/bank_07.png);
+	background-image: url(../../../img/pay/payment/bank_07.png);
 
 }
 
 /* 中信银行 */
-#CITI {
+#cncb {
 
-	background-image: url(../../../ui/mall/bank/bank_08.png);
+	background-image: url(../../../img/pay/payment/bank_08.png);
 
 }
 
 /* 中国民生银行 */
-#CMBC {
+#cmbc {
 
-	background-image: url(../../../ui/mall/bank/bank_09.png);
+	background-image: url(../../../img/pay/payment/bank_09.png);
 
 }
 
 /* 广发银行 */
-#CGB {
+#cgb {
 
-	background-image: url(../../../ui/mall/bank/bank_10.png);
+	background-image: url(../../../img/pay/payment/bank_10.png);
 
 }
 
 /* 华夏银行 */
-#HXBC {
+#hxb {
 
-	background-image: url(../../../ui/mall/bank/bank_11.png);
+	background-image: url(../../../img/pay/payment/bank_11.png);
 
 }
 
 /* 支付宝 */
-#ZFB {
+#alipay {
 
-	background-image: url(../../../ui/mall/bank/bank_12.png);
+	background-image: url(../../../img/pay/payment/bank_12.png);
 
 }
 
 /* 环迅支付 */
-#HXZF {
+#ips {
 
-	background-image: url(../../../ui/mall/bank/bank_13.png);
+	background-image: url(../../../img/pay/payment/bank_13.png);
 
 }
 
@@ -315,5 +315,25 @@
 	color: #fff;
 
 	font-weight: bold;
+
+}
+
+
+
+/*
+		 (__)
+		 (oo)
+  /-------\/
+
+ / |     ||----> error box.
+*  ||----||
+  ___/  ___/
+*/
+
+.tipBox {
+
+	font-size: 12px;
+
+	color: #f00;
 
 }
