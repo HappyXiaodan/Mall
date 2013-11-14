@@ -278,13 +278,17 @@
 							
 							<div class="pnvContent">
 								
-								<form action="#" class="enterArea frmPhoneSubmit" id="frmPhoneSubmit" name="frmPhoneSubmit" method="post">
+								<!-- Begin | Phone Validation Form -->
+
+									<form id="frmPhoneSubmit" class="enterArea frmPhoneSubmit" name="frmPhoneSubmit" action="#" method="post">
+										
+										<input type="text" id="userPhone" class="userPhone" name="userPhone" placeholder="请输入您的手机号"/>
+										
+										<button name="btnSendCode" type="submit">发送验证码</button>
+										
+									</form>
 									
-									<input type="text" id="userPhone" class="userPhone" name="userPhone" placeholder="请输入您的手机号"/>
-									
-									<button name="btnSendCode" type="submit">发送验证码</button>
-									
-								</form>
+								<!-- End | Phone Validation Form -->
 								
 								<div class="valiSuccessBar hide">
 									

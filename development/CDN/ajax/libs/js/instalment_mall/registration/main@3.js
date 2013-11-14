@@ -94,11 +94,13 @@
 			
 			'cdnjs/jquery_cookie/1.3.1/jquery.cookie.min',
 			
+			'cdnjs/jquery_validation/1.11.1/jquery.validate.min',
+			
 			'cdnjs/gridder/0.1.0/gridder',
 			
 			'cdnjs/jquery_title_modify/title.modify'
 		
-		], function (modernizr, SJ, cookie, gridder, modifyTitle) {
+		], function (modernizr, SJ, cookie, Hawaii, gridder, modifyTitle) {
 			
 			SJ(function ($) {
 
@@ -117,7 +119,7 @@
 																																																					 Font: Univers.
 				*/
 
-				var phoneValidation = (function (thisModule) {
+				var phoneValidation = (function ($, thisModule) {
 					
 					/*
 							 (__)   
@@ -129,20 +131,71 @@
 					*/
 					
 					var internalProtection = {};
+					
+					/*
+							 (__)   
+							 (oo)   
+					  /-------\/    
+					 / |     ||----> Private functions: 
+					*  ||----||     
+					  ___/  ___/
+					*/
+					
+					internalProtection.frmPhoneValidation = function () {
 
+						console.log('Testing.');
 
+					};
+					
+					/*
+							 (__)   
+							 (oo)   
+					  /-------\/    
+					 / |     ||----> Private functions: 
+					*  ||----||     
+					  ___/  ___/
+					*/
+					
+					internalProtection.codeValidation = function () {
 
-					thisModule.init = function () {
+						console.log('Testing.');
 
-						
+					};
+					
+					/*
+							 (__)   
+							 (oo)   
+					  /-------\/    
+					 / |     ||----> Public functions: Start all subroutines.
+					*  ||----||     
+					  ___/  ___/
+					*/
+					
+					thisModule.init = function (opts) {
+
+						var excute = function () {
+
+							internalProtection.frmPhoneValidation();
+
+							internalProtection.codeValidation();
+
+						};
+
+						opts.excute ? excute() : console.log('Sorry! Do not have the permission to excute part of program.');
 
 					};
 
 					return thisModule;
 
-				} (phoneValidation || {}));
+				} ($, phoneValidation || {}));
 
-
+				phoneValidation.init({excute: true});
+				
+				
+				
+				/**
+				 * Close the boot prompt.
+				 */
 
 				$('.enterTip').children('a').on('click', function (e) {
 					
