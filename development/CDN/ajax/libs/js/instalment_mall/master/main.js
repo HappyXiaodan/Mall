@@ -142,7 +142,7 @@
 				 * Footer registration form checker.
 				 */
 				
-				footerForm.formcheck();
+				footerForm.formcheck();	
 				
 			});
 			
