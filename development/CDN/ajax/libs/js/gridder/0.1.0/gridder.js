@@ -217,7 +217,7 @@
 					
 				};
 			
-			keyboard.bind('ctrl+shift+s', function() {
+			keyboard.bind('g', function() {
 				
 				var obj = SJ('.gridPanel');
 				

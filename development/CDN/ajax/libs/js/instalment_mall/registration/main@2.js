@@ -94,11 +94,13 @@
 			
 			'cdnjs/jquery_cookie/1.3.1/jquery.cookie.min',
 			
-			'cdnjs/gridder/0.1.0/gridder',
+			'cdnjs/gridder/0.1.0/gridder.min',
+			
+			'cdnjs/mousetrap/1.4.5/mousetrap.min',
 			
 			'cdnjs/jquery_title_modify/title.modify'
 		
-		], function (modernizr, SJ, cookie, gridder, modifyTitle) {
+		], function (modernizr, SJ, cookie, gridder, keyboard, modifyTitle) {
 			
 			SJ(function ($) {
 
@@ -139,11 +141,13 @@
 					  ___/  ___/    
 					*/
 					
-					internalProtection['protocolChecked'] = $('#protocolChecked'),
+					internalProtection['protocolChecked'] = $('#protocolChecked');
 						
-					internalProtection['protocolError'] = $('.protocolError'),
+					internalProtection['protocolError'] = $('.protocolError');
 						
 					internalProtection['btnNext'] = $('.protocolTool').children('a');
+
+					internalProtection['status'] = false;
 					
 					/*
 							 (__)   
@@ -233,6 +237,8 @@
 								if (that.data('error') === 'yeah') {
 									
 									errorTip.addClass('hide');
+
+									that.data('error', 'noop');
 									
 								}
 								
@@ -247,7 +253,52 @@
 							}
 							
 						});
+
+						checkBox.on('keyup', function () {
+
+							keyboard.trigger('enter');
+
+						});
 						
+					};
+					
+					/*
+							 (__)   
+							 (oo)   
+					  /-------\/    
+					 / |     ||----> Private function: Handle the keyboard shortcut to go to next page.( ctrl + shift + n )
+					*  ||----||     
+					  ___/  ___/    
+					*/
+					
+					internalProtection.keyboardShortcuts = function () {
+
+						var btnNext = this.btnNext,
+
+							checkBox = this.protocolChecked,
+							
+							errorTip = this.protocolError;
+
+						keyboard.bind('enter', function() {
+							
+							if ($('#protocolChecked').prop('checked') !== true) {
+								
+								errorTip.removeClass('hide');
+									
+								$('#protocolChecked').data('error', 'yeah');
+
+								//Test script: console.log('Unchecked!');
+								
+							} else {
+
+								document.location = $.trim(btnNext.attr('href'));
+
+								//Test script: console.log('Checked!');
+
+							}
+
+						});
+
 					};
 					
 					/*
@@ -268,6 +319,8 @@
 							internalProtection.clickNext();
 							
 							internalProtection.checkBoxChange();
+
+							internalProtection.keyboardShortcuts();
 							
 							//Test script: console.log('Excuted!');
 							
