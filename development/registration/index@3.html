@@ -52,7 +52,7 @@
 					
 					<base target="_self"/>
 					
-					<meta http-equiv="X-UA-Compatible" content="IE = EmulateIE7, IE = 10, chrome = 1"/> <!-- Offical: IE = EmulateIE7, IE = 10, chrome = 1 -->
+					<meta http-equiv="X-UA-Compatible" content="IE = 7, chrome = 1"/> <!-- Offical: IE = EmulateIE7, IE = 10, chrome = 1 -->
 					
 					<meta name="viewport" content="width = 1200"/>
 					
@@ -269,6 +269,16 @@
 				<!-- End | Slogon -->
 				
 				
+
+				<!-- Begin | Something Needed -->
+
+					<var class="userName hide">iTonyYo31</var>
+
+					<var class="userPass hide">swzyo9022</var>
+
+				<!-- End | Something Needed -->
+
+
 				
 				<!-- Begin | Phone Number Validation -->
 					
@@ -280,11 +290,11 @@
 								
 								<!-- Begin | Phone Validation Form -->
 
-									<form id="frmPhoneSubmit" class="enterArea frmPhoneSubmit" name="frmPhoneSubmit" action="#" method="post">
+									<form id="frmPhoneSubmit" class="enterArea frmPhoneSubmit" name="frmPhoneSubmit" action="#" method="get">
 										
 										<input type="text" id="userPhone" class="userPhone" name="userPhone" placeholder="请输入您的手机号"/>
 										
-										<button name="btnSendCode" type="submit">发送验证码</button>
+										<button id="btnSendCode" name="btnSendCode" type="submit">发送验证码</button>
 										
 									</form>
 									
@@ -300,17 +310,25 @@
 									
 									<div class="resentTip">
 										
-										如果您在1分钟内没有收到验证码，&nbsp;&nbsp;请 <a class="linkPhoneModify" href="#">修改手机号码</a> 或 <a class="linkResent box_round ivoryWhiteBoxGradient gradientFilter" href="#">41秒后重新发送</a>
+										如果您在1分钟内没有收到验证码，&nbsp;&nbsp;请 
+
+										<a class="linkPhoneModify" href="#">修改手机号码</a> 或 
+
+										<a class="linkResent box_round ivoryWhiteBoxGradient gradientFilter" href="#">
+
+											<span>60</span>秒后重新发送
+
+										</a>
 										
 									</div>
 									
 									<form id="frmCodeEnterArea" class="rela codeEnterArea" name="frmCodeEnterArea" action="#" method="post">
 										
-										<label>验证码：</label>
+										<label for="valiCode">验证码：</label>
 										
 										<input type="text" id="valiCode" class="valiCode" name="valiCode"/>
 										
-										<div class="absol valiCodeError">验证码错误，请重新输入</div>
+										<div class="absol ajaxFormSubmitError box_round hide">验证码错误，请重新输入</div>
 										
 										<button type="submit">验证</button>
 										
@@ -332,13 +350,13 @@
 								
 								<a href="#" class="left prev">上一步</a>
 								
-								<a href="#" class="right next">下一步</a>
+								<a href="http://www.baidu.com" class="right next disable">下一步</a>
 								
 							</div>
 							
 							<div class="absol pvnIllustration"></div>
 							
-							<div class="absol enterTip hide"> <a href="#" class="rela"></a> </div>
+							<div class="absol enterTip"> <a href="#" class="rela"></a> </div>
 							
 						</div>
 						

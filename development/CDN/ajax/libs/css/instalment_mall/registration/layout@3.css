@@ -125,6 +125,241 @@ body {
 	
 }
 
+/*
+                                                                                    ,----,                                                                             
+                                                               ,---,              ,/   .`|                                                                             
+    ,---,.                                                   ,---.'|            ,`   .'  :                                          ,---,                              
+  ,'  .'  \                       ,--,                       |   | :          ;    ;     /                                         '  .' \            ,---,      ,---, 
+,---.' .' |                     ,--.'|         ,---,         '   : '        .'___,/    ,'  ,---.        ,---,                     /  ;    '.        ,---.'|    ,---.'| 
+|   |  |: |            ,----._,.|  |,      ,-+-. /  |        :   | |        |    :     |  '   ,'\   ,-+-. /  |                   :  :       \       |   | :    |   | : 
+:   :  :  /   ,---.   /   /  ' /`--'_     ,--.'|'   |        |   ' :        ;    |.';  ; /   /   | ,--.'|'   |      .--,         :  |   /\   \      |   | |    |   | | 
+:   |    ;   /     \ |   :     |,' ,'|   |   |  ,"' |        ;   ; |        `----'  |  |.   ; ,. :|   |  ,"' |    /_ ./|         |  :  ' ;.   :   ,--.__| |  ,--.__| | 
+|   :     \ /    /  ||   | .\  .'  | |   |   | /  | |        '   | '            '   :  ;'   | |: :|   | /  | | , ' , ' :         |  |  ;/  \   \ /   ,'   | /   ,'   | 
+|   |   . |.    ' / |.   ; ';  ||  | :   |   | |  | |        |   | :            |   |  ''   | .; :|   | |  | |/___/ \: |         '  :  | \  \ ,'.   '  /  |.   '  /  | 
+'   :  '; |'   ;   /|'   .   . |'  : |__ |   | |  |/         '   : '            '   :  ||   :    ||   | |  |/  .  \  ' |         |  |  '  '--'  '   ; |:  |'   ; |:  | 
+|   |  | ; '   |  / | `---`-'| ||  | '.'||   | |--'          |   | |            ;   |.'  \   \  / |   | |--'    \  ;   :         |  :  :        |   | '/  '|   | '/  ' 
+|   :   /  |   :    | .'__/\_: |;  :    ;|   |/              ;   : ;            '---'     `----'  |   |/         \  \  ;         |  | ,'        |   :    :||   :    :| 
+|   | ,'    \   \  /  |   :    :|  ,   / '---'               |   ,/                               '---'           :  \  \        `--''           \   \  /   \   \  /   
+`----'       `----'    \   \  /  ---`-'                      '---'                                                 \  ' ;                         `----'     `----'    
+                        `--`-'                                                                                      `--`                                               
+*/
+
+.phoneValiError {
+	
+	z-index: 7;
+	
+	color: #f1f1f1;
+	
+	font-family: "新宋体";
+	
+	font-size: 12px;
+	
+	line-height: 22px;
+	
+	height: 22px;
+	
+	top: 80px;
+	
+	left: 530px;
+	
+	padding: 0 14px 0 14px;
+
+	-webkit-box-shadow: 1px 1px 3px 0 #999;
+			
+			box-shadow: 1px 1px 3px 0 #999;
+	
+	background-color: #e60012;
+	
+}
+
+.phoneValiError:before,
+.phoneValiError:after {
+	
+	content: '';
+	
+	display: block;
+	
+	position: absolute;
+	
+	left: 9px;
+	
+	width: 0;
+	
+	height: 0;
+	
+	border: 7px outset transparent;
+	
+}
+
+.phoneValiError:before {
+	
+	top: -13px;
+	
+	border-bottom: 7px solid #e60012;
+	
+}
+
+.phoneValiError:after {
+	
+	top: -13px;
+	
+	border-bottom: 7px solid #e60012;
+	
+}
+
+
+
+.valiCodeError {
+	
+	z-index: 7;
+	
+	color: #f1f1f1;
+	
+	font-family: "新宋体";
+	
+	font-size: 12px;
+	
+	line-height: 22px;
+	
+	height: 22px;
+	
+	top: 70px;
+	
+	left: 20px;
+	
+	padding: 0 14px 0 14px;
+	
+	padding: 0 14px 0 14px;
+
+	-webkit-box-shadow: 1px 1px 3px 0 #999;
+			
+			box-shadow: 1px 1px 3px 0 #999;
+	
+	background-color: #e60012;
+	
+}
+
+.valiCodeError:before,
+.valiCodeError:after {
+	
+	content: '';
+	
+	display: block;
+	
+	position: absolute;
+	
+	left: 7px;
+	
+	width: 0;
+	
+	height: 0;
+	
+	border: 7px outset transparent;
+	
+}
+
+.valiCodeError:before {
+	
+	top: -13px;
+	
+	border-bottom: 7px solid #e60012;
+	
+}
+
+.valiCodeError:after {
+	
+	top: -13px;
+	
+	border-bottom: 7px solid #e60012;
+	
+}
+
+
+
+.ajaxFormSubmitError {
+	
+	z-index: 7;
+	
+	color: #f1f1f1;
+	
+	font-family: "新宋体";
+	
+	font-size: 12px;
+	
+	line-height: 22px;
+	
+	height: 22px;
+	
+	top: 70px;
+	
+	left: 20px;
+	
+	padding: 0 14px 0 14px;
+	
+	padding: 0 14px 0 14px;
+
+	-webkit-box-shadow: 1px 1px 3px 0 #999;
+			
+			box-shadow: 1px 1px 3px 0 #999;
+	
+	background-color: #e60012;
+
+}
+
+.ajaxFormSubmitError:before,
+.ajaxFormSubmitError:after {
+	
+	content: '';
+	
+	display: block;
+	
+	position: absolute;
+	
+	left: 7px;
+	
+	width: 0;
+	
+	height: 0;
+	
+	border: 7px outset transparent;
+	
+}
+
+.ajaxFormSubmitError:before {
+	
+	top: -13px;
+	
+	border-bottom: 7px solid #e60012;
+	
+}
+
+.ajaxFormSubmitError:after {
+	
+	top: -13px;
+	
+	border-bottom: 7px solid #e60012;
+	
+}
+
+/*
+                                                                ,----,                                                                             
+                                           ,---,              ,/   .`|                                                                             
+    ,---,.                               ,---.'|            ,`   .'  :                                          ,---,                              
+  ,'  .' |                  ,---,        |   | :          ;    ;     /                                         '  .' \            ,---,      ,---, 
+,---.'   |      ,---,     ,---.'|        '   : '        .'___,/    ,'  ,---.        ,---,                     /  ;    '.        ,---.'|    ,---.'| 
+|   |   .'  ,-+-. /  |    |   | :        :   | |        |    :     |  '   ,'\   ,-+-. /  |                   :  :       \       |   | :    |   | : 
+:   :  |-, ,--.'|'   |    |   | |        |   ' :        ;    |.';  ; /   /   | ,--.'|'   |      .--,         :  |   /\   \      |   | |    |   | | 
+:   |  ;/||   |  ,"' |  ,--.__| |        ;   ; |        `----'  |  |.   ; ,. :|   |  ,"' |    /_ ./|         |  :  ' ;.   :   ,--.__| |  ,--.__| | 
+|   :   .'|   | /  | | /   ,'   |        '   | '            '   :  ;'   | |: :|   | /  | | , ' , ' :         |  |  ;/  \   \ /   ,'   | /   ,'   | 
+|   |  |-,|   | |  | |.   '  /  |        |   | :            |   |  ''   | .; :|   | |  | |/___/ \: |         '  :  | \  \ ,'.   '  /  |.   '  /  | 
+'   :  ;/||   | |  |/ '   ; |:  |        '   : '            '   :  ||   :    ||   | |  |/  .  \  ' |         |  |  '  '--'  '   ; |:  |'   ; |:  | 
+|   |    \|   | |--'  |   | '/  '        |   | |            ;   |.'  \   \  / |   | |--'    \  ;   :         |  :  :        |   | '/  '|   | '/  ' 
+|   :   .'|   |/      |   :    :|        ;   : ;            '---'     `----'  |   |/         \  \  ;         |  | ,'        |   :    :||   :    :| 
+|   | ,'  '---'        \   \  /          |   ,/                               '---'           :  \  \        `--''           \   \  /   \   \  /   
+`----'                  `----'           '---'                                                 \  ' ;                         `----'     `----'    
+                                                                                                `--`                                               
+*/
+
 
 
 /*
@@ -284,49 +519,6 @@ body {
 	margin-top: 30px;
 	
 	margin-left: 45px;
-	
-}
-
-.validatingPanel > .codeEnterArea > .valiCodeError {
-	
-	z-index: 20;
-	
-	height: 22px;
-	
-	min-width: 100px;
-	
-	width: auto !important;
-	
-	width: 100px;
-	
-	top: 70px;
-	
-	left: 20px;
-	
-	padding: 0 14px 0 14px;
-	
-}
-
-.validatingPanel > .codeEnterArea > .valiCodeError:before,
-.validatingPanel > .codeEnterArea > .valiCodeError:after {
-	
-	left: 7px;
-	
-	width: 0;
-	
-	height: 0;
-	
-}
-
-.validatingPanel > .codeEnterArea > .valiCodeError:before {
-	
-	top: -13px;
-	
-}
-
-.validatingPanel > .codeEnterArea > .valiCodeError:after {
-	
-	top: -13px;
 	
 }
 

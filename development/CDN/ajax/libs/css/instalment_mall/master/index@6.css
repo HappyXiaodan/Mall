@@ -89,6 +89,20 @@
 	
 }
 
+.regPgsBar > .pgsItem.second > span.s {
+
+	color: #CCC;
+	
+	font: 12px/normal "宋体";
+	
+}
+
+.regPgsBar > .pgsItem.second > span.s.passedColor {
+	
+	color: #339900;
+
+}
+
 .ie7 .regPgsBar {
 	
 	border: 1px solid #CCC;

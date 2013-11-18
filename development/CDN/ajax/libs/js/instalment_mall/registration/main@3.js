@@ -15,6 +15,8 @@
  * 
  * Last update: 2013.10.29 15:40 ( Tony ).
  * 
+ * Music: Hotel Transylvania - The Monster Remix - will.i.am.mp3
+ * 
  * License: ~
  * 
  * Copyright: ~
@@ -92,15 +94,19 @@
 			
 			'jquery',
 			
+			'cdnjs/mousetrap/1.4.5/mousetrap.min',
+			
 			'cdnjs/jquery_cookie/1.3.1/jquery.cookie.min',
+
+			'cdnjs/jquery_xdomainrequest/1.0.1/jquery.xdomainrequest.min',
 			
 			'cdnjs/jquery_validation/1.11.1/jquery.validate.min',
 			
-			'cdnjs/gridder/0.1.0/gridder',
+			'cdnjs/gridder/0.1.0/gridder.min',
 			
-			'cdnjs/jquery_title_modify/title.modify'
+			'cdnjs/jquery_title_modify/title.modify.min'
 		
-		], function (modernizr, SJ, cookie, Hawaii, gridder, modifyTitle) {
+		], function (modernizr, SJ, keyboard, cookie, XR, Hawaii, gridder, modifyTitle) {
 			
 			SJ(function ($) {
 
@@ -136,14 +142,59 @@
 							 (__)   
 							 (oo)   
 					  /-------\/    
-					 / |     ||----> Private functions: 
+					 / |     ||----> Private variables.
+					*  ||----||     
+					  ___/  ___/
+
+					 1. 验证手机号码在数据库的唯一性，并将状态返回存储在该变量中。
+
+					 2. 手机号码唯一性、有效性验证都通过后，将转改存储在该变量中。
+					*/
+
+					internalProtection['phoneValiStatus'] = false; /* 1 */
+
+					internalProtection['nextpermission'] = false; /* 2 */
+					
+
+
+					/*
+							 (__)   
+							 (oo)   
+					  /-------\/    
+					 / |     ||----> 关闭操作提示.
 					*  ||----||     
 					  ___/  ___/
 					*/
-					
-					internalProtection.frmPhoneValidation = function () {
 
-						console.log('Testing.');
+					internalProtection.enterTip = function () {
+
+						$('.enterTip').on('click', function (e) {
+
+							var that = $(this),
+
+								clickCloseArea = function (e) {
+
+									e.stopPropagation();
+									
+									e.preventDefault();
+									
+									that.addClass('hide');
+
+									$('#userPhone').focus();
+
+								},
+
+								clickOtherArea = function () {
+
+									that.addClass('hide');
+
+									$('#userPhone').focus();
+
+								};
+
+							e.target.nodeName == 'A' ? clickCloseArea(e) : clickOtherArea();
+
+						});
 
 					};
 					
@@ -156,11 +207,515 @@
 					  ___/  ___/
 					*/
 					
-					internalProtection.codeValidation = function () {
+					internalProtection.frmPhoneValidation = function () {
 
-						console.log('Testing.');
+						var privateObj = this;
+
+						/**
+						 * 130, 133, 147, 150,153,156，157, 158,159，180, 183, 188，189
+						 */
+
+						$.validator.addMethod("phoneNumber", function(value, element) {
+							
+							return this.optional(element) || /^(1(([35][0-9])|(47)|[8][01236789]))\d{8}$/.test(value);
+							
+						}, "请输入正确的手机号码。");
+
+						var queryUrl = 'http://192.168.0.107:8080/fenqimall/registerResp';
+
+						var queryString = {
+
+							operation: function () {
+
+								return 'unique_mobile';
+
+							},
+
+							phoneNumber: function () {
+
+								return $.trim($('#userPhone').val());
+
+							},
+
+							userName: function () {
+
+								return $.trim($('.userName').text());
+
+							}
+
+						};
+
+						/**
+						 * Need, [ http | https ] [ host ] [ port ] [ base url ] ( [ operation = unique_mobile | validate_mobile_suc ] [ phoneNumber = ? ] [ userName = ? ] )
+						 */
+
+						$( "#frmPhoneSubmit" ).validate({
+
+							debug: true,
+
+							rules: {
+
+								userPhone: {
+									
+									required: true,
+
+									phoneNumber: true,
+
+									remote: {
+
+										url: queryUrl,
+
+										data: queryString,
+
+										complete: function (jqXHR, textStatus) {
+
+											var valid = function () {
+
+												privateObj.phoneValiStatus = true;
+
+												privateObj.remoteValiSuccess();
+
+											};
+
+											var unValid = function () {
+
+												privateObj.phoneValiStatus = false;
+
+												privateObj.remoteValiFaith();
+
+											};
+
+											jqXHR.responseText !== '{"result":"false"}' ? valid() : unValid();
+
+											/* Test script: console.log(jqXHR.responseText); */
+
+											/* Test script: console.log(textStatus);*/
+
+										}
+
+									}
+
+								}
+
+							},
+
+							messages: {
+
+								userPhone: {
+
+									remote: '该号码已存在。'
+
+								}
+
+							},
+							
+							onfocusout: function(element) { 
+								
+								SJ(element).valid();
+								
+							},
+							
+							onkeyup: function(element) {
+								
+								SJ(element).valid();
+								
+							},
+							
+							errorElement: 'div',
+							
+							errorPlacement: function (error, element) {
+								
+								SJ(error).addClass('absol phoneValiError box_round');
+								
+								SJ(element).parent().append(error);
+								
+							},
+							
+							success: function(error) {
+								
+								SJ(error).remove();
+								
+							},
+							
+							submitHandler: function (form, event) {}
+
+						});
+
+						//Test script: console.log('Testing.');
 
 					};
+					
+					/*
+							 (__)   
+							 (oo)   
+					  /-------\/    
+					 / |     ||----> 远程验证 ”成功“ 后触发的行为。
+					*  ||----||     
+					  ___/  ___/
+					*/
+					
+					internalProtection.remoteValiSuccess = function () {
+
+						/* Test script: console.log('Remote validation is successful.'); */
+
+					};
+					
+					/*
+							 (__)   
+							 (oo)   
+					  /-------\/    
+					 / |     ||----> 远程验证 “失败” 后触发的行为。
+					*  ||----||     
+					  ___/  ___/
+					*/
+					
+					internalProtection.remoteValiFaith = function () {
+
+						$('.validatingPanel').addClass('hide');
+
+						this.resetCountDown();
+
+						/* Test script:  */console.log('Remote validation is faithful.');
+
+					};
+					
+					/*
+							 (__)   
+							 (oo)   
+					  /-------\/    
+					 / |     ||----> 点击 “发送验证码” 按钮触发的行为。
+					*  ||----||     
+					  ___/  ___/
+					*/
+					
+					internalProtection.clickBtnSendCode = function () {
+
+						var _this = this;
+
+						$('#btnSendCode').on('click', function (e) {
+
+							var trueStatus = function () {
+
+									$('.validatingPanel').removeClass('hide');
+
+									$('#valiCode').focus();
+
+									_this.resentCountDown();
+
+									console.log('Fuck Off!Cell phone validation!!!!!Yeah!It\'s you!I have passed!Bite me!');
+
+								},
+
+								falseStatus = function (e) {
+
+									e.stopPropagation();
+
+									e.preventDefault();
+
+									SJ('#userPhone').valid();
+
+								};
+
+							_this.phoneValiStatus == true ? trueStatus() : falseStatus(e);
+
+							//Test script: console.log('Fuck Off!');
+
+						});
+
+					};
+					
+					/*
+							 (__)   
+							 (oo)   
+					  /-------\/    
+					 / |     ||----> 重新发送验证码计时器。
+					*  ||----||     
+					  ___/  ___/
+					*/
+					
+					var sec = 60,
+
+						timer;
+
+					internalProtection.resentCountDown = function () {
+
+						var linkResent = $('.linkResent'),
+
+							countDownResent = linkResent.children('span'),
+
+							intervalFn = function () {
+
+								countDownResent.text(--sec);
+
+								if (sec == 0) {
+
+									window.clearInterval(timer);
+
+									var strResent = $('<span>重新发送</span>');
+
+									linkResent.html(strResent);
+
+								};
+
+							};
+
+						timer = window.setInterval(intervalFn, 1000);
+
+						/* Test script: */console.log(countDownResent.text());
+
+					};
+					
+					/*
+							 (__)   
+							 (oo)   
+					  /-------\/    
+					 / |     ||----> “重置” 发送验证码的计时器。
+					*  ||----||     
+					  ___/  ___/
+					*/
+					
+					internalProtection.resetCountDown = function () {
+
+						window.clearInterval(timer);
+
+						sec = 60;
+
+						$('.linkResent').children('span').text(60);
+
+					};
+					
+					/*
+							 (__)   
+							 (oo)   
+					  /-------\/    
+					 / |     ||----> 对发送至手机的验证码进行验证。
+					*  ||----||     
+					  ___/  ___/
+					*/
+					
+					internalProtection.codeValidation = function () {
+
+						var _this = this;
+
+						$( "#frmCodeEnterArea" ).validate({
+
+							debug: true,
+
+							rules: {
+
+								valiCode: {
+									
+									required: true,
+
+									number: true
+
+								}
+
+							},
+							
+							onfocusout: function(element) { 
+								
+								SJ(element).valid();
+								
+							},
+							
+							onkeyup: function(element) {
+								
+								SJ(element).valid();
+								
+							},
+							
+							errorElement: 'div',
+							
+							errorPlacement: function (error, element) {
+								
+								SJ(error).addClass('absol valiCodeError box_round');
+								
+								SJ(element).parent().append(error);
+								
+							},
+							
+							success: function(error) {
+								
+								SJ(error).remove();
+								
+							},
+							
+							submitHandler: function (form, event) {
+
+								/**
+								 * Need, [ http | https ] [ host ] [ port ] [ base url ] ( [ operation = unique_mobile | validate_mobile_suc ] [ phoneNumber = ? ] [ userName = ? ] [ CAPTCHA = ? ] [ password = ? ] )
+								 */
+
+								$.ajax({
+
+									url: 'http://192.168.0.107:8080/fenqimall/registerResp',
+
+									mode: 'abort',
+
+									dataType: 'json',
+
+									/*data: 'operation=validate_mobile_suc&phoneNumber='+$('#userPhone').val()+'&userName='+$('.userName').val()+'&CAPTCHA='+$('#valiCode').val()+'&password='+$('.userPass').val(),*/
+
+									data: {
+
+										operation: function () {
+
+											return 'validate_mobile_suc';
+
+										},
+
+										phoneNumber: function () {
+
+											return $.trim($('#userPhone').val());
+
+										},
+
+										userName: function () {
+
+											return $.trim($('.userName').text());
+
+										},
+
+										CAPTCHA: function () {
+
+											return $.trim($('#valiCode').val());
+
+										},
+
+										password: function () {
+
+											return $.trim($('.userPass').text());
+
+										}
+
+									},
+
+									success: function (response) {
+
+										/*
+										
+										Test Script: 
+
+											console.log('User phone: ' + $('#userPhone').val());
+
+											console.log('User Name: ' + $('.userName').text());
+
+											console.log('User Validation Code: ' + $('#valiCode').val());
+
+											console.log('User Password: ' + $('.userPass').text());
+
+											console.log(response);
+
+											console.log(response.result);
+
+										*/
+
+										response.result === 'true' ? _this.valiCodeRemoteSuccess() : _this.valiCodeRemoteFaith();
+
+									}
+
+								});
+								
+							}
+
+						});
+
+						//Test script: console.log('Testing.');
+
+					};
+
+					internalProtection.valiCodeRemoteSuccess = function () {
+
+						this.nextpermission = true;
+
+						$('.pnvTool').children('a.next').removeClass('disable');
+
+						// Hide Error Tip.
+
+						if (!$('.ajaxFormSubmitError').hasClass('hide')) {
+
+							$('.ajaxFormSubmitError').addClass('hide');
+
+						}
+
+						// Switch progress status.
+
+						$('.frmPhoneSubmit, .validatingPanel').addClass('hide');
+
+						$('.valiSuccessBar, .valiSuccessTip').removeClass('hide');
+
+						// Change phone validated status.
+
+						var strPhoneValidated = $('.pgsItem.second').children('span.s');
+
+						if ($.cookie('phonevalidated') == undefined || $.cookie('phonevalidated') == '' || $.cookie('phonevalidated') == null) {
+
+							$.cookie('phonevalidated', 'true');
+
+							strPhoneValidated.addClass('passedColor');
+
+						} else {
+
+							strPhoneValidated.addClass('passedColor');
+
+						}
+
+						/* Test script: console.log('Phone is validated: ' + $.cookie('phonevalidated')); */
+
+						/* Test script: console.log('Oh Yeah! I passed.'); */
+
+					};
+
+					internalProtection.valiCodeRemoteFaith = function () {
+
+						$('.ajaxFormSubmitError').removeClass('hide');
+
+						/* Test script: console.log('Oh! Come on! I haven\'t passed.'); */
+
+					};
+
+					internalProtection.clickBtnNext = function (e) {
+
+						var _this = this;
+
+						$('.pnvTool').children('a.next').on('click', function (e) {
+
+							if (!_this.nextpermission) {
+
+								e.stopPropagation();
+
+								e.preventDefault();
+
+							} else {
+
+							}
+
+						});
+
+					};
+					
+					/*
+							 (__)   
+							 (oo)   
+					  /-------\/    
+					 / |     ||----> Private functions: 键盘事件.
+					*  ||----||     
+					  ___/  ___/
+
+					 注：完善后再启用该模块。
+
+					*/
+					
+					/*internalProtection.keyboardShortcuts = function () {
+
+						keyboard.bind('enter', function () {
+
+							$('.enterTip').addClass('hide');
+
+						});
+
+					};*/
 					
 					/*
 							 (__)   
@@ -169,15 +724,35 @@
 					 / |     ||----> Public functions: Start all subroutines.
 					*  ||----||     
 					  ___/  ___/
+
+					 1. 执行快捷键模块；
+
+					 2. 执行提示信息模块；
+
+					 3. 执行手机号码唯一性验证模块；
+
+					 4. 执行手机号码有效性验证模块；
+
+					 5. 执行点击“发送验证码”按钮模块；
+
+					 6. 执行点击“下一步”按钮模块；
 					*/
 					
 					thisModule.init = function (opts) {
 
 						var excute = function () {
 
-							internalProtection.frmPhoneValidation();
+							/*internalProtection.keyboardShortcuts();*/ /* 1 */
 
-							internalProtection.codeValidation();
+							internalProtection.enterTip(); /* 2 */
+
+							internalProtection.frmPhoneValidation(); /* 3 */
+
+							internalProtection.codeValidation(); /* 4 */
+
+							internalProtection.clickBtnSendCode(); /* 5 */
+
+							internalProtection.clickBtnNext(); /* 6 */
 
 						};
 
@@ -197,15 +772,11 @@
 				 * Close the boot prompt.
 				 */
 
-				$('.enterTip').children('a').on('click', function (e) {
+				/*$('.enterTip').children('a').on('click', function (e) {
 					
-					e.stopPropagation();
 					
-					e.preventDefault();
 					
-					$(this).parent().addClass('hide');
-					
-				});
+				});*/
 
 				/*
 				+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

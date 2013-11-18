@@ -1,3 +1,27 @@
+/**
+ * Statement: Just shut the fuck up!In case you hadn’t noticed, I’m a bit of a stickler for terminology.You motherfucker!!!
+ * 
+ * Describe: The javascript boot file of second registration progress page ( ~/registration/index@3.html ).
+ * 
+ * Further changes, comments: ~
+ * 
+ * Docs: ~
+ * 
+ * Original Author: Tony ( Shen Weizhong ).
+ * 
+ * Version: 0.1.0
+ * 
+ * Creation Date: 2013.10.29 15:40 ( Tony ).
+ * 
+ * Last update: 2013.11.15 16:02 ( Tony ).
+ * 
+ * Music: Hotel Transylvania - The Monster Remix - will.i.am.mp3
+ * 
+ * License: ~
+ * 
+ * Copyright: ~
+ */
+
 (function (name, factory) {
 	
 	// See http://bugs.jquery.com/ticket/13335
