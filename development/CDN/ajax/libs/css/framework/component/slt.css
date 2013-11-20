@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+.slt { /* Short time. */
+	
+	margin: 300px 0 0 700px;
+
+}
+
+.slt > select {
+	
+	z-index: 1;
+	
+	top: -55px;
+	
+	left: 0;
+	
+}
+
+.slt_container {
+
+	width: 170px;
+
+	height: 55px;
+
+}
+
+.slt_core {
+
+	z-index: 500;
+
+	width: 170px;
+
+	height: 55px;
+
+	background: none;
+
+}
+
+.slt_selected {
+
+	cursor: pointer;
+
+	z-index: 600;
+	
+	text-align: center;
+
+	width: 170px;
+
+	height: 55px;
+
+	background: none;
+	
+	background-repeat: no-repeat;
+
+}
+
+.slt_selected > span {
+	
+	color: #13b5b1;
+	
+	font: 24px/55px "微软雅黑";
+	
+}
+
+.slt_arrow {
+
+	z-index: 550;
+
+	width: 170px;
+
+	height: 55px;
+
+	background: none;
+
+}
+
+.slt_arrow > i {
+
+	z-index: 555;
+
+	top: 50%;
+
+	margin-top: -3px;
+
+	margin-right: 30px;
+
+	width: 12px;
+
+	height: 7px;
+
+	background-position: center;
+
+	background-repeat: no-repeat;
+
+}
+
+.slt_arrow > i.selectorEdClose {
+	
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAYAAAA8sqwkAAAA60lEQVQYVy2QwW6DMBBExxiTgAg5cUCBiOb//6ZVfwBUJBCBmrYqwdhdb+qT17tvZ8bi9e3djeOIdV2h1AFCCARBAEBg2za6O1hrkSQJyrKE+P75dW3bou97GGO56ZwjMGBQCIsoipDnOW63FwhLXa2/0DQNxnHirf54QClFsEFVVQykafIE/MA0faJtP7AsC6t4S2EY4nxOUdc14viAfSflzVgnpeCt97vGMAyY55kVsizD9Xqh4SPVPAKxewnS4Jz/UNd1ZCdCURQ4nY78/ngYSCmflnzhf0cpSRkctNYMZFlMGXwesB3v5A+yX3iD/hmX4QAAAABJRU5ErkJggg==);
+	
+}
+
+.slt_arrow > i.selectorEdOpen {
+	
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAYAAAA8sqwkAAAA40lEQVQYVz2QYW+CMBCG32tlAQVHZISFYPj//8plCOjCB2MFGba1PbO9l37o9bl770rGWgsn64JceCl1h9YaSbJxGQMi9+KOF2lruOAPvlyu6PszjDHI8xz5R8qgl8/Rw2grSHBiHO/oug6n0w/f0zTFvvpEHMcQQrArO/jut/GG9thjGAYsi2aAi94TlGWJ3e7lRH4HhtsWfXd28IIwXPPM0zRhJYlHq6oK2238Kjh8HdA0DX7nB6SUDpb/M1tt2K0oCtR1Dfo+NtbDSim8BSH8p83zwg5BELhNLbtGUYQsy/AEVHl3SsYjawsAAAAASUVORK5CYII=);
+	
+}
+
+.slt_panel {
+
+	z-index: 505;
+
+	top: 15px;
+
+	left: 0;
+
+	width: 170px;
+	
+	-webkit-box-shadow: 0 0 5px 1px #e1e0e1;
+			
+			box-shadow: 0 0 5px 1px #e1e0e1;
+
+	background-color: #FFF;
+
+}
+
+.ie7 .slt_panel {
+	
+	width: 168px;
+
+	border: 1px solid #CCC;
+	
+}
+
+.slt_panel > ul {
+	
+	width: 160px;
+	
+	margin-top: 55px;
+	
+	margin-left: 5px;
+	
+	border-top: 1px solid #CCC;
+	
+}
+
+.slt_panel > ul > .options {
+	
+	cursor: pointer;
+	
+	font: normal 24px/30px "微软雅黑";
+	
+	text-align: center;
+	
+	width: 160px;
+	
+	height: 30px;
+	
+	margin-bottom: 5px;
+	
+	margin-bottom: 5px;
+	
+}
+
+.slt_panel > ul > .options:first-child {
+	
+	margin-top: 5px;
+	
+}
+
+.slt_panel > ul > .options:hover {
+	
+	color: #FFF;
+	
+	background-color: #00c4b5;
+	
+}

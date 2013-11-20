@@ -246,7 +246,7 @@
 						};
 
 						/**
-						 * Need, [ http | https ] [ host ] [ port ] [ base url ] ( [ operation = unique_mobile | validate_mobile_suc ] [ phoneNumber = ? ] [ userName = ? ] )
+						 * URL, Query String, [ http | https ] [ host ] [ port ] [ base url ] ( [ operation = unique_mobile | validate_mobile_suc ] [ phoneNumber = ? ] [ userName = ? ] )
 						 */
 
 						$( "#frmPhoneSubmit" ).validate({
@@ -544,7 +544,7 @@
 							submitHandler: function (form, event) {
 
 								/**
-								 * Need, [ http | https ] [ host ] [ port ] [ base url ] ( [ operation = unique_mobile | validate_mobile_suc ] [ phoneNumber = ? ] [ userName = ? ] [ CAPTCHA = ? ] [ password = ? ] )
+								 * URL, Query String, [ http | https ] [ host ] [ port ] [ base url ] ( [ operation = unique_mobile | validate_mobile_suc ] [ phoneNumber = ? ] [ userName = ? ] [ CAPTCHA = ? ] [ password = ? ] )
 								 */
 
 								$.ajax({
@@ -765,18 +765,6 @@
 				} ($, phoneValidation || {}));
 
 				phoneValidation.init({excute: true});
-				
-				
-				
-				/**
-				 * Close the boot prompt.
-				 */
-
-				/*$('.enterTip').children('a').on('click', function (e) {
-					
-					
-					
-				});*/
 
 				/*
 				+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

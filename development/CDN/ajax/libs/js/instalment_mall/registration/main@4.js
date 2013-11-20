@@ -94,15 +94,64 @@
 			
 			'cdnjs/jquery_cookie/1.3.1/jquery.cookie.min',
 			
-			'cdnjs/gridder/0.1.0/gridder',
+			'cdnjs/jquery_selector/0.1.0/jquery.selector',
 			
-			'cdnjs/jquery_title_modify/title.modify'
+			'cdnjs/gridder/0.1.0/gridder.min',
+			
+			'cdnjs/jquery_title_modify/title.modify.min'
 		
-		], function (modernizr, SJ, cookie, gridder, modifyTitle) {
+		], function (modernizr, SJ, cookie, sl, gridder, modifyTitle) {
 			
 			SJ(function ($) {
-				
-				
+
+				$('.slt').slt();
+
+				var basiceInfoModule = (function ($, thisModule) {
+
+					var internalProtection = {};
+
+					internalProtection.defaultData = function () {
+
+						
+
+					};
+
+					internalProtection.fnSelector = function () {
+
+						
+
+					};
+
+					internalProtection.clickBtnNext = function () {
+
+						
+
+					};
+
+					thisModule.init = function (opts) {
+
+						var excute = function () {
+
+							internalProtection.defaultData();
+
+							internalProtection.fnSelector();
+
+							internalProtection.clickBtnNext();
+
+						};
+
+						opts.excute ? excute() : console.log('Sorry! Do not have the permission to excute part of program.');
+
+					};
+
+					return thisModule;
+
+				} ($, basiceInfoModule || {}));
+
+				basiceInfoModule.init({excute: true});
+
+
+
 				var selectorEd = $('.selectorEd'),
 					
 					selectorOptions = $('.selectPanel > ul > li'),
@@ -164,6 +213,10 @@
 					var that = $(this),
 						
 						selectedValue = that.text();
+
+					/* Test Script: */ $('#selectorTest').children('option').eq(that.index()).attr('selected', 'true');
+
+					console.log( $('#selectorTest').val());
 					
 					selectorEd.children('span').text(selectedValue);
 					
@@ -233,9 +286,9 @@
 	
 	boot.judgement({
 		
-		jq1x: 'ajax/libs/js/jquery/1.10.2/jquery.min',
+		jq1x: '//code.jquery.com/jquery-1.11.0-beta2.min',
 		
-		jq2x: 'ajax/libs/js/jquery/2.0.3/jquery.min'
+		jq2x: '//code.jquery.com/jquery-2.1.0-beta2.min'
 		
 	});
 		

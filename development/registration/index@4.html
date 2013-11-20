@@ -52,7 +52,7 @@
 					
 					<base target="_self"/>
 					
-					<meta http-equiv="X-UA-Compatible" content="IE = 7, chrome = 1"/> <!-- Offical: IE = EmulateIE7, IE = 10, chrome = 1 -->
+					<meta http-equiv="X-UA-Compatible" content="ie = EmulateIE7, chrome = 1"/> <!-- Offical: IE = EmulateIE7, IE = 10, chrome = 1 -->
 					
 					<meta name="viewport" content="width = 1200"/>
 					
@@ -153,6 +153,8 @@
 						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/registration/layout%404.css"/> <!-- Layout -->
 						
 						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/registration/index%404.css"/> <!-- Index -->
+
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/component/slt.css"/>
 						
 					<!-- End | Private Stylesheet ( Progress ) -->
 					
@@ -183,6 +185,52 @@
 		<!-- Begin | Body -->
 			
 			<body class="rela antialiased">
+				
+				
+				
+				<div class="slt slt_container">
+					
+					<div class="rela slt_core">
+						
+						<div class="absol slt_selected">
+							
+							<span class="">身份</span>
+							
+						</div>
+						
+						<div class="absol slt_arrow">
+							
+							<i class="rela right selectorEdClose"></i>
+							
+						</div>
+						
+						<div class="absol opacityFull slt_panel minHeight_150 hide">
+							
+							<ul>
+								
+								<li class="options box_round">白领</li>
+								
+								<li class="options box_round">学生</li>
+								
+								<li class="options box_round">其他</li>
+								
+							</ul>
+							
+						</div>
+						
+					</div>
+					
+					<select class="rela original_select hide" name="sltHello">
+						
+						<option value="白领">白领</option>
+						
+						<option value="学生">学生</option>
+						
+						<option value="其他">其他</option>
+						
+					</select>
+					
+				</div>
 				
 				
 				
@@ -306,9 +354,19 @@
 													
 													<span class="left">身份</span>
 													
-													<input id="selectedIdentity" class="selectedIdentity" type="hidden" name="selectedIdentity"/>
+													<input id="selectedIdentity" class="selectedIdentity" type="hidden" name="selectedIdentity"/>	
 													
 												</div>
+
+												<select id="selectorTest">
+													
+													<option value="白领">白领</option>
+
+												    <option value="学生">学生</option>
+
+												    <option value="其他">其他</option>
+
+												</select>
 												
 											</div>
 											
@@ -384,7 +442,7 @@
 								
 								<a href="#" class="left prev">上一步</a>
 								
-								<a href="#" class="right next">下一步</a>
+								<a href="http://www.baidu.com/" class="right next">下一步</a>
 								
 							</div>
 							
@@ -395,6 +453,8 @@
 					</div>
 					
 				<!-- End | Protocol -->
+
+
 				
 				
 				

@@ -98,7 +98,7 @@
 			
 			'cdnjs/mousetrap/1.4.5/mousetrap.min',
 			
-			'cdnjs/jquery_title_modify/title.modify'
+			'cdnjs/jquery_title_modify/title.modify.min'
 		
 		], function (modernizr, SJ, cookie, gridder, keyboard, modifyTitle) {
 			
