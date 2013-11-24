@@ -149,12 +149,12 @@
 					<!-- End | Private Stylesheet ( Master ) -->
 					
 					<!-- Begin | Private Stylesheet ( Progress ) -->
+
+						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/component/slt.css"/>
 						
 						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/registration/layout%404.css"/> <!-- Layout -->
 						
 						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/instalment_mall/registration/index%404.css"/> <!-- Index -->
-
-						<link rel="stylesheet" type="text/css" href="../CDN/ajax/libs/css/framework/component/slt.css"/>
 						
 					<!-- End | Private Stylesheet ( Progress ) -->
 					
@@ -188,55 +188,9 @@
 				
 				
 				
-				<div class="slt slt_container">
-					
-					<div class="rela slt_core">
-						
-						<div class="absol slt_selected">
-							
-							<span class="">身份</span>
-							
-						</div>
-						
-						<div class="absol slt_arrow">
-							
-							<i class="rela right selectorEdClose"></i>
-							
-						</div>
-						
-						<div class="absol opacityFull slt_panel minHeight_150 hide">
-							
-							<ul>
-								
-								<li class="options box_round">白领</li>
-								
-								<li class="options box_round">学生</li>
-								
-								<li class="options box_round">其他</li>
-								
-							</ul>
-							
-						</div>
-						
-					</div>
-					
-					<select class="rela original_select hide" name="sltHello">
-						
-						<option value="白领">白领</option>
-						
-						<option value="学生">学生</option>
-						
-						<option value="其他">其他</option>
-						
-					</select>
-					
-				</div>
-				
-				
-				
 				<!-- Begin | Header -->
 					
-					<header class="mstHdr2nd pageHeader fullWidth rela" itemscope itemtype="http://schema.org/WPHeader"> <!-- Blog, http://html5doctor.com/the-header-element/ | Browser Compatibility, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header#Browser_compatibility -->
+					<header class="mstHdr2nd pageHeader fullWidth rela" itemscope itemtype="http://schema.org/WPHeader">
 						
 						<div class="row clearfix"> <!-- Main area of the header part.  -->
 							
@@ -318,7 +272,7 @@
 				
 				
 				
-				<!-- Begin | Phone Number Validation -->
+				<!-- Begin | Basic Info -->
 					
 					<div class="rela row basicInfoArea">
 						
@@ -336,37 +290,55 @@
 											
 											<div class="selectIdentityArea rela right">
 												
-												<div class="hide opacityFull selectPanel absol grid_2 minHeight_150">
+												<!-- Begin | Selector -->
 													
-													<ul>
+													<div class="slt slt_container identitySelector customSelector" data-target="authenticationErrorPos">
 														
-														<li class="options box_round">白领</li>
+														<div class="rela slt_core">
+															
+															<div class="absol slt_selected">
+																
+																<span class="" data-default="身份" data-modify="false">身份</span>
+																
+															</div>
+															
+															<div class="absol slt_arrow">
+																
+																<i class="rela right selectorEdClose"></i>
+																
+															</div>
+															
+															<div class="absol opacityFull slt_panel minHeight_150 hide">
+																
+																<ul>
+																	
+																	<li class="options box_round">白领</li>
+																	
+																	<li class="options box_round">学生</li>
+																	
+																	<li class="options box_round">其他</li>
+																	
+																</ul>
+																
+															</div>
+															
+														</div>
 														
-														<li class="options box_round">学生</li>
+														<select id="originalIdtSlt" class="rela original_select originalIdtSlt hide" name="originalIdtSlt">
+
+															<option value="白领">白领</option>
+															
+															<option value="学生">学生</option>
+															
+															<option value="其他">其他</option>
+															
+														</select>
 														
-														<li class="options box_round">其他</li>
-														
-													</ul>
+													</div>
 													
-												</div>
+												<!-- End | Selector -->
 												
-												<div class="absol grid_2 selectorEd selectorEdClose clearfix">
-													
-													<span class="left">身份</span>
-													
-													<input id="selectedIdentity" class="selectedIdentity" type="hidden" name="selectedIdentity"/>	
-													
-												</div>
-
-												<select id="selectorTest">
-													
-													<option value="白领">白领</option>
-
-												    <option value="学生">学生</option>
-
-												    <option value="其他">其他</option>
-
-												</select>
+												<div class="hide absol valierror authenticationErrorPos box_round">请选择</div>
 												
 											</div>
 											
@@ -381,68 +353,216 @@
 										<div class="basicInfoTable clearfix">
 											
 											<div class="rela left tableItem1">
-													
+												
 												<label class="left">身份证号：</label>
-
+												
 												<input id="userIdentity" class="left userIdentity" name="userIdentity" type="text"/>
-
+												
 												<span class="absol left example">（请输入18位身份证号）</span>
-
+												
 											</div>
 											
 											<div class="rela left tableItem2">
-													
+												
 												<label class="left">身份证有效期至：</label>
-
-												<input id="identityYear" class="left identityYear" name="identityYear" type="text" placeholder="年"/>
-
+												
+												<!-- Begin | Selector -->
+													
+													<div class="slt slt_container customSelector identityValiDate identityValiYear" data-target="identityValiYearErrorPos">
+														
+														<div class="rela slt_core">
+															
+															<div class="absol slt_selected">
+																
+																<span class="" data-default="年" data-modify="false">年</span>
+																
+															</div>
+															
+															<div class="absol slt_arrow">
+																
+																<i class="rela right selectorEdClose"></i>
+																
+															</div>
+															
+															<div class="absol opacityFull slt_panel hide">
+																
+																<ul>
+																	
+																	<li class="options box_round">2013</li>
+																	
+																	<li class="options box_round">2012</li>
+																	
+																	<li class="options box_round">2011</li>
+																	
+																</ul>
+																
+															</div>
+															
+														</div>
+														
+														<select class="rela original_select hide" name="sltHello">
+															
+															<option value="白领">2013</option>
+															
+															<option value="学生">2012</option>
+															
+															<option value="其他">2011</option>
+															
+														</select>
+														
+													</div>
+													
+												<!-- End | Selector -->
+												
 												<span class="left connectionLine"></span>
-
-												<input id="identityMonth" class="left identityMonth" name="identityMonth" type="text" placeholder="月"/>
-
+												
+												<!-- Begin | Selector -->
+													
+													<div class="slt slt_container customSelector identityValiDate identityValiMonth" data-target="identityValiMonthErrorPos">
+														
+														<div class="rela slt_core">
+															
+															<div class="absol slt_selected">
+																
+																<span class="" data-default="月" data-modify="false">月</span>
+																
+															</div>
+															
+															<div class="absol slt_arrow">
+																
+																<i class="rela right selectorEdClose"></i>
+																
+															</div>
+															
+															<div class="absol opacityFull slt_panel hide">
+																
+																<ul>
+																	
+																	<li class="options box_round">12</li>
+																	
+																	<li class="options box_round">11</li>
+																	
+																	<li class="options box_round">10</li>
+																	
+																</ul>
+																
+															</div>
+															
+														</div>
+														
+														<select class="rela original_select hide" name="sltHello">
+															
+															<option value="白领">12</option>
+															
+															<option value="学生">11</option>
+															
+															<option value="其他">10</option>
+															
+														</select>
+														
+													</div>
+													
+												<!-- End | Selector -->
+												
 												<span class="left connectionLine"></span>
-
-												<input id="identityDate" class="left identityDate" name="identityDate" type="text" placeholder="日"/>
-
-												<span class="absol left example">（例：2013-01-01）</span>
-
+												
+												<!-- Begin | Selector -->
+													
+													<div class="slt slt_container customSelector identityValiDate identityValiDay" data-target="identityValiDayErrorPos">
+														
+														<div class="rela slt_core">
+															
+															<div class="absol slt_selected">
+																
+																<span class="" data-default="日" data-modify="false">日</span>
+																
+															</div>
+															
+															<div class="absol slt_arrow">
+																
+																<i class="rela right selectorEdClose"></i>
+																
+															</div>
+															
+															<div class="absol opacityFull slt_panel hide">
+																
+																<ul>
+																	
+																	<li class="options box_round">31</li>
+																	
+																	<li class="options box_round">30</li>
+																	
+																	<li class="options box_round">29</li>
+																	
+																</ul>
+																
+															</div>
+															
+														</div>
+														
+														<select class="rela original_select hide" name="sltHello">
+															
+															<option value="白领">31</option>
+															
+															<option value="学生">30</option>
+															
+															<option value="其他">39</option>
+															
+														</select>
+														
+													</div>
+													
+												<!-- End | Selector -->
+												
+												<!-- <span class="absol left example">（例：2013-01-01）</span> -->
+												
+												<!-- Begin | Error Tips -->
+													
+													<div class="hide absol valierror identityValiYearErrorPos box_round">请选择</div>
+													
+													<div class="hide absol valierror identityValiMonthErrorPos box_round">请选择</div>
+													
+													<div class="hide absol valierror identityValiDayErrorPos box_round">请选择</div>
+													
+												<!-- End | Error Tips -->
+												
 											</div>
 											
 											<div class="rela left tableItem3">
 												
 												<label class="left">Email：</label>
-
+												
 												<input id="identityEmail" class="left identityEmail" name="identityEmail" type="text"/>
-
+												
 											</div>
 											
 											<div class="rela left tableItem4">
 												
 												<label class="left">固定电话：</label>
-
+												
 												<input id="areaCode" class="left areaCode" name="areaCode" type="text" placeholder="区号"/>
-
+												
 												<span class="left connectionLine"></span>
-
+												
 												<input id="userTele" class="left userTele" name="userTele" type="text" placeholder="座机"/>
-
+												
 												<span class="absol left example">（可选填）</span>
-
+												
 											</div>
 											
 										</div>
 										
 									<!-- End | Table -->
 									
+									<div class="basicInfoTool clearfix">
+										
+										<a href="#" class="left prev">上一步</a>
+										
+										<button class="right next disable" type="submit">下一步</button>
+										
+									</div>
+									
 								</form>
-								
-							</div>
-							
-							<div class="basicInfoTool clearfix">
-								
-								<a href="#" class="left prev">上一步</a>
-								
-								<a href="http://www.baidu.com/" class="right next">下一步</a>
 								
 							</div>
 							
@@ -452,9 +572,7 @@
 						
 					</div>
 					
-				<!-- End | Protocol -->
-
-
+				<!-- End | Basic Info -->
 				
 				
 				

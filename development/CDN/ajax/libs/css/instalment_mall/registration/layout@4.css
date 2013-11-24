@@ -60,9 +60,13 @@ body {
 
 .frmBasicInfo {
 	
-	width: 1170px;
+	display: inline-block;
 	
-	height: 400px;
+	*display: inline;
+	
+	*zoom: 1;
+	
+	width: 1170px;
 	
 }
 
@@ -122,61 +126,11 @@ body {
 	
 }
 
-.selectPanel {
+.identitySelector {
 	
-	top: 35px;
+	margin-top: 20px;
 	
-	left: 35px;
-	
-}
-
-.ie7 .selectPanel {
-	
-	width: 170px;
-	
-}
-
-.selectPanel > ul {
-	
-	width: 160px;
-	
-	margin-top: 55px;
-	
-	margin-left: 5px;
-	
-	border-top: 1px solid #CCC;
-	
-}
-
-.selectPanel > ul > .options {
-	
-	width: 160px;
-	
-	height: 30px;
-	
-	margin-bottom: 5px;
-	
-}
-
-.selectPanel > ul > .options:first-child {
-	
-	margin-top: 5px;
-	
-}
-
-.selectorEd {
-	
-	top: 40px;
-	
-	left: 35px;
-	
-}
-
-.selectorEd > span {
-	
-	margin-top: -3px;
-	
-	margin-left: 39px;
+	margin-left: 48px;
 	
 }
 
@@ -319,7 +273,13 @@ body {
   ___/  ___/
 */
 
-.basicInfoPanel > .basicInfoTool > a {
+.basicInfoTool {
+
+	margin-top: 300px;
+
+}
+
+.basicInfoTool > a, .basicInfoTool > button {
 	
 	margin-top: 20px;
 	
@@ -327,7 +287,7 @@ body {
 	
 }
 
-.basicInfoPanel > .basicInfoTool > a.prev {
+.basicInfoTool > a.prev {
 	
 	padding-left: 35px;
 	
@@ -335,7 +295,7 @@ body {
 
 }
 
-.basicInfoPanel > .basicInfoTool > a.next {
+.basicInfoTool > button.next {
 	
 	padding-right: 35px;
 	

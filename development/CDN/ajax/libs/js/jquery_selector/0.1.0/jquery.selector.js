@@ -279,6 +279,8 @@
 				utils.dpControl(e);
 				
 				var that = $(this);
+
+				originalSelector.focus();
 				
 				!tgl ? _this.animations.show_panel(that, panel, opts) : _this.animations.hide_panel(that, panel, opts);
 				

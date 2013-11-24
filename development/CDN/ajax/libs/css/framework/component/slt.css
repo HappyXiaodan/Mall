@@ -2,17 +2,7 @@
 
 .slt { /* Short time. */
 	
-	margin: 300px 0 0 700px;
-
-}
-
-.slt > select {
 	
-	z-index: 1;
-	
-	top: -55px;
-	
-	left: 0;
 	
 }
 
@@ -22,6 +12,16 @@
 
 	height: 55px;
 
+}
+
+.slt_container > select {
+	
+	z-index: 1;
+	
+	top: -55px;
+	
+	left: 0;
+	
 }
 
 .slt_core {
