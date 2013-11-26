@@ -77,6 +77,8 @@ body {
 
 .lines {
 
+	position: relative;
+
 	border-bottom: 1px solid #eee;
 
 }
@@ -260,9 +262,9 @@ input.currAddressDetail {
 
 	z-index: 99;
 
-	top: 23px;
+	top: 35px;
 
-	left: -90px;
+	left: 15px;
 
 }
 
@@ -433,22 +435,6 @@ input.currAddressDetail {
   ___/  ___/
 */
 
-.errMsg {
-
-	display: none;
-
-	width: 135px;
-
-	height: 22px;
-
-	z-index: 1;
-
-	top: 70px;
-	
-	left: 30px;
-
-}
-
 .eduSysError, .gradeError {
 
 	left: 50px;
@@ -482,69 +468,7 @@ input.currAddressDetail {
   ___/  ___/
 */
 
-.selectPanel {
 
-	width: 100%;
-	
-	top: 35px;
-	
-	left: 0px;
-
-	z-index: 20;
-	
-}
-
-.ie7 .selectPanel {
-	
-}
-
-.selectPanel > ul {
-	
-	margin-top: 55px;
-	
-	margin-left: 5px;
-
-	margin-right: 5px;
-	
-	border-top: 1px solid #CCC;
-	
-}
-
-.selectPanel > ul > .options {
-	
-	padding: 0 10px;
-	
-	height: 30px;
-	
-	margin-bottom: 5px;
-	
-}
-
-.selectPanel > ul > .options:first-child {
-	
-	margin-top: 5px;
-	
-}
-
-.selectorEd {
-	
-	z-index: 1;
-
-	width: 100%;
-	
-	top: 40px;
-	
-	left: 0px;
-	
-}
-
-.selectorEd > span {
-	
-	margin-top: -3px;
-	
-	margin-left: 28px;
-	
-}
 
 
 
@@ -558,7 +482,7 @@ input.currAddressDetail {
   ___/  ___/
 */
 
-.infoTool > a {
+.infoTool > a, .infoTool > button {
 	
 	margin-top: 20px;
 	
@@ -574,11 +498,19 @@ input.currAddressDetail {
 
 }
 
-.infoTool > a.next {
+.infoTool > button.next {
 	
 	padding-right: 35px;
 	
 	margin-right: 60px;
+
+}
+
+.basicInfoTool > button.next {
+	
+	padding-right: 35px;
+	
+	margin-right: 100px;
 
 }
 
