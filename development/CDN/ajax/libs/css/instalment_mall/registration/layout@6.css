@@ -93,7 +93,7 @@ body {
 
 .graduateLabel {
 
-	margin-left: 100px;
+	margin-left: 0;
 
 }
 
@@ -334,13 +334,15 @@ input.currAddressDetail {
 
 	z-index: 99;
 
-	top: 23px;
+	top: 337px;
 
-	left: -90px;
+	left: 15px;
 
 }
 
 .closeBtn {
+
+	cursor: pointer;
 
 	width: 40px;
 
@@ -484,7 +486,9 @@ input.currAddressDetail {
 
 .graduateSchool {
 
-	margin-left: 115px !important;
+	width: 385px;
+
+	margin-left: 0px !important;
 
 }
 
@@ -504,128 +508,6 @@ input.currAddressDetail {
 
 }
 
-/*
-		 (__)
-		 (oo)
-  /-------\/
- / |     ||----> error message.
-*  ||----||
-  ___/  ___/
-*/
-
-.errMsg {
-
-	display: none;
-
-	width: 135px;
-
-	height: 22px;
-
-	z-index: 1;
-
-	top: 70px;
-	
-	left: 30px;
-
-}
-
-.eduSysError, .gradeError, .HighestEduError {
-
-	left: 50px;
-
-}
-
-.incomeError, .phoneError, .comAddError, .schAddError, .homeAddError {
-
-	left: 100px;
-
-}
-
- .companyError, .sectorError, .jobError {
-
- 	left: 200px;
-
- }
-
-
-
-
-
-
-
-/*
-		 (__)
-		 (oo)
-  /-------\/
- / |     ||----> selectPanel.
-*  ||----||
-  ___/  ___/
-*/
-
-.selectPanel {
-
-	width: 100%;
-	
-	top: 35px;
-	
-	left: 0px;
-
-	z-index: 20;
-	
-}
-
-.ie7 .selectPanel {
-	
-}
-
-.selectPanel > ul {
-	
-	margin-top: 55px;
-	
-	margin-left: 5px;
-
-	margin-right: 5px;
-	
-	border-top: 1px solid #CCC;
-	
-}
-
-.selectPanel > ul > .options {
-	
-	padding: 0 10px;
-	
-	height: 30px;
-	
-	margin-bottom: 5px;
-	
-}
-
-.selectPanel > ul > .options:first-child {
-	
-	margin-top: 5px;
-	
-}
-
-.selectorEd {
-	
-	z-index: 1;
-
-	width: 100%;
-	
-	top: 40px;
-	
-	left: 0px;
-	
-}
-
-.selectorEd > span {
-	
-	margin-top: -3px;
-	
-	margin-left: 28px;
-	
-}
-
 
 
 
@@ -638,7 +520,7 @@ input.currAddressDetail {
   ___/  ___/
 */
 
-.infoTool > a {
+.infoTool > a, .infoTool > button {
 	
 	margin-top: 20px;
 	
@@ -651,10 +533,10 @@ input.currAddressDetail {
 	padding-left: 35px;
 	
 	margin-left: 60px;
-
+	
 }
 
-.infoTool > a.next {
+.infoTool > button.next {
 	
 	padding-right: 35px;
 	
@@ -663,13 +545,13 @@ input.currAddressDetail {
 }
 
 .prevLine {
-
+	
 	left: 230px;
-
+	
 }
 
 .nextLine {
-
+	
 	left: 960px;
-
+	
 }
