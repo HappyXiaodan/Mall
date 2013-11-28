@@ -190,7 +190,7 @@
 						
 						var showPanel = function () {
 							
-							panel.find('.schoolListBox').niceScroll().show();
+							panel.find('.schoolListBox').studioScroll().show();
 							
 							panel.stop().animate({opacity: 1, top: 302}, {
 								
@@ -208,7 +208,7 @@
 						
 						var hidePanel = function () {
 							
-							panel.find('.schoolListBox').getNiceScroll().hide();
+							panel.find('.schoolListBox').getStudioScroll().hide();
 							
 							panel.stop().animate({opacity: 0, top: 337}, {
 								
