@@ -110,398 +110,173 @@
 			
 			SJ(function ($) {
 				
-				var basiceInfoModule = (function ($, thisModule) {
+				$('.slt').slt({
 					
-					var internalProtection = {},
-						
-						custom_selector = $('.customSelector'),
-						
-						ctrlStatus = false,
-						
-						_validator;
+					sldSpeed: 100,
 					
-					internalProtection.defaultData = function () {
-						
-						
-						
-					};
+					arwSpeed: 100,
 					
-					internalProtection.fnSelector = function () {
-						
-						var shortArray = [],
-							
-							ctmSltEachFn = function (index) {
-								
-								var that = $(this),
-									
-									click_selected = function () {
-										
-										if (that.hasClass('identitySelector')) {
-											
-											if (!that.siblings('.valierror').hasClass('hide')) {
-												
-												that.siblings('.valierror').addClass('hide');
-												
-											}
-											
-										} else {
-											
-											var errorTarget = that.data('target');
-											
-											if (!that.siblings('.'+errorTarget).hasClass('hide')) {
-												
-												that.siblings('.'+errorTarget).addClass('hide');
-												
-											}
-											
-										}
-										
-									},
-									
-									click_option = function () {
-										
-										shortArray = [];
-										
-										var _this = $(this),
-											
-											dataModify = _this.offsetParent().siblings('.slt_selected').children();
-										
-										if (dataModify.data('modify') == false) {
-											
-											dataModify.data('modify', true);
-											
-											console.log(that.find('.slt_selected').children().data('modify'));
-											
-										}
-										
-										var invalidCount = _validator.numberOfInvalids();
-										
-										custom_selector.each(function () {
-											
-											var _that = $(this);
-											
-											if (_that.find('.slt_selected').children().data('modify') == false) {
-												
-												shortArray.push(_that.data('target'));
-												
-											}
-											
-										});
-										
-										if (invalidCount == 0 && shortArray.length == 0) {
-											
-											$('.basicInfoTool').children('button').removeClass('disable');
-											
-										}
-										
-									};
-								
-								that.find('.slt_selected').on('click.customSelector.yoka', click_selected);
-								
-								that.find('li').on('click.customSelector.yoka', click_option);
-								
-							};
-						
-						$('.slt').slt();
-						
-						custom_selector.each(ctmSltEachFn);
-						
-					};
+					effect: 'swing',
 					
-					internalProtection.validation = function () {
-						
-						var _shortArray = [];
-							
-						$.validator.setDefaults({
-							
-							debug: true,
-							
-							onfocusout: function(element) {
-								
-								_shortArray = [];
-								
-								SJ(element).valid();
-								
-								var invalidCount = _validator.numberOfInvalids();
-								
-								custom_selector.each(function () {
-									
-									var _that = $(this);
-									
-									if (_that.find('.slt_selected').children().data('modify') == false) {
-										
-										_shortArray.push(_that.data('target'));
-										
-									}
-									
-								});
-								
-								if (invalidCount == 0 && _shortArray.length == 0) {
-									
-									$('.basicInfoTool').children('button').removeClass('disable');
-									
-								}
-								
-							},
-							
-							onkeyup: function(element) {
-								
-								_shortArray = [];
-								
-								SJ(element).valid();
-								
-								var invalidCount = _validator.numberOfInvalids();
-								
-								custom_selector.each(function () {
-									
-									var _that = $(this);
-									
-									if (_that.find('.slt_selected').children().data('modify') == false) {
-										
-										_shortArray.push(_that.data('target'));
-										
-									}
-									
-								});
-								
-								if (invalidCount == 0 && _shortArray.length == 0) {
-									
-									$('.basicInfoTool').children('button').removeClass('disable');
-									
-								}
-								
-							},
-							
-							success: function(error) {
-								
-								SJ(error).remove();
-								
-							}
-							
-						});
-						
-						$.validator.addMethod("nowhitespace", function(value, element) {
-							
-							return this.optional(element) || /^\S+$/i.test(value);
-							
-						}, "不允许有空格。");
-						
-						$.validator.addMethod("Chinses", function(value, element) {
-							
-							return this.optional(element) || /[^x00-xff]/.test(value);
-							
-						}, "请输入中文。");
-						
-						$.validator.addMethod("email2", function(value, element, param) {
-							
-							return this.optional(element) || /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)*(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i.test(value);
-							
-						}, $.validator.messages.email);
-						
-						$.validator.addClassRules({
-							
-							userName: {
-								
-								required: true,
-								
-								Chinses: true,
-								
-								nowhitespace: true
-								
-							},
-							
-							userIdentity: {
-								
-								required: true,
-								
-								nowhitespace: true
-								
-							},
-							
-							identityEmail: {
-								
-								required: true,
-								
-								nowhitespace: true,
-								
-								email: true
-								
-							}
-							
-						});
-						
-						_validator = $('#frmBasicInfo').validate({
-							
-							errorElement: 'div',
-							
-							errorPlacement: function (error, element) {
-								
-								switch (SJ(element).attr('id')) {
-									
-									case 'userName': {
-										
-										SJ(error).addClass('absol valierror userNameErrorPos box_round');
-										
-										SJ(element).parent().append(error);
-										
-										break;
-										
-									}
-									
-									case 'userIdentity': {
-										
-										SJ(error).addClass('absol valierror uiErrorPos box_round');
-										
-										SJ(element).parent().append(error);
-										
-										break;
-										
-									}
-									
-									case 'identityEmail': {
-										
-										SJ(error).addClass('absol valierror iemailErrorPos box_round');
-										
-										SJ(element).parent().append(error);
-										
-										break;
-										
-									}
-									
-								}
-								
-							},
-							
-							submitHandler: function (form, event) {
-								
-								//form.submit();
-								
-								custom_selector.each(function (index) {
-									
-									var that = $(this);
-									
-									if (that.hasClass('identitySelector')) {
-										
-										if (!that.siblings('.valierror').hasClass('hide')) {
-											
-											//console.log('身份未选择。');
-											
-											return false;
-											
-										}
-										
-									} else  if (that.hasClass('identityValiDate')) {
-										
-										var errorTarget = that.data('target');
-										
-										if (!that.siblings('.identityValiYearErrorPos').hasClass('hide')) {
-											
-											//console.log('有效期（年）未选择。');
-											
-											return false;
-											
-										} else if (!that.siblings('.identityValiMonthErrorPos').hasClass('hide')) {
-											
-											//console.log('有效期（月）未选择。');
-											
-											return false;
-											
-										} else if (!that.siblings('.identityValiDayErrorPos').hasClass('hide')) {
-											
-											//console.log('有效期（日）未选择。');
-											
-											return false;
-											
-										} else {
-											
-											form.submit();
-											
-										}
-										
-									}
-									
-								});
-								
-							}
-							
-						});
-						
-					};
+					form: '#frmBasicInfo'
 					
-					internalProtection.clickBtnNext = function () {
-						
-						var ctmSltEachFn = function (index) {
-								
-								var that = $(this),
-									
-									dataArea = that.find('.slt_selected').children(),
-									
-									defaultValue = dataArea.data('default'),
-									
-									currentValue = dataArea.text(),
-									
-									status = (currentValue == defaultValue && dataArea.data('modify') == false);
-								
-								if (status) {
-									
-									if (that.hasClass('identitySelector')) {
-										
-										that.siblings('.valierror').removeClass('hide');
-										
-									} else {
-										
-										var errorTarget = that.data('target');
-										
-										that.siblings('.'+errorTarget).removeClass('hide');
-										
-									}
-									
-									ctrlStatus = true;
-									
-								}
-								
-							},
-							
-							click_next = function () {
-								
-								if (ctrlStatus) {
-									
-									custom_selector.siblings('.valierror').addClass('hide');
-									
-								}
-								
-								custom_selector.each(ctmSltEachFn);
-								
-							};
-						
-						$('.basicInfoTool').on('click.custom', 'button', click_next);
-						
-					};
-					
-					thisModule.init = function (opts) {
-						
-						var excute = function () {
-							
-							internalProtection.defaultData();
-							
-							internalProtection.fnSelector();
-							
-							internalProtection.validation();
-							
-							internalProtection.clickBtnNext();
-							
-						};
-						
-						opts.excute ? excute() : console.log('Sorry! Do not have the permission to excute part of program.');
-						
-					};
-					
-					return thisModule;
-					
-				} ($, basiceInfoModule || {}));
+				});
 				
-				basiceInfoModule.init({excute: true});
+				$.validator.setDefaults({
+					
+					debug: true,
+					
+					onfocusout: function(element) {
+						
+						SJ(element).valid();
+						
+					},
+					
+					onkeyup: function(element) {
+						
+						SJ(element).valid();
+						
+					},
+					
+					success: function(error) {
+						
+						SJ(error).remove();
+						
+					}
+					
+				});
+
+				$.validator.addMethod("nowhitespace", function(value, element) {
+					
+					return this.optional(element) || /^\S+$/i.test(value);
+					
+				}, "不允许有空格。");
 				
+				$.validator.addMethod("Chinses", function(value, element) {
+					
+					return this.optional(element) || /[^x00-xff]/.test(value);
+					
+				}, "请输入中文。");
+				
+				$.validator.addMethod("email2", function(value, element, param) {
+					
+					return this.optional(element) || /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)*(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i.test(value);
+					
+				}, $.validator.messages.email);
+
+				$.validator.addClassRules({
+					
+					userName: {
+						
+						required: true,
+						
+						Chinses: true,
+						
+						nowhitespace: true
+						
+					},
+
+					oglSltIdentity: { // 身份
+						
+						required: true
+
+					},
+					
+					userIdentity: { // 身份证号码
+						
+						required: true,
+						
+						nowhitespace: true
+						
+					},
+
+					oglSltDateYear: {
+						
+						required: true
+
+					},
+					
+					identityEmail: {
+						
+						required: true,
+						
+						nowhitespace: true,
+						
+						email: true
+						
+					}
+					
+				});
+
+				var _validator = $('#frmBasicInfo').validate({
+
+					errorElement: 'div',
+
+					errorPlacement: function (error, element) {
+
+						switch (SJ(element).attr('id')) {
+							
+							case 'userName': {
+								
+								SJ(error).addClass('absol valierror errPos1 box_round');
+								
+								SJ(element).parent().append(error);
+								
+								break;
+								
+							}
+
+							case 'oglSltIdentity': {
+								
+								SJ(error).addClass('sltError errPos2');
+								
+								SJ(element).closest('.slt_container').append(error);
+
+								break;
+
+							}
+							
+							case 'userIdentity': {
+								
+								SJ(error).addClass('absol valierror errPos3 box_round');
+								
+								SJ(element).parent().append(error);
+								
+								break;
+								
+							}
+
+							case 'oglSltDateYear': {
+								
+								SJ(error).addClass('sltError errPos4');
+								
+								SJ(element).closest('.slt_container').append(error);
+
+								break;
+
+							}
+							
+							case 'identityEmail': {
+								
+								SJ(error).addClass('absol valierror errPos6 box_round');
+								
+								SJ(element).parent().append(error);
+								
+								break;
+								
+							}
+							
+						}
+
+					},
+
+					submitHandler: function (form, event) {
+
+						//, 'cdnjs/modernizr_amd/modernizr.min'
+
+					}
+
+				});
 				
 				
 				/**

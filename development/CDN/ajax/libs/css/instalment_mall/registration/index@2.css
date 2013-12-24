@@ -58,9 +58,7 @@
 
 .protocolPanel > .protocolContent > .protocol {
 	
-	overflow: scroll;
-	
-	overflow-x: hidden;
+	overflow: hidden;
 	
 	border: 1px solid #999;
 	

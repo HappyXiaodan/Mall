@@ -226,116 +226,6 @@
 
 }
 
-
-
-.identityValiDate {
-
-	float: left;
-
-	margin-top: 44px;
-
-}
-
-.identityValiDate, .identityValiDate .slt_core,
-.identityValiDate .slt_selected, .identityValiDate .slt_arrow,
-.identityValiDate .slt_panel {
-	
-	width: 50px;
-
-}
-
-.identityValiDate, .identityValiDate .slt_core,
-.identityValiDate .slt_selected, .identityValiDate .slt_arrow,
-.identityValiDate .slt_panel > ul > .options {
-
-	height: 18px;
-
-}
-
-.identityValiDate .identityValiDate > select {
-	
-	z-index: 1;
-	
-	top: -18px;
-	
-	left: 0;
-	
-}
-
-.identityValiDate > .slt_core {
-
-	z-index: 500;
-
-}
-
-.identityValiDate .slt_selected {
-
-	z-index: 600;
-
-}
-
-.identityValiDate .slt_selected > span {
-	
-	color: #13b5b1;
-
-	font-size: 12px;
-
-	line-height: 18px;
-	
-}
-
-.identityValiDate .slt_arrow > i {
-
-	display: none;
-
-	z-index: 555;
-
-	top: 50%;
-
-	margin-top: -3px;
-
-	margin-right: 1px;
-
-}
-
-.identityValiDate .slt_panel {
-
-	z-index: 505;
-
-	top: 15px;
-
-	left: 0;
-
-}
-
-.identityValiDate .ie7 .slt_panel {
-	
-	width: 48px;
-	
-}
-
-.identityValiDate .slt_panel > ul {
-	
-	width: 40px;
-	
-	margin-top: 18px;
-	
-	margin-left: 5px;
-	
-}
-
-.identityValiDate .slt_panel > ul > .options {
-
-	font-size: 12px;
-
-	line-height: 18px;
-	
-	width: 40px;
-	
-}
-
-
-
 .basicInfoTable > div.tableItem3 {
 
 	border-bottom: 0;
@@ -508,7 +398,34 @@
 	
 }
 
-.userNameErrorPos {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.errPos1 {
 	
 	top: 70px;
 	
@@ -516,15 +433,13 @@
 
 }
 
-.authenticationErrorPos {
+.errPos2 {
 	
-	top: 70px;
-	
-	left: 115px;
+	left: 68px;
 	
 }
 
-.uiErrorPos {
+.errPos3 {
 	
 	top: 70px;
 	
@@ -532,7 +447,7 @@
 	
 }
 
-.identityValiYearErrorPos {
+.errPos4 {
 	
 	top: 70px;
 	
@@ -540,7 +455,7 @@
 	
 }
 
-.identityValiMonthErrorPos {
+.errPos4 {
 	
 	top: 70px;
 	
@@ -548,7 +463,7 @@
 	
 }
 
-.identityValiDayErrorPos {
+.errPos5 {
 	
 	top: 70px;
 	
@@ -556,17 +471,100 @@
 	
 }
 
-.identityValiDayErrorPos:before,
-.identityValiDayErrorPos:after {
+.errPos5:before,
+.errPos5:after {
 	
 	left: 12px;
 	
 }
 
-.iemailErrorPos {
+.errPos6 {
 	
 	top: 70px;
 	
 	left: 80px;
 	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sltIdentity {
+
+	margin-top: 22px;
+
+	margin-left: 49px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sltDate {
+
+	float: left;
+
+	margin-top: 44px;
+
+}
+
+.sltDate, 
+.sltDate .slt_core,
+.sltDate .slt_selected,
+.sltDate .slt_arrow,
+.sltDate .slt_panel {
+	
+	width: 50px;
+
+}
+
+.sltDate, 
+.sltDate .slt_core,
+.sltDate .slt_selected, 
+.sltDate .slt_arrow {
+
+	height: 18px;
+
 }
